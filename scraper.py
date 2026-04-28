@@ -33,12 +33,20 @@ def get_data():
                 # 1. Umbrella vs Event Name Logic
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
+                
+                # Clone H2 to isolate the event name (the text not inside the span)
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span: h2_clone.span.decompose()
                 event_name = h2_clone.get_text().replace('::', '').strip()
-                final_title = f"{umbrella_name}\n{event_name}" if umbrella_name else event_name
+                
+                # Format: Umbrella on first line, Event Name on second
+                # Using .upper() for the Umbrella helps the CSS hierarchy
+                if umbrella_name:
+                    final_title = f"{umbrella_name.upper()}\n{event_name}"
+                else:
+                    final_title = event_name
 
-                # 2. Precision Hour Fetching
+                # 2. Precision Hour Fetching from Sub-page
                 url = "https://www.teatroaveirense.pt" + link_el['href']
                 time_iso = ""
                 try:
@@ -47,29 +55,30 @@ def get_data():
                     horario_p = inner_soup.select_one('p.horarios_txt')
                     
                     if horario_p:
-                        # Convert <br> to \n so we can split by line
-                        for br in horario_p.find_all("br"):
-                            br.replace_with("\n")
+                        # Use separator to preserve the line break between Date and Time
+                        text_content = horario_p.get_text(separator="\n")
+                        lines = text_content.split('\n')
                         
-                        lines = horario_p.get_text().split('\n')
-                        # We look for the line that has 'h' in it (e.g., 21h30)
                         for line in lines:
+                            # Look for the line containing the time (e.g., "21h30")
                             if 'h' in line and any(char.isdigit() for char in line):
-                                # Split by hyphen '–' or '-' to isolate "21h30"
-                                clean_time = line.split('–')[0].split('-')[0].strip()
-                                # Clean characters like 'h' to ':'
-                                match = re.search(r'(\d{1,2})h(\d{2})', clean_time)
+                                # Isolate the part before the hyphen/en-dash
+                                # Uses a regex to split by various hyphen types
+                                time_part = re.split(r'[–\u2014-]', line)[0].strip()
+                                
+                                # Convert 21h30 to 21:30
+                                match = re.search(r'(\d{1,2})h(\d{2})', time_part)
                                 if match:
                                     h = match.group(1).zfill(2)
                                     m = match.group(2)
                                     time_iso = f"T{h}:{m}:00"
-                                    print(f"Success: {event_name} @ {h}:{m}")
+                                    print(f"Time found: {h}:{m} for {event_name}")
                                     break
                 except Exception as e:
-                    print(f"Error fetching time for {event_name}: {e}")
+                    print(f"Error fetching detail for {event_name}: {e}")
 
                 all_events.append({
-                    "title": f"🎭 {final_title}",
+                    "title": final_title,
                     "start": parse_pt_date(date_el.text.strip()) + time_iso,
                     "url": url,
                     "source": "teatro",
@@ -77,10 +86,12 @@ def get_data():
                 })
 
     except Exception as e: 
-        print(f"General Error: {e}")
+        print(f"General Scraper Error: {e}")
 
+    # Save to JSON
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(all_events, f, ensure_ascii=False, indent=2)
+    print(f"Scraper finished. Total events: {len(all_events)}")
 
 if __name__ == "__main__":
     get_data()
