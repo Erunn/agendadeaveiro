@@ -6,88 +6,170 @@
     <title>Aveiro Events Meta-Search</title>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; display: flex; flex-direction: column; height: 100vh; }
+        :root {
+            --sidebar-bg: #009a61; /* Verde Viral */
+            --main-bg: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --border-color: #ddd;
+        }
+
+        [data-theme="dark"] {
+            --main-bg: #1a1d21;
+            --text-color: #e1e1e1;
+            --card-bg: #24282d;
+            --border-color: #383f47;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background: var(--main-bg); 
+            color: var(--text-color);
+            display: flex; 
+            flex-direction: column; 
+            height: 100vh; 
+            transition: background 0.3s ease;
+        }
         
-        /* LAYOUT REORGANIZADO */
         .main-wrapper { display: flex; flex: 1; overflow: hidden; }
         
+        /* SIDEBAR ESTILO VIRAL */
         .sidebar { 
-            width: 220px; 
-            background: white; 
+            width: 240px; 
+            background: var(--sidebar-bg); 
             padding: 30px 20px; 
-            border-right: 1px solid #ddd; 
             display: flex; 
             flex-direction: column; 
             gap: 20px;
+            color: white;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 10;
         }
 
-        .calendar-section { flex: 1; padding: 20px; overflow-y: auto; background: #f4f7f6; }
+        .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
 
-        .filter-group { display: flex; flex-direction: column; gap: 12px; }
-        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 600; }
+        .filter-group { display: flex; flex-direction: column; gap: 15px; }
+        .filter-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            cursor: pointer; 
+            font-size: 14px; 
+            font-weight: 600;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .filter-item:hover { background: rgba(255,255,255,0.2); }
         
-        h1 { font-size: 1.4rem; color: #333; margin-bottom: 10px; }
-        input[type="checkbox"] { transform: scale(1.2); }
-
-        /* --- CORES DE EVENTOS --- */
-        .event-teatro { background-color: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
-        .event-cinema { background-color: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
-        .event-cma    { background-color: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
-        .event-viral  { background-color: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
-
-        /* --- CENTRAMENTO E ALINHAMENTO --- */
-        .fc-event { border: none !important; margin-bottom: 4px !important; }
+        h1 { font-size: 1.2rem; margin: 0; color: white; letter-spacing: 0.5px; }
         
+        /* TOGGLE DARK MODE */
+        .theme-switch-wrapper {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        .theme-switch {
+            display: inline-block;
+            height: 24px;
+            position: relative;
+            width: 44px;
+        }
+        .theme-switch input { display:none; }
+        .slider {
+            background-color: #ccc;
+            bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0;
+            transition: .4s; border-radius: 34px;
+        }
+        .slider:before {
+            background-color: #fff; bottom: 4px; content: ""; height: 16px; left: 4px;
+            position: absolute; transition: .4s; width: 16px; border-radius: 50%;
+        }
+        input:checked + .slider { background-color: var(--sidebar-bg); }
+        input:checked + .slider:before { transform: translateX(20px); }
+
+        /* --- CALENDÁRIO --- */
+        #calendar { 
+            background: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 12px; 
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
+        .fc-header-toolbar { margin-bottom: 25px !important; }
+        .fc-toolbar-title { font-size: 1.4em !important; font-weight: bold; color: var(--text-color); }
+        
+        /* BOTÕES ESTILO DASHBOARD */
+        .fc-button {
+            background: var(--card-bg) !important;
+            border: 1px solid var(--border-color) !important;
+            color: var(--text-color) !important;
+            text-transform: capitalize !important;
+            font-weight: 600 !important;
+            box-shadow: none !important;
+        }
+        .fc-button-active { background: var(--sidebar-bg) !important; color: white !important; border-color: var(--sidebar-bg) !important; }
+
+        /* --- EVENTOS (GRID) --- */
+        .fc-event { border: none !important; border-radius: 6px !important; overflow: hidden; margin: 2px 0 !important; }
+        .event-teatro { background: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
+        .event-cinema { background: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
+        .event-cma    { background: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
+        .event-viral  { background: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
+
         .fc-event-main {
             display: grid !important;
-            grid-template-columns: 60px 1fr !important; /* Espaço maior entre hora e texto */
-            align-items: center !important; /* CENTRAMENTO VERTICAL */
-            padding: 8px !important;
-            min-height: 50px;
+            grid-template-columns: 50px 1fr !important;
+            align-items: center !important;
+            padding: 6px !important;
+            min-height: 45px;
         }
 
-        .fc-event-time { 
-            font-weight: bold !important; 
-            font-size: 0.9em !important; 
-            color: #000 !important;
-            text-align: center !important;
-        }
+        .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
+        .fc-event-title { color: #000 !important; font-size: 0.85em; line-height: 1.3; font-weight: normal !important; padding-left: 8px; }
 
-        .fc-event-title {
-            color: #000 !important;
-            font-size: 0.85em !important;
-            line-height: 1.4 !important;
-            padding-left: 5px; /* Mais espaço após a hora */
-        }
-
-        /* --- RESET DO LOOK DA LISTA (VOLTANDO ATRÁS) --- */
-        .fc-list-event { background-color: transparent !important; }
-        .fc-list-event-title { padding: 12px !important; }
-        .fc-list-day-side-text { display: block !important; } /* Reverte a remoção do dia da semana */
-
-        /* TOOLBAR À ESQUERDA */
-        .fc-header-toolbar { 
-            display: flex !important; 
-            justify-content: flex-start !important; 
-            gap: 20px !important;
-            margin-bottom: 20px !important;
-        }
+        /* --- MODO LISTA --- */
+        .fc-list { border: none !important; background: transparent !important; }
+        .fc-list-event { cursor: pointer !important; transition: transform 0.2s; }
+        .fc-list-event:hover { transform: scale(1.01); }
+        .fc-list-event-dot { display: none; }
+        
+        .list-row-container { display: flex; align-items: center; padding: 10px; width: 100%; gap: 15px; }
+        .list-img { width: 70px; height: 50px; object-fit: cover; border-radius: 6px; }
+        .list-time { font-weight: bold; min-width: 60px; text-align: center; border-right: 1px solid rgba(0,0,0,0.1); padding-right: 10px; }
+        
+        .fc-list-day-cushion { background: var(--main-bg) !important; }
+        .fc-list-event-title { padding: 0 !important; }
     </style>
 </head>
 <body>
 
     <div class="main-wrapper">
         <div class="sidebar">
-            <h1>Explorar Aveiro</h1>
+            <h1>AGENDA AVEIRO</h1>
             <div class="filter-group" id="sourceFilters">
-                <label class="filter-item" style="color: #e67e22"><input type="checkbox" checked value="teatro"> Teatro</label>
-                <label class="filter-item" style="color: #3498db"><input type="checkbox" checked value="cinema"> Cinema</label>
-                <label class="filter-item" style="color: #27ae60"><input type="checkbox" checked value="cma"> Município</label>
-                <label class="filter-item" style="color: #8e44ad"><input type="checkbox" checked value="viral"> Viral Agenda</label>
+                <label class="filter-item" style="border-left: 4px solid #e67e22;"><input type="checkbox" checked value="teatro"> Teatro</label>
+                <label class="filter-item" style="border-left: 4px solid #1e88e5;"><input type="checkbox" checked value="cinema"> Cinema</label>
+                <label class="filter-item" style="border-left: 4px solid #2e7d32;"><input type="checkbox" checked value="cma"> Município</label>
+                <label class="filter-item" style="border-left: 4px solid #7b1fa2;"><input type="checkbox" checked value="viral"> Viral Agenda</label>
             </div>
         </div>
 
         <div class="calendar-section">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+            </div>
             <div id='calendar'></div>
         </div>
     </div>
@@ -95,7 +177,18 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        var allEvents = [];
+        
+        // DARK MODE TOGGLE
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }    
+            calendar.render(); 
+        }
+        toggleSwitch.addEventListener('change', switchTheme, false);
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
@@ -103,18 +196,30 @@
           firstDay: 1, 
           height: 'auto',
           headerToolbar: { 
-            left: 'prev,next today month,listMonth', // Tudo à esquerda
+            left: 'prev,next today month,listMonth',
             center: 'title', 
             right: '' 
           },
           displayEventTime: true,
           eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
           
-          // PERMITE HTML NO TÍTULO (Para o negrito do Scraper funcionar)
           eventContent: function(arg) {
-            let timeText = arg.timeText ? '<div class="fc-event-time">' + arg.timeText + '</div>' : '<div class="fc-event-time">all-day</div>';
+            let imgUrl = arg.event.extendedProps.image;
+            let timeText = arg.timeText || 'all-day';
+
+            if (arg.view.type === 'listMonth') {
+                let imgHtml = imgUrl ? `<img src="${imgUrl}" class="list-img">` : '<div style="width:70px"></div>';
+                return { 
+                  html: `<div class="list-row-container">
+                            <div class="list-time">${timeText}</div>
+                            ${imgHtml}
+                            <div style="flex:1">${arg.event.title}</div>
+                         </div>` 
+                };
+            }
             return { 
-              html: timeText + '<div class="fc-event-title">' + arg.event.title + '</div>' 
+              html: `<div class="fc-event-time">${timeText}</div>
+                     <div class="fc-event-title">${arg.event.title}</div>` 
             };
           },
 
@@ -133,20 +238,20 @@
         fetch('events.json?t=' + new Date().getTime())
           .then(res => res.json())
           .then(data => {
-            allEvents = data;
+            window.allEvents = data;
             updateCalendar();
           });
 
-        function updateCalendar() {
+        window.updateCalendar = function() {
           const activeSources = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
-          const filtered = allEvents.filter(ev => activeSources.includes(ev.source));
+          const filtered = window.allEvents.filter(ev => activeSources.includes(ev.source));
           calendar.removeAllEvents();
           calendar.addEventSource(filtered);
           calendar.render();
         }
 
         document.querySelectorAll('#sourceFilters input').forEach(input => {
-          input.addEventListener('change', updateCalendar);
+          input.addEventListener('change', window.updateCalendar);
         });
       });
     </script>
