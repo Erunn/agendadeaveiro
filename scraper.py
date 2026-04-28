@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 
-# Headers to prevent being blocked
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
 
 def parse_pt_date(date_str):
@@ -15,9 +14,11 @@ def parse_pt_date(date_str):
         'novembro': '11', 'dezembro': '12'
     }
     try:
-        d = date_str.lower().replace(' de ', ' ').split()
-        day = d[0].zfill(2)
-        month = months.get(d[1], '01')
+        # Clean string: "28 Abril" -> ["28", "abril"]
+        clean = date_str.lower().replace(' de ', ' ').strip()
+        parts = clean.split()
+        day = parts[0].zfill(2)
+        month = months.get(parts[1], '01')
         return f"{datetime.now().year}-{month}-{day}"
     except:
         return datetime.now().strftime('%Y-%m-%d')
@@ -25,71 +26,61 @@ def parse_pt_date(date_str):
 def get_data():
     all_events = []
 
-    # 1. TEATRO AVEIRENSE
+    # 1. TEATRO AVEIRENSE (Updated Selector)
     try:
-        res = requests.get("https://www.teatroaveirense.pt/pt/programacao/", headers=HEADERS)
+        res = requests.get("https://www.teatroaveirense.pt/pt/programacao/", headers=HEADERS, timeout=10)
         soup = BeautifulSoup(res.text, 'html.parser')
-        for item in soup.select('.item'):
-            title = item.select_one('.title a')
-            if title:
+        # The site structure usually uses an article or div with a specific class for the list
+        items = soup.find_all(class_='item') # Or check if it is 'event-item'
+        for item in items:
+            title_el = item.select_one('h2 a') or item.select_one('.title a')
+            date_el = item.select_one('.date')
+            if title_el and date_el:
                 all_events.append({
-                    "title": title.text.strip(),
-                    "start": parse_pt_date(item.select_one('.date').text),
-                    "url": "https://www.teatroaveirense.pt" + title['href'],
-                    "source": "teatro",
-                    "color": "#e67e22"
+                    "title": f"🎭 {title_el.text.strip()}",
+                    "start": parse_pt_date(date_el.text.strip()),
+                    "url": "https://www.teatroaveirense.pt" + title_el['href'],
+                    "source": "teatro", "color": "#e67e22"
                 })
-    except: print("Error scraping Teatro")
+        print(f"Teatro: Found {len(items)} items")
+    except Exception as e: print(f"Teatro Error: {e}")
 
-    # 2. CINEMA GLICINIAS
+    # 2. CINEMA GLICINIAS (Updated for Filmspot/Cinecartaz style)
     try:
-        res = requests.get("https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718", headers=HEADERS)
+        res = requests.get("https://filmspot.pt/cinema/cinemas-nos-glicinias-aveiro-24/", headers=HEADERS, timeout=10)
         soup = BeautifulSoup(res.text, 'html.parser')
-        for movie in soup.select('.highlight-item'):
-            title = movie.select_one('h3 a')
+        for movie in soup.select('.movie-item, .film-info'): # Common selectors for cinema lists
+            title = movie.select_one('h3, .title')
             if title:
                 all_events.append({
-                    "title": title.text.strip(),
+                    "title": f"🎬 {title.text.strip()}",
                     "start": datetime.now().strftime('%Y-%m-%d'),
-                    "url": "https://cinecartaz.publico.pt" + title['href'],
-                    "source": "cinema",
-                    "color": "#3498db"
+                    "source": "cinema", "color": "#3498db"
                 })
-    except: print("Error scraping Cinema")
+    except Exception as e: print(f"Cinema Error: {e}")
 
-    # 3. CMA AGENDA
+    # 3. VIRAL AGENDA (Updated Selector)
     try:
-        res = requests.get("https://www.cm-aveiro.pt/visitantes/agenda-aveiro", headers=HEADERS)
+        res = requests.get("https://www.viralagenda.com/pt/aveiro/aveiro", headers=HEADERS, timeout=10)
         soup = BeautifulSoup(res.text, 'html.parser')
-        for item in soup.select('.list-item'):
-            title = item.select_one('.title')
+        for event in soup.select('.event-item, .item'):
+            title = event.select_one('.title a, h3 a')
             if title:
                 all_events.append({
-                    "title": title.text.strip(),
-                    "start": parse_pt_date(item.select_one('.date-wrapper').text),
-                    "source": "cma",
-                    "color": "#27ae60"
-                })
-    except: print("Error scraping CMA")
-
-    # 4. VIRAL AGENDA
-    try:
-        res = requests.get("https://www.viralagenda.com/pt/aveiro/aveiro", headers=HEADERS)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        for event in soup.select('.event-item'):
-            title = event.select_one('.title a')
-            if title:
-                all_events.append({
-                    "title": title.text.strip(),
+                    "title": f"🌟 {title.text.strip()}",
                     "start": datetime.now().strftime('%Y-%m-%d'),
-                    "url": "https://www.viralagenda.com" + title['href'],
-                    "source": "viral",
-                    "color": "#8e44ad"
+                    "url": "https://www.viralagenda.com" + title['href'] if title['href'].startswith('/') else title['href'],
+                    "source": "viral", "color": "#8e44ad"
                 })
-    except: print("Error scraping Viral")
+    except Exception as e: print(f"Viral Error: {e}")
 
-    with open('events.json', 'w', encoding='utf-8') as f:
-        json.dump(all_events, f, ensure_ascii=False, indent=2)
+    # Final Save
+    if all_events:
+        with open('events.json', 'w', encoding='utf-8') as f:
+            json.dump(all_events, f, ensure_ascii=False, indent=2)
+        print(f"SUCCESS: Saved {len(all_events)} events to events.json")
+    else:
+        print("WARNING: No events found. Check website selectors.")
 
 if __name__ == "__main__":
     get_data()
