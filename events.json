@@ -1,6 +1,6 @@
 [
   {
-    "title": "AVEIRO_SÍNTESE 2026\n[c2] câmara escura  acusmática & mista",
+    "title": "AVEIRO_SÍNTESE 2026\n[c2] câmara escura acusmática & mista",
     "start": "2026-04-28T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c2-acusmatica-mista-aveiro-sintese-2026/",
     "source": "teatro",
@@ -21,7 +21,7 @@
     "color": "#e67e22"
   },
   {
-    "title": "AVEIRO_SÍNTESE 2026\n[c3] acusmática  Ludger Brümmer",
+    "title": "AVEIRO_SÍNTESE 2026\n[c3] acusmática Ludger Brümmer",
     "start": "2026-04-30T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c3-acusmatica-ludger-brummer-aveiro-sintese-2026/",
     "source": "teatro",
@@ -59,6 +59,13 @@
     "title": "AVEIRO_SÍNTESE 2026\n[c6] NMpNM",
     "start": "2026-05-03T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c6-nmpnm-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "OS FILMES DAS NOSSAS TERÇAS\nChercher la Femme",
+    "start": "2026-05-05T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/chercher-la-femme/",
     "source": "teatro",
     "color": "#e67e22"
   },
