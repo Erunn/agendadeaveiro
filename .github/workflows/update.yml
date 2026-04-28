@@ -2,16 +2,19 @@ name: Update Aveiro Events
 on:
   schedule:
     - cron: '0 0 * * *' # Runs every night at midnight
-  workflow_dispatch: # Allows you to run it manually for testing
+  workflow_dispatch: # Allows manual update
 jobs:
   build:
     runs-on: ubuntu-latest
+    # This tells GitHub to use the newer Node.js engine now
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4 # Latest version
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Latest version
         with:
-          python-version: '3.9'
+          python-version: '3.11' # A newer, faster Python version
       - name: Install dependencies
         run: pip install requests beautifulsoup4
       - name: Run Scraper
