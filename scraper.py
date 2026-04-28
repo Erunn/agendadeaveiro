@@ -37,7 +37,7 @@ def get_data():
     all_events = []
     base_url = "https://www.teatroaveirense.pt"
     
-    print("Starting scraper for Teatro Aveirense...")
+    print("Iniciando scraper para Teatro Aveirense...")
     
     try:
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
@@ -45,15 +45,23 @@ def get_data():
         soup = BeautifulSoup(res.text, 'html.parser')
         items = soup.select('.programa_item')
         
-        print(f"Found {len(items)} items in listing.")
+        print(f"Foram encontrados {len(items)} eventos na listagem.")
         
         for item in items:
             h2 = item.select_one('h2')
             date_el = item.select_one('.data')
             link_el = item.select_one('a')
             
+            # --- EXTRAÇÃO DA IMAGEM ---
+            img_el = item.select_one('img')
+            img_url = ""
+            if img_el:
+                img_url = img_el.get('src', '')
+                if img_url and not img_url.startswith('http'):
+                    img_url = base_url + img_url
+            
             if h2 and date_el and link_el:
-                # 1. Umbrella vs Event Name Logic com HTML Tags
+                # 1. Lógica de Título (Umbrella em bold, Evento normal)
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
                 
@@ -64,21 +72,19 @@ def get_data():
                 event_name = h2_clone.get_text().replace('::', '').strip()
                 event_name = " ".join(event_name.split()) 
                 
-                # --- LOGICA DE TITULO ATUALIZADA ---
-                # Usamos <b> para negrito total e <br> para quebra de linha física
                 if umbrella_name:
                     final_title = f"<b>{umbrella_name.upper()}</b><br>{event_name}"
                 else:
                     final_title = event_name
 
-                # 2. Precision Hour Fetching
+                # 2. Busca detalhada da hora (Segunda requisição)
                 url = link_el['href']
                 if not url.startswith('http'):
                     url = base_url + url
                 
                 time_iso = ""
                 try:
-                    time.sleep(0.5) 
+                    time.sleep(0.3) # Delay leve para respeitar o servidor
                     event_page = session.get(url, headers=HEADERS, timeout=5)
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
                     horario_p = inner_soup.select_one('p.horarios_txt')
@@ -97,26 +103,31 @@ def get_data():
                                     time_iso = f"T{h}:{m}:00"
                                     break
                 except Exception as e:
-                    print(f"Error fetching detail for {event_name}: {e}")
+                    print(f"Erro ao buscar detalhes de {event_name}: {e}")
 
+                # Criamos o objeto final incluindo a imagem no extendedProps
                 all_events.append({
                     "title": final_title,
                     "start": parse_pt_date(date_el.text.strip()) + time_iso,
                     "url": url,
                     "source": "teatro",
-                    "color": "#e67e22"
+                    "color": "#e67e22",
+                    "extendedProps": {
+                        "image": img_url,
+                        "source": "teatro"
+                    }
                 })
-                print(f"Processed: {event_name}")
+                print(f"Processado: {event_name}")
 
     except Exception as e: 
-        print(f"General Scraper Error: {e}")
+        print(f"Erro Geral no Scraper: {e}")
 
     if all_events:
         with open('events.json', 'w', encoding='utf-8') as f:
             json.dump(all_events, f, ensure_ascii=False, indent=2)
-        print(f"Scraper finished successfully. Total events: {len(all_events)}")
+        print(f"Scraper terminado. Total de eventos: {len(all_events)}")
     else:
-        print("No events scraped.")
+        print("Nenhum evento capturado.")
 
 if __name__ == "__main__":
     get_data()
