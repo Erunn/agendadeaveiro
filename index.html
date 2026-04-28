@@ -26,72 +26,82 @@
         h1 { margin: 0; font-size: 1.5rem; color: #333; }
         input[type="checkbox"] { transform: scale(1.2); }
 
-        /* --- CORES E ESTILIZAÇÃO DOS EVENTOS --- */
+        /* --- CORES DE FUNDO (MAIS ESCURAS) --- */
+        .event-teatro { background-color: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
+        .event-cinema { background-color: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
+        .event-cma    { background-color: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
+        .event-viral  { background-color: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
 
+        /* --- ALINHAMENTO VERTICAL E HORIZONTAL --- */
         .fc-event {
             text-decoration: none !important;
             opacity: 1 !important; 
             border: none !important;
-            margin-bottom: 2px !important;
+            margin-bottom: 3px !important;
         }
 
-        /* Esconder os círculos coloridos (dots) em todo o lado */
-        .fc-daygrid-event-dot, .fc-list-event-dot {
-            display: none !important;
+        /* Forçar alinhamento em grelha para horas e títulos */
+        .fc-event-main {
+            display: grid !important;
+            grid-template-columns: 55px 1fr !important; /* Coluna fixa para a hora */
+            align-items: center !important; /* Centraliza verticalmente */
+            justify-content: center !important;
+            padding: 6px 8px !important;
+            min-height: 40px;
         }
 
-        /* Cores Dinâmicas por Fonte */
-        .event-teatro { background-color: #fff3e0 !important; border-left: 4px solid #e67e22 !important; }
-        .event-cinema { background-color: #e3f2fd !important; border-left: 4px solid #3498db !important; }
-        .event-cma    { background-color: #e8f5e9 !important; border-left: 4px solid #27ae60 !important; }
-        .event-viral  { background-color: #f3e5f5 !important; border-left: 4px solid #8e44ad !important; }
+        /* Ocultar dots */
+        .fc-daygrid-event-dot, .fc-list-event-dot { display: none !important; }
 
-        /* Texto dentro dos eventos */
-        .fc-event-main-frame { 
-            flex-direction: column !important; 
-            padding: 4px 6px !important; 
+        .fc-event-time { 
+            font-weight: bold !important; 
+            font-size: 0.85em !important; 
+            color: #000 !important;
+            text-align: center !important;
         }
-
-        .fc-event-time, .fc-event-title { 
-            color: #333 !important; 
-        }
-
-        .fc-event-time { font-weight: bold !important; font-size: 0.75em !important; margin-bottom: 2px; }
 
         .fc-event-title {
+            color: #000 !important;
             white-space: pre-wrap !important;
             line-height: 1.3 !important;
             font-size: 0.85em !important;
-            display: block !important;
+            font-weight: normal !important; /* Evento normal */
         }
 
+        /* Negrito apenas na primeira linha (Umbrella) */
         .fc-event-title::first-line {
             font-weight: bold !important;
             text-transform: uppercase !important;
-            font-size: 0.9em !important;
         }
 
-        /* --- AJUSTES DO MODO LISTA --- */
+        /* --- MODO LISTA --- */
+        .fc-list-day-side-text { display: none !important; } /* Remove weekday à direita */
         
-        .fc-list-day-side-text { display: none !important; }
-        
-        .fc-list-event { background-color: transparent !important; }
-        
-        /* Aplicar as cores de fundo também nas linhas da lista */
-        .fc-list-event.event-teatro { background-color: #fff3e0 !important; }
-        .fc-list-event.event-cinema { background-color: #e3f2fd !important; }
-        .fc-list-event.event-cma    { background-color: #e8f5e9 !important; }
-        .fc-list-event.event-viral  { background-color: #f3e5f5 !important; }
+        .fc-list-event { 
+            display: grid !important;
+            grid-template-columns: 70px 1fr !important;
+            align-items: center !important;
+            border-bottom: 1px solid #eee !important;
+        }
 
-        .fc-list-event-title { white-space: pre-wrap !important; padding: 12px 8px !important; border-left: 4px solid transparent; }
-        
-        /* Manter a borda colorida na lista para consistência */
-        .event-teatro .fc-list-event-title { border-left-color: #e67e22 !important; }
-        .event-cinema .fc-list-event-title { border-left-color: #3498db !important; }
-        .event-cma    .fc-list-event-title { border-left-color: #27ae60 !important; }
-        .event-viral  .fc-list-event-title { border-left-color: #8e44ad !important; }
+        .fc-list-event-time { 
+            padding: 15px !important; 
+            font-weight: bold !important; 
+            text-align: center !important;
+            color: #000 !important;
+        }
 
-        .fc-list-event-time { font-weight: bold; color: #444 !important; padding-left: 10px !important; }
+        .fc-list-event-title { 
+            padding: 15px !important; 
+            white-space: pre-wrap !important; 
+            border-left: 5px solid transparent; 
+        }
+
+        /* Cores na Lista */
+        .fc-list-event.event-teatro { background-color: #ffcc80 !important; }
+        .fc-list-event.event-cinema { background-color: #90caf9 !important; }
+        .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
+        .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
 
     </style>
 </head>
