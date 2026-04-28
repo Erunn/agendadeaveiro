@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aveiro Events Meta-Search</title>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; }
+        .filter-bar { background: white; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 1000; }
+        .filter-group { display: inline-flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+        .filter-item { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 14px; font-weight: 600; }
+        #calendar-container { max-width: 1100px; margin: 20px auto; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 1.5rem; color: #333; }
+        input[type="checkbox"] { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+
+    <div class="filter-bar">
+        <h1>Explorar Aveiro</h1>
+        <div class="filter-group" id="sourceFilters">
+            <label class="filter-item" style="color: #e67e22"><input type="checkbox" checked value="teatro"> Teatro</label>
+            <label class="filter-item" style="color: #3498db"><input type="checkbox" checked value="cinema"> Cinema</label>
+            <label class="filter-item" style="color: #27ae60"><input type="checkbox" checked value="cma"> Município</label>
+            <label class="filter-item" style="color: #8e44ad"><input type="checkbox" checked value="viral"> Viral Agenda</label>
+        </div>
+    </div>
+
+    <div id="calendar-container">
+        <div id='calendar'></div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var allEvents = [];
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth',
+          locale: 'pt',
+          headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,listMonth' },
+          eventClick: function(info) { if(info.event.url) window.open(info.event.url, "_blank"); info.jsEvent.preventDefault(); }
+        });
+
+        // Fetch data and handle filtering
+        fetch('events.json')
+          .then(res => res.json())
+          .then(data => {
+            allEvents = data;
+            updateCalendar();
+          });
+
+        function updateCalendar() {
+          const activeSources = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
+          const filtered = allEvents.filter(ev => activeSources.includes(ev.source));
+          
+          calendar.removeAllEvents();
+          calendar.addEventSource(filtered);
+          calendar.render();
+        }
+
+        // Listen for checkbox changes
+        document.querySelectorAll('#sourceFilters input').forEach(input => {
+          input.addEventListener('change', updateCalendar);
+        });
+      });
+    </script>
+</body>
+</html>
