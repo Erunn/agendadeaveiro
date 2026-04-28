@@ -7,7 +7,7 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
     <style>
         :root {
-            --sidebar-bg: #009a61; /* Verde Viral */
+            --sidebar-bg: #009a61;
             --main-bg: #f4f7f6;
             --text-color: #333;
             --card-bg: #ffffff;
@@ -21,13 +21,11 @@
             --border-color: #383f47;
         }
 
-        body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
+        body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; }
         
-        /* SIDEBAR */
         .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 10; }
         .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
-        .filter-group { display: flex; flex-direction: column; gap: 12px; }
-        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 10px; }
         
         /* DARK MODE TOGGLE */
         .theme-switch-wrapper { position: absolute; top: 25px; right: 25px; z-index: 100; }
@@ -40,35 +38,45 @@
 
         /* --- CALENDÁRIO --- */
         #calendar { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); }
-        .fc-toolbar { margin-bottom: 20px !important; display: flex; justify-content: flex-start !important; gap: 15px; }
-
+        
         /* EVENTOS (GRID) */
-        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
-        .fc-event:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 5; }
+        .fc-event { 
+            border: none !important; 
+            border-radius: 6px !important; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+            opacity: 1 !important; /* Garante visibilidade em eventos passados */
+        }
+        .fc-event:hover { transform: translateY(-2px); z-index: 5; }
         
         .event-teatro { background: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
         .event-cinema { background: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
         .event-cma    { background: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
         .event-viral  { background: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
 
-        .fc-event-main { display: grid !important; grid-template-columns: 50px 1fr !important; align-items: center; padding: 8px !important; min-height: 45px; }
-        .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
-        .fc-event-title { color: #000 !important; font-size: 0.85em; font-weight: normal !important; padding-left: 8px; }
-
-        /* --- MODO LISTA (ESTILO VIRAL) --- */
-        .fc-list-event { cursor: pointer !important; }
-        
-        /* REMOVER CÍRCULOS (DOTS) E COLUNAS NATURAIS DA LISTA */
-        .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
-        
-        .list-row-container { 
-            display: flex; 
-            align-items: stretch; /* Garante que a altura é uniforme */
-            width: 100%; 
-            min-height: 110px; 
+        .fc-event-main { 
+            display: grid !important; 
+            grid-template-columns: 55px 1fr !important; 
+            align-items: center; 
+            padding: 8px !important; 
+            min-height: 45px;
+            white-space: normal !important; /* Permite quebra de linha */
         }
 
-        /* Célula da Hora: Centrada Vertical e Horizontalmente */
+        .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
+        .fc-event-title { 
+            color: #000 !important; 
+            font-size: 0.85em; 
+            font-weight: normal !important; 
+            padding-left: 8px;
+            overflow: visible !important; /* Impede o corte do texto */
+        }
+
+        /* --- MODO LISTA --- */
+        .fc-list-event { cursor: pointer !important; }
+        .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
+        
+        .list-row-container { display: flex; align-items: stretch; width: 100%; min-height: 110px; }
         .list-time-box { 
             width: 90px; 
             display: flex; 
@@ -79,30 +87,9 @@
             color: #000;
             border-right: 1px solid rgba(0,0,0,0.1);
         }
+        .list-img { width: 160px; height: 100px; object-fit: cover; border-radius: 8px; margin: auto 20px; }
+        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; color: #000; padding-right: 10px; }
 
-        /* Imagem Maior e mais legível */
-        .list-img { 
-            width: 160px; 
-            height: 100px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-            margin: auto 20px; /* Centra a imagem verticalmente no espaço */
-        }
-
-        .list-info { 
-            flex: 1; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centra o texto verticalmente */
-            padding-right: 20px; 
-            color: #000; 
-        }
-
-        .fc-list-event-title { padding: 0 !important; border: none !important; }
-        .fc-list-table { border-collapse: separate; border-spacing: 0 8px; }
-        .fc-list-day-cushion { background: rgba(0,0,0,0.05) !important; }
-        
-        /* Forçar cores de fundo na lista */
         .fc-list-event.event-teatro { background-color: #ffcc80 !important; }
         .fc-list-event.event-cinema { background-color: #90caf9 !important; }
         .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
@@ -148,8 +135,19 @@
             right: '' 
           },
           buttonText: { dayGridMonth: 'Calendário', listMonth: 'Lista', today: 'Hoje' },
+          
           eventContent: function(arg) {
-            let timeText = arg.timeText || 'all-day';
+            // Lógica para formatar a hora corretamente (garantir HH:mm)
+            let timeText = 'all-day';
+            if (arg.event.start) {
+                let date = arg.event.start;
+                // Só mostra hora se não for um evento de dia inteiro "real" no objeto
+                if (date.getHours() !== 0 || date.getMinutes() !== 0) {
+                    timeText = date.getHours().toString().padStart(2, '0') + ':' + 
+                               date.getMinutes().toString().padStart(2, '0');
+                }
+            }
+
             let imgUrl = arg.event.extendedProps.image;
 
             if (arg.view.type === 'listMonth') {
@@ -162,10 +160,8 @@
                 };
             }
             return { 
-              html: `<div class="fc-event-main">
-                        <div class="fc-event-time">${timeText}</div>
-                        <div class="fc-event-title">${arg.event.title}</div>
-                     </div>` 
+              html: `<div class="fc-event-time">${timeText}</div>
+                     <div class="fc-event-title">${arg.event.title}</div>` 
             };
           },
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
