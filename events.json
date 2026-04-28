@@ -1,1 +1,240 @@
-[]
+[
+  {
+    "title": "🎭 [c2] câmara escura :: acusmática & mista Aveiro_Síntese 2026",
+    "start": "2026-04-28",
+    "url": "https://www.teatroaveirense.pt/pt/evento/c2-acusmatica-mista-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Maria Vitória Os Filmes das Nossas Terças",
+    "start": "2026-04-28",
+    "url": "https://www.teatroaveirense.pt/pt/evento/maria-vitoria-os-filmes-das-nossas-tercas/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Aveiro_Síntese 2026 Bienal de Música Electroacústica",
+    "start": "2026-04-26",
+    "url": "https://www.teatroaveirense.pt/pt/evento/aveiro-sintese-2026-bienal-de-musica-electroacustica/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 [c3] acusmática :: Ludger Brümmer Aveiro_Síntese 2026",
+    "start": "2026-04-30",
+    "url": "https://www.teatroaveirense.pt/pt/evento/c3-acusmatica-ludger-brummer-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 [ca] Som A/Interior Aveiro_Síntese 2026",
+    "start": "2026-05-01",
+    "url": "https://www.teatroaveirense.pt/pt/evento/ca-som-a-interior-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 [c4] ars ad hoc Aveiro_Síntese 2026",
+    "start": "2026-05-01",
+    "url": "https://www.teatroaveirense.pt/pt/evento/c4-ars-ad-hoc-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 [c5] O. Beiras Aveiro_Síntese 2026",
+    "start": "2026-05-02",
+    "url": "https://www.teatroaveirense.pt/pt/evento/c5-o-beiras/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Dreaming Bodies: A Collective Practice for the Future Masterclass Palcos Instáveis",
+    "start": "2026-05-03",
+    "url": "https://www.teatroaveirense.pt/pt/evento/dreaming-bodies-a-collective-practice-for-the-future-masterclass-palcos-instaveis/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 [c6] NMpNM Aveiro_Síntese 2026",
+    "start": "2026-05-03",
+    "url": "https://www.teatroaveirense.pt/pt/evento/c6-nmpnm-aveiro-sintese-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 A SENSE OF De Beatriz Lourenço / Palcos Instáveis - Segunda Casa",
+    "start": "2026-05-07",
+    "url": "https://www.teatroaveirense.pt/pt/evento/a-sense-of/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Nós Fado & Samba / Dramaturgia Musical / Palco Central",
+    "start": "2026-05-09",
+    "url": "https://www.teatroaveirense.pt/pt/evento/nos/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Concerto de Homenagem a Santa Joana Orquestra das Beiras e Orquestra Sinfónica do DeCA",
+    "start": "2026-05-10",
+    "url": "https://www.teatroaveirense.pt/pt/evento/concerto-de-homenagem-a-santa-joana/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Falsas Histórias Verdadeiras: Uma Pina Colagem Teatro Nacional São João / Direção de Victor Hugo Pontes e música de A Garota Não",
+    "start": "2026-05-15-16",
+    "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 O que é que queres saber? De Inês Pupo e Gonçalo Pratas",
+    "start": "2026-05-17",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-que-e-que-queres-saber/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 19ª Festa do Cinema Italiano",
+    "start": "2026-05-18-19",
+    "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Fabrik Quartet Tubo de Ensaio",
+    "start": "2026-05-21",
+    "url": "https://www.teatroaveirense.pt/pt/evento/fabrik-quartet-tubo-de-ensaio/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Oficinas 18 Pontos Com João Fino e Claudinei Garcia",
+    "start": "2026-05-26",
+    "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 A Morte do Diabo Fragmentos de uma opereta de Eça de Queirós pela Banda Amizade - Banda Sinfónica de Aveiro",
+    "start": "2026-05-30",
+    "url": "https://www.teatroaveirense.pt/pt/evento/a-morte-do-diabo/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Only Duos Companhia Nacional de Bailado",
+    "start": "2026-06-03",
+    "url": "https://www.teatroaveirense.pt/pt/evento/only-duos/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 The Simon & Garfunkel Story",
+    "start": "2026-06-08",
+    "url": "https://www.teatroaveirense.pt/pt/evento/the-simon-garfunkel-story/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 ONYX Piny",
+    "start": "2026-06-11",
+    "url": "https://www.teatroaveirense.pt/pt/evento/onyx-piny/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 18 Pontos Andreia Ribeiro da Silva",
+    "start": "2026-06-12-13",
+    "url": "https://www.teatroaveirense.pt/pt/evento/18-pontos/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Duques do Precariado Novas Quintas",
+    "start": "2026-06-18",
+    "url": "https://www.teatroaveirense.pt/pt/evento/duques-do-precariado/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 As Filhas do Limo ou o Concelho das Águas Espetáculo Comunitário OLAS 2026 / Companhia João Garcia Miguel",
+    "start": "2026-06-20-21",
+    "url": "https://www.teatroaveirense.pt/pt/evento/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 hOLD São Castro e Teresa Alves da Silva",
+    "start": "2026-06-26",
+    "url": "https://www.teatroaveirense.pt/pt/evento/hold/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Cantar-o-Lar Projeto de Arte Comunitária / 3ª edição",
+    "start": "2026-06-28",
+    "url": "https://www.teatroaveirense.pt/pt/evento/cantar-o-lar-aaaa/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Baião d'Oxigénio João Baião",
+    "start": "2026-07-03-04",
+    "url": "https://www.teatroaveirense.pt/pt/evento/baiao-doxigenio/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Festival dos Canais 2026",
+    "start": "2026-07-15-19",
+    "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Território IX Estúdios Victor Córdon",
+    "start": "2026-07-25",
+    "url": "https://www.teatroaveirense.pt/pt/evento/territorio-ix/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Avanca Film Fest 30ª Edição",
+    "start": "2026-07-27-30",
+    "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Marta Ren",
+    "start": "2026-07-31",
+    "url": "https://www.teatroaveirense.pt/pt/evento/marta-ren/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Ainda Nada? Márcia Leite",
+    "start": "2026-08-01-02",
+    "url": "https://www.teatroaveirense.pt/pt/evento/ainda-nada-marcia-leite/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 MAQUINA. Novas Quintas na Rua",
+    "start": "2026-08-06",
+    "url": "https://www.teatroaveirense.pt/pt/evento/maquina/",
+    "source": "teatro",
+    "color": "#e67e22"
+  },
+  {
+    "title": "🎭 Logos Com Hugo Oliveira e Sage Cushman",
+    "start": "2026-08-08",
+    "url": "https://www.teatroaveirense.pt/pt/evento/logos/",
+    "source": "teatro",
+    "color": "#e67e22"
+  }
+]
