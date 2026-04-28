@@ -25,9 +25,8 @@
         
         .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 10; }
         .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
-        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 10px; }
         
-        /* DARK MODE TOGGLE */
         .theme-switch-wrapper { position: absolute; top: 25px; right: 25px; z-index: 100; }
         .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
         .theme-switch input { display:none; }
@@ -38,16 +37,9 @@
 
         /* --- CALENDÁRIO --- */
         #calendar { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); }
-        
-        /* EVENTOS (GRID) */
-        .fc-event { 
-            border: none !important; 
-            border-radius: 6px !important; 
-            cursor: pointer; 
-            transition: transform 0.2s; 
-            opacity: 1 !important;
-            overflow: hidden; /* Garante que nada sai da célula */
-        }
+        .fc-toolbar { margin-bottom: 20px !important; display: flex; justify-content: flex-start !important; gap: 15px; }
+
+        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; transition: transform 0.2s; opacity: 1 !important; overflow: hidden; }
         .fc-event:hover { transform: translateY(-2px); z-index: 5; }
         
         .event-teatro { background: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
@@ -60,24 +52,19 @@
             grid-template-columns: 55px 1fr !important; 
             align-items: center; 
             padding: 8px !important; 
-            min-height: 45px;
-            white-space: normal !important; /* CORREÇÃO: Permite quebra de linha */
-            word-break: break-word; /* CORREÇÃO: Parte palavras se necessário */
+            white-space: normal !important; 
+            word-break: break-word;
         }
 
         .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
-        .fc-event-title { 
-            color: #000 !important; 
-            font-size: 0.85em; 
-            font-weight: normal !important; 
-            padding-left: 8px;
-        }
+        .fc-event-title { color: #000 !important; font-size: 0.85em; font-weight: normal !important; padding-left: 8px; }
 
         /* --- MODO LISTA --- */
-        .fc-list-event { cursor: pointer !important; }
+        /* CRÍTICO: Garantir que o link de fundo capture o clique */
+        .fc-list-event { cursor: pointer !important; position: relative; }
         .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
         
-        /* Adicionamos pointer-events: none no container interno para o clique passar para a linha pai */
+        /* Esta classe impede que os elementos internos "roubem" o clique */
         .list-row-container { 
             display: flex; 
             align-items: stretch; 
@@ -86,16 +73,7 @@
             pointer-events: none; 
         }
         
-        .list-time-box { 
-            width: 90px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-weight: bold; 
-            font-size: 1.1em; 
-            color: #000;
-            border-right: 1px solid rgba(0,0,0,0.1);
-        }
+        .list-time-box { width: 90px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #000; border-right: 1px solid rgba(0,0,0,0.1); }
         .list-img { width: 160px; height: 100px; object-fit: cover; border-radius: 8px; margin: auto 20px; }
         .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; color: #000; padding-right: 10px; }
 
@@ -104,8 +82,8 @@
         .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
         .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
 
-        /* Ajuste para que a linha da lista ocupe o clique */
-        .fc-list-event-title { padding: 0 !important; }
+        .fc-list-event-title { padding: 0 !important; border: none !important; }
+        .fc-list-table { border-collapse: separate; border-spacing: 0 8px; }
     </style>
 </head>
 <body>
@@ -141,7 +119,6 @@
           initialView: 'dayGridMonth',
           locale: 'pt',
           firstDay: 1, 
-          dayMaxEventRows: true, // Garante que o calendário não quebre se houver muitos eventos
           headerToolbar: { 
             left: 'prev,next today dayGridMonth,listMonth', 
             center: 'title', 
@@ -170,7 +147,6 @@
                          </div>` 
                 };
             }
-            // Modo Calendário
             return { 
               html: `<div class="fc-event-main">
                         <div class="fc-event-time">${timeText}</div>
@@ -180,7 +156,7 @@
           },
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
           
-          // Função de clique centralizada para ambos os modos
+          // CRÍTICO: Forçar o clique no modo Lista
           eventClick: function(info) { 
             if(info.event.url) {
                 window.open(info.event.url, "_blank"); 
