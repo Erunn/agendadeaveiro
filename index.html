@@ -6,119 +6,90 @@
     <title>Aveiro Events Meta-Search</title>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; }
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; display: flex; flex-direction: column; height: 100vh; }
         
-        .filter-bar { 
+        /* LAYOUT REORGANIZADO */
+        .main-wrapper { display: flex; flex: 1; overflow: hidden; }
+        
+        .sidebar { 
+            width: 220px; 
             background: white; 
-            padding: 20px; 
-            text-align: center; 
-            border-bottom: 1px solid #ddd; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 30px 20px; 
+            border-right: 1px solid #ddd; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px;
         }
+
+        .calendar-section { flex: 1; padding: 20px; overflow-y: auto; background: #f4f7f6; }
+
+        .filter-group { display: flex; flex-direction: column; gap: 12px; }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 600; }
         
-        .filter-group { display: inline-flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
-        .filter-item { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 14px; font-weight: 600; }
-        
-        #calendar-container { max-width: 1100px; margin: 20px auto; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 1.5rem; color: #333; }
+        h1 { font-size: 1.4rem; color: #333; margin-bottom: 10px; }
         input[type="checkbox"] { transform: scale(1.2); }
 
-        /* --- CORES DE FUNDO (MAIS ESCURAS) --- */
+        /* --- CORES DE EVENTOS --- */
         .event-teatro { background-color: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
         .event-cinema { background-color: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
         .event-cma    { background-color: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
         .event-viral  { background-color: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
 
-        /* --- ALINHAMENTO VERTICAL E HORIZONTAL --- */
-        .fc-event {
-            text-decoration: none !important;
-            opacity: 1 !important; 
-            border: none !important;
-            margin-bottom: 3px !important;
-        }
-
-        /* Forçar alinhamento em grelha para horas e títulos */
+        /* --- CENTRAMENTO E ALINHAMENTO --- */
+        .fc-event { border: none !important; margin-bottom: 4px !important; }
+        
         .fc-event-main {
             display: grid !important;
-            grid-template-columns: 55px 1fr !important; /* Coluna fixa para a hora */
-            align-items: center !important; /* Centraliza verticalmente */
-            justify-content: center !important;
-            padding: 6px 8px !important;
-            min-height: 40px;
+            grid-template-columns: 60px 1fr !important; /* Espaço maior entre hora e texto */
+            align-items: center !important; /* CENTRAMENTO VERTICAL */
+            padding: 8px !important;
+            min-height: 50px;
         }
-
-        /* Ocultar dots */
-        .fc-daygrid-event-dot, .fc-list-event-dot { display: none !important; }
 
         .fc-event-time { 
             font-weight: bold !important; 
-            font-size: 0.85em !important; 
+            font-size: 0.9em !important; 
             color: #000 !important;
             text-align: center !important;
         }
 
         .fc-event-title {
             color: #000 !important;
-            white-space: pre-wrap !important;
-            line-height: 1.3 !important;
             font-size: 0.85em !important;
-            font-weight: normal !important; /* Evento normal */
+            line-height: 1.4 !important;
+            padding-left: 5px; /* Mais espaço após a hora */
         }
 
-        /* Negrito apenas na primeira linha (Umbrella) */
-        .fc-event-title::first-line {
-            font-weight: bold !important;
-            text-transform: uppercase !important;
+        /* --- RESET DO LOOK DA LISTA (VOLTANDO ATRÁS) --- */
+        .fc-list-event { background-color: transparent !important; }
+        .fc-list-event-title { padding: 12px !important; }
+        .fc-list-day-side-text { display: block !important; } /* Reverte a remoção do dia da semana */
+
+        /* TOOLBAR À ESQUERDA */
+        .fc-header-toolbar { 
+            display: flex !important; 
+            justify-content: flex-start !important; 
+            gap: 20px !important;
+            margin-bottom: 20px !important;
         }
-
-        /* --- MODO LISTA --- */
-        .fc-list-day-side-text { display: none !important; } /* Remove weekday à direita */
-        
-        .fc-list-event { 
-            display: grid !important;
-            grid-template-columns: 70px 1fr !important;
-            align-items: center !important;
-            border-bottom: 1px solid #eee !important;
-        }
-
-        .fc-list-event-time { 
-            padding: 15px !important; 
-            font-weight: bold !important; 
-            text-align: center !important;
-            color: #000 !important;
-        }
-
-        .fc-list-event-title { 
-            padding: 15px !important; 
-            white-space: pre-wrap !important; 
-            border-left: 5px solid transparent; 
-        }
-
-        /* Cores na Lista */
-        .fc-list-event.event-teatro { background-color: #ffcc80 !important; }
-        .fc-list-event.event-cinema { background-color: #90caf9 !important; }
-        .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
-        .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
-
     </style>
 </head>
 <body>
 
-    <div class="filter-bar">
-        <h1>Explorar Aveiro</h1>
-        <div class="filter-group" id="sourceFilters">
-            <label class="filter-item" style="color: #e67e22"><input type="checkbox" checked value="teatro"> Teatro</label>
-            <label class="filter-item" style="color: #3498db"><input type="checkbox" checked value="cinema"> Cinema</label>
-            <label class="filter-item" style="color: #27ae60"><input type="checkbox" checked value="cma"> Município</label>
-            <label class="filter-item" style="color: #8e44ad"><input type="checkbox" checked value="viral"> Viral Agenda</label>
+    <div class="main-wrapper">
+        <div class="sidebar">
+            <h1>Explorar Aveiro</h1>
+            <div class="filter-group" id="sourceFilters">
+                <label class="filter-item" style="color: #e67e22"><input type="checkbox" checked value="teatro"> Teatro</label>
+                <label class="filter-item" style="color: #3498db"><input type="checkbox" checked value="cinema"> Cinema</label>
+                <label class="filter-item" style="color: #27ae60"><input type="checkbox" checked value="cma"> Município</label>
+                <label class="filter-item" style="color: #8e44ad"><input type="checkbox" checked value="viral"> Viral Agenda</label>
+            </div>
         </div>
-    </div>
 
-    <div id="calendar-container">
-        <div id='calendar'></div>
+        <div class="calendar-section">
+            <div id='calendar'></div>
+        </div>
     </div>
 
     <script>
@@ -127,22 +98,26 @@
         var allEvents = [];
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth',
+          initialView: 'dayGridMonth',
           locale: 'pt',
           firstDay: 1, 
+          height: 'auto',
           headerToolbar: { 
-            left: 'prev,next today', 
+            left: 'prev,next today month,listMonth', // Tudo à esquerda
             center: 'title', 
-            right: 'dayGridMonth,listMonth' 
+            right: '' 
           },
           displayEventTime: true,
-          eventTimeFormat: { 
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: false
-          },
-          listDayFormat: { weekday: 'long', day: 'numeric', month: 'long' },
+          eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
           
+          // PERMITE HTML NO TÍTULO (Para o negrito do Scraper funcionar)
+          eventContent: function(arg) {
+            let timeText = arg.timeText ? '<div class="fc-event-time">' + arg.timeText + '</div>' : '<div class="fc-event-time">all-day</div>';
+            return { 
+              html: timeText + '<div class="fc-event-title">' + arg.event.title + '</div>' 
+            };
+          },
+
           eventClassNames: function(arg) {
             return [ 'event-' + arg.event.extendedProps.source ];
           },
@@ -165,7 +140,6 @@
         function updateCalendar() {
           const activeSources = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
           const filtered = allEvents.filter(ev => activeSources.includes(ev.source));
-          
           calendar.removeAllEvents();
           calendar.addEventSource(filtered);
           calendar.render();
@@ -173,14 +147,6 @@
 
         document.querySelectorAll('#sourceFilters input').forEach(input => {
           input.addEventListener('change', updateCalendar);
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth < 768) {
-                calendar.changeView('listMonth');
-            } else {
-                calendar.changeView('dayGridMonth');
-            }
         });
       });
     </script>
