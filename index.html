@@ -21,218 +21,155 @@
             --border-color: #383f47;
         }
 
-        body { 
-            margin: 0; 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            background: var(--main-bg); 
-            color: var(--text-color);
-            display: flex; 
-            flex-direction: column; 
-            height: 100vh; 
-            transition: background 0.3s ease;
-        }
+        body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
         
-        .main-wrapper { display: flex; flex: 1; overflow: hidden; }
-        
-        /* SIDEBAR ESTILO VIRAL */
-        .sidebar { 
-            width: 240px; 
-            background: var(--sidebar-bg); 
-            padding: 30px 20px; 
-            display: flex; 
-            flex-direction: column; 
-            gap: 20px;
-            color: white;
-            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-            z-index: 10;
-        }
-
+        /* SIDEBAR */
+        .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 10; }
         .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
-
-        .filter-group { display: flex; flex-direction: column; gap: 15px; }
-        .filter-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 12px; 
-            cursor: pointer; 
-            font-size: 14px; 
-            font-weight: 600;
-            padding: 8px 12px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 6px;
-            transition: background 0.2s;
-        }
-        .filter-item:hover { background: rgba(255,255,255,0.2); }
+        .filter-group { display: flex; flex-direction: column; gap: 12px; }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; }
         
-        h1 { font-size: 1.2rem; margin: 0; color: white; letter-spacing: 0.5px; }
-        
-        /* TOGGLE DARK MODE */
-        .theme-switch-wrapper {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            display: flex;
-            align-items: center;
-            z-index: 100;
-        }
-        .theme-switch {
-            display: inline-block;
-            height: 24px;
-            position: relative;
-            width: 44px;
-        }
+        /* DARK MODE TOGGLE */
+        .theme-switch-wrapper { position: absolute; top: 25px; right: 25px; z-index: 100; }
+        .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
         .theme-switch input { display:none; }
-        .slider {
-            background-color: #ccc;
-            bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0;
-            transition: .4s; border-radius: 34px;
-        }
-        .slider:before {
-            background-color: #fff; bottom: 4px; content: ""; height: 16px; left: 4px;
-            position: absolute; transition: .4s; width: 16px; border-radius: 50%;
-        }
-        input:checked + .slider { background-color: var(--sidebar-bg); }
+        .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 34px; }
+        .slider:before { background-color: #fff; bottom: 4px; content: ""; height: 16px; left: 4px; position: absolute; transition: .4s; width: 16px; border-radius: 50%; }
+        input:checked + .slider { background-color: #222; }
         input:checked + .slider:before { transform: translateX(20px); }
 
         /* --- CALENDÁRIO --- */
-        #calendar { 
-            background: var(--card-bg); 
-            padding: 20px; 
-            border-radius: 12px; 
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-        }
+        #calendar { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); }
+        .fc-toolbar { margin-bottom: 20px !important; display: flex; justify-content: flex-start !important; gap: 15px; }
 
-        .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-header-toolbar { margin-bottom: 25px !important; }
-        .fc-toolbar-title { font-size: 1.4em !important; font-weight: bold; color: var(--text-color); }
+        /* EVENTOS (GRID) */
+        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+        .fc-event:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 5; }
         
-        /* BOTÕES ESTILO DASHBOARD */
-        .fc-button {
-            background: var(--card-bg) !important;
-            border: 1px solid var(--border-color) !important;
-            color: var(--text-color) !important;
-            text-transform: capitalize !important;
-            font-weight: 600 !important;
-            box-shadow: none !important;
-        }
-        .fc-button-active { background: var(--sidebar-bg) !important; color: white !important; border-color: var(--sidebar-bg) !important; }
-
-        /* --- EVENTOS (GRID) --- */
-        .fc-event { border: none !important; border-radius: 6px !important; overflow: hidden; margin: 2px 0 !important; }
         .event-teatro { background: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
         .event-cinema { background: #90caf9 !important; border-left: 5px solid #1e88e5 !important; }
         .event-cma    { background: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
         .event-viral  { background: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
 
-        .fc-event-main {
-            display: grid !important;
-            grid-template-columns: 50px 1fr !important;
-            align-items: center !important;
-            padding: 6px !important;
-            min-height: 45px;
+        .fc-event-main { display: grid !important; grid-template-columns: 50px 1fr !important; align-items: center; padding: 8px !important; min-height: 45px; }
+        .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
+        .fc-event-title { color: #000 !important; font-size: 0.85em; font-weight: normal !important; padding-left: 8px; }
+
+        /* --- MODO LISTA (ESTILO VIRAL) --- */
+        .fc-list-event { cursor: pointer !important; }
+        
+        /* REMOVER CÍRCULOS (DOTS) E COLUNAS NATURAIS DA LISTA */
+        .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
+        
+        .list-row-container { 
+            display: flex; 
+            align-items: stretch; /* Garante que a altura é uniforme */
+            width: 100%; 
+            min-height: 110px; 
         }
 
-        .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
-        .fc-event-title { color: #000 !important; font-size: 0.85em; line-height: 1.3; font-weight: normal !important; padding-left: 8px; }
+        /* Célula da Hora: Centrada Vertical e Horizontalmente */
+        .list-time-box { 
+            width: 90px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: bold; 
+            font-size: 1.1em; 
+            color: #000;
+            border-right: 1px solid rgba(0,0,0,0.1);
+        }
 
-        /* --- MODO LISTA --- */
-        .fc-list { border: none !important; background: transparent !important; }
-        .fc-list-event { cursor: pointer !important; transition: transform 0.2s; }
-        .fc-list-event:hover { transform: scale(1.01); }
-        .fc-list-event-dot { display: none; }
+        /* Imagem Maior e mais legível */
+        .list-img { 
+            width: 160px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin: auto 20px; /* Centra a imagem verticalmente no espaço */
+        }
+
+        .list-info { 
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra o texto verticalmente */
+            padding-right: 20px; 
+            color: #000; 
+        }
+
+        .fc-list-event-title { padding: 0 !important; border: none !important; }
+        .fc-list-table { border-collapse: separate; border-spacing: 0 8px; }
+        .fc-list-day-cushion { background: rgba(0,0,0,0.05) !important; }
         
-        .list-row-container { display: flex; align-items: center; padding: 10px; width: 100%; gap: 15px; }
-        .list-img { width: 70px; height: 50px; object-fit: cover; border-radius: 6px; }
-        .list-time { font-weight: bold; min-width: 60px; text-align: center; border-right: 1px solid rgba(0,0,0,0.1); padding-right: 10px; }
-        
-        .fc-list-day-cushion { background: var(--main-bg) !important; }
-        .fc-list-event-title { padding: 0 !important; }
+        /* Forçar cores de fundo na lista */
+        .fc-list-event.event-teatro { background-color: #ffcc80 !important; }
+        .fc-list-event.event-cinema { background-color: #90caf9 !important; }
+        .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
+        .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
     </style>
 </head>
 <body>
 
-    <div class="main-wrapper">
-        <div class="sidebar">
-            <h1>AGENDA AVEIRO</h1>
-            <div class="filter-group" id="sourceFilters">
-                <label class="filter-item" style="border-left: 4px solid #e67e22;"><input type="checkbox" checked value="teatro"> Teatro</label>
-                <label class="filter-item" style="border-left: 4px solid #1e88e5;"><input type="checkbox" checked value="cinema"> Cinema</label>
-                <label class="filter-item" style="border-left: 4px solid #2e7d32;"><input type="checkbox" checked value="cma"> Município</label>
-                <label class="filter-item" style="border-left: 4px solid #7b1fa2;"><input type="checkbox" checked value="viral"> Viral Agenda</label>
-            </div>
+    <div class="sidebar">
+        <h1>AGENDA AVEIRO</h1>
+        <div class="filter-group" id="sourceFilters">
+            <label class="filter-item"><input type="checkbox" checked value="teatro"> Teatro</label>
+            <label class="filter-item"><input type="checkbox" checked value="cinema"> Cinema</label>
+            <label class="filter-item"><input type="checkbox" checked value="cma"> Município</label>
+            <label class="filter-item"><input type="checkbox" checked value="viral"> Viral Agenda</label>
         </div>
+    </div>
 
-        <div class="calendar-section">
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider"></div>
-                </label>
-            </div>
-            <div id='calendar'></div>
+    <div class="calendar-section">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
         </div>
+        <div id='calendar'></div>
     </div>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         
-        // DARK MODE TOGGLE
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }    
-            calendar.render(); 
-        }
-        toggleSwitch.addEventListener('change', switchTheme, false);
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('change', () => {
+            document.documentElement.setAttribute('data-theme', themeToggle.checked ? 'dark' : 'light');
+            calendar.render();
+        });
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           locale: 'pt',
           firstDay: 1, 
-          height: 'auto',
           headerToolbar: { 
-            left: 'prev,next today month,listMonth',
+            left: 'prev,next today dayGridMonth,listMonth', 
             center: 'title', 
             right: '' 
           },
-          displayEventTime: true,
-          eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
-          
+          buttonText: { dayGridMonth: 'Calendário', listMonth: 'Lista', today: 'Hoje' },
           eventContent: function(arg) {
-            let imgUrl = arg.event.extendedProps.image;
             let timeText = arg.timeText || 'all-day';
+            let imgUrl = arg.event.extendedProps.image;
 
             if (arg.view.type === 'listMonth') {
-                let imgHtml = imgUrl ? `<img src="${imgUrl}" class="list-img">` : '<div style="width:70px"></div>';
                 return { 
                   html: `<div class="list-row-container">
-                            <div class="list-time">${timeText}</div>
-                            ${imgHtml}
-                            <div style="flex:1">${arg.event.title}</div>
+                            <div class="list-time-box">${timeText}</div>
+                            <img src="${imgUrl || ''}" class="list-img" style="${imgUrl ? '' : 'display:none'}">
+                            <div class="list-info">${arg.event.title}</div>
                          </div>` 
                 };
             }
             return { 
-              html: `<div class="fc-event-time">${timeText}</div>
-                     <div class="fc-event-title">${arg.event.title}</div>` 
+              html: `<div class="fc-event-main">
+                        <div class="fc-event-time">${timeText}</div>
+                        <div class="fc-event-title">${arg.event.title}</div>
+                     </div>` 
             };
           },
-
-          eventClassNames: function(arg) {
-            return [ 'event-' + arg.event.extendedProps.source ];
-          },
-
-          eventClick: function(info) { 
-            if(info.event.url) {
-                window.open(info.event.url, "_blank"); 
-                info.jsEvent.preventDefault(); 
-            }
-          }
+          eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
+          eventClick: function(info) { if(info.event.url) window.open(info.event.url, "_blank"); info.jsEvent.preventDefault(); }
         });
 
         fetch('events.json?t=' + new Date().getTime())
@@ -248,7 +185,7 @@
           calendar.removeAllEvents();
           calendar.addEventSource(filtered);
           calendar.render();
-        }
+        };
 
         document.querySelectorAll('#sourceFilters input').forEach(input => {
           input.addEventListener('change', window.updateCalendar);
