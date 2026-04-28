@@ -25,7 +25,7 @@
         
         .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 10; }
         .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
-        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 10px; }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; }
         
         /* DARK MODE TOGGLE */
         .theme-switch-wrapper { position: absolute; top: 25px; right: 25px; z-index: 100; }
@@ -45,7 +45,8 @@
             border-radius: 6px !important; 
             cursor: pointer; 
             transition: transform 0.2s; 
-            opacity: 1 !important; /* Garante visibilidade em eventos passados */
+            opacity: 1 !important;
+            overflow: hidden; /* Garante que nada sai da célula */
         }
         .fc-event:hover { transform: translateY(-2px); z-index: 5; }
         
@@ -60,7 +61,8 @@
             align-items: center; 
             padding: 8px !important; 
             min-height: 45px;
-            white-space: normal !important; /* Permite quebra de linha */
+            white-space: normal !important; /* CORREÇÃO: Permite quebra de linha */
+            word-break: break-word; /* CORREÇÃO: Parte palavras se necessário */
         }
 
         .fc-event-time { font-weight: bold; color: #000 !important; text-align: center; font-size: 0.85em; }
@@ -69,14 +71,21 @@
             font-size: 0.85em; 
             font-weight: normal !important; 
             padding-left: 8px;
-            overflow: visible !important; /* Impede o corte do texto */
         }
 
         /* --- MODO LISTA --- */
         .fc-list-event { cursor: pointer !important; }
         .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
         
-        .list-row-container { display: flex; align-items: stretch; width: 100%; min-height: 110px; }
+        /* Adicionamos pointer-events: none no container interno para o clique passar para a linha pai */
+        .list-row-container { 
+            display: flex; 
+            align-items: stretch; 
+            width: 100%; 
+            min-height: 110px; 
+            pointer-events: none; 
+        }
+        
         .list-time-box { 
             width: 90px; 
             display: flex; 
@@ -94,6 +103,9 @@
         .fc-list-event.event-cinema { background-color: #90caf9 !important; }
         .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
         .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
+
+        /* Ajuste para que a linha da lista ocupe o clique */
+        .fc-list-event-title { padding: 0 !important; }
     </style>
 </head>
 <body>
@@ -129,6 +141,7 @@
           initialView: 'dayGridMonth',
           locale: 'pt',
           firstDay: 1, 
+          dayMaxEventRows: true, // Garante que o calendário não quebre se houver muitos eventos
           headerToolbar: { 
             left: 'prev,next today dayGridMonth,listMonth', 
             center: 'title', 
@@ -137,11 +150,9 @@
           buttonText: { dayGridMonth: 'Calendário', listMonth: 'Lista', today: 'Hoje' },
           
           eventContent: function(arg) {
-            // Lógica para formatar a hora corretamente (garantir HH:mm)
             let timeText = 'all-day';
             if (arg.event.start) {
                 let date = arg.event.start;
-                // Só mostra hora se não for um evento de dia inteiro "real" no objeto
                 if (date.getHours() !== 0 || date.getMinutes() !== 0) {
                     timeText = date.getHours().toString().padStart(2, '0') + ':' + 
                                date.getMinutes().toString().padStart(2, '0');
@@ -159,13 +170,23 @@
                          </div>` 
                 };
             }
+            // Modo Calendário
             return { 
-              html: `<div class="fc-event-time">${timeText}</div>
-                     <div class="fc-event-title">${arg.event.title}</div>` 
+              html: `<div class="fc-event-main">
+                        <div class="fc-event-time">${timeText}</div>
+                        <div class="fc-event-title">${arg.event.title}</div>
+                     </div>` 
             };
           },
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
-          eventClick: function(info) { if(info.event.url) window.open(info.event.url, "_blank"); info.jsEvent.preventDefault(); }
+          
+          // Função de clique centralizada para ambos os modos
+          eventClick: function(info) { 
+            if(info.event.url) {
+                window.open(info.event.url, "_blank"); 
+                info.jsEvent.preventDefault(); 
+            }
+          }
         });
 
         fetch('events.json?t=' + new Date().getTime())
