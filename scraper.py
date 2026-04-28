@@ -13,21 +13,18 @@ def parse_pt_date(date_str):
         'janeiro': '01', 'fevereiro': '02', 'março': '03', 'abril': '04',
         'maio': '05', 'junho': '06', 'julho': '07', 'agosto': '08',
         'setembro': '09', 'outubro': '10', 'novembro': '11', 'dezembro': '12',
-        # Suporte para abreviaturas comuns
         'jan': '01', 'fev': '02', 'mar': '03', 'abr': '04', 'mai': '05', 'jun': '06',
         'jul': '07', 'ago': '08', 'set': '09', 'out': '10', 'nov': '11', 'dez': '12'
     }
     try:
-        # Limpa strings como "28 de abril" ou "28 abril 2026"
         clean_str = date_str.lower().replace(' de ', ' ').strip()
         parts = clean_str.split()
         
         day = parts[0].zfill(2)
-        month_name = parts[1].replace('.', '') # remove pontos de abr. set. etc
+        month_name = parts[1].replace('.', '')
         month = months.get(month_name, '01')
         
         year = datetime.now().year
-        # Se estamos em Dezembro e o evento é em Janeiro, assume o próximo ano
         if datetime.now().month == 12 and month == '01':
             year += 1
             
@@ -56,21 +53,21 @@ def get_data():
             link_el = item.select_one('a')
             
             if h2 and date_el and link_el:
-                # 1. Umbrella vs Event Name Logic
+                # 1. Umbrella vs Event Name Logic com HTML Tags
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
                 
-                # Clone para não afetar o soup original
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span:
                     h2_clone.span.decompose()
                 
-                # Limpeza profunda do nome do evento
                 event_name = h2_clone.get_text().replace('::', '').strip()
-                event_name = " ".join(event_name.split()) # Remove espaços/tabs extras
+                event_name = " ".join(event_name.split()) 
                 
+                # --- LOGICA DE TITULO ATUALIZADA ---
+                # Usamos <b> para negrito total e <br> para quebra de linha física
                 if umbrella_name:
-                    final_title = f"{umbrella_name.upper()}\n{event_name}"
+                    final_title = f"<b>{umbrella_name.upper()}</b><br>{event_name}"
                 else:
                     final_title = event_name
 
@@ -81,7 +78,6 @@ def get_data():
                 
                 time_iso = ""
                 try:
-                    # Pequeno delay para evitar bloqueios
                     time.sleep(0.5) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
@@ -93,7 +89,6 @@ def get_data():
                         
                         for line in lines:
                             if 'h' in line.lower() and any(char.isdigit() for char in line):
-                                # Regex para pegar o formato 21h30 ou 21:30
                                 time_part = re.split(r'[–\u2014-]', line)[0].strip()
                                 match = re.search(r'(\d{1,2})[h:](\d{2})', time_part.lower())
                                 if match:
@@ -116,13 +111,12 @@ def get_data():
     except Exception as e: 
         print(f"General Scraper Error: {e}")
 
-    # Save to JSON
     if all_events:
         with open('events.json', 'w', encoding='utf-8') as f:
             json.dump(all_events, f, ensure_ascii=False, indent=2)
         print(f"Scraper finished successfully. Total events: {len(all_events)}")
     else:
-        print("No events scraped. Check if the website structure has changed.")
+        print("No events scraped.")
 
 if __name__ == "__main__":
     get_data()
