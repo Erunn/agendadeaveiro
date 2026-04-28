@@ -5,50 +5,82 @@ import re
 from datetime import datetime
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-session = requests.Session() # Keeps the connection open for speed
+session = requests.Session()
+
+def parse_pt_date(date_str):
+    months = {'janeiro':'01','fevereiro':'02','março':'03','abril':'04','maio':'05','junho':'06','julho':'07','agosto':'08','setembro':'09','outubro':'10','novembro':'11','dezembro':'12'}
+    try:
+        parts = date_str.lower().strip().split()
+        day = parts[0].zfill(2)
+        month = months.get(parts[1], '01')
+        return f"{datetime.now().year}-{month}-{day}"
+    except:
+        return datetime.now().strftime('%Y-%m-%d')
 
 def get_data():
     all_events = []
-    res = session.get("https://www.teatroaveirense.pt/pt/programacao/", headers=HEADERS)
-    soup = BeautifulSoup(res.text, 'html.parser')
-    items = soup.select('.programa_item')
-
-    for item in items:
-        h2 = item.select_one('h2')
-        date_el = item.select_one('.data')
-        link_el = item.select_one('a')
-
-        if h2 and date_el:
-            # Hierarchy Logic
-            umbrella = h2.find('span').get_text().strip() if h2.find('span') else ""
-            h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
-            if h2_clone.span: h2_clone.span.decompose()
-            performance_name = h2_clone.get_text().replace('::', '').strip()
+    try:
+        res = session.get("https://www.teatroaveirense.pt/pt/programacao/", headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        items = soup.select('.programa_item')
+        
+        for item in items:
+            h2 = item.select_one('h2')
+            date_el = item.select_one('.data')
+            link_el = item.select_one('a')
             
-            # 1. Try to find Time in the main listing first
-            time_match = re.search(r'(\d{2}[h:]\d{2})', item.get_text())
-            
-            # 2. If not found, only THEN make the second request
-            url = "https://www.teatroaveirense.pt" + link_el['href']
-            if not time_match:
+            if h2 and date_el and link_el:
+                # 1. Umbrella vs Event Name Logic
+                span = h2.find('span')
+                umbrella_name = span.get_text().strip() if span else ""
+                h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
+                if h2_clone.span: h2_clone.span.decompose()
+                event_name = h2_clone.get_text().replace('::', '').strip()
+                final_title = f"{umbrella_name}\n{event_name}" if umbrella_name else event_name
+
+                # 2. Precision Hour Fetching
+                url = "https://www.teatroaveirense.pt" + link_el['href']
+                time_iso = ""
                 try:
                     event_page = session.get(url, headers=HEADERS, timeout=5)
-                    # This looks exactly for the tag in your screenshot
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
-                    horario_el = inner_soup.select_one('.horarios_txt')
-                    if horario_el:
-                        time_match = re.search(r'(\d{2}[h:]\d{2})', horario_el.get_text())
-                except: pass
+                    horario_p = inner_soup.select_one('p.horarios_txt')
+                    
+                    if horario_p:
+                        # Convert <br> to \n so we can split by line
+                        for br in horario_p.find_all("br"):
+                            br.replace_with("\n")
+                        
+                        lines = horario_p.get_text().split('\n')
+                        # We look for the line that has 'h' in it (e.g., 21h30)
+                        for line in lines:
+                            if 'h' in line and any(char.isdigit() for char in line):
+                                # Split by hyphen '–' or '-' to isolate "21h30"
+                                clean_time = line.split('–')[0].split('-')[0].strip()
+                                # Clean characters like 'h' to ':'
+                                match = re.search(r'(\d{1,2})h(\d{2})', clean_time)
+                                if match:
+                                    h = match.group(1).zfill(2)
+                                    m = match.group(2)
+                                    time_iso = f"T{h}:{m}:00"
+                                    print(f"Success: {event_name} @ {h}:{m}")
+                                    break
+                except Exception as e:
+                    print(f"Error fetching time for {event_name}: {e}")
 
-            time_iso = "T" + time_match.group(1).replace('h', ':') if time_match else ""
-            
-            all_events.append({
-                "title": f"{umbrella}\n{performance_name}",
-                "start": parse_pt_date(date_el.text.strip()) + time_iso,
-                "url": url,
-                "source": "teatro",
-                "color": "#e67e22"
-            })
+                all_events.append({
+                    "title": f"🎭 {final_title}",
+                    "start": parse_pt_date(date_el.text.strip()) + time_iso,
+                    "url": url,
+                    "source": "teatro",
+                    "color": "#e67e22"
+                })
+
+    except Exception as e: 
+        print(f"General Error: {e}")
 
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(all_events, f, ensure_ascii=False, indent=2)
+
+if __name__ == "__main__":
+    get_data()
