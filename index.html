@@ -7,12 +7,54 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
     <style>
         body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; }
-        .filter-bar { background: white; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 1000; }
+        
+        .filter-bar { 
+            background: white; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 1px solid #ddd; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
         .filter-group { display: inline-flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
         .filter-item { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 14px; font-weight: 600; }
+        
         #calendar-container { max-width: 1100px; margin: 20px auto; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         h1 { margin: 0; font-size: 1.5rem; color: #333; }
         input[type="checkbox"] { transform: scale(1.2); }
+
+        /* --- UPDATED CSS FOR TWO-LINE TITLES --- */
+        
+        /* Ensures \n from scraper creates a new line */
+        .fc-event-title, .fc-list-event-title {
+            white-space: pre-wrap !important; 
+            display: block;
+            line-height: 1.3;
+            padding: 2px 0;
+            font-size: 0.9em;
+        }
+
+        /* Styles the first line (The Umbrella Name) differently */
+        .fc-event-title::first-line {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            color: rgba(0,0,0,0.8);
+        }
+
+        /* Makes the grid cells slightly taller for better reading */
+        .fc-daygrid-event {
+            margin-top: 2px !important;
+            padding: 2px 4px !important;
+        }
+
+        /* Mobile specific list styling */
+        .fc-list-event-title {
+            padding: 8px 0 !important;
+        }
     </style>
 </head>
 <body>
@@ -39,8 +81,21 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth',
           locale: 'pt',
-          headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,listMonth' },
-          eventClick: function(info) { if(info.event.url) window.open(info.event.url, "_blank"); info.jsEvent.preventDefault(); }
+          firstDay: 1, // Start week on Monday
+          headerToolbar: { 
+            left: 'prev,next today', 
+            center: 'title', 
+            right: 'dayGridMonth,listMonth' 
+          },
+          // Customizing the list view for a cleaner look
+          listDayFormat: { weekday: 'long', day: 'numeric', month: 'long' },
+          
+          eventClick: function(info) { 
+            if(info.event.url) {
+                window.open(info.event.url, "_blank"); 
+                info.jsEvent.preventDefault(); 
+            }
+          }
         });
 
         // Fetch data and handle filtering
@@ -63,6 +118,15 @@
         // Listen for checkbox changes
         document.querySelectorAll('#sourceFilters input').forEach(input => {
           input.addEventListener('change', updateCalendar);
+        });
+
+        // Handle window resize to switch views automatically
+        window.addEventListener('resize', function() {
+            if (window.innerWidth < 768) {
+                calendar.changeView('listMonth');
+            } else {
+                calendar.changeView('dayGridMonth');
+            }
         });
       });
     </script>
