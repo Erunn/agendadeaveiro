@@ -176,37 +176,33 @@
             flex-direction: column; border-top-width: 8px !important; border-top-style: solid;
         }
 
-        /* Molduras de Imagem */
-        .card-img-wrap { overflow: hidden; flex-shrink: 0; }
+        /* =====================================================
+           MOLDURAS DE IMAGEM (CINEMA VS TEATRO)
+           Isto resolve o problema de crop dos posters!
+        ======================================================== */
+        .card-img-wrap { overflow: hidden; flex-shrink: 0; background: var(--main-bg); }
         
+        /* 1. Largura Base Horizontal para Teatro/Geral (Landscape) */
         .event-card.horizontal .card-img-wrap { width: 160px; border-right: var(--divider); }
-        .event-card.vertical .card-img-wrap { width: 100%; height: 220px; border-bottom: var(--divider); }
+        .event-card.horizontal.row-span-2 .card-img-wrap { width: 45%; }
         
-        /* O Cartão Destaque GIGANTE (Span-6, Row-Span-2) */
+        /* 2. OVERRIDE PARA CINEMA: O segredo para o rácio 2:3 perfeito */
+        .event-cinema.horizontal .card-img-wrap { width: 95px !important; } /* (140px altura * 2/3) = 93.3px */
+        .event-cinema.horizontal.row-span-2 .card-img-wrap { width: 197px !important; } /* (296px altura * 2/3) = 197.3px */
+        
+        /* Cartões Verticais (Grelha de 3 itens) */
+        .event-card.vertical .card-img-wrap { width: 100%; height: 220px; border-bottom: var(--divider); }
         .event-card.row-span-2.vertical .card-img-wrap { height: auto; flex: 1; }
-        .event-card.row-span-2.horizontal .card-img-wrap { width: 45%; }
-
-        /* Ajustes para Span-3 Horizontal (Grelha de 4) */
-        .span-3.horizontal .card-img-wrap { width: 100px; }
-        .span-3.horizontal .card-info { padding: 10px 15px; }
-        .span-3.horizontal .card-title { font-size: 0.95rem; margin-bottom: 4px; }
-        .span-3.horizontal .card-time { font-size: 0.8rem; }
-        .span-3.horizontal .card-meta { font-size: 0.65rem; margin-bottom: 4px; }
-
-        /* Ajustes para Span-4 Horizontal (Grelha de 3) */
-        .span-4.horizontal .card-img-wrap { width: 120px; }
-        .span-4.horizontal .card-info { padding: 12px 15px; }
-        .span-4.horizontal .card-title { font-size: 1rem; margin-bottom: 4px; }
 
         .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
         .event-card:hover .card-img { transform: scale(1.05); }
 
         /* Texto do Cartão Geral */
-        .card-info { padding: 15px 20px; display: flex; flex-direction: column; flex: 1; justify-content: center; }
+        .card-info { padding: 15px 20px; display: flex; flex-direction: column; flex: 1; justify-content: center; overflow: hidden; }
         .card-meta { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 1px;}
         .card-title { font-size: 1.1rem; font-weight: 700; line-height: 1.25; text-transform: uppercase; margin-bottom: 8px; }
         
-        /* FIX DO UMBRELLA: Não deixa esticar em cartões largos */
+        /* Caixa do Umbrella fixa e compacta */
         .card-umbrella { 
             display: inline-flex; width: fit-content; align-self: flex-start;
             font-size: 0.8em; margin-bottom: 6px; background: var(--main-bg); 
@@ -214,6 +210,15 @@
         }
         
         .card-time { font-size: 0.9rem; font-weight: 600; margin-top: auto; color: var(--text-muted);}
+
+        /* Ajustes Específicos para Cartões Pequenos de Cinema para não esmagar o texto */
+        .span-3.horizontal .card-info { padding: 10px 15px; }
+        .span-3.horizontal .card-title { font-size: 0.95rem; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+        .span-3.horizontal .card-time { font-size: 0.8rem; }
+        .span-3.horizontal .card-meta { font-size: 0.65rem; margin-bottom: 4px; }
+
+        .span-4.horizontal .card-info { padding: 12px 15px; }
+        .span-4.horizontal .card-title { font-size: 1rem; margin-bottom: 4px; }
 
         /* Regras da Grelha */
         .span-12 { grid-column: span 12; }
@@ -352,7 +357,7 @@
             } else if (total === 2) {
                 renderOrder.forEach(e => e.gridClass = 'span-6 horizontal');
             } else if (total === 3) {
-                renderOrder.forEach(e => e.gridClass = 'span-4 horizontal'); // CORRIGIDO PARA HORIZONTAL (Como o de 4)
+                renderOrder.forEach(e => e.gridClass = 'span-4 horizontal'); // Mantém-se sempre horizontal e bonito!
             } else if (t === 0) { 
                 if (c === 4) {
                     renderOrder.forEach(e => e.gridClass = 'span-3 horizontal');
@@ -370,14 +375,14 @@
                 tEvents.forEach(e => {
                     if (t === 1) e.gridClass = 'span-12 horizontal';
                     else if (t === 2) e.gridClass = 'span-6 horizontal';
-                    else if (t === 3) e.gridClass = 'span-4 horizontal'; // CORRIGIDO
+                    else if (t === 3) e.gridClass = 'span-4 horizontal';
                     else e.gridClass = 'span-6 horizontal'; 
                 });
                 
                 cEvents.forEach(e => {
                     if (c === 1) e.gridClass = 'span-12 horizontal';
                     else if (c === 2) e.gridClass = 'span-6 horizontal';
-                    else if (c === 3) e.gridClass = 'span-4 horizontal'; // CORRIGIDO PARA HORIZONTAL
+                    else if (c === 3) e.gridClass = 'span-4 horizontal'; 
                     else e.gridClass = 'span-3 horizontal'; 
                 });
             }
@@ -388,7 +393,7 @@
                 let umbrellaHtml = p.umbrella ? `<div class="card-umbrella">${p.umbrella}</div>` : '';
                 
                 html += `
-                <a href="${e.url}" target="_blank" class="event-card ${e.gridClass}" style="border-color: var(--${e.source}-color);">
+                <a href="${e.url}" target="_blank" class="event-card ${e.gridClass} event-${e.source}" style="border-color: var(--${e.source}-color);">
                     <div class="card-img-wrap">
                         <img src="${p.image}" class="card-img">
                     </div>
@@ -513,7 +518,7 @@
                 }
             }
 
-            // --- NOVO: ÂNCORA DE SCROLL PARA OS FILTROS ---
+            // --- MAGIA DA QUALIDADE DE VIDA: ÂnCORA DE SCROLL ---
             let currentScrollDate = null;
             if (currentViewName === 'listYear') {
                 let dayHeaders = document.querySelectorAll('.fc-list-day');
@@ -534,11 +539,13 @@
             calendar.addEventSource(finalRenderData);
             calendar.render();
             
-            // Reposiciona o ecrã instantaneamente após o DOM recarregar
+            // O ecrã volta instantaneamente ao dia onde estavas após filtrar
             setTimeout(() => {
                 if (currentViewName === 'listYear' && currentScrollDate) {
                     let newHeaders = document.querySelectorAll('.fc-list-day');
                     let target = Array.from(newHeaders).find(el => el.getAttribute('data-date') >= currentScrollDate);
+                    // Se o dia atual foi apagado pelo filtro, tenta ir para o dia seguinte disponível
+                    if (!target) target = Array.from(newHeaders).find(el => el.getAttribute('data-date') > currentScrollDate);
                     if (target) target.scrollIntoView({ block: 'start' });
                 }
                 updateTitleOnScroll();
