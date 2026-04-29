@@ -83,51 +83,48 @@
         
         #calendar { background: transparent; padding: 0; border: none; }
 
-        /* CORREÇÕES GLOBAIS DE BORDAS */
-        .fc-theme-standard th, .fc-theme-standard td, .fc-theme-standard .fc-list { border: none !important; background: transparent !important; }
-
         /* --- MODO CALENDÁRIO (GRID) --- */
-        .fc-dayGridMonth-view { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 10px; }
-        .fc-dayGridMonth-view .fc-theme-standard td, .fc-dayGridMonth-view .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
+        /* Devolvemos as bordas normais à grelha do calendário */
+        .fc-theme-standard th, .fc-theme-standard td { border-color: var(--border-color) !important; }
+        .fc-scrollgrid { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color) !important; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: 1px solid var(--border-color) !important; }
         .fc-daygrid-day-frame { padding: 5px; }
 
-        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
-        .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
-        .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
-        .event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
-        .event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
+        /* Cores dos eventos no Calendário (Restrito à vista Grid!) */
+        .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
+        .fc-daygrid-event.event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
+        .fc-daygrid-event.event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
+        .fc-daygrid-event.event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
+        .fc-daygrid-event.event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
 
         .fc-event-main { display: flex !important; align-items: flex-start; gap: 6px; padding: 4px 6px !important; white-space: normal !important; word-break: break-word; }
         .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: normal !important; flex-shrink: 0; max-width: 45%; }
         .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
 
         /* --- MODO LISTA CONTÍNUA (SCROLL NATURAL) --- */
+        /* Retira qualquer estrutura nativa da tabela da lista */
         .fc-list { border: none !important; background: transparent !important; }
-        .fc-list-table { background: transparent !important; border: none !important; border-spacing: 0 !important; } 
+        .fc-list-table, .fc-list-table tbody, .fc-list-table tr, .fc-list-table th, .fc-list-table td { border: none !important; background: transparent !important; } 
         
-        /* CORREÇÃO DO ERRO AQUI: Esconde gráficos/hora nativos, mas DEIXA o título visível! */
-        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
-        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; } 
+        /* Limpa as classes das linhas (Resolve o retângulo fantasma!) */
+        tr.fc-list-event { background: transparent !important; border: none !important; }
+        tr.fc-list-event td { padding: 0 0 15px 0 !important; background: transparent !important; border: none !important; } 
+        tr.fc-list-event:hover td { background: transparent !important; } 
         
-        .fc-list-event td { padding: 0 0 15px 0 !important; border: none !important; background: transparent !important; } 
-        .fc-list-event:hover td { background: transparent !important; } 
+        /* Oculta apenas os pedaços velhos nativos */
+        .fc-list-event-graphic, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
         
-        /* CABEÇALHO DO DIA - TOTALMENTE TRANSPARENTE E SEM POSIÇÃO FIXA */
-        .fc-list-day-cushion { 
-            background: transparent !important; 
-            padding: 0 !important; border: none !important; 
-        }
+        /* CABEÇALHO DO DIA - Transparente */
+        .fc-list-day-cushion { padding: 0 !important; border: none !important; background: transparent !important; }
 
         .custom-day-header {
             display: flex; flex-direction: column; gap: 2px;
             padding: 25px 0 10px 0; text-align: left; cursor: default;
-            background: transparent;
         }
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
         .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
 
-        /* Cartão Branco Moderno */
+        /* --- O NOSSO CARTÃO BRANCO MODERNO --- */
         .list-card { 
             display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 120px; cursor: pointer;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
@@ -135,7 +132,6 @@
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         
-        /* Múltiplas Horas Centradas */
         .list-time-box { 
             width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
             font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
@@ -204,7 +200,6 @@
             return dateObj.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
         };
 
-        // Scroll Spy Inteligente (Atualiza o mês lendo a página)
         function updateTitleOnScroll() {
             if(currentViewName !== 'listYear') return;
             
@@ -229,7 +224,6 @@
 
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
-        // Lógica de Salto de Mês Refinada
         function navigateListMonth(direction) {
             let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
             if (!dayHeaders.length) return;
@@ -263,7 +257,6 @@
           showNonCurrentDates: false,  
           height: 'auto',
           
-          // DESLIGA OS STICKY HEADERS! Garante o scroll natural transparente
           stickyHeaderDates: false, 
           
           datesSet: function(info) {
@@ -332,7 +325,6 @@
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; }
         });
 
-        // BOTÕES DO CABEÇALHO
         document.getElementById('btn-prev').addEventListener('click', () => {
             if(currentViewName === 'listYear') navigateListMonth(-1);
             else window.calendar.prev();
@@ -360,7 +352,6 @@
             }
         });
 
-        // Troca de Vistas
         document.querySelectorAll('.header-left .btn[data-view]').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 document.querySelectorAll('.header-left .btn[data-view]').forEach(b => b.classList.remove('active'));
