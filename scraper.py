@@ -45,7 +45,6 @@ def parse_pt_date(date_str, default_date=None):
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def clean_times_and_tags(text):
-    """Converte '16h' em '16:00' sem destruir o resto do texto [VP]"""
     def replacer(m):
         try:
             h_str = m.group(1) or m.group(3)
@@ -80,17 +79,14 @@ def get_teatro_data():
     all_events = []
     base_url = "https://www.teatroaveirense.pt"
     print("A iniciar scraper para Teatro Aveirense...")
-    
     try:
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
-        
         for item in soup.select('.programa_item'):
             h2 = item.select_one('h2')
             date_el = item.select_one('.data')
             link_el = item.select_one('a')
-            
             img_el = item.select_one('img')
             img_url = img_el.get('src', '') if img_el else ""
             if img_url and not img_url.startswith('http'): img_url = base_url + img_url
@@ -105,7 +101,6 @@ def get_teatro_data():
             if h2 and date_el and link_el:
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
-                
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span: h2_clone.span.decompose()
                 event_name = " ".join(h2_clone.get_text().replace('::', '').strip().split())
@@ -114,7 +109,6 @@ def get_teatro_data():
 
                 listing_date = parse_pt_date(date_el.text.strip())
                 daily_schedules = {}
-                
                 try:
                     time.sleep(0.2) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
@@ -129,17 +123,12 @@ def get_teatro_data():
                 except Exception: pass
 
                 if not daily_schedules: daily_schedules[listing_date] = set()
-                    
                 for d_date, times_set in daily_schedules.items():
                     sorted_times = sorted(list(times_set))
                     display_time = " / ".join(sorted_times) if sorted_times else "Todo o dia"
                     time_iso = f"T{sorted_times[0]}:00" if sorted_times else ""
-
                     all_events.append({
-                        "title": event_name,
-                        "start": d_date + time_iso,
-                        "url": url,
-                        "source": "teatro",
+                        "title": event_name, "start": d_date + time_iso, "url": url, "source": "teatro",
                         "extendedProps": {
                             "umbrella": umbrella_name, "image": img_url, "source": "teatro",
                             "description": resumo_text, "category": categoria_text,
@@ -147,7 +136,6 @@ def get_teatro_data():
                         },
                         "raw_event_name": event_name, "raw_umbrella_name": umbrella_name
                     })
-        
         umbrella_names = {ev["raw_umbrella_name"].lower() for ev in all_events if ev.get("raw_umbrella_name")}
         final_teatro = []
         for ev in all_events:
@@ -176,45 +164,31 @@ def get_cinema_data():
             title_el = block.select_one('.movie-card__title')
             if not title_el: continue
             title = title_el.get_text(strip=True)
-            
             img_el = block.select_one('img')
             img_url = img_el['src'] if img_el and 'src' in img_el.attrs else ""
-            
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
-            
             movie_times_by_date = {} 
             
             for p in block.select('.movie-card__info p'):
                 text_content = p.get_text(separator="\n").strip()
-                # Verifica se a palavra sessões está no bloco
                 if not re.search(r'(?i)sess[õo]e?s', text_content): continue
-                
                 current_days = set(range(7)) 
                 for line in text_content.split('\n'):
                     s_raw = line.strip()
                     s_lower = s_raw.lower()
-                    
-                    # Correção das global flags: O (?i) tem de estar no início do padrão
                     if not s_raw or re.match(r'(?i)^sess[õo]e?s:$', s_lower): continue
-                    
                     if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
-                        
                         times_str = s_raw
                         if ':' in s_raw:
                             prefix, suffix = s_raw.split(':', 1)
                             if any(d in prefix.lower() for d in ['2ª', '2a', '3ª', '3a', '4ª', '4a', '5ª', '5a', '6ª', '6a', 'sáb', 'sab', 'dom', 'dia', 'sess']):
                                 times_str = suffix.strip()
-                                
                         formatted_times = clean_times_and_tags(times_str)
-                        
-                        # Correção das global flags: (?i) colocado no início absoluto do regex
                         formatted_times = re.sub(r'(?i)^sess[õo]e?s\s*:?\s*', '', formatted_times).lstrip(' :,-')
-
                         if not formatted_times: continue
-                        
                         for dt in target_dates:
                             if dt.weekday() in current_days:
                                 date_str = dt.strftime('%Y-%m-%d')
@@ -229,16 +203,10 @@ def get_cinema_data():
             for date_str, times_list in movie_times_by_date.items():
                 if times_list:
                     final_cinema.append({
-                        "title": title,
-                        "start": date_str,
-                        "url": movie_url,
-                        "source": "cinema",
+                        "title": title, "start": date_str, "url": movie_url, "source": "cinema",
                         "extendedProps": {
-                            "image": img_url,
-                            "display_time": " | ".join(times_list), 
-                            "source": "cinema",
-                            "category": "Cinema",
-                            "category_normalized": "cinema"
+                            "image": img_url, "display_time": " | ".join(times_list), 
+                            "source": "cinema", "category": "Cinema", "category_normalized": "cinema"
                         }
                     })
         return final_cinema
@@ -246,8 +214,131 @@ def get_cinema_data():
         print(f"Erro Cinema: {e}")
         return []
 
+def get_23milhas_data():
+    final_23milhas = []
+    base_url = "https://www.23milhas.pt"
+    print("A iniciar scraper para 23 Milhas (Ílhavo)...")
+    try:
+        res = session.get(base_url, headers=HEADERS, timeout=15)
+        res.raise_for_status()
+        soup = BeautifulSoup(res.text, 'html.parser')
+        event_links = set()
+
+        for a in soup.find_all('a', href=True):
+            href = a['href']
+            if '/evento/' in href:
+                url = base_url + href if str(href).startswith('/') else href
+                if base_url in url:
+                    event_links.add(url)
+
+        for url in event_links:
+            try:
+                time.sleep(0.2)
+                ev_res = session.get(url, headers=HEADERS, timeout=5)
+                ev_soup = BeautifulSoup(ev_res.text, 'html.parser')
+
+                title = ""
+                og_title = ev_soup.find('meta', property='og:title')
+                if og_title: title = og_title['content'].replace(' - 23 Milhas', '').strip()
+                if not title: continue
+
+                img_url = ""
+                og_img = ev_soup.find('meta', property='og:image')
+                if og_img: img_url = og_img['content']
+
+                desc = ""
+                og_desc = ev_soup.find('meta', property='og:description')
+                if og_desc: desc = og_desc['content']
+
+                page_text = ev_soup.get_text(separator=' ').lower()
+                
+                # Encontrar a Data
+                months_regex = r'(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)'
+                date_match = re.search(r'\b(\d{1,2})\s+(?:de\s+)?' + months_regex + r'(?:\s+(?:de\s+)?(\d{4}))?\b', page_text)
+                
+                date_str = ""
+                if date_match:
+                    y = date_match.group(3) or str(datetime.now().year)
+                    date_str = f"{date_match.group(1)} {date_match.group(2)} {y}"
+                
+                start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
+
+                # NOVO MOTOR DE EXTRACAO BASEADO NO INSPETOR DOM DO UTILIZADOR
+                time_str = ""
+                cat_str = ""
+                
+                # Extrai todos os textos limpos para uma lista
+                all_texts = [el.get_text(strip=True) for el in ev_soup.find_all(string=True) if el.get_text(strip=True)]
+                
+                for i, txt in enumerate(all_texts):
+                    t_low = txt.lower()
+                    if t_low == 'horário' and i + 1 < len(all_texts):
+                        time_str = all_texts[i+1] # O valor a seguir é o horário!
+                    if t_low == 'categoria' and i + 1 < len(all_texts):
+                        cat_str = all_texts[i+1]  # O valor a seguir é a categoria!
+                
+                display_time = "Todo o dia"
+                if time_str:
+                    # Limpa a hora caso seja um intervalo (ex: 21:30-22:50) e guarda só o início
+                    time_match = re.search(r'\b(\d{1,2}[:hH]\d{2})\b', time_str)
+                    if time_match:
+                        t_clean = time_match.group(1).replace('h', ':').replace('H', ':')
+                        start_iso += f"T{t_clean}:00"
+                        display_time = time_str # Mantém o original "21:30-22:50" para mostrar no cartão
+                    else:
+                        start_iso += "T00:00:00"
+                else:
+                    start_iso += "T00:00:00"
+
+                # Identificar o Local (Umbrella)
+                umbrella = "23 Milhas"
+                if "casa cultura" in page_text or "casa da cultura" in page_text: umbrella = "Casa da Cultura de Ílhavo"
+                elif "fábrica das ideias" in page_text or "fábrica" in page_text: umbrella = "Fábrica das Ideias da Gafanha"
+                elif "laboratório das artes" in page_text: umbrella = "Laboratório das Artes"
+                elif "cais criativo" in page_text: umbrella = "Cais Criativo da Costa Nova"
+
+                # Identificar a Categoria baseada no DOM, com fallback para o texto inteiro
+                cat = "Outros"
+                if cat_str:
+                    cat_low = cat_str.lower()
+                    if "música" in cat_low or "concerto" in cat_low: cat = "Música"
+                    elif "teatro" in cat_low: cat = "Teatro"
+                    elif "oficina" in cat_low or "workshop" in cat_low: cat = "Workshop"
+                    elif "dança" in cat_low or "danca" in cat_low: cat = "Dança"
+                    elif "experiência" in cat_low or "experiencia" in cat_low: cat = "Multidisciplinar"
+                    else: cat = cat_str.capitalize()
+                else:
+                    if "música" in page_text or "concerto" in page_text: cat = "Música"
+                    elif "teatro" in page_text: cat = "Teatro"
+                    elif "oficina" in page_text or "workshop" in page_text: cat = "Workshop"
+                    elif "dança" in page_text or "danca" in page_text: cat = "Dança"
+                    elif "experiência" in page_text or "experiencia" in page_text: cat = "Multidisciplinar"
+
+                final_23milhas.append({
+                    "title": title,
+                    "start": start_iso,
+                    "url": url,
+                    "source": "23milhas",
+                    "extendedProps": {
+                        "umbrella": umbrella,
+                        "image": img_url,
+                        "source": "23milhas",
+                        "description": desc,
+                        "category": cat,
+                        "category_normalized": normalize_category(cat),
+                        "display_time": display_time
+                    }
+                })
+            except Exception as e:
+                pass
+
+    except Exception as e:
+        print(f"Erro global 23 Milhas: {e}")
+
+    return final_23milhas
+
 if __name__ == "__main__":
-    results = get_teatro_data() + get_cinema_data()
+    results = get_teatro_data() + get_cinema_data() + get_23milhas_data()
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"Sucesso! Total de eventos guardados: {len(results)}")
