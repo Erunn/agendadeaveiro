@@ -58,9 +58,8 @@ def format_cinema_times(text):
     return ", ".join(formatted)
 
 def normalize_category(cat_str):
-    """Mapeamento rigoroso baseado nas categorias do Teatro Aveirense"""
     cat = cat_str.lower()
-    if 'teatro' in cat: return 'teatro' # Apanha "Teatro" e "Teatro de Objetos"
+    if 'teatro' in cat: return 'teatro'
     if 'cinema' in cat or 'filme' in cat: return 'cinema'
     if 'música' in cat or 'musica' in cat: return 'música'
     if 'dança' in cat or 'danca' in cat: return 'dança'
@@ -212,14 +211,11 @@ def get_cinema_data():
         final_cinema = []
         for d_date, movies in cinema_events_by_date.items():
             final_cinema.append({
-                "title": "CINEMAS NOS GLICÍNIAS PLAZA",
+                "title": "CINEMAS GLICÍNIAS",
                 "start": d_date,
                 "source": "cinema",
                 "extendedProps": { 
-                    "is_glicinias": True, 
-                    "movies": movies, 
-                    "source": "cinema",
-                    "category_normalized": "cinema" 
+                    "is_glicinias": True, "movies": movies, "source": "cinema", "category_normalized": "cinema"
                 }
             })
         return final_cinema
