@@ -36,7 +36,6 @@ def parse_pt_date(date_str, default_date=None):
             return datetime.now().strftime('%Y-%m-%d')
 
         year = datetime.now().year
-        # Procura se o ano com 4 dígitos foi explicitamente escrito no HTML
         for d in days:
             if len(d) == 4:
                 year = int(d)
@@ -96,7 +95,6 @@ def get_data():
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
 
-                # Data base encontrada na listagem principal
                 listing_date = parse_pt_date(date_el.text.strip())
                 daily_schedules = {}
                 
@@ -110,31 +108,23 @@ def get_data():
                         for hp in horarios_elements:
                             text_content = hp.get_text(separator="\n").lower()
                             lines = text_content.split('\n')
-                            
-                            # A data costuma estar na 1ª linha. Se falhar, usa a data da listagem
                             day_date = parse_pt_date(lines[0], default_date=listing_date)
-                            
-                            # Apanha TODAS as horas mencionadas no bloco
                             times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
                             
                             if day_date not in daily_schedules:
                                 daily_schedules[day_date] = set()
-                            
-                            # Adiciona as horas ao "saco" desse dia (o set() impede duplicados)
                             for h, m in times_in_block:
                                 daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
                 except Exception as e:
-                    print(f"Erro ao buscar detalhes do evento: {e}")
+                    print(f"Erro ao buscar detalhes: {e}")
 
-                # Se não encontrou horários detalhados, marca como "Todo o dia"
                 if not daily_schedules:
                     daily_schedules[listing_date] = set()
                     
-                # Cria um evento final por cada dia distinto agrupando as horas
                 for d_date, times_set in daily_schedules.items():
                     sorted_times = sorted(list(times_set))
                     if sorted_times:
-                        display_time = " / ".join(sorted_times) # ex: 15:30 / 21:30
+                        display_time = " / ".join(sorted_times) 
                         time_iso = f"T{sorted_times[0]}:00"
                     else:
                         display_time = "Todo o dia"
@@ -152,14 +142,39 @@ def get_data():
                             "description": resumo_text,
                             "category": categoria_text,
                             "display_time": display_time
-                        }
+                        },
+                        # CHAVES TEMPORÁRIAS PARA APANHAR O AGREGADOR
+                        "raw_event_name": event_name,
+                        "raw_umbrella_name": umbrella_name
                     })
-                print(f"Processado: {event_name} ({len(daily_schedules)} dia(s) processados)")
 
     except Exception as e: print(f"Erro Geral: {e}")
 
-    if all_events:
+    # ========================================================
+    # LÓGICA MÁGICA: LIMPAR OS EVENTOS AGREGADORES ("PAIS")
+    # ========================================================
+    # 1. Encontra todos os nomes "Umbrella" que existem na lista
+    umbrella_names_set = set()
+    for ev in all_events:
+        if ev.get("raw_umbrella_name"):
+            umbrella_names_set.add(ev["raw_umbrella_name"].lower())
+            
+    # 2. Filtra a lista
+    final_events = []
+    for ev in all_events:
+        # Se o nome normal do evento for um Umbrella noutro lado, ignoramos (é o Pai!)
+        if ev.get("raw_event_name", "").lower() in umbrella_names_set:
+            continue
+            
+        # Apaga as chaves temporárias para não sujar o JSON
+        ev.pop("raw_event_name", None)
+        ev.pop("raw_umbrella_name", None)
+        
+        final_events.append(ev)
+
+    if final_events:
         with open('events.json', 'w', encoding='utf-8') as f:
-            json.dump(all_events, f, ensure_ascii=False, indent=2)
+            json.dump(final_events, f, ensure_ascii=False, indent=2)
+        print(f"Scraper terminado! Total: {len(final_events)} (Agregadores removidos)")
 
 if __name__ == "__main__": get_data()
