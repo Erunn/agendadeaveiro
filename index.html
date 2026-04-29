@@ -12,6 +12,10 @@
             --text-color: #333;
             --card-bg: #ffffff;
             --border-color: #e5e7eb;
+            --teatro-color: #e67e22;
+            --cinema-color: #1e88e5;
+            --cma-color: #2e7d32;
+            --viral-color: #7b1fa2;
         }
 
         [data-theme="dark"] {
@@ -23,10 +27,31 @@
 
         body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
         
+        /* SIDEBAR */
         .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 10; box-shadow: 2px 0 10px rgba(0,0,0,0.05); }
         .calendar-section { flex: 1; padding: 25px; overflow-y: auto; position: relative; }
-        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 10px; }
         
+        .filter-group { display: flex; flex-direction: column; gap: 12px; }
+        .filter-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            cursor: pointer; 
+            font-size: 14px; 
+            font-weight: 600; 
+            padding: 10px 15px; 
+            border-radius: 8px; 
+            background: rgba(255,255,255,0.1);
+            transition: all 0.2s;
+            border-left: 4px solid transparent;
+        }
+        /* Cores específicas para os filtros */
+        .filter-teatro { border-left-color: var(--teatro-color) !important; }
+        .filter-cinema { border-left-color: var(--cinema-color) !important; }
+        .filter-cma    { border-left-color: var(--cma-color) !important; }
+        .filter-viral  { border-left-color: var(--viral-color) !important; }
+        .filter-item:hover { background: rgba(255,255,255,0.2); }
+
         /* DARK MODE TOGGLE */
         .theme-switch-wrapper { position: absolute; top: 25px; right: 25px; z-index: 100; }
         .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
@@ -38,41 +63,26 @@
 
         /* --- CALENDÁRIO --- */
         #calendar { background: var(--card-bg); padding: 20px; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
-        .fc-toolbar { margin-bottom: 25px !important; }
-
-        /* CALENDÁRIO: Design Moderno e Clean */
-        .fc-event { 
-            border: 1px solid var(--border-color) !important; 
-            border-radius: 6px !important; 
-            cursor: pointer; 
-            overflow: hidden; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-            margin: 2px 0 !important;
-        }
         
-        /* Cores mais subtis e profissionais para o modo calendário */
-        .event-teatro { background: rgba(230, 126, 34, 0.05) !important; border-left: 4px solid #e67e22 !important; }
-        .event-cinema { background: rgba(30, 136, 229, 0.05) !important; border-left: 4px solid #1e88e5 !important; }
-        .event-cma    { background: rgba(46, 125, 50, 0.05) !important; border-left: 4px solid #2e7d32 !important; }
-        .event-viral  { background: rgba(123, 31, 162, 0.05) !important; border-left: 4px solid #7b1fa2 !important; }
+        /* EVENTOS (GRID) */
+        .fc-event { border: 1px solid var(--border-color) !important; border-radius: 6px !important; cursor: pointer; overflow: hidden; margin: 2px 0 !important; }
+        .event-teatro { background: rgba(230, 126, 34, 0.05) !important; border-left: 4px solid var(--teatro-color) !important; }
+        .event-cinema { background: rgba(30, 136, 229, 0.05) !important; border-left: 4px solid var(--cinema-color) !important; }
+        .event-cma    { background: rgba(46, 125, 50, 0.05) !important; border-left: 4px solid var(--cma-color) !important; }
+        .event-viral  { background: rgba(123, 31, 162, 0.05) !important; border-left: 4px solid var(--viral-color) !important; }
 
-        .fc-event-main { display: flex !important; align-items: flex-start; gap: 8px; padding: 6px 8px !important; white-space: normal !important; word-break: break-word; }
-        .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: nowrap !important; }
+        .fc-event-main { display: flex !important; align-items: flex-start; gap: 6px; padding: 4px 6px !important; white-space: normal !important; word-break: break-word; }
+        .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: nowrap !important; flex-shrink: 0; }
         .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
 
-        /* --- MODO LISTA (CARTÕES SEPARADOS) --- */
-        .fc-list-event-dot, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
-        .fc-list-table { border-collapse: separate !important; border-spacing: 0 15px !important; } /* Separação forte entre eventos! */
+        /* --- MODO LISTA (DESIGN MODERNO) --- */
+        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
+        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; }
+        .fc-list-table { border-collapse: separate !important; border-spacing: 0 !important; } 
         .fc-list-event { background: transparent !important; }
+        .fc-list-event td { border: none !important; padding: 0 0 15px 0 !important; background: transparent !important; }
         
-        /* O "td" engloba tudo, tornamo-lo invisível e transparente */
-        .fc-list-event td { 
-            border: none !important;
-            padding: 0 !important;
-            background: transparent !important;
-        }
-        
-        /* O Cartão Real (List Card) */
+        /* O Cartão agora tem fundo fixo var(--card-bg) e a barra vertical à esquerda */
         .list-card { 
             display: flex; 
             align-items: stretch; 
@@ -84,23 +94,23 @@
             border: 1px solid var(--border-color);
             transition: transform 0.2s, box-shadow 0.2s;
             overflow: hidden;
-            pointer-events: auto; /* Garante o click */
+            pointer-events: auto; 
+            border-left-width: 8px !important; /* Barra vertical grossa */
+            border-left-style: solid;
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
         
-        .list-img { width: 180px; object-fit: cover; }
-        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px; color: var(--text-color); }
+        .list-time-box { width: 90px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid var(--border-color); flex-shrink: 0; }
+        .list-img { width: 180px; height: 130px; object-fit: cover; flex-shrink: 0; margin: auto 15px auto 0; border-radius: 0 8px 8px 0; }
+        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; color: var(--text-color); }
 
         .list-meta { font-size: 0.85em; color: #888; margin-bottom: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
         .list-meta span { color: var(--text-color); }
         .list-title { font-size: 1.1em; line-height: 1.3; margin-bottom: 5px; }
         .list-title b { display: block; font-size: 0.9em; margin-bottom: 3px; color: var(--sidebar-bg); }
-        
         .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        [data-theme="dark"] .list-desc { color: #9ca3af; }
-        [data-theme="dark"] .list-meta { color: #9ca3af; }
 
-        .fc-list-day-cushion { background: transparent !important; padding: 15px 0 5px 0 !important; font-size: 1.1em; font-weight: bold; border: none !important; }
+        .fc-list-day-cushion { background: transparent !important; padding: 20px 0 10px 0 !important; font-size: 1.1em; font-weight: bold; border: none !important; }
     </style>
 </head>
 <body>
@@ -108,10 +118,10 @@
     <div class="sidebar">
         <h1>AGENDA AVEIRO</h1>
         <div class="filter-group" id="sourceFilters">
-            <label class="filter-item"><input type="checkbox" checked value="teatro"> Teatro</label>
-            <label class="filter-item"><input type="checkbox" checked value="cinema"> Cinema</label>
-            <label class="filter-item"><input type="checkbox" checked value="cma"> Município</label>
-            <label class="filter-item"><input type="checkbox" checked value="viral"> Viral Agenda</label>
+            <label class="filter-item filter-teatro"><input type="checkbox" checked value="teatro"> Teatro</label>
+            <label class="filter-item filter-cinema"><input type="checkbox" checked value="cinema"> Cinema</label>
+            <label class="filter-item filter-cma"><input type="checkbox" checked value="cma"> Município</label>
+            <label class="filter-item filter-viral"><input type="checkbox" checked value="viral"> Viral Agenda</label>
         </div>
     </div>
 
@@ -127,20 +137,83 @@
         var calendarEl = document.getElementById('calendar');
         window.allEvents = [];
 
+        function navigateListMonth(direction) {
+            const scroller = document.querySelector('.fc-scroller');
+            if (!scroller) return;
+            const dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
+            if (dayHeaders.length === 0) return;
+            const scrollerTop = scroller.getBoundingClientRect().top;
+            let currentHeader = dayHeaders[0];
+            for (let header of dayHeaders) {
+                if (header.getBoundingClientRect().top >= scrollerTop - 10) {
+                    currentHeader = header;
+                    break;
+                }
+            }
+            let currentDate = new Date(currentHeader.getAttribute('data-date'));
+            let targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + direction, 1);
+            let targetYYYYMM = targetDate.getFullYear() + '-' + String(targetDate.getMonth() + 1).padStart(2, '0');
+            let targetHeader = null;
+            if (direction === 1) { 
+                targetHeader = dayHeaders.find(h => h.getAttribute('data-date') >= targetYYYYMM + '-01');
+            } else { 
+                let currentYYYYMM = currentDate.getFullYear() + '-' + String(currentDate.getMonth() + 1).padStart(2, '0');
+                let reversed = [...dayHeaders].reverse();
+                let lastOfPrevMonth = reversed.find(h => h.getAttribute('data-date') < currentYYYYMM + '-01');
+                if (lastOfPrevMonth) {
+                    let prevYYYYMM = lastOfPrevMonth.getAttribute('data-date').substring(0, 7);
+                    targetHeader = dayHeaders.find(h => h.getAttribute('data-date').startsWith(prevYYYYMM));
+                }
+            }
+            if (targetHeader) targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
         window.calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
+          initialView: 'listYear', // DEFINIDO COMO DEFAULT
           locale: 'pt',
           firstDay: 1, 
-          dayMaxEvents: 4, /* CORREÇÃO: Limita eventos por dia e impede que a grelha cresça descontroladamente */
+          dayMaxEvents: 4, 
+          fixedWeekCount: false, 
+          height: 'auto',
+          customButtons: {
+            customPrev: {
+                icon: 'chevron-left',
+                click: function() {
+                    if (window.calendar.view.type === 'listYear') navigateListMonth(-1);
+                    else window.calendar.prev();
+                }
+            },
+            customNext: {
+                icon: 'chevron-right',
+                click: function() {
+                    if (window.calendar.view.type === 'listYear') navigateListMonth(1);
+                    else window.calendar.next();
+                }
+            },
+            customToday: {
+                text: 'Hoje',
+                click: function() {
+                    window.calendar.today();
+                    if (window.calendar.view.type === 'listYear') {
+                        setTimeout(() => {
+                            let todayStr = new Date().toISOString().split('T')[0];
+                            let headers = Array.from(document.querySelectorAll('.fc-list-day'));
+                            let target = headers.find(h => h.getAttribute('data-date') >= todayStr) || headers[headers.length-1];
+                            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
+                }
+            }
+          },
           headerToolbar: { 
-            left: 'prev,next today dayGridMonth,listMonth', 
+            left: 'customPrev,customNext customToday listYear,dayGridMonth', // ORDEM ALTERADA
             center: 'title', 
             right: '' 
           },
-          buttonText: { dayGridMonth: 'Calendário', listMonth: 'Lista', today: 'Hoje' },
+          buttonText: { dayGridMonth: 'Calendário', listYear: 'Lista' }, 
           
           eventContent: function(arg) {
-            let timeText = 'All-day';
+            let timeText = 'Todo dia'; 
             if (arg.event.start && (arg.event.start.getHours() !== 0 || arg.event.start.getMinutes() !== 0)) {
                 timeText = arg.event.start.getHours().toString().padStart(2, '0') + ':' + 
                            arg.event.start.getMinutes().toString().padStart(2, '0');
@@ -150,22 +223,20 @@
             let descText = arg.event.extendedProps.description;
             let catText = arg.event.extendedProps.category || 'Vários';
             
-            // Define a cor base para usar no border-left do cartão da lista
             let sourceColor = '#ccc';
-            if(arg.event.extendedProps.source === 'teatro') sourceColor = '#e67e22';
-            if(arg.event.extendedProps.source === 'cinema') sourceColor = '#1e88e5';
-            if(arg.event.extendedProps.source === 'cma') sourceColor = '#2e7d32';
-            if(arg.event.extendedProps.source === 'viral') sourceColor = '#7b1fa2';
+            if(arg.event.extendedProps.source === 'teatro') sourceColor = 'var(--teatro-color)';
+            if(arg.event.extendedProps.source === 'cinema') sourceColor = 'var(--cinema-color)';
+            if(arg.event.extendedProps.source === 'cma') sourceColor = 'var(--cma-color)';
+            if(arg.event.extendedProps.source === 'viral') sourceColor = 'var(--viral-color)';
 
-            if (arg.view.type === 'listMonth') {
+            if (arg.view.type === 'listYear') {
                 let descHtml = descText ? `<div class="list-desc">${descText}</div>` : '';
-                
-                // HTML do Cartão Moderno (com onclick INLINE para garantir o clique!)
                 return { 
-                  html: `<div class="list-card" style="border-left: 5px solid ${sourceColor}" onclick="window.open('${arg.event.url}', '_blank')">
-                            <img src="${imgUrl || 'https://via.placeholder.com/180x130?text=Sem+Imagem'}" class="list-img" style="${imgUrl ? '' : 'display:none'}">
+                  html: `<div class="list-card" style="border-left-color: ${sourceColor} !important" onclick="window.open('${arg.event.url}', '_blank')">
+                            <div class="list-time-box">${timeText}</div>
+                            <img src="${imgUrl || ''}" class="list-img" style="${imgUrl ? '' : 'display:none'}">
                             <div class="list-info">
-                                <div class="list-meta"><b>${timeText}</b> &nbsp;&bull;&nbsp; <span>${catText}</span></div>
+                                <div class="list-meta"><span>${catText}</span></div>
                                 <div class="list-title">${arg.event.title}</div>
                                 ${descHtml}
                             </div>
@@ -181,31 +252,33 @@
           },
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
           eventClick: function(info) { 
-            // Usado primariamente para o modo calendário
-            if(info.event.url && info.view.type !== 'listMonth') {
+            if(info.event.url && info.view.type !== 'listYear') {
                 window.open(info.event.url, "_blank"); 
                 info.jsEvent.preventDefault(); 
             }
           }
         });
 
-        // Toggle Dark Mode
         const themeToggle = document.getElementById('themeToggle');
         themeToggle.addEventListener('change', () => {
             document.documentElement.setAttribute('data-theme', themeToggle.checked ? 'dark' : 'light');
             window.calendar.render();
         });
 
-        // Fetch de Dados
         fetch('events.json?t=' + new Date().getTime())
           .then(res => res.json())
           .then(data => {
             window.allEvents = data;
             if(data.length > 0) {
                 let minDateStr = data.reduce((min, ev) => (ev.start < min ? ev.start : min), data[0].start);
-                let startDateOnly = minDateStr.split('T')[0];
-                window.calendar.setOption('validRange', { start: startDateOnly });
-                window.calendar.gotoDate(startDateOnly);
+                let maxDateStr = data.reduce((max, ev) => (ev.start > max ? ev.start : max), data[0].start);
+                let maxDateObj = new Date(maxDateStr.split('T')[0]);
+                maxDateObj.setDate(maxDateObj.getDate() + 1);
+                window.calendar.setOption('validRange', { 
+                    start: minDateStr.split('T')[0],
+                    end: maxDateObj.toISOString().split('T')[0]
+                });
+                window.calendar.gotoDate(minDateStr.split('T')[0]);
             }
             updateCalendar();
           })
