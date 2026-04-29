@@ -81,6 +81,7 @@ def get_teatro_data():
     print("A iniciar scraper para Teatro Aveirense...")
     try:
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
+        res.encoding = 'utf-8' # FIX DE ACENTOS
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
         for item in soup.select('.programa_item'):
@@ -112,6 +113,7 @@ def get_teatro_data():
                 try:
                     time.sleep(0.2) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
+                    event_page.encoding = 'utf-8' # FIX DE ACENTOS
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
                     for hp in inner_soup.select('.horarios_txt'):
                         text_content = hp.get_text(separator="\n").lower()
@@ -153,6 +155,7 @@ def get_cinema_data():
     print("A iniciar scraper para Cinema Glicínias...")
     try:
         res = session.get(url, headers=HEADERS, timeout=15)
+        res.encoding = 'utf-8' # FIX DE ACENTOS
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
         today = datetime.now().date()
@@ -221,13 +224,12 @@ def get_23milhas_data():
     try:
         events_dict = {}
 
-        # Visita a Homepage e a página de Programação
         for path in ["", "/programacao"]:
             try:
                 res = session.get(base_url + path, headers=HEADERS, timeout=15)
+                res.encoding = 'utf-8' # FIX DE ACENTOS
                 soup = BeautifulSoup(res.text, 'html.parser')
 
-                # Procura todos os links de eventos gerados
                 for a in soup.find_all('a', href=re.compile(r'evento/')):
                     href = a['href']
                     clean_href = href if href.startswith('/') else '/' + href
@@ -235,39 +237,36 @@ def get_23milhas_data():
                     
                     if url in events_dict: continue
 
-                    # MÁGICA: Procura o cartão "pai" que contém todos os dados pré-carregados!
                     card = a.find_parent('div', attrs={'data-bl-name': re.compile(r'Box|Grid Item|Slide|wrap|List\.card', re.I)})
                     if not card: continue
 
-                    # Extrair Título Principal
+                    # Extrair Título Principal (O primeiro título)
                     title_el = card.find(lambda tag: tag.name == 'div' and 'titulo' in tag.get('data-bl-name', '').lower())
                     title = title_el.get_text(strip=True) if title_el else ""
-                    if not title: continue # Ignora se for um card quebrado
+                    if not title: continue 
 
-                    # Extrair Subtítulo (se existir, ex: "Mochos no Telhado" para adicionar à "Fernanda...")
+                    # Extrair Subtítulo (O segundo título, ex: "Festim | d'Orfeu") -> Vai ser o UMBRELLA!
                     subtitle = ""
                     sub_elements = card.find_all(lambda tag: tag.name == 'div' and 'titulo' in tag.get('data-bl-name', '').lower())
                     if len(sub_elements) > 1:
-                        subtitle = " - " + sub_elements[1].get_text(strip=True)
-                    full_title = title + subtitle
+                        subtitle = sub_elements[1].get_text(strip=True)
+                    
+                    # O Umbrella recebe o subtítulo (se houver), caso contrário mete '23 Milhas'
+                    umbrella = subtitle if subtitle else "23 Milhas"
 
-                    # Extrair Imagem HD
                     img_url = ""
                     img_el = card.find('img')
                     if img_el and img_el.get('src') and 'empty-image' not in img_el.get('src'):
                         img_url = img_el['src']
                     else:
-                        # Em muitos cartões do 23 Milhas, a imagem está em background-image num DIV
                         bg_img_el = card.find(lambda tag: tag.has_attr('style') and 'background-image' in tag['style'])
                         if bg_img_el:
                             bg_match = re.search(r'url\((.*?)\)', bg_img_el['style'])
                             if bg_match: img_url = bg_match.group(1).strip('"\'')
 
-                    # Categoria
                     cat_el = card.find(lambda tag: tag.name == 'div' and 'cat' in tag.get('data-bl-name', '').lower())
                     cat = cat_el.get_text(strip=True) if cat_el else "Outros"
 
-                    # Data (Dia + Mês)
                     dia_el = card.find(lambda tag: tag.name == 'div' and 'dia' in tag.get('data-bl-name', '').lower())
                     mes_el = card.find(lambda tag: tag.name == 'div' and 'mes' in tag.get('data-bl-name', '').lower())
                     dia = dia_el.get_text(strip=True) if dia_el else ""
@@ -276,7 +275,6 @@ def get_23milhas_data():
                     date_str = f"{dia} {mes} {datetime.now().year}" if dia and mes else ""
                     start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
 
-                    # Hora
                     hora_el = card.find(lambda tag: tag.name == 'div' and 'hora' in tag.get('data-bl-name', '').lower())
                     time_str = hora_el.get_text(strip=True) if hora_el else ""
                     display_time = "Todo o dia"
@@ -287,30 +285,16 @@ def get_23milhas_data():
                     else:
                         start_iso += "T00:00:00"
 
-                    # Local / Umbrella
-                    local_el = card.find(lambda tag: tag.name == 'div' and 'local' in tag.get('data-bl-name', '').lower())
-                    umbrella = "23 Milhas"
-                    if local_el:
-                        loc_text = local_el.get_text(strip=True)
-                        loc_lower = loc_text.lower()
-                        if "casa" in loc_lower: umbrella = "Casa da Cultura de Ílhavo"
-                        elif "fábrica" in loc_lower: umbrella = "Fábrica das Ideias da Gafanha"
-                        elif "laboratório" in loc_lower: umbrella = "Laboratório das Artes"
-                        elif "cais" in loc_lower: umbrella = "Cais Criativo da Costa Nova"
-                        elif "planteia" in loc_lower: umbrella = "Planteia"
-                        else: umbrella = loc_text
-
-                    # Descrição do evento
                     desc_el = card.find(lambda tag: tag.name == 'div' and 'descri' in tag.get('data-bl-name', '').lower())
                     desc = desc_el.get_text(strip=True) if desc_el else ""
 
                     events_dict[url] = {
-                        "title": full_title,
+                        "title": title, # Fica só com o título principal
                         "start": start_iso,
                         "url": url,
                         "source": "23milhas",
                         "extendedProps": {
-                            "umbrella": umbrella,
+                            "umbrella": umbrella, # O subtítulo fica aqui!
                             "image": img_url,
                             "source": "23milhas",
                             "description": desc,
@@ -325,7 +309,7 @@ def get_23milhas_data():
         for ev in events_dict.values():
             final_23milhas.append(ev)
 
-        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos e estruturados com perfeição!")
+        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos!")
 
     except Exception as e:
         print(f"Erro global 23 Milhas: {e}")
