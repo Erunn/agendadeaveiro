@@ -30,8 +30,7 @@ def parse_pt_date(date_str, default_date=None):
                 month = months[word_clean]
                 break
 
-        if not month:
-            return default_date or datetime.now().strftime('%Y-%m-%d')
+        if not month: return default_date or datetime.now().strftime('%Y-%m-%d')
 
         year = datetime.now().year
         for d in days:
@@ -41,28 +40,19 @@ def parse_pt_date(date_str, default_date=None):
         else:
             if datetime.now().month >= 10 and month in ['01', '02', '03']:
                 year += 1
-
         return f"{year}-{month}-{day}"
     except Exception:
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
-def format_cinema_times(text):
-    # Apanha formatos seguros como '16h', '16h30' ou '16:30' (evitando apanhar "5" de "5ª feira")
-    matches = re.findall(r'(?<!\d)(\d{1,2})[hH](\d{2})?|(?<!\d)(\d{1,2}):(\d{2})', text)
-    times = []
-    for match in matches:
-        h = match[0] or match[2]
-        m = match[1] or match[3]
-        h_int = int(h)
-        m_int = int(m) if m else 0
-        if 0 <= h_int <= 25: times.append((h_int, m_int))
-        
-    times = sorted(list(set(times)))
-    formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
-    return ", ".join(formatted)
+def clean_times_and_tags(text):
+    """Converte '16h' ou '16h30' em '16:00' e '16:30', mantendo o resto do texto intacto (como [VP])."""
+    def replacer(m):
+        h = int(m.group(1) or m.group(3))
+        m_min = int(m.group(2) or m.group(4) or 0)
+        return f"{h:02d}:{m_min:02d}"
+    return re.sub(r'(?<!\d)(\d{1,2})[hH](\d{2})?|(?<!\d)(\d{1,2}):(\d{2})', replacer, text)
 
 def parse_days_from_str(text):
-    """Mapeia os dias da semana a partir de uma linha de texto (0=2ª feira, 6=Domingo)"""
     day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb': 5, 'sab': 5, 'dom': 6}
     found = set()
     if 'todos os dias' in text: return set(range(7))
@@ -79,7 +69,7 @@ def normalize_category(cat_str):
     if 'workshop' in cat or 'oficina' in cat: return 'workshop'
     if 'ópera' in cat or 'opera' in cat: return 'ópera'
     if 'festival' in cat: return 'festival'
-    return 'multidisciplinar'
+    return 'outros'
 
 def get_teatro_data():
     all_events = []
@@ -90,21 +80,19 @@ def get_teatro_data():
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
-        items = soup.select('.programa_item')
         
-        for item in items:
+        for item in soup.select('.programa_item'):
             h2 = item.select_one('h2')
             date_el = item.select_one('.data')
             link_el = item.select_one('a')
             
             img_el = item.select_one('img')
             img_url = img_el.get('src', '') if img_el else ""
-            if img_url and not img_url.startswith('http'):
-                img_url = base_url + img_url
+            if img_url and not img_url.startswith('http'): img_url = base_url + img_url
 
             resumo_text = item.select_one('.resumo').get_text(strip=True) if item.select_one('.resumo') else ""
             categoria_el = item.select_one('.categoria')
-            categoria_text = "Multidisciplinar"
+            categoria_text = "Outros"
             if categoria_el:
                 if categoria_el.select_one('.sr-only'): categoria_el.select_one('.sr-only').decompose()
                 categoria_text = categoria_el.get_text(strip=True)
@@ -116,7 +104,6 @@ def get_teatro_data():
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span: h2_clone.span.decompose()
                 event_name = " ".join(h2_clone.get_text().replace('::', '').strip().split())
-                
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
 
@@ -127,16 +114,13 @@ def get_teatro_data():
                     time.sleep(0.2) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
-                    horarios_elements = inner_soup.select('.horarios_txt')
-                    
-                    if horarios_elements:
-                        for hp in horarios_elements:
-                            text_content = hp.get_text(separator="\n").lower()
-                            lines = text_content.split('\n')
-                            day_date = parse_pt_date(lines[0], default_date=listing_date)
-                            times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
-                            if day_date not in daily_schedules: daily_schedules[day_date] = set()
-                            for h, m in times_in_block: daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
+                    for hp in inner_soup.select('.horarios_txt'):
+                        text_content = hp.get_text(separator="\n").lower()
+                        lines = text_content.split('\n')
+                        day_date = parse_pt_date(lines[0], default_date=listing_date)
+                        times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
+                        if day_date not in daily_schedules: daily_schedules[day_date] = set()
+                        for h, m in times_in_block: daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
                 except Exception: pass
 
                 if not daily_schedules: daily_schedules[listing_date] = set()
@@ -152,16 +136,11 @@ def get_teatro_data():
                         "url": url,
                         "source": "teatro",
                         "extendedProps": {
-                            "umbrella": umbrella_name,
-                            "image": img_url,
-                            "source": "teatro",
-                            "description": resumo_text,
-                            "category": categoria_text,
-                            "category_normalized": normalize_category(categoria_text),
-                            "display_time": display_time
+                            "umbrella": umbrella_name, "image": img_url, "source": "teatro",
+                            "description": resumo_text, "category": categoria_text,
+                            "category_normalized": normalize_category(categoria_text), "display_time": display_time
                         },
-                        "raw_event_name": event_name,
-                        "raw_umbrella_name": umbrella_name
+                        "raw_event_name": event_name, "raw_umbrella_name": umbrella_name
                     })
         
         umbrella_names = {ev["raw_umbrella_name"].lower() for ev in all_events if ev.get("raw_umbrella_name")}
@@ -192,7 +171,6 @@ def get_cinema_data():
             title = block.select_one('.movie-card__title').get_text(strip=True)
             img_el = block.select_one('.flex-media img')
             img_url = img_el['src'] if img_el else ""
-            
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
@@ -202,39 +180,38 @@ def get_cinema_data():
                 text_content = p.get_text(separator="\n").strip()
                 if 'Sessões:' not in text_content: continue
                 
-                # Assume todos os dias até que a linha diga o contrário
                 current_days = set(range(7)) 
-                lines = text_content.split('\n')
-                
-                for line in lines:
-                    s_lower = line.lower().strip()
-                    if not s_lower or s_lower == 'sessões:': continue
+                for line in text_content.split('\n'):
+                    s_raw = line.strip()
+                    s_lower = s_raw.lower()
+                    if not s_raw or s_lower == 'sessões:': continue
                     
-                    # Se tiver um formato de horas (ex: 13h40 ou 13:40)
                     if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
-                        
-                        # Pode acontecer que os dias estejam colados às horas na mesma linha
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
                         
-                        times = format_cinema_times(s_lower)
-                        if not times: continue
+                        # Extrai as horas + tags ignorando os dias da semana escritos antes de ":"
+                        if ':' in s_raw and any(d in s_lower.split(':')[0] for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
+                            times_str = s_raw.split(':', 1)[1].strip()
+                        else:
+                            times_str = s_raw
+                            
+                        formatted_times = clean_times_and_tags(times_str)
+                        if not formatted_times: continue
                         
                         for dt in target_dates:
                             if dt.weekday() in current_days:
                                 date_str = dt.strftime('%Y-%m-%d')
                                 if date_str not in movie_times_by_date:
-                                    movie_times_by_date[date_str] = set()
-                                for t in times.split(', '):
-                                    movie_times_by_date[date_str].add(t)
+                                    movie_times_by_date[date_str] = []
+                                if formatted_times not in movie_times_by_date[date_str]:
+                                    movie_times_by_date[date_str].append(formatted_times)
                     else:
-                        # Se não tem horas, é uma linha que só dita os dias (ex: "Sáb. Dom.")
                         new_days = parse_days_from_str(s_lower)
                         if new_days: current_days = new_days
 
-            for date_str, times_set in movie_times_by_date.items():
-                if times_set:
-                    sorted_times = sorted(list(times_set))
+            for date_str, times_list in movie_times_by_date.items():
+                if times_list:
                     final_cinema.append({
                         "title": title,
                         "start": date_str,
@@ -242,7 +219,7 @@ def get_cinema_data():
                         "source": "cinema",
                         "extendedProps": {
                             "image": img_url,
-                            "display_time": ", ".join(sorted_times),
+                            "display_time": " | ".join(times_list), # Junta várias linhas de sessões com " | "
                             "source": "cinema",
                             "category": "Cinema",
                             "category_normalized": "cinema"
