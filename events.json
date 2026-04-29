@@ -745,8 +745,450 @@
       "source": "teatro",
       "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense.",
       "category": "Novo Circo",
-      "category_normalized": "outros",
+      "category_normalized": "multidisciplinar",
       "display_time": "22:00"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:05, 15:45, 18:30, 21:15, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:05, 15:45, 18:30, 21:15, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-04-30",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-01",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-02",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-03",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-04",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-05",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:50, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-04-30",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-01",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-04",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-05",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-02",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "10:50, 13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-05-03",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "10:50, 13:40, 16:15, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-04-30",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-01",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-02",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-03",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-04",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-05",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Drama",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+      "display_time": "13:05, 15:40, 18:10, 20:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-04-30",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-01",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-02",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-03",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-04",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-05",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Tudo Me Lembra de Ti",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/filme/lembra-415142",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+      "display_time": "00:05, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   }
 ]
