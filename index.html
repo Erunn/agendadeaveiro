@@ -30,7 +30,7 @@
         body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
         
         /* --- SIDEBAR --- */
-        .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 200; box-shadow: 2px 0 10px rgba(0,0,0,0.1); }
+        .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 200; box-shadow: 2px 0 10px rgba(0,0,0,0.1); flex-shrink: 0; }
         .sidebar h1 { font-size: 1.5rem; margin: 0 0 10px 0; letter-spacing: -0.5px; }
         .filter-group { display: flex; flex-direction: column; gap: 10px; }
         .filter-item { 
@@ -50,7 +50,7 @@
         .custom-header { 
             display: flex; justify-content: space-between; align-items: center; 
             padding: 20px 30px; background: var(--main-bg); z-index: 100;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
         }
         [data-theme="dark"] .custom-header { border-bottom: 1px solid rgba(255,255,255,0.05); }
         
@@ -77,18 +77,20 @@
         input:checked + .slider { background-color: #222; }
         input:checked + .slider:before { transform: translateX(20px); }
 
-        /* --- ZONA DE CONTEÚDO --- */
+        /* --- ZONA DE CONTEÚDO (ÚNICO ELEMENTO COM SCROLL) --- */
         .calendar-section { flex: 1; padding: 25px 30px; overflow-y: auto; scroll-behavior: smooth; }
         .fc-header-toolbar { display: none !important; } 
         
         #calendar { background: transparent; padding: 0; border: none; }
 
+        /* CORREÇÕES GLOBAIS DE BORDAS */
+        .fc-theme-standard th, .fc-theme-standard td, .fc-theme-standard .fc-list { border: none !important; background: transparent !important; }
+
         /* --- MODO CALENDÁRIO (GRID) --- */
-        .fc-theme-standard th, .fc-theme-standard td { border-color: var(--border-color) !important; }
-        .fc-scrollgrid { border-radius: 12px; border: 1px solid var(--border-color) !important; overflow: hidden; background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; }
-        .fc-daygrid-day-top { flex-direction: row; padding: 8px; }
-        .fc-daygrid-day-number { color: var(--text-color); font-weight: 600; text-decoration: none; }
+        .fc-dayGridMonth-view { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 10px; }
+        .fc-dayGridMonth-view .fc-theme-standard td, .fc-dayGridMonth-view .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
+        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
+        .fc-daygrid-day-frame { padding: 5px; }
 
         .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
         .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
@@ -100,25 +102,25 @@
         .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: normal !important; flex-shrink: 0; max-width: 45%; }
         .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
 
-        /* --- MODO LISTA CONTÍNUA (MINIMALISTA) --- */
+        /* --- MODO LISTA CONTÍNUA (SCROLL NATURAL) --- */
         .fc-list { border: none !important; background: transparent !important; }
         .fc-list-table { background: transparent !important; border: none !important; border-spacing: 0 !important; } 
         
-        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
+        .fc-list-event-graphic, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
         
         .fc-list-event td { padding: 0 0 15px 0 !important; border: none !important; background: transparent !important; } 
-        .fc-list-event:hover td { background: transparent !important; } /* Impede hover nativo do FC */
+        .fc-list-event:hover td { background: transparent !important; } 
         
-        /* CORREÇÃO DO CABEÇALHO DO DIA (Oculta os cartões que fazem scroll por baixo) */
+        /* CABEÇALHO DO DIA - TOTALMENTE TRANSPARENTE E SEM POSIÇÃO FIXA */
         .fc-list-day-cushion { 
-            background: var(--main-bg) !important; /* FUNDO SÓLIDO */
+            background: transparent !important; 
             padding: 0 !important; border: none !important; 
         }
 
         .custom-day-header {
             display: flex; flex-direction: column; gap: 2px;
             padding: 25px 0 10px 0; text-align: left; cursor: default;
-            background: var(--main-bg); /* FUNDO SÓLIDO */
+            background: transparent; /* Sem fundo a estragar o design */
         }
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
         .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
@@ -131,7 +133,7 @@
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         
-        /* Múltiplas Horas Centradas e Empilhadas */
+        /* Múltiplas Horas Centradas */
         .list-time-box { 
             width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
             font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
@@ -196,12 +198,11 @@
         let currentViewName = 'listYear';
         let currentDateInView = new Date(); 
 
-        // Formata a data para "abril de 2026"
         const formatMonth = (dateObj) => {
             return dateObj.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
         };
 
-        // Scroll Spy Inteligente para a Lista
+        // Scroll Spy Inteligente (Atualiza o mês lendo a página)
         function updateTitleOnScroll() {
             if(currentViewName !== 'listYear') return;
             
@@ -226,7 +227,7 @@
 
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
-        // Lógica de Salto de Mês Refinada (Procura o PRÓXIMO mês existente no DOM)
+        // Lógica de Salto de Mês Refinada
         function navigateListMonth(direction) {
             let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
             if (!dayHeaders.length) return;
@@ -260,6 +261,9 @@
           showNonCurrentDates: false,  
           height: 'auto',
           
+          // DESLIGA OS STICKY HEADERS! É ISTO QUE FAZ O SCROLL NATURAL!
+          stickyHeaderDates: false, 
+          
           datesSet: function(info) {
               if (currentViewName === 'dayGridMonth') {
                   titleEl.innerText = info.view.title.toLowerCase();
@@ -288,7 +292,6 @@
             let timeText = 'Todo o dia'; 
             
             if (ep.display_time && ep.display_time !== 'Todo o dia') {
-                // Quebra as horas empilhadas verticalmente
                 timeText = ep.display_time.split(' / ').join('<br>');
             } else if (arg.event.start && (arg.event.start.getHours() !== 0 || arg.event.start.getMinutes() !== 0)) {
                 timeText = arg.event.start.getHours().toString().padStart(2, '0') + ':' + 
