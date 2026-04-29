@@ -102,40 +102,37 @@
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 2px; }
         .custom-date { font-size: 1.5rem; font-weight: 700; color: var(--text-color); letter-spacing: -1px; text-transform: uppercase;}
 
+        /* A SOLUÇÃO DE ALTURA E LARGURA TOTAL PARA GARANTIR CONSISTÊNCIA */
         .daily-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 16px;
-            grid-auto-flow: dense;
+            grid-auto-rows: 140px; /* Garante os 140px fixos para TODAS as linhas */
         }
 
         .event-card {
             display: flex; background: var(--card-bg); border: var(--card-border);
             box-shadow: var(--card-shadow); transition: transform 0.15s, box-shadow 0.15s;
             text-decoration: none; color: inherit; overflow: hidden;
-            min-height: 140px; 
+            height: 100%; width: 100%; /* Força a ocupar a grelha toda até ao fim do ecrã */
         }
         .event-card:hover { transform: var(--card-hover-transform); box-shadow: var(--card-hover-shadow); }
 
         .event-card.horizontal { flex-direction: row; border-left-width: var(--card-left-width) !important; border-left-style: solid; }
-        .event-card.vertical { flex-direction: column; border-top-width: 8px !important; border-top-style: solid; }
-
-        .card-img-wrap { overflow: hidden; flex-shrink: 0; background: var(--main-bg); }
+        
+        .card-img-wrap { overflow: hidden; flex-shrink: 0; background: var(--main-bg); height: 100%; }
         .event-card.horizontal .card-img-wrap { width: 160px; border-right: var(--divider); }
-        .event-card.horizontal.row-span-2 .card-img-wrap { width: 45%; }
-        
         .event-cinema.horizontal .card-img-wrap { width: 95px !important; }
-        .event-cinema.horizontal.row-span-2 .card-img-wrap { width: 197px !important; }
         
-        .event-card.vertical .card-img-wrap { width: 100%; height: 220px; border-bottom: var(--divider); }
-        .event-card.row-span-2.vertical .card-img-wrap { height: auto; flex: 1; }
+        /* Aumenta a imagem significativamente quando o cartão está sozinho (span-12) */
+        .event-card.horizontal.single-event .card-img-wrap { width: 300px; max-width: 40%; }
 
         .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
         .event-card:hover .card-img { transform: scale(1.05); }
 
         .card-info { padding: 15px 20px; display: flex; flex-direction: column; flex: 1; justify-content: center; overflow: hidden; }
         .card-meta { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 1px;}
-        .card-title { font-size: 1.1rem; font-weight: 700; line-height: 1.25; text-transform: uppercase; margin-bottom: 8px; }
+        .card-title { font-size: 1.1rem; font-weight: 700; line-height: 1.25; text-transform: uppercase; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
         
         .card-umbrella { 
             display: inline-flex; width: fit-content; align-self: flex-start;
@@ -146,7 +143,7 @@
         .card-time { font-size: 0.9rem; font-weight: 600; margin-top: auto; color: var(--text-muted); line-height: 1.4;}
 
         .span-3.horizontal .card-info { padding: 10px 15px; }
-        .span-3.horizontal .card-title { font-size: 0.95rem; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+        .span-3.horizontal .card-title { font-size: 0.95rem; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
         .span-3.horizontal .card-time { font-size: 0.8rem; }
         .span-3.horizontal .card-meta { font-size: 0.65rem; margin-bottom: 4px; }
         .span-4.horizontal .card-info { padding: 12px 15px; }
@@ -156,13 +153,9 @@
         .span-6 { grid-column: span 6; }
         .span-4 { grid-column: span 4; }
         .span-3 { grid-column: span 3; }
-        .row-span-2 { grid-row: span 2; }
         
         @media (max-width: 900px) {
-            .span-3, .span-4, .span-6 { grid-column: span 12; }
-            .event-card.vertical { flex-direction: row; border-left-width: var(--card-left-width) !important; border-top-width: 0 !important;}
-            .event-card.vertical .card-img-wrap { width: 120px; height: auto; border-bottom: none; border-right: var(--divider); }
-            .row-span-2 { grid-row: span 1; }
+            .span-3, .span-4, .span-6, .span-12 { grid-column: span 12; }
         }
     </style>
 </head>
@@ -233,57 +226,41 @@
             let ep = arg.event.extendedProps;
             if (!ep.is_grouped) return; 
 
-            let tEvents = ep.daily_events.filter(e => e.source !== 'cinema');
-            let cEvents = ep.daily_events.filter(e => e.source === 'cinema');
-            let t = tEvents.length;
-            let c = cEvents.length;
-            let total = t + c;
-
-            // O motor de lógica atribui os TAMANHOS corretamente a cada fonte
-            let renderOrder = (t >= 2 && c >= 4) ? [...cEvents, ...tEvents] : [...tEvents, ...cEvents];
-
-            if (total === 1) {
-                renderOrder[0].gridClass = 'span-12 horizontal';
-            } else if (total === 2) {
-                renderOrder.forEach(e => e.gridClass = 'span-6 horizontal');
-            } else if (total === 3) {
-                renderOrder.forEach(e => e.gridClass = 'span-4 horizontal'); 
-            } else if (t === 0) { 
-                if (c === 4) {
-                    renderOrder.forEach(e => e.gridClass = 'span-3 horizontal');
-                } else { 
-                    renderOrder[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
-                    for(let i=1; i<c; i++) renderOrder[i].gridClass = 'span-3 horizontal'; 
-                }
-            } else if (t === 1 && c >= 4) {
-                tEvents[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
-                cEvents.forEach(e => e.gridClass = 'span-3 horizontal');
-            } else if (t >= 2 && c >= 4) {
-                cEvents.forEach(e => e.gridClass = 'span-3 horizontal'); 
-                tEvents.forEach(e => e.gridClass = 'span-6 horizontal');
-            } else {
-                tEvents.forEach(e => {
-                    if (t === 1) e.gridClass = 'span-12 horizontal';
-                    else if (t === 2) e.gridClass = 'span-6 horizontal';
-                    else if (t === 3) e.gridClass = 'span-4 horizontal';
-                    else e.gridClass = 'span-6 horizontal'; 
-                });
-                
-                cEvents.forEach(e => {
-                    if (c === 1) e.gridClass = 'span-12 horizontal';
-                    else if (c === 2) e.gridClass = 'span-6 horizontal';
-                    else if (c === 3) e.gridClass = 'span-4 horizontal'; 
-                    else e.gridClass = 'span-3 horizontal'; 
-                });
-            }
-
-            // MAGIA: Depois de as classes estarem atribuídas com sucesso, 
-            // ORDENAMOS TUDO cronologicamente antes de renderizar no DOM!
-            let finalRender = [...renderOrder].sort((a, b) => {
-                let timeA = a.start || "";
-                let timeB = b.start || "";
-                return timeA.localeCompare(timeB);
+            // Passo 1: Ordenação Cronológica Estrita pelo horário!
+            let sortedEvents = [...ep.daily_events].sort((a, b) => {
+                let getTime = (ev) => {
+                    let t = ev.extendedProps.display_time || "";
+                    let m = t.match(/\d{2}:\d{2}/);
+                    return m ? m[0] : "24:00"; // Envia eventos "Todo o dia" para o fim
+                };
+                return getTime(a).localeCompare(getTime(b));
             });
+
+            // Passo 2: O Motor Lógico que preenche as linhas sempre a 100% da largura
+            let finalRender = [];
+            let i = 0;
+            let n = sortedEvents.length;
+            
+            while (i < n) {
+                let rem = n - i;
+                let chunk = 0;
+                let span = 12;
+                
+                // Decide quantos eventos vão preencher esta linha de 12 colunas
+                if (rem >= 4) { chunk = 4; span = 3; }
+                else if (rem === 3) { chunk = 3; span = 4; }
+                else if (rem === 2) { chunk = 2; span = 6; }
+                else if (rem === 1) { chunk = 1; span = 12; }
+
+                for (let j = 0; j < chunk; j++) {
+                    let ev = sortedEvents[i + j];
+                    ev.gridClass = `span-${span} horizontal`;
+                    // Se o evento ficou sozinho na linha, aplica a classe que aumenta a imagem
+                    if (span === 12) ev.gridClass += ' single-event';
+                    finalRender.push(ev);
+                }
+                i += chunk;
+            }
 
             let html = '<div class="daily-grid">';
             finalRender.forEach(e => {
