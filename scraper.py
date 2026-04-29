@@ -190,13 +190,16 @@ def get_cinema_data():
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
                         
-                        # Extrai as horas + tags ignorando os dias da semana escritos antes de ":"
                         if ':' in s_raw and any(d in s_lower.split(':')[0] for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
                             times_str = s_raw.split(':', 1)[1].strip()
                         else:
                             times_str = s_raw
                             
                         formatted_times = clean_times_and_tags(times_str)
+                        
+                        # NOVO: Limpa qualquer pontuação solta ou espaços no início da string
+                        formatted_times = re.sub(r'^(?i)sessões:\s*', '', formatted_times).lstrip(' :,-')
+
                         if not formatted_times: continue
                         
                         for dt in target_dates:
@@ -219,7 +222,7 @@ def get_cinema_data():
                         "source": "cinema",
                         "extendedProps": {
                             "image": img_url,
-                            "display_time": " | ".join(times_list), # Junta várias linhas de sessões com " | "
+                            "display_time": " | ".join(times_list), 
                             "source": "cinema",
                             "category": "Cinema",
                             "category_normalized": "cinema"
