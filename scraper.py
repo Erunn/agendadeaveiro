@@ -47,19 +47,28 @@ def parse_pt_date(date_str, default_date=None):
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def format_cinema_times(text):
-    # Extrai horas no formato '16h', '16h15', '16:15'
     matches = re.findall(r'(\d{1,2})[hH:](\d{2})?', text)
     times = []
     for h, m in matches:
         h_int = int(h)
         m_int = int(m) if m else 0
-        if 0 <= h_int <= 25: 
-            times.append((h_int, m_int))
-    # Remove duplicados e ordena cronologicamente
+        if 0 <= h_int <= 25: times.append((h_int, m_int))
     times = sorted(list(set(times)))
-    # Formata garantindo os zeros à esquerda (ex: 16:00, 21:30)
     formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
     return ", ".join(formatted)
+
+def normalize_category(cat_str):
+    """Mapeamento rigoroso baseado nas categorias do Teatro Aveirense"""
+    cat = cat_str.lower()
+    if 'teatro' in cat: return 'teatro' # Apanha "Teatro" e "Teatro de Objetos"
+    if 'cinema' in cat or 'filme' in cat: return 'cinema'
+    if 'música' in cat or 'musica' in cat: return 'música'
+    if 'dança' in cat or 'danca' in cat: return 'dança'
+    if 'workshop' in cat or 'oficina' in cat: return 'workshop'
+    if 'ópera' in cat or 'opera' in cat: return 'ópera'
+    if 'multidisciplinar' in cat: return 'multidisciplinar'
+    if 'festival' in cat: return 'festival'
+    return 'outros'
 
 def get_teatro_data():
     all_events = []
@@ -84,7 +93,7 @@ def get_teatro_data():
 
             resumo_text = item.select_one('.resumo').get_text(strip=True) if item.select_one('.resumo') else ""
             categoria_el = item.select_one('.categoria')
-            categoria_text = "Vários"
+            categoria_text = "Outros"
             if categoria_el:
                 if categoria_el.select_one('.sr-only'): categoria_el.select_one('.sr-only').decompose()
                 categoria_text = categoria_el.get_text(strip=True)
@@ -137,6 +146,7 @@ def get_teatro_data():
                             "source": "teatro",
                             "description": resumo_text,
                             "category": categoria_text,
+                            "category_normalized": normalize_category(categoria_text),
                             "display_time": display_time,
                             "is_glicinias": False
                         },
@@ -205,7 +215,12 @@ def get_cinema_data():
                 "title": "CINEMAS NOS GLICÍNIAS PLAZA",
                 "start": d_date,
                 "source": "cinema",
-                "extendedProps": { "is_glicinias": True, "movies": movies, "source": "cinema" }
+                "extendedProps": { 
+                    "is_glicinias": True, 
+                    "movies": movies, 
+                    "source": "cinema",
+                    "category_normalized": "cinema" 
+                }
             })
         return final_cinema
     except Exception as e:
