@@ -106,7 +106,9 @@
         .fc-list { border: none !important; background: transparent !important; }
         .fc-list-table { background: transparent !important; border: none !important; border-spacing: 0 !important; } 
         
-        .fc-list-event-graphic, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
+        /* CORREÇÃO DO ERRO AQUI: Esconde gráficos/hora nativos, mas DEIXA o título visível! */
+        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
+        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; } 
         
         .fc-list-event td { padding: 0 0 15px 0 !important; border: none !important; background: transparent !important; } 
         .fc-list-event:hover td { background: transparent !important; } 
@@ -120,7 +122,7 @@
         .custom-day-header {
             display: flex; flex-direction: column; gap: 2px;
             padding: 25px 0 10px 0; text-align: left; cursor: default;
-            background: transparent; /* Sem fundo a estragar o design */
+            background: transparent;
         }
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
         .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
@@ -261,7 +263,7 @@
           showNonCurrentDates: false,  
           height: 'auto',
           
-          // DESLIGA OS STICKY HEADERS! É ISTO QUE FAZ O SCROLL NATURAL!
+          // DESLIGA OS STICKY HEADERS! Garante o scroll natural transparente
           stickyHeaderDates: false, 
           
           datesSet: function(info) {
@@ -330,7 +332,7 @@
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; }
         });
 
-        // BOTÕES DO CABEÇALHO (Setas e Hoje)
+        // BOTÕES DO CABEÇALHO
         document.getElementById('btn-prev').addEventListener('click', () => {
             if(currentViewName === 'listYear') navigateListMonth(-1);
             else window.calendar.prev();
