@@ -81,9 +81,9 @@ def get_teatro_data():
     print("A iniciar scraper para Teatro Aveirense...")
     try:
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
-        res.encoding = 'utf-8' # FIX DE ACENTOS
-        res.raise_for_status()
-        soup = BeautifulSoup(res.text, 'html.parser')
+        html_text = res.content.decode('utf-8', errors='replace') # Forçar UTF-8 contra caracteres estranhos
+        soup = BeautifulSoup(html_text, 'html.parser')
+        
         for item in soup.select('.programa_item'):
             h2 = item.select_one('h2')
             date_el = item.select_one('.data')
@@ -113,8 +113,8 @@ def get_teatro_data():
                 try:
                     time.sleep(0.2) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
-                    event_page.encoding = 'utf-8' # FIX DE ACENTOS
-                    inner_soup = BeautifulSoup(event_page.text, 'html.parser')
+                    event_html = event_page.content.decode('utf-8', errors='replace')
+                    inner_soup = BeautifulSoup(event_html, 'html.parser')
                     for hp in inner_soup.select('.horarios_txt'):
                         text_content = hp.get_text(separator="\n").lower()
                         lines = text_content.split('\n')
@@ -155,9 +155,9 @@ def get_cinema_data():
     print("A iniciar scraper para Cinema Glicínias...")
     try:
         res = session.get(url, headers=HEADERS, timeout=15)
-        res.encoding = 'utf-8' # FIX DE ACENTOS
-        res.raise_for_status()
-        soup = BeautifulSoup(res.text, 'html.parser')
+        html_text = res.content.decode('utf-8', errors='replace') # Forçar UTF-8
+        soup = BeautifulSoup(html_text, 'html.parser')
+        
         today = datetime.now().date()
         days_to_next_wed = (2 - today.weekday()) % 7
         if days_to_next_wed == 0: days_to_next_wed = 7 
@@ -222,94 +222,140 @@ def get_23milhas_data():
     base_url = "https://www.23milhas.pt"
     print("A iniciar scraper para 23 Milhas (Ílhavo)...")
     try:
-        events_dict = {}
+        event_links = set()
 
         for path in ["", "/programacao"]:
             try:
                 res = session.get(base_url + path, headers=HEADERS, timeout=15)
-                res.encoding = 'utf-8' # FIX DE ACENTOS
-                soup = BeautifulSoup(res.text, 'html.parser')
+                html_text = res.content.decode('utf-8', errors='replace')
+                
+                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+|evento/[^"\'\s\\><]+)', html_text.replace('\\/', '/'))
+                for r_url in raw_urls:
+                    clean_url = r_url if r_url.startswith('/') else '/' + r_url
+                    clean_url = clean_url.rstrip('.,;:') 
+                    event_links.add(base_url + clean_url)
+            except Exception:
+                pass
 
-                for a in soup.find_all('a', href=re.compile(r'evento/')):
-                    href = a['href']
-                    clean_href = href if href.startswith('/') else '/' + href
-                    url = base_url + clean_href
-                    
-                    if url in events_dict: continue
+        print(f"-> Encontrados {len(event_links)} links potenciais. A recolher detalhes sem truncaturas...")
 
-                    card = a.find_parent('div', attrs={'data-bl-name': re.compile(r'Box|Grid Item|Slide|wrap|List\.card', re.I)})
-                    if not card: continue
+        for url in event_links:
+            try:
+                time.sleep(0.1)
+                ev_res = session.get(url, headers=HEADERS, timeout=5)
+                ev_html = ev_res.content.decode('utf-8', errors='replace') # Forçar UTF-8 na página de detalhe
+                ev_soup = BeautifulSoup(ev_html, 'html.parser')
 
-                    # Extrair Título Principal (O primeiro título)
-                    title_el = card.find(lambda tag: tag.name == 'div' and 'titulo' in tag.get('data-bl-name', '').lower())
-                    title = title_el.get_text(strip=True) if title_el else ""
-                    if not title: continue 
+                # TÍTULO E UMBRELLA LIMPOS (Separação a partir do Hífen ou Barra Vertical)
+                title = ""
+                og_title = ev_soup.find('meta', property='og:title')
+                if og_title: 
+                    title = og_title['content'].replace(' - 23 Milhas', '').strip()
+                
+                if not title: continue 
 
-                    # Extrair Subtítulo (O segundo título, ex: "Festim | d'Orfeu") -> Vai ser o UMBRELLA!
-                    subtitle = ""
-                    sub_elements = card.find_all(lambda tag: tag.name == 'div' and 'titulo' in tag.get('data-bl-name', '').lower())
-                    if len(sub_elements) > 1:
-                        subtitle = sub_elements[1].get_text(strip=True)
-                    
-                    # O Umbrella recebe o subtítulo (se houver), caso contrário mete '23 Milhas'
-                    umbrella = subtitle if subtitle else "23 Milhas"
+                # Separação Inteligente: O Nome fica antes do "-", o Umbrella fica com o que estiver depois
+                umbrella = ""
+                if " - " in title:
+                    parts = title.split(" - ", 1)
+                    title = parts[0].strip()
+                    umbrella = parts[1].strip().rstrip('. ')
+                elif " | " in title:
+                    parts = title.split(" | ", 1)
+                    title = parts[0].strip()
+                    umbrella = parts[1].strip().rstrip('. ')
 
-                    img_url = ""
-                    img_el = card.find('img')
-                    if img_el and img_el.get('src') and 'empty-image' not in img_el.get('src'):
-                        img_url = img_el['src']
-                    else:
-                        bg_img_el = card.find(lambda tag: tag.has_attr('style') and 'background-image' in tag['style'])
-                        if bg_img_el:
-                            bg_match = re.search(r'url\((.*?)\)', bg_img_el['style'])
-                            if bg_match: img_url = bg_match.group(1).strip('"\'')
+                # IMAGEM
+                img_url = ""
+                og_img = ev_soup.find('meta', property='og:image')
+                if og_img: img_url = og_img['content']
 
-                    cat_el = card.find(lambda tag: tag.name == 'div' and 'cat' in tag.get('data-bl-name', '').lower())
-                    cat = cat_el.get_text(strip=True) if cat_el else "Outros"
+                # TEXTOS PARA DATAS E HORAS
+                page_text = ev_soup.get_text(separator=' ').lower()
+                all_texts = [el.get_text(strip=True) for el in ev_soup.find_all(string=True) if el.get_text(strip=True)]
+                
+                months_regex = r'(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)'
+                date_match = re.search(r'\b(\d{1,2})\s+(?:de\s+)?' + months_regex + r'(?:\s+(?:de\s+)?(\d{4}))?\b', page_text)
+                
+                date_str = ""
+                if date_match:
+                    y = date_match.group(3) or str(datetime.now().year)
+                    date_str = f"{date_match.group(1)} {date_match.group(2)} {y}"
+                
+                start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
 
-                    dia_el = card.find(lambda tag: tag.name == 'div' and 'dia' in tag.get('data-bl-name', '').lower())
-                    mes_el = card.find(lambda tag: tag.name == 'div' and 'mes' in tag.get('data-bl-name', '').lower())
-                    dia = dia_el.get_text(strip=True) if dia_el else ""
-                    mes = mes_el.get_text(strip=True) if mes_el else ""
-                    
-                    date_str = f"{dia} {mes} {datetime.now().year}" if dia and mes else ""
-                    start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
-
-                    hora_el = card.find(lambda tag: tag.name == 'div' and 'hora' in tag.get('data-bl-name', '').lower())
-                    time_str = hora_el.get_text(strip=True) if hora_el else ""
-                    display_time = "Todo o dia"
-                    if time_str:
-                        t_clean = time_str.replace('h', ':').replace('H', ':')
+                time_str = ""
+                cat_str = ""
+                for i, txt in enumerate(all_texts):
+                    t_low = txt.lower()
+                    if t_low == 'horário' and i + 1 < len(all_texts):
+                        time_str = all_texts[i+1]
+                    if t_low == 'categoria' and i + 1 < len(all_texts):
+                        cat_str = all_texts[i+1]
+                
+                display_time = "Todo o dia"
+                if time_str:
+                    time_match = re.search(r'\b(\d{1,2}[:hH]\d{2})\b', time_str)
+                    if time_match:
+                        t_clean = time_match.group(1).replace('h', ':').replace('H', ':')
                         start_iso += f"T{t_clean}:00"
                         display_time = time_str
                     else:
                         start_iso += "T00:00:00"
+                else:
+                    time_match = re.search(r'\b(\d{1,2}[:hH]\d{2})\b', page_text)
+                    if time_match:
+                        t_clean = time_match.group(1).replace('h', ':').replace('H', ':')
+                        start_iso += f"T{t_clean}:00"
+                        display_time = time_match.group(1)
+                    else:
+                        start_iso += "T00:00:00"
 
-                    desc_el = card.find(lambda tag: tag.name == 'div' and 'descri' in tag.get('data-bl-name', '').lower())
-                    desc = desc_el.get_text(strip=True) if desc_el else ""
+                # LOCAL / UMBRELLA (Se não apanhou Umbrella no título, deduz do local)
+                if not umbrella:
+                    umbrella = "23 Milhas"
+                    if "casa cultura" in page_text or "casa da cultura" in page_text: umbrella = "Casa da Cultura de Ílhavo"
+                    elif "fábrica das ideias" in page_text or "fábrica" in page_text: umbrella = "Fábrica das Ideias da Gafanha"
+                    elif "laboratório das artes" in page_text: umbrella = "Laboratório das Artes"
+                    elif "cais criativo" in page_text: umbrella = "Cais Criativo da Costa Nova"
+                    elif "planteia" in page_text: umbrella = "Planteia"
 
-                    events_dict[url] = {
-                        "title": title, # Fica só com o título principal
-                        "start": start_iso,
-                        "url": url,
+                # CATEGORIA
+                cat = "Outros"
+                if cat_str:
+                    cat_low = cat_str.lower()
+                    if "música" in cat_low or "concerto" in cat_low: cat = "Música"
+                    elif "teatro" in cat_low: cat = "Teatro"
+                    elif "oficina" in cat_low or "workshop" in cat_low: cat = "Workshop"
+                    elif "dança" in cat_low or "danca" in cat_low: cat = "Dança"
+                    elif "experiência" in cat_low or "experiencia" in cat_low: cat = "Multidisciplinar"
+                    else: cat = cat_str.capitalize()
+                else:
+                    if "música" in page_text or "concerto" in page_text: cat = "Música"
+                    elif "teatro" in page_text: cat = "Teatro"
+                    elif "oficina" in page_text or "workshop" in page_text: cat = "Workshop"
+                    elif "dança" in page_text or "danca" in page_text: cat = "Dança"
+                    elif "experiência" in page_text or "experiencia" in page_text: cat = "Multidisciplinar"
+
+                final_23milhas.append({
+                    "title": title,
+                    "start": start_iso,
+                    "url": url,
+                    "source": "23milhas",
+                    "extendedProps": {
+                        "umbrella": umbrella,
+                        "image": img_url,
                         "source": "23milhas",
-                        "extendedProps": {
-                            "umbrella": umbrella, # O subtítulo fica aqui!
-                            "image": img_url,
-                            "source": "23milhas",
-                            "description": desc,
-                            "category": cat,
-                            "category_normalized": normalize_category(cat),
-                            "display_time": display_time
-                        }
+                        "description": "",
+                        "category": cat,
+                        "category_normalized": normalize_category(cat),
+                        "display_time": display_time
                     }
+                })
             except Exception as e:
                 pass
 
-        for ev in events_dict.values():
-            final_23milhas.append(ev)
-
-        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos!")
+        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos perfeitamente!")
 
     except Exception as e:
         print(f"Erro global 23 Milhas: {e}")
@@ -318,6 +364,7 @@ def get_23milhas_data():
 
 if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data() + get_23milhas_data()
+    # A garantia absoluta de que o JSON grava com formato internacional para acentos
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"Sucesso Total! Aglomerados {len(results)} eventos guardados.")
