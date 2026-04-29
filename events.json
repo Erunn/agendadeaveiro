@@ -542,21 +542,7 @@
       "source": "teatro",
       "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante.",
       "category": "Musical",
-      "display_time": "15:30"
-    }
-  },
-  {
-    "title": "<b>JOÃO BAIÃO</b><br>Baião d'Oxigénio",
-    "start": "2026-07-04T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/baiao-doxigenio/",
-    "source": "teatro",
-    "color": "#e67e22",
-    "extendedProps": {
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/baiao-doxigenio_img698c5894bde0d.jpg",
-      "source": "teatro",
-      "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante.",
-      "category": "Musical",
-      "display_time": "21:30"
+      "display_time": "15:30 / 21:30"
     }
   },
   {
