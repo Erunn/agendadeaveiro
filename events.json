@@ -1192,213 +1192,198 @@
     }
   },
   {
-    "title": "Evento",
-    "start": "2026-06-27T22:00:00",
-    "url": "https://www.23milhas.pt/evento/roger-correa/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Mãºsica",
-      "category_normalized": "outros",
-      "display_time": "22:00"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-05-15T21:30:00",
-    "url": "https://www.23milhas.pt/evento/filodemo/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-05-23T10:00:00",
-    "url": "https://www.23milhas.pt/evento/cores-que-se-comem/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Workshop",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-05-23T21:30:00",
-    "url": "https://www.23milhas.pt/evento/funk-you-brass-band-1774879003964/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Mãºsica",
-      "category_normalized": "outros",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-05-17T17:00:00",
-    "url": "https://www.23milhas.pt/evento/fernanda-e-a-inesperada-virtude-de-aprender-a-voar/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "17:00"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Mãºsica",
-      "category_normalized": "outros",
-      "display_time": "21:00"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-04-06T15:56:00",
-    "url": "https://www.23milhas.pt/evento/guerra-e-paz-1774884045676/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "15:56"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-05-16T17:00:00",
-    "url": "https://www.23milhas.pt/evento/cabe-mais-um-1774876531778/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "17:00"
-    }
-  },
-  {
-    "title": "Evento",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
-      "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Experiãªncia",
-      "category_normalized": "outros",
-      "display_time": "21:00"
-    }
-  },
-  {
-    "title": "Evento",
+    "title": "Carminho - Eu vou morrer de amor ou resis...",
     "start": "2026-05-09T21:30:00",
     "url": "https://www.23milhas.pt/evento/carminho-1774870274261/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-carminho.jpg?fit=fill&w=1400",
       "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Mãºsica",
+      "description": "",
+      "category": "MÃºsica",
       "category_normalized": "outros",
       "display_time": "21:30"
     }
   },
   {
-    "title": "Evento",
-    "start": "2026-06-27T10:00:00",
-    "url": "https://www.23milhas.pt/evento/plantas-saudaveis-na-varanda/",
+    "title": "Filodemo - Teatro Nacional D. Maria II",
+    "start": "2026-05-15T21:30:00",
+    "url": "https://www.23milhas.pt/evento/filodemo/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-filodemo.jpg?fit=fill&w=1400",
       "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Workshop",
+      "description": "",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Cabe mais um? - Teatro Nacional D. Maria II",
+    "start": "2026-05-16T17:00:00",
+    "url": "https://www.23milhas.pt/evento/cabe-mais-um-1774876531778/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "LaboratÃ³rio Artes",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-cabemaisum.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "17:00"
+    }
+  },
+  {
+    "title": "Fernanda e a inesperada virtude de aprender a voar - Mochos no Telhado",
+    "start": "2026-05-17T17:00:00",
+    "url": "https://www.23milhas.pt/evento/fernanda-e-a-inesperada-virtude-de-aprender-a-voar/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Museu MarÃ­timo de Ãlhavo",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-fernandavirtudevoar.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "17:00"
+    }
+  },
+  {
+    "title": "Cores que se comem - Oficina Saber Fazer",
+    "start": "2026-05-23T10:00:00",
+    "url": "https://www.23milhas.pt/evento/cores-que-se-comem/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Planteia",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-coresquesecomem.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
       "category_normalized": "workshop",
       "display_time": "10:00"
     }
   },
   {
-    "title": "Evento",
-    "start": "2026-06-28T10:30:00",
-    "url": "https://www.23milhas.pt/evento/construcao-de-um-relvinhas/",
+    "title": "Funk You Brass Band - A New Groove Odyssey",
+    "start": "2026-05-23T21:30:00",
+    "url": "https://www.23milhas.pt/evento/funk-you-brass-band-1774879003964/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-funkyoubrassband.jpg?fit=fill&w=1400",
       "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Workshop",
-      "category_normalized": "workshop",
-      "display_time": "10:30"
+      "description": "",
+      "category": "MÃºsica",
+      "category_normalized": "outros",
+      "display_time": "21:30"
     }
   },
   {
-    "title": "Evento",
+    "title": "Nuvens e outras criaturas voadoras - Planteia em FamÃ­lia",
     "start": "2026-05-24T10:30:00",
     "url": "https://www.23milhas.pt/evento/nuvens-e-outras-criaturas-voadoras/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
+      "umbrella": "Planteia",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-nuvenseoutrascriaturasvoadoras.jpg?fit=fill&w=1400",
       "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Workshop",
+      "description": "",
+      "category": "Oficina",
       "category_normalized": "workshop",
       "display_time": "10:30"
     }
   },
   {
-    "title": "Evento",
+    "title": "MÃºsicas para dar a volta ao Mundo da Dona ArmÃ©nia - Ana Madureira & Vahan Kero...",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais Criativo da Costa Nova",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/dona-arm-foto-desnorte.png?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "MÃºsica",
+      "category_normalized": "outros",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Dormir com as Estrelas - Concerto \"MÃºsicas para da...",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais Criativo da Costa Nova",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-dormircomasestrelas.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "ExperiÃªncia",
+      "category_normalized": "outros",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "RaÃ¼l Refree & Maria Mazzotta - festim - festival intermunicip...",
     "start": "2026-06-26T22:00:00",
     "url": "https://www.23milhas.pt/evento/raul-refree-andamp-maria-mazzotta/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "Casa da Cultura de Ílhavo",
-      "image": "https://cdn.bndlyr.com/nkqfjskujo/_assets/nwk0yxlesfnyyyhkjwibd.png?fit=pad&w=1200&h=630&bg=ffffff",
+      "umbrella": "FÃ¡brica Ideias",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_raulandmaria.jpg?fit=fill&w=1400",
       "source": "23milhas",
-      "description": "O 23 Milhas Ã© um projeto de transformaÃ§Ã£o cultural do municÃ­pio de Ãlhavo.",
-      "category": "Mãºsica",
+      "description": "",
+      "category": "MÃºsica",
       "category_normalized": "outros",
       "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Plantas SaudÃ¡veis na Varanda - Planteia em FamÃ­lia",
+    "start": "2026-06-27T10:00:00",
+    "url": "https://www.23milhas.pt/evento/plantas-saudaveis-na-varanda/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Planteia",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "10:00"
+    }
+  },
+  {
+    "title": "Roger CorrÃªa - Festim | dâOrfeu AC",
+    "start": "2026-06-27T22:00:00",
+    "url": "https://www.23milhas.pt/evento/roger-correa/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "FÃ¡brica Ideias",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_rogercorrea.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "MÃºsica",
+      "category_normalized": "outros",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "ConstruÃ§Ã£o de um Relvinhas - Planteia em FamÃ­lia",
+    "start": "2026-06-28T10:30:00",
+    "url": "https://www.23milhas.pt/evento/construcao-de-um-relvinhas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Planteia",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "10:30"
     }
   }
 ]
