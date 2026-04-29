@@ -43,17 +43,20 @@
         .filter-viral  { border-left-color: var(--viral-color) !important; }
         .filter-item:hover { background: rgba(255,255,255,0.2); transform: translateX(3px); }
 
-        /* --- CONTENT AREA & CUSTOM HEADER --- */
+        /* --- LAYOUT PRINCIPAL --- */
         .main-wrapper { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         
+        /* --- HEADER FIXO E LIMPO --- */
         .custom-header { 
             display: flex; justify-content: space-between; align-items: center; 
             padding: 20px 30px; background: var(--main-bg); z-index: 100;
-            border-bottom: 1px solid var(--border-color);
         }
         
-        .header-nav { display: flex; align-items: center; gap: 15px; }
-        .header-nav h2 { margin: 0; font-size: 1.4rem; font-weight: 700; text-transform: lowercase; min-width: 160px; text-align: center; }
+        .header-left, .header-right { display: flex; align-items: center; gap: 10px; width: 250px; }
+        .header-right { justify-content: flex-end; }
+        
+        .header-center { display: flex; align-items: center; gap: 15px; justify-content: center; flex: 1; }
+        .header-center h2 { margin: 0; font-size: 1.4rem; font-weight: 700; text-transform: lowercase; min-width: 200px; text-align: center; }
         
         .btn { 
             background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); 
@@ -64,9 +67,7 @@
         .btn.active { background: var(--sidebar-bg); color: white; border-color: var(--sidebar-bg); }
         .btn-icon { padding: 8px 12px; font-size: 16px; }
 
-        .header-views { display: flex; gap: 8px; }
-
-        .theme-switch-wrapper { position: absolute; top: 25px; right: 30px; z-index: 200; }
+        .theme-switch-wrapper { margin-left: 20px; display: flex; align-items: center; }
         .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
         .theme-switch input { display:none; }
         .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 34px; }
@@ -74,46 +75,45 @@
         input:checked + .slider { background-color: #222; }
         input:checked + .slider:before { transform: translateX(20px); }
 
-        /* --- CALENDAR SECTION --- */
-        .calendar-section { flex: 1; padding: 25px 30px; overflow-y: auto; scroll-behavior: smooth; }
+        /* --- ZONA DE CONTEÚDO --- */
+        .calendar-section { flex: 1; padding: 0 30px 30px 30px; overflow-y: auto; scroll-behavior: smooth; }
+        .fc-header-toolbar { display: none !important; } /* Esconde as ferramentas padrão do FullCalendar */
         
-        /* Esconder o Header Nativo do FullCalendar */
-        .fc-header-toolbar { display: none !important; }
         #calendar { background: transparent; padding: 0; border: none; }
 
-        /* --- MODO CALENDÁRIO (MULTIMONTH) --- */
-        .fc-multimonth { border: none !important; }
-        .fc-multimonth-month { margin-bottom: 30px !important; background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); border: 1px solid var(--border-color); }
-        .fc-multimonth-title { font-size: 1.2rem !important; font-weight: 700 !important; color: var(--text-color) !important; text-transform: lowercase; padding-bottom: 10px; }
+        /* --- MODO CALENDÁRIO --- */
+        /* O fundo branco fica APENAS na grelha do calendário */
+        .fc-dayGridMonth-view { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 10px; }
         .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-scrollgrid { border: none !important; }
+        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
         
         .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 0 !important; }
-        .event-teatro { background: rgba(230, 126, 34, 0.1) !important; border-left: 4px solid var(--teatro-color) !important; }
-        .event-cinema { background: rgba(30, 136, 229, 0.1) !important; border-left: 4px solid var(--cinema-color) !important; }
-        .event-cma    { background: rgba(46, 125, 50, 0.1) !important; border-left: 4px solid var(--cma-color) !important; }
-        .event-viral  { background: rgba(123, 31, 162, 0.1) !important; border-left: 4px solid var(--viral-color) !important; }
+        .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
+        .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
+        .event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
+        .event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
 
         .fc-event-main { display: flex !important; align-items: flex-start; gap: 6px; padding: 4px 6px !important; white-space: normal !important; word-break: break-word; }
         .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: nowrap !important; flex-shrink: 0; }
         .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
 
-        /* --- MODO LISTA (ULTRA CLEAN) --- */
+        /* --- MODO LISTA (SEM CAIXAS BRANCAS GIGANTES) --- */
         .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
         .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; }
+        
         .fc-list-table, .fc-list-table tbody, .fc-list-table tr { border: none !important; background: transparent !important; } 
         .fc-list-event td { border: none !important; padding: 0 0 15px 0 !important; background: transparent !important; }
         
-        /* Título dos Dias */
+        /* Título do Dia (Com fundo transparente) */
         .fc-list-day-cushion { 
-            background: transparent !important; padding: 30px 0 15px 0 !important; 
+            background: transparent !important; padding: 25px 0 10px 0 !important; 
             font-size: 1.1em; font-weight: 700; border: none !important; color: var(--text-color) !important; 
         }
 
-        /* Cartão de Evento */
+        /* Cartão Branco Moderno */
         .list-card { 
             display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 120px; cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid var(--border-color); transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
             overflow: hidden; pointer-events: auto; border-left-width: 6px !important; border-left-style: solid;
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
@@ -144,20 +144,22 @@
 
     <div class="main-wrapper">
         <div class="custom-header">
-            <div class="header-nav">
+            <div class="header-left">
+                <button class="btn active" id="btn-list" data-view="listYear">Lista</button>
+                <button class="btn" id="btn-grid" data-view="dayGridMonth">Calendário</button>
+            </div>
+            
+            <div class="header-center">
                 <button class="btn btn-icon" id="btn-prev">&lt;</button>
                 <h2 id="current-month-title">a carregar...</h2>
                 <button class="btn btn-icon" id="btn-next">&gt;</button>
             </div>
             
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
-            </div>
-
-            <div class="header-views">
+            <div class="header-right">
                 <button class="btn" id="btn-today">Hoje</button>
-                <button class="btn active" id="btn-list" data-view="listYear">Lista</button>
-                <button class="btn" id="btn-grid" data-view="multiMonthYear">Calendário</button>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
+                </div>
             </div>
         </div>
 
@@ -173,27 +175,24 @@
         var titleEl = document.getElementById('current-month-title');
         window.allEvents = [];
         
-        let currentDateInView = new Date(); // Guarda a data visível no momento
+        let currentViewName = 'listYear'; // Vista Default
+        let currentDateInView = new Date(); 
 
-        // Formatador de mês/ano em português
-        const formatMonth = (dateStr) => {
-            const d = new Date(dateStr);
-            return d.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
+        const formatMonth = (dateObj) => {
+            return dateObj.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
         };
 
-        // --- SISTEMA DE NAVEGAÇÃO E SCROLL SPY ---
+        // --- SISTEMA DE NAVEGAÇÃO E SCROLL SPY PARA A LISTA ---
         function updateTitleOnScroll() {
-            let view = window.calendar.view.type;
-            let elements = view === 'listYear' 
-                ? document.querySelectorAll('.fc-list-day') 
-                : document.querySelectorAll('.fc-multimonth-month');
+            if(currentViewName !== 'listYear') return;
             
-            if (!elements.length) return;
+            let dayHeaders = document.querySelectorAll('.fc-list-day');
+            if (!dayHeaders.length) return;
 
             let containerTop = scrollContainer.getBoundingClientRect().top;
-            let currentEl = elements[0];
+            let currentEl = dayHeaders[0];
             
-            for (let el of elements) {
+            for (let el of dayHeaders) {
                 if (el.getBoundingClientRect().top <= containerTop + 50) {
                     currentEl = el;
                 } else { break; }
@@ -202,26 +201,23 @@
             let dateStr = currentEl.getAttribute('data-date');
             if(dateStr) {
                 currentDateInView = new Date(dateStr);
-                titleEl.innerText = formatMonth(dateStr);
+                titleEl.innerText = formatMonth(currentDateInView);
             }
         }
 
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
-        function scrollToMonth(directionOffset) {
-            let view = window.calendar.view.type;
-            let targetDate = new Date(currentDateInView.getFullYear(), currentDateInView.getMonth() + directionOffset, 1);
-            let targetYYYYMM = targetDate.getFullYear() + '-' + String(targetDate.getMonth() + 1).padStart(2, '0');
+        function navigateListMonth(directionOffset) {
+            let d = new Date(currentDateInView);
+            d.setMonth(d.getMonth() + directionOffset);
+            let targetYYYYMM = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
             
-            let elements = view === 'listYear' 
-                ? Array.from(document.querySelectorAll('.fc-list-day')) 
-                : Array.from(document.querySelectorAll('.fc-multimonth-month'));
-
+            let elements = Array.from(document.querySelectorAll('.fc-list-day'));
             let targetEl = null;
 
-            if (directionOffset > 0) { // Próximo
+            if (directionOffset > 0) { 
                 targetEl = elements.find(el => el.getAttribute('data-date') >= targetYYYYMM + '-01');
-            } else { // Anterior
+            } else { 
                 let reversed = [...elements].reverse();
                 targetEl = reversed.find(el => el.getAttribute('data-date') < targetYYYYMM + '-32');
             }
@@ -234,12 +230,22 @@
 
         // --- INICIALIZAÇÃO DO CALENDÁRIO ---
         window.calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'listYear', // LISTA POR DEFEITO
+          initialView: 'listYear', 
           locale: 'pt',
           firstDay: 1, 
-          headerToolbar: false, // DESLIGA TOOLBAR ANTIGA
-          multiMonthMaxColumns: 1, // CALENDÁRIOS EMPILHADOS NA VERTICAL
+          dayMaxEvents: 4,
+          fixedWeekCount: false,       // Esconde semanas vazias no fim do mês
+          showNonCurrentDates: false,  // Limpa ao máximo os dias dos meses vizinhos
           
+          datesSet: function(info) {
+              // Se estivermos em Calendário, o FullCalendar diz-nos logo o nome do mês
+              if (currentViewName === 'dayGridMonth') {
+                  titleEl.innerText = info.view.title.toLowerCase();
+              } else {
+                  updateTitleOnScroll();
+              }
+          },
+
           eventContent: function(arg) {
             let timeText = 'Todo dia'; 
             if (arg.event.start && (arg.event.start.getHours() !== 0 || arg.event.start.getMinutes() !== 0)) {
@@ -269,7 +275,6 @@
                          </div>` 
                 };
             }
-            // Modo Grid (Calendário)
             return { 
               html: `<div class="fc-event-main">
                         <div class="fc-event-time">${timeText}</div>
@@ -286,38 +291,52 @@
           }
         });
 
-        // --- BOTÕES DO NOSSO HEADER ---
-        document.getElementById('btn-prev').addEventListener('click', () => scrollToMonth(-1));
-        document.getElementById('btn-next').addEventListener('click', () => scrollToMonth(1));
+        // --- LÓGICA DOS BOTÕES DO CABEÇALHO ---
+        document.getElementById('btn-prev').addEventListener('click', () => {
+            if(currentViewName === 'listYear') navigateListMonth(-1);
+            else window.calendar.prev();
+        });
+        
+        document.getElementById('btn-next').addEventListener('click', () => {
+            if(currentViewName === 'listYear') navigateListMonth(1);
+            else window.calendar.next();
+        });
         
         document.getElementById('btn-today').addEventListener('click', () => {
-            let todayStr = new Date().toISOString().split('T')[0];
-            let elements = window.calendar.view.type === 'listYear' 
-                ? Array.from(document.querySelectorAll('.fc-list-day')) 
-                : Array.from(document.querySelectorAll('.fc-multimonth-month'));
-            
-            let target = elements.find(el => el.getAttribute('data-date') >= todayStr) || elements[elements.length-1];
-            if (target) {
-                let y = target.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top - 20;
-                scrollContainer.scrollTo({top: y, behavior: 'smooth'});
+            window.calendar.today();
+            if (currentViewName === 'listYear') {
+                setTimeout(() => {
+                    let todayStr = new Date().toISOString().split('T')[0];
+                    let elements = Array.from(document.querySelectorAll('.fc-list-day'));
+                    let target = elements.find(el => el.getAttribute('data-date') >= todayStr) || elements[elements.length-1];
+                    if (target) {
+                        let y = target.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top - 20;
+                        scrollContainer.scrollTo({top: y, behavior: 'smooth'});
+                    }
+                }, 100);
             }
         });
 
-        document.querySelectorAll('.header-views .btn[data-view]').forEach(btn => {
+        // Troca de Vistas (Lista / Calendário)
+        document.querySelectorAll('.header-left .btn[data-view]').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.header-views .btn[data-view]').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.header-left .btn[data-view]').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
-                window.calendar.changeView(e.target.dataset.view);
-                setTimeout(updateTitleOnScroll, 100);
+                
+                currentViewName = e.target.dataset.view;
+                window.calendar.changeView(currentViewName);
+                
+                // Força o scroll para cima ao mudar de vista para evitar bugs
+                scrollContainer.scrollTo({top: 0});
             });
         });
 
-        // Toggle Dark Mode
+        // Dark Mode
         document.getElementById('themeToggle').addEventListener('change', (e) => {
             document.documentElement.setAttribute('data-theme', e.target.checked ? 'dark' : 'light');
         });
 
-        // Fetch e Renderização
+        // Fetch de Eventos e Aplicação de Limites de Datas
         fetch('events.json?t=' + new Date().getTime())
           .then(res => res.json())
           .then(data => {
@@ -325,16 +344,18 @@
             if(data.length > 0) {
                 let minDateStr = data.reduce((min, ev) => (ev.start < min ? ev.start : min), data[0].start);
                 let maxDateStr = data.reduce((max, ev) => (ev.start > max ? ev.start : max), data[0].start);
+                
                 let maxDateObj = new Date(maxDateStr.split('T')[0]);
                 maxDateObj.setDate(maxDateObj.getDate() + 1);
                 
+                // Corta o passado e o futuro desnecessários!
                 window.calendar.setOption('validRange', { 
                     start: minDateStr.split('T')[0],
                     end: maxDateObj.toISOString().split('T')[0]
                 });
                 window.calendar.gotoDate(minDateStr.split('T')[0]);
                 
-                setTimeout(updateTitleOnScroll, 300);
+                setTimeout(updateTitleOnScroll, 100);
             }
             updateCalendar();
           });
