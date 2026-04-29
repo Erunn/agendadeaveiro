@@ -102,29 +102,30 @@
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 2px; }
         .custom-date { font-size: 1.5rem; font-weight: 700; color: var(--text-color); letter-spacing: -1px; text-transform: uppercase;}
 
+        /* A SOLUÇÃO DE ALTURA: O CSS Grid força as linhas a 140px exatos */
         .daily-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 16px;
-            grid-auto-rows: 140px; /* Garante os 140px fixos para TODAS as linhas */
+            grid-auto-rows: 140px; 
+            grid-auto-flow: dense;
         }
 
         .event-card {
             display: flex; background: var(--card-bg); border: var(--card-border);
             box-shadow: var(--card-shadow); transition: transform 0.15s, box-shadow 0.15s;
             text-decoration: none; color: inherit; overflow: hidden;
-            height: 100%; width: 100%; /* Força a ocupar a grelha toda até ao fim do ecrã */
+            height: 100%; width: 100%;
         }
         .event-card:hover { transform: var(--card-hover-transform); box-shadow: var(--card-hover-shadow); }
 
         .event-card.horizontal { flex-direction: row; border-left-width: var(--card-left-width) !important; border-left-style: solid; }
         
         .card-img-wrap { overflow: hidden; flex-shrink: 0; background: var(--main-bg); height: 100%; }
+        /* Mantém a largura das imagens sempre fixas, mesmo se o cartão esticar até ao fim do ecrã */
         .event-card.horizontal .card-img-wrap { width: 160px; border-right: var(--divider); }
         .event-cinema.horizontal .card-img-wrap { width: 95px !important; }
-        
-        /* Aumenta a imagem significativamente quando o cartão está sozinho (span-12) */
-        .event-card.horizontal.single-event .card-img-wrap { width: 300px; max-width: 40%; }
+        .event-card.horizontal.row-span-2 .card-img-wrap { width: 45%; }
 
         .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
         .event-card:hover .card-img { transform: scale(1.05); }
@@ -152,9 +153,11 @@
         .span-6 { grid-column: span 6; }
         .span-4 { grid-column: span 4; }
         .span-3 { grid-column: span 3; }
+        .row-span-2 { grid-row: span 2; }
         
         @media (max-width: 900px) {
             .span-3, .span-4, .span-6, .span-12 { grid-column: span 12; }
+            .row-span-2 { grid-row: span 1; }
         }
     </style>
 </head>
@@ -225,7 +228,7 @@
             let ep = arg.event.extendedProps;
             if (!ep.is_grouped) return; 
 
-            // Passo 1: Ordenação Cronológica Estrita pelo horário
+            // 1. Ordenação Cronológica Exata
             let sortedEvents = [...ep.daily_events].sort((a, b) => {
                 let getTime = (ev) => {
                     let t = ev.extendedProps.display_time || "";
@@ -235,7 +238,7 @@
                 return getTime(a).localeCompare(getTime(b));
             });
 
-            // Passo 2: O Motor Híbrido (Cronológico + Layout Editorial)
+            // 2. Motor de Agrupamento
             let finalRender = [];
             let eventsPool = [...sortedEvents];
 
@@ -243,26 +246,17 @@
                 let rem = eventsPool.length;
 
                 if (rem >= 5) {
-                    // Agrupa 5 eventos no layout "1 Destaque Gigante + 4 Pequenos" (2x2)
+                    // Layout Editorial: 1 Destaque (2 Linhas) + 4 Pequenos à direita
                     let chunk = eventsPool.splice(0, 5);
                     
-                    // Procura se há teatro/música no grupo para lhe dar o destaque, senão usa o mais cedo
-                    let priorityIdx = chunk.findIndex(e => e.source !== 'cinema');
-                    let featuredEvent;
-                    
-                    if (priorityIdx !== -1) {
-                        featuredEvent = chunk.splice(priorityIdx, 1)[0];
-                    } else {
-                        featuredEvent = chunk.splice(0, 1)[0];
+                    // O primeiro do grupo (mais cedo) assume o destaque, mas mantendo a ordem cronológica no ecrã!
+                    chunk[0].gridClass = 'span-6 row-span-2 horizontal featured';
+                    finalRender.push(chunk[0]);
+
+                    for (let i = 1; i < 5; i++) {
+                        chunk[i].gridClass = 'span-3 horizontal';
+                        finalRender.push(chunk[i]);
                     }
-
-                    featuredEvent.gridClass = 'span-6 row-span-2 horizontal featured';
-                    finalRender.push(featuredEvent);
-
-                    chunk.forEach(e => {
-                        e.gridClass = 'span-3 horizontal';
-                        finalRender.push(e);
-                    });
                 }
                 else if (rem === 4) {
                     let chunk = eventsPool.splice(0, 4);
@@ -278,7 +272,8 @@
                 }
                 else if (rem === 1) {
                     let chunk = eventsPool.splice(0, 1);
-                    chunk[0].gridClass = 'span-12 horizontal single-event';
+                    // Single Event: Ocupa a largura toda, mas a imagem fica com os 160px fixos
+                    chunk[0].gridClass = 'span-12 horizontal';
                     finalRender.push(chunk[0]);
                 }
             }
