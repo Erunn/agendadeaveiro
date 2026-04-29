@@ -10,6 +10,7 @@
       "source": "teatro",
       "description": "Obras acusmáticas de Ludger Brümmer",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -25,6 +26,7 @@
       "source": "teatro",
       "description": "ESTREIA ABSOLUTA",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "17:00",
       "is_glicinias": false
     }
@@ -40,6 +42,7 @@
       "source": "teatro",
       "description": "ESTREIA NACIONAL",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -55,6 +58,7 @@
       "source": "teatro",
       "description": "ESTREIA NACIONAL",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -70,6 +74,7 @@
       "source": "teatro",
       "description": "Uma oficina de dança que emerge do universo do espetáculo \"A SENSE OF\" e propõe partilhar as ferramentas de pesquisa e os eixos conceptuais da peça.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "11:00",
       "is_glicinias": false
     }
@@ -85,6 +90,7 @@
       "source": "teatro",
       "description": "Nova Música para Novos Músicos",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "18:30",
       "is_glicinias": false
     }
@@ -100,6 +106,7 @@
       "source": "teatro",
       "description": "Um filme de António da Cunha Telles.",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -115,6 +122,7 @@
       "source": "teatro",
       "description": "O poder coletivo e o sonho como modos de protesto num espetáculo de dança.",
       "category": "Dança",
+      "category_normalized": "dança",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -130,6 +138,7 @@
       "source": "teatro",
       "description": "[ESTREIA]Uma dramaturgia musical que une o samba e o fado para contar a história de dois povos irmãos.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -145,6 +154,7 @@
       "source": "teatro",
       "description": "Um programa dedicado à Sinfonia n.º 5 de Gustav Mahler",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "17:00",
       "is_glicinias": false
     }
@@ -160,6 +170,7 @@
       "source": "teatro",
       "description": "Espetáculo que celebra o mundo às avessas de Manuel António Pina, um dos nossos maiores poetas.",
       "category": "Teatro",
+      "category_normalized": "teatro",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -175,6 +186,7 @@
       "source": "teatro",
       "description": "Espetáculo que celebra o mundo às avessas de Manuel António Pina, um dos nossos maiores poetas.",
       "category": "Teatro",
+      "category_normalized": "teatro",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -190,6 +202,7 @@
       "source": "teatro",
       "description": "Um espetáculo em formato de história-concerto para ver em família.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "16:00",
       "is_glicinias": false
     }
@@ -205,6 +218,7 @@
       "source": "teatro",
       "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "18:00 / 21:30",
       "is_glicinias": false
     }
@@ -220,6 +234,7 @@
       "source": "teatro",
       "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "18:00 / 21:30",
       "is_glicinias": false
     }
@@ -235,6 +250,7 @@
       "source": "teatro",
       "description": "Radicado na Alemanha, o Fabrik Quartet estreia-se em Portugal a convite da Arte no Tempo",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -250,6 +266,7 @@
       "source": "teatro",
       "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "18:30",
       "is_glicinias": false
     }
@@ -265,6 +282,7 @@
       "source": "teatro",
       "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "18:30",
       "is_glicinias": false
     }
@@ -280,6 +298,7 @@
       "source": "teatro",
       "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "18:30",
       "is_glicinias": false
     }
@@ -295,6 +314,7 @@
       "source": "teatro",
       "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "10:00 / 14:00",
       "is_glicinias": false
     }
@@ -310,6 +330,7 @@
       "source": "teatro",
       "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
       "category": "Workshop",
+      "category_normalized": "workshop",
       "display_time": "10:00",
       "is_glicinias": false
     }
@@ -325,6 +346,7 @@
       "source": "teatro",
       "description": "Espectáculo musical, irónico, poético e com uma forte componente visual que evoca o sonho como esperança colectiva para construir um mundo melhor.",
       "category": "Ópera",
+      "category_normalized": "ópera",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -340,6 +362,7 @@
       "source": "teatro",
       "description": "Programa da CNB que celebra a força e a intimidade do encontro entre duas presenças em palco.",
       "category": "Dança",
+      "category_normalized": "dança",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -355,6 +378,7 @@
       "source": "teatro",
       "description": "Um espetáculo de sucesso mundial que celebra a vida e a música de uma das duplas mais influentes de sempre.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -370,6 +394,7 @@
       "source": "teatro",
       "description": "Um ritual onírico de vácuo e presença, onde se apagam as fronteiras entre a intervenção política e social.",
       "category": "Dança",
+      "category_normalized": "dança",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -385,6 +410,7 @@
       "source": "teatro",
       "description": "[ESTREIA]Entrelaçando áreas artísticas, mostra-se e acolhe-se a dor, olhos nos olhos, transfigurando-a em traço e movimento.",
       "category": "Multidisciplinar",
+      "category_normalized": "multidisciplinar",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -400,6 +426,7 @@
       "source": "teatro",
       "description": "[ESTREIA]Entrelaçando áreas artísticas, mostra-se e acolhe-se a dor, olhos nos olhos, transfigurando-a em traço e movimento.",
       "category": "Multidisciplinar",
+      "category_normalized": "multidisciplinar",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -415,6 +442,7 @@
       "source": "teatro",
       "description": "Os Duques do Precariado trazem o amor e as suas imitações especiosas às Novas Quintas de junho",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "22:00",
       "is_glicinias": false
     }
@@ -430,6 +458,7 @@
       "source": "teatro",
       "description": "[ESTREIA]Espetáculo comunitário que parte das memórias, desejos e medos dos seus participantes.",
       "category": "Teatro",
+      "category_normalized": "teatro",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -445,6 +474,7 @@
       "source": "teatro",
       "description": "[ESTREIA]Espetáculo comunitário que parte das memórias, desejos e medos dos seus participantes.",
       "category": "Teatro",
+      "category_normalized": "teatro",
       "display_time": "18:00",
       "is_glicinias": false
     }
@@ -460,6 +490,7 @@
       "source": "teatro",
       "description": "Espetáculo de dança que explora a poética e a ferocidade inerentes ao processo de envelhecimento.",
       "category": "Dança",
+      "category_normalized": "dança",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -475,6 +506,7 @@
       "source": "teatro",
       "description": "Projeto orientado pela Orquestra Sem Fronteiras, que reúne participantes de quatro lares de Aveiro.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "15:00",
       "is_glicinias": false
     }
@@ -490,6 +522,7 @@
       "source": "teatro",
       "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante.",
       "category": "Musical",
+      "category_normalized": "música",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -505,6 +538,7 @@
       "source": "teatro",
       "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante.",
       "category": "Musical",
+      "category_normalized": "música",
       "display_time": "15:30 / 21:30",
       "is_glicinias": false
     }
@@ -520,6 +554,7 @@
       "source": "teatro",
       "description": "Um espetáculo absolutamente imperdível, que junta três figuras incontornáveis do panorama contemporâneo do jazz.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "18:00",
       "is_glicinias": false
     }
@@ -535,6 +570,7 @@
       "source": "teatro",
       "description": "",
       "category": "Festival",
+      "category_normalized": "festival",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -550,6 +586,7 @@
       "source": "teatro",
       "description": "",
       "category": "Festival",
+      "category_normalized": "festival",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -565,6 +602,7 @@
       "source": "teatro",
       "description": "",
       "category": "Festival",
+      "category_normalized": "festival",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -580,6 +618,7 @@
       "source": "teatro",
       "description": "",
       "category": "Festival",
+      "category_normalized": "festival",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -595,6 +634,7 @@
       "source": "teatro",
       "description": "",
       "category": "Festival",
+      "category_normalized": "festival",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -610,6 +650,7 @@
       "source": "teatro",
       "description": "A 9ª edição do programa TERRITÓRIO passa pelo Teatro Aveirense em julho",
       "category": "Dança",
+      "category_normalized": "dança",
       "display_time": "21:30",
       "is_glicinias": false
     }
@@ -625,6 +666,7 @@
       "source": "teatro",
       "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -640,6 +682,7 @@
       "source": "teatro",
       "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -655,6 +698,7 @@
       "source": "teatro",
       "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -670,6 +714,7 @@
       "source": "teatro",
       "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
       "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "Todo o dia",
       "is_glicinias": false
     }
@@ -685,6 +730,7 @@
       "source": "teatro",
       "description": "Uma das mais carismáticas vozes da nova música portuguesa num concerto ao ar livre",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "22:00",
       "is_glicinias": false
     }
@@ -700,6 +746,7 @@
       "source": "teatro",
       "description": "Um espetáculo de teatro de objetos para ver em família.",
       "category": "Teatro de Objetos",
+      "category_normalized": "teatro",
       "display_time": "18:00",
       "is_glicinias": false
     }
@@ -715,6 +762,7 @@
       "source": "teatro",
       "description": "Um espetáculo de teatro de objetos para ver em família.",
       "category": "Teatro de Objetos",
+      "category_normalized": "teatro",
       "display_time": "18:00",
       "is_glicinias": false
     }
@@ -730,6 +778,7 @@
       "source": "teatro",
       "description": "Este Verão MAQUINA. traz a sua autenticidade e musicalidade às Novas Quintas n Rua.",
       "category": "Música",
+      "category_normalized": "música",
       "display_time": "22:00",
       "is_glicinias": false
     }
@@ -745,6 +794,7 @@
       "source": "teatro",
       "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense.",
       "category": "Novo Circo",
+      "category_normalized": "outros",
       "display_time": "22:00",
       "is_glicinias": false
     }
@@ -787,7 +837,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -828,7 +879,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -863,7 +915,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -898,7 +951,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -927,7 +981,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -962,7 +1017,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -997,7 +1053,8 @@
           "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
-      "source": "cinema"
+      "source": "cinema",
+      "category_normalized": "cinema"
     }
   }
 ]
