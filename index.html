@@ -74,26 +74,37 @@
         /* --- MODO CALENDÁRIO (GRID) --- */
         .fc-dayGridMonth-view .fc-scrollgrid { background: var(--card-bg) !important; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid var(--border-color) !important; }
         .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; }
+        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
         .fc-daygrid-day-frame { padding: 5px; }
 
-        /* Dias Passados e Outros Meses no Calendário */
         .fc-day-past, .fc-day-other, .fc-day-disabled { background-color: rgba(0,0,0,0.02) !important; }
         [data-theme="dark"] .fc-day-past, [data-theme="dark"] .fc-day-other, [data-theme="dark"] .fc-day-disabled { background-color: rgba(255,255,255,0.02) !important; }
         .fc-day-past .fc-daygrid-day-number, .fc-day-other .fc-daygrid-day-number, .fc-day-disabled .fc-daygrid-day-number { opacity: 0.35; }
 
-        /* CORES DO CALENDÁRIO - O PREFIXO ESTÁ AQUI PARA NÃO PARTIR A LISTA */
         .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; padding: 2px 5px; font-size: 0.75rem; }
         .fc-daygrid-event.event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 3px solid var(--teatro-color) !important; }
         .fc-daygrid-event.event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 3px solid var(--cinema-color) !important; }
         .fc-daygrid-event.event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 3px solid var(--cma-color) !important; }
         .fc-daygrid-event.event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 3px solid var(--viral-color) !important; }
 
-        /* --- MODO LISTA (CONVERTIDA EM BLOCOS INFALÍVEIS) --- */
-        .fc-listYear-view .fc-theme-standard td, .fc-listYear-view .fc-theme-standard th { border: none !important; }
-        .fc-list { border: none !important; background: transparent !important; }
+        /* --- MODO LISTA CONTÍNUA (SCROLL NATURAL) --- */
         
-        /* O Segredo: Destruir o formato de tabela para impedir bugs de layout */
+        /* 1. DESTRÓI ELEMENTOS FEIOS NATIVOS */
+        td.fc-list-event-graphic, 
+        td.fc-list-event-time { 
+            display: none !important; 
+        } 
+        
+        /* 2. REMOVE AS LINHAS CINZENTAS DO CABEÇALHO DO DIA E DA TABELA */
+        .fc-listYear-view .fc-theme-standard th, 
+        .fc-listYear-view .fc-theme-standard td,
+        .fc-listYear-view .fc-list-day-cushion { 
+            border: none !important; 
+            background: transparent !important;
+        }
+        .fc-list-table { border-top: none !important; }
+        
+        .fc-list { border: none !important; background: transparent !important; }
         .fc-list-table, .fc-list-table tbody, .fc-list-table tr, .fc-list-table td { 
             display: block !important; 
             width: 100% !important; 
@@ -101,12 +112,9 @@
             background: transparent !important; 
         } 
         
-        /* Oculta os pontos nativos */
-        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
-        
         .fc-list-event { margin-bottom: 15px !important; }
         .fc-list-event-title { padding: 0 !important; }
-        .fc-list-day-cushion { background: transparent !important; padding: 0 !important; }
+        .fc-list-day-cushion { padding: 0 !important; }
 
         /* Título do Dia */
         .custom-day-header { display: flex; flex-direction: column; gap: 2px; padding: 25px 0 10px 0; text-align: left; }
@@ -137,16 +145,75 @@
         .list-title { font-size: 1.1em; line-height: 1.3; font-weight: bold; margin-bottom: 5px;}
         .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-        /* --- LAYOUT CINEMA (MOSAICO) --- */
-        .cinema-mosaico { display: flex; gap: 20px; padding: 15px 20px; overflow-x: auto; scroll-behavior: smooth; width: 100%; }
-        .movie-item { width: 130px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; }
-        .movie-poster { width: 130px; height: 190px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
-        .movie-item:hover .movie-poster { transform: scale(1.03); }
-        .movie-info-name { font-size: 0.8rem; font-weight: 800; color: var(--text-color); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-transform: uppercase; min-height: 2rem; }
-        .movie-info-time { font-size: 0.75rem; color: #666; font-weight: 600; background: rgba(0,0,0,0.04); padding: 4px 8px; border-radius: 4px; display: inline-block; align-self: flex-start; }
-        [data-theme="dark"] .movie-info-time { background: rgba(255,255,255,0.1); color: #bbb; }
-        .cinema-mosaico::-webkit-scrollbar { height: 4px; }
-        .cinema-mosaico::-webkit-scrollbar-thumb { background: #ddd; border-radius: 10px; }
+        /* --- LAYOUT CINEMA (MOSAICO HORIZONTAL) --- */
+        .cinema-main-card {
+            cursor: default !important; /* Desativa cursor pointer no cartão principal */
+        }
+        .cinema-main-card:hover {
+            transform: none !important; /* Desativa o "pulo" no hover */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important;
+        }
+        
+        .cinema-mosaico { display: flex; gap: 15px; padding: 15px 20px; overflow-x: auto; scroll-behavior: smooth; width: 100%; align-items: stretch; }
+        
+        /* Filme individual (Cartaz na esquerda, texto na direita) */
+        .movie-item { 
+            width: 250px; 
+            flex-shrink: 0; 
+            display: flex; 
+            flex-direction: row; 
+            gap: 12px; 
+            background: var(--main-bg);
+            padding: 8px;
+            border-radius: 8px;
+            text-decoration: none; /* Porque agora é um link <a> */
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        [data-theme="dark"] .movie-item { background: rgba(255,255,255,0.05); }
+        
+        .movie-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .movie-poster { 
+            width: 70px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+        }
+        
+        .movie-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+        }
+        
+        .movie-info-name { 
+            font-size: 0.8rem; 
+            font-weight: 800; 
+            color: var(--text-color); 
+            line-height: 1.3; 
+            display: -webkit-box; 
+            -webkit-line-clamp: 3; 
+            -webkit-box-orient: vertical; 
+            overflow: hidden; 
+            text-transform: uppercase; 
+        }
+        
+        .movie-info-time { 
+            font-size: 0.75rem; 
+            color: #666; 
+            font-weight: 600; 
+        }
+
+        .cinema-mosaico::-webkit-scrollbar { height: 6px; }
+        .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 10px; }
+        [data-theme="dark"] .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); }
     </style>
 </head>
 <body>
@@ -208,22 +275,26 @@
           eventContent: function(arg) {
             let ep = arg.event.extendedProps;
 
-            // LÓGICA CINEMA MOSAICO
+            // --- LÓGICA CINEMA MOSAICO HORIZONTAL ---
             if (ep.is_glicinias && arg.view.type === 'listYear') {
                 let moviesHtml = ep.movies.map(m => `
-                    <div class="movie-item">
+                    <a href="${m.url}" target="_blank" class="movie-item">
                         <img src="${m.img}" class="movie-poster">
-                        <div class="movie-info-name">${m.titulo}</div>
-                        <div class="movie-info-time">${m.horas}</div>
-                    </div>`).join('');
+                        <div class="movie-details">
+                            <div class="movie-info-name">${m.titulo}</div>
+                            <div class="movie-info-time">${m.horas}</div>
+                        </div>
+                    </a>`).join('');
+                
+                // Nota: removido o onclick do main card e adicionada a classe 'cinema-main-card'
                 return { html: `
-                    <div class="list-card" style="border-left-color: var(--cinema-color) !important; flex-direction: column; height: auto;" onclick="window.open('${arg.event.url}', '_blank')">
+                    <div class="list-card cinema-main-card" style="border-left-color: var(--cinema-color) !important; flex-direction: column; height: auto;">
                         <div style="padding: 15px 20px 0 20px; font-weight: 800; font-size: 0.75rem; color: var(--cinema-color); text-transform: uppercase;">📽️ Cinemas NOS Glicínias Plaza</div>
                         <div class="cinema-mosaico">${moviesHtml}</div>
                     </div>` };
             }
 
-            // LÓGICA EVENTOS NORMAIS
+            // --- LÓGICA EVENTOS NORMAIS ---
             let timeText = ep.display_time ? ep.display_time.split(' / ').join('<br>') : 'Todo o dia';
             let sourceColor = ep.source === 'teatro' ? 'var(--teatro-color)' : ep.source === 'cinema' ? 'var(--cinema-color)' : ep.source === 'cma' ? 'var(--cma-color)' : 'var(--viral-color)';
 
@@ -265,8 +336,10 @@
         
         function navigateListMonth(direction) {
             let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
+            if (!dayHeaders.length) return;
+            
             let currentMonthStr = new Date(titleEl.innerText.split(' de ').reverse().join('-')).toISOString().substring(0,7); 
-            // Abordagem robusta baseada no mês atual do ecrã
+            
             let targetHeader = (direction === 1) 
                 ? dayHeaders.find(el => el.getAttribute('data-date').substring(0, 7) > currentMonthStr)
                 : [...dayHeaders].reverse().find(el => el.getAttribute('data-date').substring(0, 7) < currentMonthStr);
