@@ -187,31 +187,31 @@ def get_cinema_data():
             
             for p in block.select('.movie-card__info p'):
                 text_content = p.get_text(separator="\n").strip()
-                if 'sess' not in text_content.lower(): continue
+                # Verifica se a palavra sessões está no bloco
+                if not re.search(r'(?i)sess[õo]e?s', text_content): continue
                 
                 current_days = set(range(7)) 
                 for line in text_content.split('\n'):
                     s_raw = line.strip()
                     s_lower = s_raw.lower()
-                    if not s_raw: continue
                     
-                    # Se detetar qualquer indicação de hora (ex: 13h, 13h40, 13:40)
+                    # Correção das global flags: O (?i) tem de estar no início do padrão
+                    if not s_raw or re.match(r'(?i)^sess[õo]e?s:$', s_lower): continue
+                    
                     if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
                         
                         times_str = s_raw
-                        # Limpa dias colados na mesma linha ex: "Sáb e Dom: 16h" -> Fica só com "16h"
                         if ':' in s_raw:
                             prefix, suffix = s_raw.split(':', 1)
-                            # Confirma que os ":" não fazem parte da hora em si (ex: 16:00)
                             if any(d in prefix.lower() for d in ['2ª', '2a', '3ª', '3a', '4ª', '4a', '5ª', '5a', '6ª', '6a', 'sáb', 'sab', 'dom', 'dia', 'sess']):
                                 times_str = suffix.strip()
                                 
                         formatted_times = clean_times_and_tags(times_str)
                         
-                        # Limpeza final cirúrgica no início da string
-                        formatted_times = re.sub(r'^(?i)sess[õo]e?s\s*:?\s*', '', formatted_times).lstrip(' :,-')
+                        # Correção das global flags: (?i) colocado no início absoluto do regex
+                        formatted_times = re.sub(r'(?i)^sess[õo]e?s\s*:?\s*', '', formatted_times).lstrip(' :,-')
 
                         if not formatted_times: continue
                         
