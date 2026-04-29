@@ -88,7 +88,7 @@
 
         /* --- MODO LISTA CONTÍNUA (SCROLL NATURAL) --- */
         
-        /* MATA AS LINHAS CINZENTAS, PONTOS E ALL-DAY DE VEZ! */
+        /* 1. MATA TUDO O QUE É FORMATAÇÃO NATIVA (Bolas, linhas, all-day) */
         .fc .fc-list-event-graphic, 
         .fc .fc-list-event-time { 
             display: none !important; 
@@ -103,7 +103,7 @@
             border-top: none !important;
             background: transparent !important;
         }
-
+        
         .fc-theme-standard .fc-list { border: none !important; }
         .fc-theme-standard .fc-list-event:hover td { background-color: transparent !important; }
         
@@ -121,20 +121,23 @@
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
         .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
 
-        /* --- CARTÃO PADRÃO --- */
+        /* --- ESTRUTURA BASE DOS CARTÕES (Usada no Teatro e no Cinema) --- */
         .list-card { 
             display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 120px; cursor: pointer;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
             overflow: hidden; border-left-width: 6px !important; border-left-style: solid;
         }
-        .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        
+        .list-card.clickable-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         
         .list-time-box { 
             width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
             font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
             flex-shrink: 0; padding: 10px; text-align: center; line-height: 1.4;
         }
+        [data-theme="dark"] .list-time-box { border-right-color: rgba(255,255,255,0.05); }
 
+        /* --- COMPONENTES DO TEATRO --- */
         .list-img { 
             width: 160px; align-self: stretch; object-fit: cover; flex-shrink: 0; 
             margin-right: 20px; border-radius: 0; 
@@ -145,43 +148,79 @@
         .list-title { font-size: 1.1em; line-height: 1.3; font-weight: bold; margin-bottom: 5px;}
         .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-        /* --- LAYOUT CINEMA (MOSAICO HORIZONTAL) --- */
+        /* --- LAYOUT CINEMA (HORIZONTAL COM CARTAZ E TEXTO LADO A LADO) --- */
         .cinema-main-card {
-            cursor: default !important; /* Desativa cursor pointer no cartão principal */
-            background: transparent !important;
-            box-shadow: none !important;
-            border-left: none !important;
+            cursor: default !important; /* Desativa cursor no cartão base */
         }
-        .cinema-main-card:hover { transform: none !important; box-shadow: none !important; }
         
-        .cinema-mosaico { display: flex; gap: 15px; overflow-x: auto; scroll-behavior: smooth; width: 100%; align-items: stretch; padding-bottom: 10px; }
+        /* O Mosaico encosta no list-time-box e preenche o resto */
+        .cinema-mosaico { 
+            display: flex; 
+            flex: 1;
+            overflow-x: auto; 
+            scroll-behavior: smooth; 
+        }
         
+        /* O filme tem a imagem à esquerda (a ocupar os 100% verticais) e texto à direita */
         .movie-item { 
-            width: 260px; 
-            flex-shrink: 0; 
             display: flex; 
             flex-direction: row; 
-            background: var(--card-bg);
-            border-radius: 8px;
-            text-decoration: none; 
+            align-items: stretch;
+            width: 360px; /* Largura total de cada bloco de filme */
+            flex-shrink: 0; 
+            background: transparent;
+            text-decoration: none !important; /* Retira sublinhado dos links */
             color: inherit;
-            transition: transform 0.2s, box-shadow 0.2s;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-            border-left: 4px solid var(--cinema-color);
+            border-right: 1px solid rgba(0,0,0,0.05);
+            transition: background 0.2s;
+        }
+        [data-theme="dark"] .movie-item { border-right-color: rgba(255,255,255,0.05); }
+        
+        /* Sem efeitos de levitar no cinema, apenas um fundo subtil para saber que é clicável */
+        .movie-item:hover { 
+            background: rgba(0,0,0,0.02);
+            text-decoration: none !important; 
+        }
+        [data-theme="dark"] .movie-item:hover { background: rgba(255,255,255,0.02); }
+        
+        .movie-poster { 
+            width: 160px; /* Exata mesma largura do Teatro */
+            align-self: stretch; /* Estica a 100% da altura */
+            object-fit: cover; 
+            flex-shrink: 0;
+            border-radius: 0;
         }
         
-        .movie-item:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        .movie-details { 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            padding: 15px 20px; 
+            gap: 8px; 
+        }
         
-        .movie-poster { width: 90px; align-self: stretch; object-fit: cover; flex-shrink: 0;}
+        .movie-info-name { 
+            font-size: 0.95rem; 
+            font-weight: 800; 
+            color: var(--text-color); 
+            line-height: 1.25; 
+            display: -webkit-box; 
+            -webkit-line-clamp: 3; 
+            -webkit-box-orient: vertical; 
+            overflow: hidden; 
+            text-transform: uppercase; 
+        }
         
-        .movie-details { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 10px 12px; gap: 6px; }
-        .movie-info-name { font-size: 0.85rem; font-weight: 800; color: var(--text-color); line-height: 1.2; text-transform: uppercase; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        .movie-info-time { font-size: 0.75rem; color: #666; font-weight: 600; }
+        .movie-info-time { 
+            font-size: 0.85rem; 
+            color: #666; 
+            font-weight: 600; 
+        }
 
         .cinema-mosaico::-webkit-scrollbar { height: 6px; }
-        .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 10px; }
-        [data-theme="dark"] .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); }
+        .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+        [data-theme="dark"] .cinema-mosaico::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); }
     </style>
 </head>
 <body>
@@ -226,9 +265,6 @@
         var titleEl = document.getElementById('current-month-title');
         window.allEvents = [];
         let currentViewName = 'listYear';
-        
-        // Variavel inteligente para guardar o mês onde estamos a navegar na lista
-        let currentListDate = new Date();
 
         window.calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
           initialView: 'listYear', locale: 'pt', firstDay: 1, stickyHeaderDates: false, height: 'auto',
@@ -246,7 +282,7 @@
           eventContent: function(arg) {
             let ep = arg.event.extendedProps;
 
-            // --- LÓGICA CINEMA MOSAICO HORIZONTAL ---
+            // --- LÓGICA CINEMA ---
             if (ep.is_glicinias && arg.view.type === 'listYear') {
                 let moviesHtml = ep.movies.map(m => `
                     <a href="${m.url}" target="_blank" class="movie-item">
@@ -257,25 +293,29 @@
                         </div>
                     </a>`).join('');
                 
-                // Retirada a padding e o nome "Cinemas Glicinias" para o cartão ficar limpo
+                // Sem texto "Cinema Glicinias", e mosaico alinhado depois do time-box vazio
                 return { html: `
-                    <div class="list-card cinema-main-card" style="flex-direction: column; height: auto;">
+                    <div class="list-card cinema-main-card" style="border-left-color: var(--cinema-color) !important;">
+                        <div class="list-time-box"></div>
                         <div class="cinema-mosaico">${moviesHtml}</div>
                     </div>` };
             }
 
-            // --- LÓGICA EVENTOS NORMAIS ---
+            // --- LÓGICA EVENTOS NORMAIS (Teatro, CMA, etc) ---
             let timeText = ep.display_time ? ep.display_time.split(' / ').join('<br>') : 'Todo o dia';
             let sourceColor = ep.source === 'teatro' ? 'var(--teatro-color)' : ep.source === 'cinema' ? 'var(--cinema-color)' : ep.source === 'cma' ? 'var(--cma-color)' : 'var(--viral-color)';
 
             if (arg.view.type === 'listYear') {
+                // O Umbrella Name volta a ficar verde se existir!
+                let umbrellaHtml = ep.umbrella ? `<b style="color: var(--sidebar-bg); display: block; font-size: 0.9em; margin-bottom: 3px; text-transform: uppercase;">${ep.umbrella}</b>` : '';
+                
                 return { html: `
-                    <div class="list-card" style="border-left-color: ${sourceColor} !important" onclick="window.open('${arg.event.url}', '_blank')">
+                    <div class="list-card clickable-card" style="border-left-color: ${sourceColor} !important" onclick="window.open('${arg.event.url}', '_blank')">
                         <div class="list-time-box">${timeText}</div>
                         ${ep.image ? `<img src="${ep.image}" class="list-img">` : ''}
                         <div class="list-info">
                             <div class="list-meta"><span>${ep.category || 'Geral'}</span></div>
-                            <div class="list-title">${arg.event.title}</div>
+                            <div class="list-title">${umbrellaHtml}${arg.event.title}</div>
                             <div class="list-desc">${ep.description || ''}</div>
                         </div>
                     </div>` };
@@ -286,51 +326,43 @@
           eventClassNames: (arg) => ['event-' + arg.event.extendedProps.source]
         });
 
-        // Atualizar o título do mês com base no Scroll
         function updateTitleOnScroll() {
             if(currentViewName !== 'listYear') return;
             let dayHeaders = document.querySelectorAll('.fc-list-day');
             let containerTop = scrollContainer.getBoundingClientRect().top;
-            let currentEl = null;
-            
+            let currentEl = dayHeaders[0];
             for (let el of dayHeaders) {
                 if (el.getBoundingClientRect().top <= containerTop + 100) currentEl = el;
                 else break;
             }
-            if(!currentEl && dayHeaders.length > 0) currentEl = dayHeaders[0];
-
             if(currentEl && currentEl.getAttribute('data-date')) {
-                currentListDate = new Date(currentEl.getAttribute('data-date'));
-                titleEl.innerText = currentListDate.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
+                titleEl.innerText = new Date(currentEl.getAttribute('data-date')).toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
             }
         }
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
-        // Navegação Mês a Mês na Lista
+        document.getElementById('btn-prev').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(-1) : calendar.prev());
+        document.getElementById('btn-next').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(1) : calendar.next());
+        
         function navigateListMonth(direction) {
             let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
             if (!dayHeaders.length) return;
             
-            // Avança ou recua um mês à variavel inteligente
-            currentListDate.setMonth(currentListDate.getMonth() + direction);
-            let targetMonthStr = currentListDate.getFullYear() + '-' + String(currentListDate.getMonth() + 1).padStart(2, '0');
+            let currentMonthStr = new Date(titleEl.innerText.split(' de ').reverse().join('-')).toISOString().substring(0,7); 
             
-            let targetHeader = dayHeaders.find(el => el.getAttribute('data-date').startsWith(targetMonthStr));
-            
-            // Se não houver dia 1 do mês, procura o mais próximo
-            if (!targetHeader) {
-                 if (direction === 1) targetHeader = dayHeaders.find(el => el.getAttribute('data-date') > targetMonthStr);
-                 else targetHeader = [...dayHeaders].reverse().find(el => el.getAttribute('data-date') < targetMonthStr);
-            }
+            let targetHeader = (direction === 1) 
+                ? dayHeaders.find(el => el.getAttribute('data-date').substring(0, 7) > currentMonthStr)
+                : [...dayHeaders].reverse().find(el => el.getAttribute('data-date').substring(0, 7) < currentMonthStr);
             
             if (targetHeader) {
+                if (direction === -1) {
+                    let prevMonthStr = targetHeader.getAttribute('data-date').substring(0, 7);
+                    targetHeader = dayHeaders.find(el => el.getAttribute('data-date').startsWith(prevMonthStr));
+                }
                 targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
 
-        document.getElementById('btn-prev').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(-1) : calendar.prev());
-        document.getElementById('btn-next').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(1) : calendar.next());
-        
         document.getElementById('btn-today').addEventListener('click', () => {
             if (currentViewName === 'listYear') {
                 let target = Array.from(document.querySelectorAll('.fc-list-day')).find(el => el.getAttribute('data-date') >= new Date().toISOString().split('T')[0]);
