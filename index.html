@@ -102,7 +102,6 @@
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 2px; }
         .custom-date { font-size: 1.5rem; font-weight: 700; color: var(--text-color); letter-spacing: -1px; text-transform: uppercase;}
 
-        /* A SOLUÇÃO DE ALTURA E LARGURA TOTAL PARA GARANTIR CONSISTÊNCIA */
         .daily-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -226,40 +225,62 @@
             let ep = arg.event.extendedProps;
             if (!ep.is_grouped) return; 
 
-            // Passo 1: Ordenação Cronológica Estrita pelo horário!
+            // Passo 1: Ordenação Cronológica Estrita pelo horário
             let sortedEvents = [...ep.daily_events].sort((a, b) => {
                 let getTime = (ev) => {
                     let t = ev.extendedProps.display_time || "";
                     let m = t.match(/\d{2}:\d{2}/);
-                    return m ? m[0] : "24:00"; // Envia eventos "Todo o dia" para o fim
+                    return m ? m[0] : "24:00"; 
                 };
                 return getTime(a).localeCompare(getTime(b));
             });
 
-            // Passo 2: O Motor Lógico que preenche as linhas sempre a 100% da largura
+            // Passo 2: O Motor Híbrido (Cronológico + Layout Editorial)
             let finalRender = [];
-            let i = 0;
-            let n = sortedEvents.length;
-            
-            while (i < n) {
-                let rem = n - i;
-                let chunk = 0;
-                let span = 12;
-                
-                // Decide quantos eventos vão preencher esta linha de 12 colunas
-                if (rem >= 4) { chunk = 4; span = 3; }
-                else if (rem === 3) { chunk = 3; span = 4; }
-                else if (rem === 2) { chunk = 2; span = 6; }
-                else if (rem === 1) { chunk = 1; span = 12; }
+            let eventsPool = [...sortedEvents];
 
-                for (let j = 0; j < chunk; j++) {
-                    let ev = sortedEvents[i + j];
-                    ev.gridClass = `span-${span} horizontal`;
-                    // Se o evento ficou sozinho na linha, aplica a classe que aumenta a imagem
-                    if (span === 12) ev.gridClass += ' single-event';
-                    finalRender.push(ev);
+            while (eventsPool.length > 0) {
+                let rem = eventsPool.length;
+
+                if (rem >= 5) {
+                    // Agrupa 5 eventos no layout "1 Destaque Gigante + 4 Pequenos" (2x2)
+                    let chunk = eventsPool.splice(0, 5);
+                    
+                    // Procura se há teatro/música no grupo para lhe dar o destaque, senão usa o mais cedo
+                    let priorityIdx = chunk.findIndex(e => e.source !== 'cinema');
+                    let featuredEvent;
+                    
+                    if (priorityIdx !== -1) {
+                        featuredEvent = chunk.splice(priorityIdx, 1)[0];
+                    } else {
+                        featuredEvent = chunk.splice(0, 1)[0];
+                    }
+
+                    featuredEvent.gridClass = 'span-6 row-span-2 horizontal featured';
+                    finalRender.push(featuredEvent);
+
+                    chunk.forEach(e => {
+                        e.gridClass = 'span-3 horizontal';
+                        finalRender.push(e);
+                    });
                 }
-                i += chunk;
+                else if (rem === 4) {
+                    let chunk = eventsPool.splice(0, 4);
+                    chunk.forEach(e => { e.gridClass = 'span-3 horizontal'; finalRender.push(e); });
+                }
+                else if (rem === 3) {
+                    let chunk = eventsPool.splice(0, 3);
+                    chunk.forEach(e => { e.gridClass = 'span-4 horizontal'; finalRender.push(e); });
+                }
+                else if (rem === 2) {
+                    let chunk = eventsPool.splice(0, 2);
+                    chunk.forEach(e => { e.gridClass = 'span-6 horizontal'; finalRender.push(e); });
+                }
+                else if (rem === 1) {
+                    let chunk = eventsPool.splice(0, 1);
+                    chunk[0].gridClass = 'span-12 horizontal single-event';
+                    finalRender.push(chunk[0]);
+                }
             }
 
             let html = '<div class="daily-grid">';
