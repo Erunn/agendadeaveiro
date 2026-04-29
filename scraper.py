@@ -45,11 +45,16 @@ def parse_pt_date(date_str, default_date=None):
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def clean_times_and_tags(text):
-    """Converte '16h' ou '16h30' em '16:00' e '16:30', mantendo o resto do texto intacto (como [VP])."""
+    """Converte '16h' ou '16h30' em '16:00' sem estourar se encontrar formatos esquisitos."""
     def replacer(m):
-        h = int(m.group(1) or m.group(3))
-        m_min = int(m.group(2) or m.group(4) or 0)
-        return f"{h:02d}:{m_min:02d}"
+        try:
+            h_str = m.group(1) or m.group(3)
+            m_str = m.group(2) or m.group(4)
+            h = int(h_str)
+            m_min = int(m_str) if m_str else 0
+            return f"{h:02d}:{m_min:02d}"
+        except Exception:
+            return m.group(0) # Se houver erro, devolve o texto original intacto
     return re.sub(r'(?<!\d)(\d{1,2})[hH](\d{2})?|(?<!\d)(\d{1,2}):(\d{2})', replacer, text)
 
 def parse_days_from_str(text):
@@ -178,27 +183,30 @@ def get_cinema_data():
             
             for p in block.select('.movie-card__info p'):
                 text_content = p.get_text(separator="\n").strip()
-                if 'Sessões:' not in text_content: continue
+                # Apanha "Sessão" ou "Sessões"
+                if not re.search(r'(?i)sess[õo]e?s', text_content): continue
                 
                 current_days = set(range(7)) 
                 for line in text_content.split('\n'):
                     s_raw = line.strip()
                     s_lower = s_raw.lower()
-                    if not s_raw or s_lower == 'sessões:': continue
+                    if not s_raw or re.match(r'^(?i)sess[õo]e?s:$', s_lower): continue
                     
                     if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
                         
-                        if ':' in s_raw and any(d in s_lower.split(':')[0] for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
-                            times_str = s_raw.split(':', 1)[1].strip()
-                        else:
-                            times_str = s_raw
-                            
+                        times_str = s_raw
+                        if ':' in s_raw:
+                            prefix = s_lower.split(':')[0]
+                            if any(d in prefix for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
+                                parts = s_raw.split(':', 1)
+                                if len(parts) > 1:
+                                    times_str = parts[1].strip()
+                                    
                         formatted_times = clean_times_and_tags(times_str)
-                        
-                        # NOVO: Limpa qualquer pontuação solta ou espaços no início da string
-                        formatted_times = re.sub(r'^(?i)sessões:\s*', '', formatted_times).lstrip(' :,-')
+                        # Remove palavras parasitas no início sem comer detalhes
+                        formatted_times = re.sub(r'^(?i)sess[õo]e?s:\s*', '', formatted_times).lstrip(' :,-')
 
                         if not formatted_times: continue
                         
@@ -230,7 +238,8 @@ def get_cinema_data():
                     })
         return final_cinema
     except Exception as e:
-        print(f"Erro Cinema: {e}"); return []
+        print(f"Erro Cinema: {e}")
+        return []
 
 if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data()
