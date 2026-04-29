@@ -39,7 +39,15 @@
         #calendar { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); }
         .fc-toolbar { margin-bottom: 20px !important; display: flex; justify-content: flex-start !important; gap: 15px; }
 
-        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; transition: transform 0.2s; opacity: 1 !important; overflow: hidden; }
+        .fc-event { 
+            border: none !important; 
+            border-radius: 6px !important; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+            opacity: 1 !important; 
+            max-height: 100px !important; /* CORREÇÃO: Impede o evento de ficar gigante */
+            overflow: hidden; 
+        }
         .fc-event:hover { transform: translateY(-2px); z-index: 5; }
         
         .event-teatro { background: #ffcc80 !important; border-left: 5px solid #e67e22 !important; }
@@ -60,30 +68,28 @@
         .fc-event-title { color: #000 !important; font-size: 0.85em; font-weight: normal !important; padding-left: 8px; }
 
         /* --- MODO LISTA --- */
-        /* CRÍTICO: Garantir que o link de fundo capture o clique */
         .fc-list-event { cursor: pointer !important; position: relative; }
         .fc-list-event-dot, .fc-list-event-time { display: none !important; } 
         
-        /* Esta classe impede que os elementos internos "roubem" o clique */
+        /* CORREÇÃO CLIQUE: Garantimos que o container não bloqueia o clique e tem margem */
         .list-row-container { 
             display: flex; 
             align-items: stretch; 
             width: 100%; 
             min-height: 110px; 
+            margin-bottom: 8px; /* SEPARAÇÃO entre eventos do mesmo dia */
             pointer-events: none; 
         }
         
         .list-time-box { width: 90px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #000; border-right: 1px solid rgba(0,0,0,0.1); }
         .list-img { width: 160px; height: 100px; object-fit: cover; border-radius: 8px; margin: auto 20px; }
-        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; color: #000; padding-right: 10px; }
+        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; color: #000; padding-right: 10px; font-weight: normal; }
 
-        .fc-list-event.event-teatro { background-color: #ffcc80 !important; }
-        .fc-list-event.event-cinema { background-color: #90caf9 !important; }
-        .fc-list-event.event-cma    { background-color: #a5d6a7 !important; }
-        .fc-list-event.event-viral  { background-color: #ce93d8 !important; }
+        /* Estilização para o <b> dentro da lista */
+        .list-info b { display: block; margin-bottom: 4px; }
 
-        .fc-list-event-title { padding: 0 !important; border: none !important; }
-        .fc-list-table { border-collapse: separate; border-spacing: 0 8px; }
+        .fc-list-event-title { padding: 4px !important; border: none !important; }
+        .fc-list-table { border-collapse: separate; border-spacing: 0 12px; } /* Espaçamento entre dias */
     </style>
 </head>
 <body>
@@ -156,7 +162,7 @@
           },
           eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
           
-          // CRÍTICO: Forçar o clique no modo Lista
+          // CRÍTICO: Forçamos o clique a abrir o URL
           eventClick: function(info) { 
             if(info.event.url) {
                 window.open(info.event.url, "_blank"); 
