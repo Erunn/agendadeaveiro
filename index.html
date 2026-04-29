@@ -46,10 +46,11 @@
         /* --- LAYOUT PRINCIPAL --- */
         .main-wrapper { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         
-        /* --- HEADER FIXO --- */
+        /* --- HEADER (Estático e Organizado) --- */
         .custom-header { 
             display: flex; justify-content: space-between; align-items: center; 
             padding: 20px 30px; background: var(--main-bg); z-index: 100;
+            flex-shrink: 0; /* Impede o header de ser esmagado */
         }
         
         .header-left, .header-right { display: flex; align-items: center; gap: 10px; width: 250px; }
@@ -81,13 +82,16 @@
         
         #calendar { background: transparent; padding: 0; border: none; }
 
-        /* --- MODO CALENDÁRIO (GRID) --- */
-        /* Devolvemos as linhas nativas apenas à grelha do calendário */
-        .fc-scrollgrid { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color) !important; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: 1px solid var(--border-color) !important; }
-        .fc-daygrid-day-frame { min-height: 100px !important; padding: 5px; }
+        /* CORREÇÕES GLOBAIS DE BORDAS */
+        .fc-theme-standard th, .fc-theme-standard td, .fc-theme-standard .fc-list { border: none !important; background: transparent !important; }
 
-        /* Eventos no Calendário */
+        /* --- MODO CALENDÁRIO (GRID) --- */
+        .fc-dayGridMonth-view { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 10px; }
+        .fc-dayGridMonth-view .fc-theme-standard td, .fc-dayGridMonth-view .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
+        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
+        /* Removido o min-height gigante para restaurar a proporção correta */
+        .fc-daygrid-day-frame { padding: 5px; }
+
         .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 0 !important; }
         .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
         .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
@@ -98,28 +102,31 @@
         .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: normal !important; flex-shrink: 0; max-width: 45%; }
         .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
 
-        /* --- MODO LISTA CONTÍNUA (MINIMALISTA) --- */
-        .fc-list { border: none !important; background: transparent !important; }
-        .fc-list-table, .fc-list-table tbody, .fc-list-table tr, .fc-list-table th, .fc-list-table td { border: none !important; background: transparent !important; }
+        /* --- MODO LISTA CONTÍNUA --- */
+        .fc-list-event-graphic, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
+        .fc-list-table { border-collapse: separate !important; border-spacing: 0 !important; } 
+        .fc-list-event td { padding: 0 0 15px 0 !important; } 
         
-        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
-        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; }
-        
-        .fc-list-event td { padding: 0 0 15px 0 !important; } /* Margem entre cartões */
-        .fc-list-day-cushion { background: transparent !important; padding: 0 !important; border: none !important; }
+        /* CORREÇÃO DA SOBREPOSIÇÃO DO DIA (Oculta cartões que passam por baixo) */
+        .fc-list-day-cushion { 
+            background: var(--main-bg) !important; /* Fundo sólido! */
+            padding: 0 !important; 
+            border: none !important; 
+            z-index: 10; /* Garante que fica por cima dos cartões */
+        }
 
-        /* Cabeçalho do Dia Limpo e Moderno */
+        /* CABEÇALHO DO DIA - Alinhado à Esquerda */
         .custom-day-header {
             display: flex;
             flex-direction: column;
             gap: 2px;
-            padding: 30px 0 15px 0;
+            padding: 25px 0 15px 0;
+            text-align: left;
             cursor: default;
         }
         .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
         .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
 
-        /* Cartão Branco Moderno */
         .list-card { 
             display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 120px; cursor: pointer;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
@@ -127,7 +134,12 @@
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         
-        .list-time-box { width: 100px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; padding: 0 10px; text-align: center; }
+        /* CORREÇÃO DAS HORAS: Stack vertical centrado */
+        .list-time-box { 
+            width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
+            flex-shrink: 0; padding: 0 10px; text-align: center; line-height: 1.4;
+        }
         [data-theme="dark"] .list-time-box { border-right-color: rgba(255,255,255,0.05); }
         .list-img { width: 160px; height: 120px; object-fit: cover; flex-shrink: 0; margin: auto 20px auto 0; border-radius: 0 8px 8px 0; }
         .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; color: var(--text-color); }
@@ -191,6 +203,7 @@
             return dateObj.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
         };
 
+        // Scroll Spy Inteligente
         function updateTitleOnScroll() {
             if(currentViewName !== 'listYear') return;
             
@@ -201,7 +214,7 @@
             let currentEl = dayHeaders[0];
             
             for (let el of dayHeaders) {
-                if (el.getBoundingClientRect().top <= containerTop + 50) {
+                if (el.getBoundingClientRect().top <= containerTop + 60) {
                     currentEl = el;
                 } else { break; }
             }
@@ -215,6 +228,7 @@
 
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
+        // Lógica de Salto de Mês Refinada
         function navigateListMonth(directionOffset) {
             let d = new Date(currentDateInView);
             d.setMonth(d.getMonth() + directionOffset);
@@ -227,11 +241,11 @@
                 targetEl = elements.find(el => el.getAttribute('data-date') >= targetYYYYMM + '-01');
             } else { 
                 let reversed = [...elements].reverse();
-                targetEl = reversed.find(el => el.getAttribute('data-date') < targetYYYYMM + '-32');
+                targetEl = reversed.find(el => el.getAttribute('data-date') < targetYYYYMM + '-32'); // Encontra o último dia do mês anterior
             }
 
             if (targetEl) {
-                let y = targetEl.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top - 20;
+                let y = targetEl.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top;
                 scrollContainer.scrollTo({top: y, behavior: 'smooth'});
             }
         }
@@ -242,7 +256,8 @@
           firstDay: 1, 
           dayMaxEvents: 4,
           fixedWeekCount: false,       
-          showNonCurrentDates: false,  
+          showNonCurrentDates: false,
+          aspectRatio: 1.5, // Ajuda a manter a grelha do calendário mais elegante
           
           datesSet: function(info) {
               if (currentViewName === 'dayGridMonth') {
@@ -252,7 +267,6 @@
               }
           },
 
-          // ESTE É O HOOK QUE REFAZ O CABEÇALHO DO DIA NA LISTA!
           dayHeaderContent: function(arg) {
               if (arg.view.type === 'listYear') {
                   let dateObj = arg.date;
@@ -273,7 +287,8 @@
             let timeText = 'Todo o dia'; 
             
             if (ep.display_time && ep.display_time !== 'Todo o dia') {
-                timeText = ep.display_time;
+                // CORREÇÃO MÚLTIPLAS HORAS: Substitui " / " por uma quebra de linha <br>
+                timeText = ep.display_time.split(' / ').join('<br>');
             } else if (arg.event.start && (arg.event.start.getHours() !== 0 || arg.event.start.getMinutes() !== 0)) {
                 timeText = arg.event.start.getHours().toString().padStart(2, '0') + ':' + 
                            arg.event.start.getMinutes().toString().padStart(2, '0');
@@ -328,17 +343,20 @@
         });
         
         document.getElementById('btn-today').addEventListener('click', () => {
-            window.calendar.today();
             if (currentViewName === 'listYear') {
-                setTimeout(() => {
-                    let todayStr = new Date().toISOString().split('T')[0];
-                    let elements = Array.from(document.querySelectorAll('.fc-list-day'));
-                    let target = elements.find(el => el.getAttribute('data-date') >= todayStr) || elements[elements.length-1];
-                    if (target) {
-                        let y = target.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top - 20;
-                        scrollContainer.scrollTo({top: y, behavior: 'smooth'});
-                    }
-                }, 100);
+                let todayStr = new Date().toISOString().split('T')[0];
+                let elements = Array.from(document.querySelectorAll('.fc-list-day'));
+                let target = elements.find(el => el.getAttribute('data-date') >= todayStr);
+                
+                // Se hoje for no passado (não há eventos em frente), vai para o último evento da lista
+                if (!target && elements.length > 0) target = elements[elements.length-1];
+                
+                if (target) {
+                    let y = target.getBoundingClientRect().top + scrollContainer.scrollTop - scrollContainer.getBoundingClientRect().top;
+                    scrollContainer.scrollTo({top: y, behavior: 'smooth'});
+                }
+            } else {
+                window.calendar.today();
             }
         });
 
@@ -368,10 +386,19 @@
                 let maxDateObj = new Date(maxDateStr.split('T')[0]);
                 maxDateObj.setDate(maxDateObj.getDate() + 1);
                 
+                // Ajusta o ValidRange para garantir que inclui o dia de "Hoje" caso os eventos sejam futuros
+                let todayISO = new Date().toISOString().split('T')[0];
+                let startRange = minDateStr.split('T')[0];
+                if (todayISO < startRange) {
+                    startRange = todayISO; 
+                }
+                
                 window.calendar.setOption('validRange', { 
-                    start: minDateStr.split('T')[0],
+                    start: startRange,
                     end: maxDateObj.toISOString().split('T')[0]
                 });
+                
+                // Rola para a data mais antiga logo no início
                 window.calendar.gotoDate(minDateStr.split('T')[0]);
                 
                 setTimeout(updateTitleOnScroll, 100);
