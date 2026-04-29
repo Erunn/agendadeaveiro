@@ -32,10 +32,11 @@ def parse_pt_date(date_str, default_date=None):
                 break
 
         if not month:
-            return default_date or datetime.now().strftime('%Y-%m-%d')
+            if default_date: return default_date
+            return datetime.now().strftime('%Y-%m-%d')
 
         year = datetime.now().year
-        # Procura se o ano com 4 dígitos foi explicitamente escrito
+        # Procura se o ano com 4 dígitos foi explicitamente escrito no HTML
         for d in days:
             if len(d) == 4:
                 year = int(d)
@@ -95,9 +96,9 @@ def get_data():
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
 
-                # Data "Base" do listamento
+                # Data base encontrada na listagem principal
                 listing_date = parse_pt_date(date_el.text.strip())
-                instances = []
+                daily_schedules = {}
                 
                 try:
                     time.sleep(0.3) 
@@ -107,55 +108,41 @@ def get_data():
                     horarios_elements = inner_soup.select('.horarios_txt')
                     if horarios_elements:
                         for hp in horarios_elements:
-                            text_content = hp.get_text(separator=" | ")
-                            lines = text_content.split(' | ')
+                            text_content = hp.get_text(separator="\n").lower()
+                            lines = text_content.split('\n')
                             
-                            # A 1ª linha costuma ser a data (ex: Segunda-feira, 18 Maio 2026)
+                            # A data costuma estar na 1ª linha. Se falhar, usa a data da listagem
                             day_date = parse_pt_date(lines[0], default_date=listing_date)
                             
-                            all_times = []
-                            for line in lines:
-                                matches = re.findall(r'(\d{1,2})[h:](\d{2})', line.lower())
-                                for m in matches:
-                                    all_times.append((m[0].zfill(2), m[1]))
+                            # Apanha TODAS as horas mencionadas no bloco
+                            times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
                             
-                            unique_times = []
-                            for h, m in all_times:
-                                t_str = f"{h}:{m}"
-                                if t_str not in unique_times:
-                                    unique_times.append(t_str)
+                            if day_date not in daily_schedules:
+                                daily_schedules[day_date] = set()
                             
-                            # Cria a string visual "18:00 / 21:30"
-                            display_time = " / ".join(unique_times) if unique_times else "Todo o dia"
-                            time_iso = f"T{unique_times[0]}:00" if unique_times else ""
-                            
-                            instances.append({
-                                "date": day_date,
-                                "time_iso": time_iso,
-                                "display_time": display_time
-                            })
+                            # Adiciona as horas ao "saco" desse dia (o set() impede duplicados)
+                            for h, m in times_in_block:
+                                daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
                 except Exception as e:
-                    print(f"Erro ao buscar inner page: {e}")
+                    print(f"Erro ao buscar detalhes do evento: {e}")
 
-                # Se a página interior não tiver horários bem definidos, usamos a data base
-                if not instances:
-                    instances.append({
-                        "date": listing_date,
-                        "time_iso": "",
-                        "display_time": "Todo o dia"
-                    })
-
-                # Desduplicação (remove duplicados do mesmo dia e hora)
-                seen_instances = set()
-                for inst in instances:
-                    inst_key = f"{inst['date']}_{inst['display_time']}"
-                    if inst_key in seen_instances:
-                        continue
-                    seen_instances.add(inst_key)
+                # Se não encontrou horários detalhados, marca como "Todo o dia"
+                if not daily_schedules:
+                    daily_schedules[listing_date] = set()
+                    
+                # Cria um evento final por cada dia distinto agrupando as horas
+                for d_date, times_set in daily_schedules.items():
+                    sorted_times = sorted(list(times_set))
+                    if sorted_times:
+                        display_time = " / ".join(sorted_times) # ex: 15:30 / 21:30
+                        time_iso = f"T{sorted_times[0]}:00"
+                    else:
+                        display_time = "Todo o dia"
+                        time_iso = ""
 
                     all_events.append({
                         "title": final_title,
-                        "start": inst["date"] + inst["time_iso"],
+                        "start": d_date + time_iso,
                         "url": url,
                         "source": "teatro",
                         "color": "#e67e22",
@@ -164,12 +151,12 @@ def get_data():
                             "source": "teatro",
                             "description": resumo_text,
                             "category": categoria_text,
-                            "display_time": inst["display_time"] # <- Passado para o HTML
+                            "display_time": display_time
                         }
                     })
-                print(f"Processado: {event_name} ({len(instances)} sessões)")
+                print(f"Processado: {event_name} ({len(daily_schedules)} dia(s) processados)")
 
-    except Exception as e: print(f"Erro: {e}")
+    except Exception as e: print(f"Erro Geral: {e}")
 
     if all_events:
         with open('events.json', 'w', encoding='utf-8') as f:
