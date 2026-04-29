@@ -26,142 +26,63 @@
         }
 
         * { box-sizing: border-box; }
-
         body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
         
-        /* --- SIDEBAR --- */
         .sidebar { width: 240px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 20px; color: white; z-index: 200; box-shadow: 2px 0 10px rgba(0,0,0,0.1); flex-shrink: 0; }
         .sidebar h1 { font-size: 1.5rem; margin: 0 0 10px 0; letter-spacing: -0.5px; }
         .filter-group { display: flex; flex-direction: column; gap: 10px; }
-        .filter-item { 
-            display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; 
-            padding: 10px 15px; border-radius: 8px; background: rgba(255,255,255,0.1); transition: all 0.2s; border-left: 4px solid transparent;
-        }
+        .filter-item { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; font-weight: 600; padding: 10px 15px; border-radius: 8px; background: rgba(255,255,255,0.1); transition: all 0.2s; border-left: 4px solid transparent; }
         .filter-teatro { border-left-color: var(--teatro-color) !important; }
         .filter-cinema { border-left-color: var(--cinema-color) !important; }
-        .filter-cma    { border-left-color: var(--cma-color) !important; }
-        .filter-viral  { border-left-color: var(--viral-color) !important; }
-        .filter-item:hover { background: rgba(255,255,255,0.2); transform: translateX(3px); }
+        .filter-cma { border-left-color: var(--cma-color) !important; }
+        .filter-viral { border-left-color: var(--viral-color) !important; }
 
-        /* --- LAYOUT PRINCIPAL --- */
         .main-wrapper { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
-        
-        /* --- HEADER FIXO --- */
-        .custom-header { 
-            display: flex; justify-content: space-between; align-items: center; 
-            padding: 20px 30px; background: var(--main-bg); z-index: 100;
-            border-bottom: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
-        }
-        [data-theme="dark"] .custom-header { border-bottom: 1px solid rgba(255,255,255,0.05); }
-        
-        .header-left, .header-right { display: flex; align-items: center; gap: 10px; width: 250px; }
-        .header-right { justify-content: flex-end; }
-        
-        .header-center { display: flex; align-items: center; gap: 15px; justify-content: center; flex: 1; }
+        .custom-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; background: var(--main-bg); z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
         .header-center h2 { margin: 0; font-size: 1.4rem; font-weight: 700; text-transform: lowercase; min-width: 200px; text-align: center; }
         
-        .btn { 
-            background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); 
-            padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px; 
-            transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
-        .btn:hover { background: var(--border-color); }
+        .btn { background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.2s; }
         .btn.active { background: var(--sidebar-bg); color: white; border-color: var(--sidebar-bg); }
-        .btn-icon { padding: 8px 12px; font-size: 16px; }
 
-        .theme-switch-wrapper { margin-left: 20px; display: flex; align-items: center; }
-        .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
-        .theme-switch input { display:none; }
-        .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 34px; }
-        .slider:before { background-color: #fff; bottom: 4px; content: ""; height: 16px; left: 4px; position: absolute; transition: .4s; width: 16px; border-radius: 50%; }
-        input:checked + .slider { background-color: #222; }
-        input:checked + .slider:before { transform: translateX(20px); }
-
-        /* --- ZONA DE CONTEÚDO --- */
         .calendar-section { flex: 1; padding: 25px 30px; overflow-y: auto; scroll-behavior: smooth; }
         .fc-header-toolbar { display: none !important; } 
+        #calendar { background: transparent; border: none; }
+
+        .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
+        .fc-listYear-view .fc-theme-standard td { border: none !important; padding: 0 0 15px 0 !important; background: transparent !important; }
         
-        #calendar { background: transparent; padding: 0; border: none; }
-
-        /* CORREÇÕES GLOBAIS (Esconde nativos sem partir o resto) */
-        .fc-theme-standard th, .fc-theme-standard td, 
-        .fc-theme-standard .fc-list, 
-        .fc-theme-standard .fc-view,
-        .fc-view-harness { border: none !important; background: transparent !important; outline: none !important; }
-
-        /* --- MODO CALENDÁRIO (GRID) --- */
-        .fc-dayGridMonth-view .fc-scrollgrid { background: var(--card-bg) !important; border-radius: 12px; border: 1px solid var(--border-color) !important; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
-        .fc-dayGridMonth-view .fc-theme-standard td, .fc-dayGridMonth-view .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
-        .fc-daygrid-day-frame { padding: 5px; }
-
-        /* CORREÇÃO INFALÍVEL: Restringe as margens apenas aos eventos do calendário.
-           (Se puseres .fc-event ele apaga as linhas da tabela no Modo Lista!) */
-        .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
-        .fc-daygrid-event.event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
-        .fc-daygrid-event.event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
-        .fc-daygrid-event.event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
-        .fc-daygrid-event.event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
-
-        .fc-event-main { display: flex !important; align-items: flex-start; gap: 6px; padding: 4px 6px !important; white-space: normal !important; word-break: break-word; }
-        .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: normal !important; flex-shrink: 0; max-width: 45%; }
-        .fc-event-title { color: var(--text-color) !important; font-size: 0.85em; font-weight: normal !important; line-height: 1.3; }
-
-        /* --- MODO LISTA CONTÍNUA --- */
-        .fc-list-table { background: transparent !important; border: none !important; border-spacing: 0 !important; outline: none !important; } 
-        
-        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
-        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; }
-        
-        .fc-list-event td { padding: 0 0 15px 0 !important; border: none !important; background: transparent !important; } 
-        .fc-list-event:hover td { background: transparent !important; } 
-        
-        .fc-list-day-cushion { background: transparent !important; padding: 0 !important; border: none !important; }
-
-        .custom-day-header {
-            display: flex; flex-direction: column; gap: 2px;
-            padding: 25px 0 10px 0; text-align: left; cursor: default;
-            background: transparent;
-        }
-        .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
-        .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
-
-        /* Cartão Branco Moderno */
         .list-card { 
             display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 120px; cursor: pointer;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
-            overflow: hidden; pointer-events: auto; border-left-width: 6px !important; border-left-style: solid;
+            overflow: hidden; border-left-width: 6px !important; border-left-style: solid;
         }
         .list-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
-        
-        .list-time-box { 
-            width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
-            flex-shrink: 0; padding: 10px; text-align: center; line-height: 1.4; gap: 4px;
-        }
-        [data-theme="dark"] .list-time-box { border-right-color: rgba(255,255,255,0.05); }
-        
-        /* IMAGEM PREENCHE A ALTURA TOTAL */
-        .list-img { 
-            width: 160px; 
-            align-self: stretch; /* O segredo para esticar! */
-            object-fit: cover;   
-            flex-shrink: 0; 
-            margin-right: 20px;  
-            border-radius: 0;    
-        }
-        
-        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; color: var(--text-color); }
 
-        .list-meta { font-size: 0.85em; color: #888; margin-bottom: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-        .list-title { font-size: 1.1em; line-height: 1.3; margin-bottom: 5px; }
-        .list-title b { display: block; font-size: 0.9em; margin-bottom: 3px; color: var(--sidebar-bg); }
-        .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        [data-theme="dark"] .list-desc { color: #9ca3af; }
+        .list-time-box { width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; border-right: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; padding: 10px; text-align: center; line-height: 1.4; }
+        .list-img { width: 160px; align-self: stretch; object-fit: cover; flex-shrink: 0; margin-right: 20px; border-radius: 0; }
+        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; }
+        .list-title { font-size: 1.1em; line-height: 1.3; font-weight: bold; }
+        .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; margin-top: 5px; }
+
+        /* --- LAYOUT CINEMA (MOSAICO) --- */
+        .cinema-mosaico { display: flex; gap: 20px; padding: 15px 20px; overflow-x: auto; scroll-behavior: smooth; width: 100%; }
+        .movie-item { width: 130px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; }
+        .movie-poster { width: 130px; height: 190px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .movie-info-name { font-size: 0.8rem; font-weight: 800; color: var(--text-color); line-height: 1.2; text-transform: uppercase; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2rem; }
+        .movie-info-time { font-size: 0.75rem; color: #666; font-weight: 600; background: rgba(0,0,0,0.04); padding: 4px 8px; border-radius: 4px; display: inline-block; align-self: flex-start; }
+
+        /* --- CALENDÁRIO --- */
+        .fc-dayGridMonth-view .fc-scrollgrid { border: 1px solid var(--border-color) !important; border-radius: 12px; overflow: hidden; background: var(--card-bg); }
+        .fc-day-past, .fc-day-other { background-color: rgba(0,0,0,0.02) !important; }
+        .fc-day-past .fc-daygrid-day-number, .fc-day-other .fc-daygrid-day-number { opacity: 0.35; }
+        
+        .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; font-size: 0.75rem; padding: 2px 5px; }
+        .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 3px solid var(--teatro-color) !important; }
+        .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 3px solid var(--cinema-color) !important; }
+        .event-cma { background: rgba(46, 125, 50, 0.08) !important; border-left: 3px solid var(--cma-color) !important; }
     </style>
 </head>
 <body>
-
     <div class="sidebar">
         <h1>AGENDA AVEIRO</h1>
         <div class="filter-group" id="sourceFilters">
@@ -178,243 +99,122 @@
                 <button class="btn active" id="btn-list" data-view="listYear">Lista</button>
                 <button class="btn" id="btn-grid" data-view="dayGridMonth">Calendário</button>
             </div>
-            
             <div class="header-center">
                 <button class="btn btn-icon" id="btn-prev">&lt;</button>
                 <h2 id="current-month-title">a carregar...</h2>
                 <button class="btn btn-icon" id="btn-next">&gt;</button>
             </div>
-            
             <div class="header-right">
                 <button class="btn" id="btn-today">Hoje</button>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
-                </div>
+                <label class="theme-switch" style="margin-left:15px;"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
             </div>
         </div>
-
-        <div class="calendar-section" id="scroll-container">
-            <div id='calendar'></div>
-        </div>
+        <div class="calendar-section" id="scroll-container"><div id='calendar'></div></div>
     </div>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
         var scrollContainer = document.getElementById('scroll-container');
         var titleEl = document.getElementById('current-month-title');
-        window.allEvents = [];
-        
         let currentViewName = 'listYear';
-        let currentDateInView = new Date(); 
 
-        const formatMonth = (dateObj) => {
-            return dateObj.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
-        };
+        window.calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
+          initialView: 'listYear', locale: 'pt', firstDay: 1, stickyHeaderDates: false,
+          datesSet: (info) => { 
+              if (currentViewName === 'dayGridMonth') titleEl.innerText = info.view.title.toLowerCase();
+              else updateTitleOnScroll();
+          },
+          dayHeaderContent: (arg) => {
+              if (arg.view.type === 'listYear') {
+                  return { html: `<div style="padding: 25px 0 10px 0; text-align: left;">
+                      <div style="font-size: 0.8rem; text-transform: uppercase; color: #888; font-weight: 700;">${arg.date.toLocaleDateString('pt-PT', { weekday: 'long' })}</div>
+                      <div style="font-size: 1.3rem; font-weight: 700;">${arg.date.toLocaleDateString('pt-PT', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                  </div>` };
+              }
+          },
+          eventContent: function(arg) {
+            let ep = arg.event.extendedProps;
+            
+            if (ep.is_glicinias && arg.view.type === 'listYear') {
+                let moviesHtml = ep.movies.map(m => `
+                    <div class="movie-item">
+                        <img src="${m.img}" class="movie-poster">
+                        <div class="movie-info-name">${m.titulo}</div>
+                        <div class="movie-info-time">${m.horas}</div>
+                    </div>`).join('');
+                return { html: `
+                    <div class="list-card" style="border-left-color: var(--cinema-color) !important; flex-direction: column; height: auto;" onclick="window.open('${arg.event.url}', '_blank')">
+                        <div style="padding: 15px 20px 0 20px; font-weight: 800; font-size: 0.75rem; color: var(--cinema-color); text-transform: uppercase;">📽️ Cinemas NOS Glicínias Plaza</div>
+                        <div class="cinema-mosaico">${moviesHtml}</div>
+                    </div>` };
+            }
+
+            let timeText = ep.display_time ? ep.display_time.split(' / ').join('<br>') : 'Todo o dia';
+            let sourceColor = ep.source === 'teatro' ? 'var(--teatro-color)' : ep.source === 'cinema' ? 'var(--cinema-color)' : ep.source === 'cma' ? 'var(--cma-color)' : 'var(--viral-color)';
+
+            if (arg.view.type === 'listYear') {
+                return { html: `
+                    <div class="list-card" style="border-left-color: ${sourceColor} !important">
+                        <div class="list-time-box">${timeText}</div>
+                        ${ep.image ? `<img src="${ep.image}" class="list-img">` : ''}
+                        <div class="list-info">
+                            <div style="font-size: 0.75rem; text-transform: uppercase; color: #888; font-weight: 700;">${ep.category || 'Geral'}</div>
+                            <div class="list-title">${arg.event.title}</div>
+                            <div class="list-desc">${ep.description || ''}</div>
+                        </div>
+                    </div>` };
+            }
+            return { html: `<div style="overflow:hidden;"><b>${timeText.replace('<br>', ' ')}</b> ${arg.event.title}</div>` };
+          },
+          eventClassNames: (arg) => ['event-' + arg.event.extendedProps.source]
+        });
 
         function updateTitleOnScroll() {
             if(currentViewName !== 'listYear') return;
-            
             let dayHeaders = document.querySelectorAll('.fc-list-day');
-            if (!dayHeaders.length) return;
-
             let containerTop = scrollContainer.getBoundingClientRect().top;
             let currentEl = dayHeaders[0];
-            
             for (let el of dayHeaders) {
-                if (el.getBoundingClientRect().top <= containerTop + 100) {
-                    currentEl = el;
-                } else { break; }
+                if (el.getBoundingClientRect().top <= containerTop + 100) currentEl = el;
+                else break;
             }
-
-            let dateStr = currentEl.getAttribute('data-date');
-            if(dateStr) {
-                currentDateInView = new Date(dateStr);
-                titleEl.innerText = formatMonth(currentDateInView);
+            if(currentEl) {
+                let date = new Date(currentEl.getAttribute('data-date'));
+                titleEl.innerText = date.toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
             }
         }
-
         scrollContainer.addEventListener('scroll', updateTitleOnScroll);
 
-        function navigateListMonth(direction) {
-            let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
-            if (!dayHeaders.length) return;
-
-            let currentMonthStr = currentDateInView.getFullYear() + '-' + String(currentDateInView.getMonth() + 1).padStart(2, '0');
-            let targetHeader = null;
-
-            if (direction === 1) { 
-                targetHeader = dayHeaders.find(el => el.getAttribute('data-date').substring(0, 7) > currentMonthStr);
-            } else { 
-                let reversed = [...dayHeaders].reverse();
-                let lastOfPrevMonth = reversed.find(el => el.getAttribute('data-date').substring(0, 7) < currentMonthStr);
-                if (lastOfPrevMonth) {
-                    let prevMonthStr = lastOfPrevMonth.getAttribute('data-date').substring(0, 7);
-                    targetHeader = dayHeaders.find(el => el.getAttribute('data-date').startsWith(prevMonthStr));
-                }
-            }
-
-            if (targetHeader) {
-                targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
-
-        window.calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'listYear', 
-          locale: 'pt',
-          firstDay: 1, 
-          dayMaxEvents: 4,
-          fixedWeekCount: false,       
-          showNonCurrentDates: false,  
-          height: 'auto',
-          
-          stickyHeaderDates: false, 
-          
-          datesSet: function(info) {
-              if (currentViewName === 'dayGridMonth') {
-                  titleEl.innerText = info.view.title.toLowerCase();
-              } else {
-                  updateTitleOnScroll();
-              }
-          },
-
-          dayHeaderContent: function(arg) {
-              if (arg.view.type === 'listYear') {
-                  let dateObj = arg.date;
-                  let weekday = dateObj.toLocaleDateString('pt-PT', { weekday: 'long' });
-                  let dayMonthYear = dateObj.toLocaleDateString('pt-PT', { day: 'numeric', month: 'long', year: 'numeric' });
-                  
-                  return {
-                      html: `<div class="custom-day-header">
-                              <span class="custom-weekday">${weekday}</span>
-                              <span class="custom-date">${dayMonthYear}</span>
-                             </div>`
-                  };
-              }
-          },
-
-          eventContent: function(arg) {
-            let ep = arg.event.extendedProps;
-            let timeText = 'Todo o dia'; 
-            
-            if (ep.display_time && ep.display_time !== 'Todo o dia') {
-                timeText = ep.display_time.split(' / ').join('<br>');
-            } else if (arg.event.start && (arg.event.start.getHours() !== 0 || arg.event.start.getMinutes() !== 0)) {
-                timeText = arg.event.start.getHours().toString().padStart(2, '0') + ':' + 
-                           arg.event.start.getMinutes().toString().padStart(2, '0');
-            }
-
-            let source = ep.source;
-            let colorVar = source === 'teatro' ? 'var(--teatro-color)' : 
-                           source === 'cinema' ? 'var(--cinema-color)' : 
-                           source === 'cma' ? 'var(--cma-color)' : 'var(--viral-color)';
-
-            if (arg.view.type === 'listYear') {
-                let imgUrl = ep.image;
-                let descHtml = ep.description ? `<div class="list-desc">${ep.description}</div>` : '';
-                let catText = ep.category || 'Vários';
-                
-                return { 
-                  html: `<div class="list-card" style="border-left-color: ${colorVar} !important" onclick="window.open('${arg.event.url}', '_blank')">
-                            <div class="list-time-box">${timeText}</div>
-                            <img src="${imgUrl || ''}" class="list-img" style="${imgUrl ? '' : 'display:none'}">
-                            <div class="list-info">
-                                <div class="list-meta"><span>${catText}</span></div>
-                                <div class="list-title">${arg.event.title}</div>
-                                ${descHtml}
-                            </div>
-                         </div>` 
-                };
-            }
-            return { 
-              html: `<div class="fc-event-main">
-                        <div class="fc-event-time">${timeText}</div>
-                        <div class="fc-event-title">${arg.event.title}</div>
-                     </div>` 
-            };
-          },
-          eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; }
-        });
-
-        document.getElementById('btn-prev').addEventListener('click', () => {
-            if(currentViewName === 'listYear') navigateListMonth(-1);
-            else window.calendar.prev();
-        });
-        
-        document.getElementById('btn-next').addEventListener('click', () => {
-            if(currentViewName === 'listYear') navigateListMonth(1);
-            else window.calendar.next();
-        });
-        
+        document.getElementById('btn-prev').addEventListener('click', () => calendar.prev());
+        document.getElementById('btn-next').addEventListener('click', () => calendar.next());
         document.getElementById('btn-today').addEventListener('click', () => {
             if (currentViewName === 'listYear') {
-                let todayStr = new Date().toISOString().split('T')[0];
-                let elements = Array.from(document.querySelectorAll('.fc-list-day'));
-                let target = elements.find(el => el.getAttribute('data-date') >= todayStr);
-                
-                if (!target && elements.length > 0) target = elements[elements.length-1];
-                
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            } else {
-                window.calendar.today();
-            }
+                let target = Array.from(document.querySelectorAll('.fc-list-day')).find(el => el.getAttribute('data-date') >= new Date().toISOString().split('T')[0]);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else calendar.today();
         });
 
-        document.querySelectorAll('.header-left .btn[data-view]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.header-left .btn[data-view]').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                
-                currentViewName = e.target.dataset.view;
-                window.calendar.changeView(currentViewName);
-                scrollContainer.scrollTo({top: 0});
-            });
-        });
+        document.querySelectorAll('.header-left .btn').forEach(btn => btn.addEventListener('click', (e) => {
+            document.querySelectorAll('.header-left .btn').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            currentViewName = e.target.dataset.view;
+            calendar.changeView(currentViewName);
+        }));
 
-        document.getElementById('themeToggle').addEventListener('change', (e) => {
-            document.documentElement.setAttribute('data-theme', e.target.checked ? 'dark' : 'light');
-        });
+        document.getElementById('themeToggle').addEventListener('change', (e) => document.documentElement.setAttribute('data-theme', e.target.checked ? 'dark' : 'light'));
 
-        fetch('events.json?t=' + new Date().getTime())
-          .then(res => res.json())
-          .then(data => {
+        fetch('events.json?t=' + new Date().getTime()).then(res => res.json()).then(data => {
             window.allEvents = data;
-            if(data.length > 0) {
-                let minDateStr = data.reduce((min, ev) => (ev.start < min ? ev.start : min), data[0].start);
-                let maxDateStr = data.reduce((max, ev) => (ev.start > max ? ev.start : max), data[0].start);
-                
-                let maxDateObj = new Date(maxDateStr.split('T')[0]);
-                maxDateObj.setDate(maxDateObj.getDate() + 1);
-                
-                let todayISO = new Date().toISOString().split('T')[0];
-                let startRange = minDateStr.split('T')[0];
-                if (todayISO < startRange) startRange = todayISO; 
-                
-                window.calendar.setOption('validRange', { 
-                    start: startRange,
-                    end: maxDateObj.toISOString().split('T')[0]
-                });
-                
-                window.calendar.gotoDate(minDateStr.split('T')[0]);
-                setTimeout(updateTitleOnScroll, 100);
-            }
             updateCalendar();
-          });
-
-        window.updateCalendar = function() {
-          const activeSources = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
-          const filtered = window.allEvents.filter(ev => activeSources.includes(ev.source));
-          window.calendar.removeAllEvents();
-          window.calendar.addEventSource(filtered);
-          window.calendar.render();
-          setTimeout(updateTitleOnScroll, 100);
-        };
-
-        document.querySelectorAll('#sourceFilters input').forEach(input => {
-          input.addEventListener('change', window.updateCalendar);
         });
+
+        window.updateCalendar = () => {
+            const active = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
+            calendar.removeAllEvents();
+            calendar.addEventSource(window.allEvents.filter(ev => active.includes(ev.source)));
+            calendar.render();
+        };
+        document.querySelectorAll('#sourceFilters input').forEach(i => i.addEventListener('change', updateCalendar));
       });
     </script>
 </body>
