@@ -186,12 +186,17 @@
         .event-card.row-span-2.vertical .card-img-wrap { height: auto; flex: 1; }
         .event-card.row-span-2.horizontal .card-img-wrap { width: 45%; }
 
-        /* Ajustes Específicos para Cartões Pequenos para não esmagar o texto */
+        /* Ajustes para Span-3 Horizontal (Grelha de 4) */
         .span-3.horizontal .card-img-wrap { width: 100px; }
         .span-3.horizontal .card-info { padding: 10px 15px; }
         .span-3.horizontal .card-title { font-size: 0.95rem; margin-bottom: 4px; }
         .span-3.horizontal .card-time { font-size: 0.8rem; }
         .span-3.horizontal .card-meta { font-size: 0.65rem; margin-bottom: 4px; }
+
+        /* Ajustes para Span-4 Horizontal (Grelha de 3) */
+        .span-4.horizontal .card-img-wrap { width: 120px; }
+        .span-4.horizontal .card-info { padding: 12px 15px; }
+        .span-4.horizontal .card-title { font-size: 1rem; margin-bottom: 4px; }
 
         .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
         .event-card:hover .card-img { transform: scale(1.05); }
@@ -200,7 +205,14 @@
         .card-info { padding: 15px 20px; display: flex; flex-direction: column; flex: 1; justify-content: center; }
         .card-meta { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; letter-spacing: 1px;}
         .card-title { font-size: 1.1rem; font-weight: 700; line-height: 1.25; text-transform: uppercase; margin-bottom: 8px; }
-        .card-umbrella { display: inline-block; font-size: 0.8em; margin-bottom: 6px; background: var(--main-bg); padding: 2px 6px; border: var(--btn-border); }
+        
+        /* FIX DO UMBRELLA: Não deixa esticar em cartões largos */
+        .card-umbrella { 
+            display: inline-flex; width: fit-content; align-self: flex-start;
+            font-size: 0.8em; margin-bottom: 6px; background: var(--main-bg); 
+            padding: 2px 6px; border: var(--btn-border); font-family: var(--font-main);
+        }
+        
         .card-time { font-size: 0.9rem; font-weight: 600; margin-top: auto; color: var(--text-muted);}
 
         /* Regras da Grelha */
@@ -334,36 +346,38 @@
 
             // ==========================================
             // REGRAS MATEMÁTICAS DINÂMICAS PARA CINEMA E TEATRO
-            // Atualizado com o Fallback Robusto que o utilizador descobriu!
             // ==========================================
             if (total === 1) {
                 renderOrder[0].gridClass = 'span-12 horizontal';
             } else if (total === 2) {
                 renderOrder.forEach(e => e.gridClass = 'span-6 horizontal');
             } else if (total === 3) {
-                renderOrder.forEach(e => e.gridClass = 'span-4 vertical');
-            } else if (t === 0 && c >= 5) {
-                // Modo Destaque Cinema (1 Gigante + restantes horizontais pequenos)
-                renderOrder[0].gridClass = 'span-6 row-span-2 vertical featured';
-                for(let i=1; i<c; i++) renderOrder[i].gridClass = 'span-3 horizontal';
+                renderOrder.forEach(e => e.gridClass = 'span-4 horizontal'); // CORRIGIDO PARA HORIZONTAL (Como o de 4)
+            } else if (t === 0) { 
+                if (c === 4) {
+                    renderOrder.forEach(e => e.gridClass = 'span-3 horizontal');
+                } else { 
+                    renderOrder[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
+                    for(let i=1; i<c; i++) renderOrder[i].gridClass = 'span-3 horizontal'; 
+                }
             } else if (t === 1 && c >= 4) {
-                // Modo Destaque Teatro (1 Teatro Gigante + Cinemas horizontais pequenos)
                 tEvents[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
                 cEvents.forEach(e => e.gridClass = 'span-3 horizontal');
+            } else if (t >= 2 && c >= 4) {
+                cEvents.forEach(e => e.gridClass = 'span-3 horizontal'); 
+                tEvents.forEach(e => e.gridClass = 'span-6 horizontal');
             } else {
-                // MOTOR DE FALLBACK INTELIGENTE E INDEPENDENTE
-                // Avalia Teatros e Cinemas de forma isolada para fecharem sempre 12 colunas
                 tEvents.forEach(e => {
                     if (t === 1) e.gridClass = 'span-12 horizontal';
                     else if (t === 2) e.gridClass = 'span-6 horizontal';
-                    else if (t === 3) e.gridClass = 'span-4 vertical';
+                    else if (t === 3) e.gridClass = 'span-4 horizontal'; // CORRIGIDO
                     else e.gridClass = 'span-6 horizontal'; 
                 });
                 
                 cEvents.forEach(e => {
                     if (c === 1) e.gridClass = 'span-12 horizontal';
                     else if (c === 2) e.gridClass = 'span-6 horizontal';
-                    else if (c === 3) e.gridClass = 'span-4 vertical'; // <- AQUI ESTÁ A CORREÇÃO AO TEU PRINT!
+                    else if (c === 3) e.gridClass = 'span-4 horizontal'; // CORRIGIDO PARA HORIZONTAL
                     else e.gridClass = 'span-3 horizontal'; 
                 });
             }
@@ -434,7 +448,7 @@
                     targetHeader = dayHeaders.find(el => el.getAttribute('data-date').startsWith(prevMonthStr));
                 }
             }
-            if (targetHeader) targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (targetHeader) targetHeader.scrollIntoView({ block: 'start' });
         }
 
         document.getElementById('btn-prev').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(-1) : calendar.prev());
@@ -499,10 +513,36 @@
                 }
             }
 
+            // --- NOVO: ÂNCORA DE SCROLL PARA OS FILTROS ---
+            let currentScrollDate = null;
+            if (currentViewName === 'listYear') {
+                let dayHeaders = document.querySelectorAll('.fc-list-day');
+                if (dayHeaders.length > 0) {
+                    let containerTop = scrollContainer.getBoundingClientRect().top;
+                    for (let el of dayHeaders) {
+                        if (el.getBoundingClientRect().top <= containerTop + 100) {
+                            currentScrollDate = el.getAttribute('data-date');
+                        } else {
+                            break;
+                        }
+                    }
+                    if (!currentScrollDate) currentScrollDate = dayHeaders[0].getAttribute('data-date');
+                }
+            }
+
             calendar.removeAllEvents();
             calendar.addEventSource(finalRenderData);
             calendar.render();
-            setTimeout(updateTitleOnScroll, 100);
+            
+            // Reposiciona o ecrã instantaneamente após o DOM recarregar
+            setTimeout(() => {
+                if (currentViewName === 'listYear' && currentScrollDate) {
+                    let newHeaders = document.querySelectorAll('.fc-list-day');
+                    let target = Array.from(newHeaders).find(el => el.getAttribute('data-date') >= currentScrollDate);
+                    if (target) target.scrollIntoView({ block: 'start' });
+                }
+                updateTitleOnScroll();
+            }, 50);
         };
         
         document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(i => i.addEventListener('change', updateCalendar));
