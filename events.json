@@ -710,27 +710,32 @@
         {
           "titulo": "O Diabo Veste Prada 2",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)"
+          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274"
         },
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -747,27 +752,32 @@
         {
           "titulo": "O Diabo Veste Prada 2",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)"
+          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274"
         },
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -784,22 +794,26 @@
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -816,22 +830,26 @@
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -848,17 +866,20 @@
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -875,22 +896,26 @@
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
@@ -907,22 +932,26 @@
         {
           "titulo": "Michael",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)",
+          "url": "https://cinecartaz.publico.pt/filme/michael-415240"
         },
         {
           "titulo": "Super Mario Galaxy - O Filme",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)",
+          "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148"
         },
         {
           "titulo": "O Drama",
           "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-          "horas": "13h05, 15h40, 18h10, 20h50"
+          "horas": "13h05, 15h40, 18h10, 20h50",
+          "url": "https://cinecartaz.publico.pt/filme/o-drama-415146"
         },
         {
           "titulo": "Tudo Me Lembra de Ti",
           "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
-          "horas": "21h30, 00h05"
+          "horas": "21h30, 00h05",
+          "url": "https://cinecartaz.publico.pt/filme/lembra-415142"
         }
       ],
       "source": "cinema"
