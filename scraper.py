@@ -219,17 +219,29 @@ def get_23milhas_data():
     base_url = "https://www.23milhas.pt"
     print("A iniciar scraper para 23 Milhas (Ílhavo)...")
     try:
-        res = session.get(base_url, headers=HEADERS, timeout=15)
-        res.raise_for_status()
-        soup = BeautifulSoup(res.text, 'html.parser')
         event_links = set()
 
-        for a in soup.find_all('a', href=True):
-            href = a['href']
-            if '/evento/' in href:
-                url = base_url + href if str(href).startswith('/') else href
-                if base_url in url:
-                    event_links.add(url)
+        # Procura em 2 sítios para garantir que não escapa nada
+        for path in ["", "/programacao"]:
+            try:
+                res = session.get(base_url + path, headers=HEADERS, timeout=15)
+                soup = BeautifulSoup(res.text, 'html.parser')
+                
+                # 1. Procura Clássica (links normais)
+                for a in soup.find_all('a', href=True):
+                    href = a['href']
+                    if 'evento/' in href:
+                        url = base_url + href if str(href).startswith('/') else href
+                        if base_url in url: event_links.add(url)
+                
+                # 2. Scanner Raio-X: Procura dentro do código raw da página (para sites dinâmicos)
+                raw_urls = re.findall(r'(/evento/[a-zA-Z0-9_/-]+)', res.text)
+                for r_url in raw_urls:
+                    event_links.add(base_url + r_url)
+            except Exception as e:
+                pass
+
+        print(f"-> Encontrados {len(event_links)} links potenciais. A processar...")
 
         for url in event_links:
             try:
@@ -240,6 +252,9 @@ def get_23milhas_data():
                 title = ""
                 og_title = ev_soup.find('meta', property='og:title')
                 if og_title: title = og_title['content'].replace(' - 23 Milhas', '').strip()
+                if not title:
+                    title_el = ev_soup.find('title')
+                    if title_el: title = title_el.get_text().replace(' - 23 Milhas', '').strip()
                 if not title: continue
 
                 img_url = ""
@@ -252,7 +267,7 @@ def get_23milhas_data():
 
                 page_text = ev_soup.get_text(separator=' ').lower()
                 
-                # Encontrar a Data
+                # Encontrar a Data Perfeita
                 months_regex = r'(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)'
                 date_match = re.search(r'\b(\d{1,2})\s+(?:de\s+)?' + months_regex + r'(?:\s+(?:de\s+)?(\d{4}))?\b', page_text)
                 
@@ -263,41 +278,42 @@ def get_23milhas_data():
                 
                 start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
 
-                # NOVO MOTOR DE EXTRACAO BASEADO NO INSPETOR DOM DO UTILIZADOR
+                # Motor de Horário e Categoria
                 time_str = ""
                 cat_str = ""
-                
-                # Extrai todos os textos limpos para uma lista
                 all_texts = [el.get_text(strip=True) for el in ev_soup.find_all(string=True) if el.get_text(strip=True)]
                 
                 for i, txt in enumerate(all_texts):
                     t_low = txt.lower()
                     if t_low == 'horário' and i + 1 < len(all_texts):
-                        time_str = all_texts[i+1] # O valor a seguir é o horário!
+                        time_str = all_texts[i+1]
                     if t_low == 'categoria' and i + 1 < len(all_texts):
-                        cat_str = all_texts[i+1]  # O valor a seguir é a categoria!
+                        cat_str = all_texts[i+1]
                 
                 display_time = "Todo o dia"
                 if time_str:
-                    # Limpa a hora caso seja um intervalo (ex: 21:30-22:50) e guarda só o início
                     time_match = re.search(r'\b(\d{1,2}[:hH]\d{2})\b', time_str)
                     if time_match:
                         t_clean = time_match.group(1).replace('h', ':').replace('H', ':')
                         start_iso += f"T{t_clean}:00"
-                        display_time = time_str # Mantém o original "21:30-22:50" para mostrar no cartão
+                        display_time = time_str
                     else:
                         start_iso += "T00:00:00"
                 else:
-                    start_iso += "T00:00:00"
+                    time_match = re.search(r'\b(\d{1,2}[:hH]\d{2})\b', page_text)
+                    if time_match:
+                        t_clean = time_match.group(1).replace('h', ':').replace('H', ':')
+                        start_iso += f"T{t_clean}:00"
+                        display_time = time_match.group(1)
+                    else:
+                        start_iso += "T00:00:00"
 
-                # Identificar o Local (Umbrella)
                 umbrella = "23 Milhas"
                 if "casa cultura" in page_text or "casa da cultura" in page_text: umbrella = "Casa da Cultura de Ílhavo"
                 elif "fábrica das ideias" in page_text or "fábrica" in page_text: umbrella = "Fábrica das Ideias da Gafanha"
                 elif "laboratório das artes" in page_text: umbrella = "Laboratório das Artes"
                 elif "cais criativo" in page_text: umbrella = "Cais Criativo da Costa Nova"
 
-                # Identificar a Categoria baseada no DOM, com fallback para o texto inteiro
                 cat = "Outros"
                 if cat_str:
                     cat_low = cat_str.lower()
@@ -332,6 +348,8 @@ def get_23milhas_data():
             except Exception as e:
                 pass
 
+        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos!")
+
     except Exception as e:
         print(f"Erro global 23 Milhas: {e}")
 
@@ -341,4 +359,4 @@ if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data() + get_23milhas_data()
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"Sucesso! Total de eventos guardados: {len(results)}")
+    print(f"Sucesso Total! Aglomerados {len(results)} eventos guardados.")
