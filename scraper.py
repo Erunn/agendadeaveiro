@@ -31,8 +31,7 @@ def parse_pt_date(date_str, default_date=None):
                 break
 
         if not month:
-            if default_date: return default_date
-            return datetime.now().strftime('%Y-%m-%d')
+            return default_date or datetime.now().strftime('%Y-%m-%d')
 
         year = datetime.now().year
         for d in days:
@@ -64,32 +63,25 @@ def get_teatro_data():
             link_el = item.select_one('a')
             
             img_el = item.select_one('img')
-            img_url = ""
-            if img_el:
-                img_url = img_el.get('src', '')
-                if img_url and not img_url.startswith('http'):
-                    img_url = base_url + img_url
+            img_url = img_el.get('src', '') if img_el else ""
+            if img_url and not img_url.startswith('http'):
+                img_url = base_url + img_url
 
-            resumo_el = item.select_one('.resumo')
-            resumo_text = resumo_el.get_text(strip=True) if resumo_el else ""
-
+            resumo_text = item.select_one('.resumo').get_text(strip=True) if item.select_one('.resumo') else ""
             categoria_el = item.select_one('.categoria')
             categoria_text = "Vários"
             if categoria_el:
-                sr = categoria_el.select_one('.sr-only')
-                if sr: sr.decompose()
+                if categoria_el.select_one('.sr-only'): categoria_el.select_one('.sr-only').decompose()
                 categoria_text = categoria_el.get_text(strip=True)
             
             if h2 and date_el and link_el:
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
-                
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span: h2_clone.span.decompose()
-                
                 event_name = " ".join(h2_clone.get_text().replace('::', '').strip().split())
+                
                 final_title = f"<b>{umbrella_name.upper()}</b><br>{event_name}" if umbrella_name else event_name
-
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
 
@@ -108,15 +100,11 @@ def get_teatro_data():
                             lines = text_content.split('\n')
                             day_date = parse_pt_date(lines[0], default_date=listing_date)
                             times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
-                            
-                            if day_date not in daily_schedules:
-                                daily_schedules[day_date] = set()
-                            for h, m in times_in_block:
-                                daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
+                            if day_date not in daily_schedules: daily_schedules[day_date] = set()
+                            for h, m in times_in_block: daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
                 except Exception: pass
 
-                if not daily_schedules:
-                    daily_schedules[listing_date] = set()
+                if not daily_schedules: daily_schedules[listing_date] = set()
                     
                 for d_date, times_set in daily_schedules.items():
                     sorted_times = sorted(list(times_set))
@@ -133,69 +121,54 @@ def get_teatro_data():
                             "source": "teatro",
                             "description": resumo_text,
                             "category": categoria_text,
-                            "display_time": display_time
+                            "display_time": display_time,
+                            "is_glicinias": False
                         },
                         "raw_event_name": event_name,
                         "raw_umbrella_name": umbrella_name
                     })
         
-        # Limpeza de Agregadores
-        umbrella_names_set = {ev["raw_umbrella_name"].lower() for ev in all_events if ev.get("raw_umbrella_name")}
+        umbrella_names = {ev["raw_umbrella_name"].lower() for ev in all_events if ev.get("raw_umbrella_name")}
         final_teatro = []
         for ev in all_events:
-            if ev.get("raw_event_name", "").lower() in umbrella_names_set:
-                continue
-            ev.pop("raw_event_name", None)
-            ev.pop("raw_umbrella_name", None)
+            if ev.get("raw_event_name", "").lower() in umbrella_names: continue
+            ev.pop("raw_event_name", None); ev.pop("raw_umbrella_name", None)
             final_teatro.append(ev)
         return final_teatro
-
     except Exception as e:
-        print(f"Erro Teatro: {e}")
-        return []
+        print(f"Erro Teatro: {e}"); return []
 
 def get_cinema_data():
     cinema_events_by_date = {}
     url = "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718"
     print("A iniciar scraper para Cinema Glicínias...")
-    
     try:
         res = session.get(url, headers=HEADERS, timeout=15)
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
-        
         day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb.': 5, 'dom.': 6, 'sab': 5, 'dom': 6}
         today = datetime.now().date()
         days_to_next_wed = (2 - today.weekday()) % 7
         if days_to_next_wed == 0: days_to_next_wed = 7 
         target_dates = [today + timedelta(days=i) for i in range(days_to_next_wed + 1)]
 
-        movie_blocks = soup.select('.movie-card')
-        for block in movie_blocks:
+        for block in soup.select('.movie-card'):
             title = block.select_one('.movie-card__title').get_text(strip=True)
             img_el = block.select_one('.flex-media img')
             img_url = img_el['src'] if img_el else ""
             
-            info_p = block.select('.movie-card__info p')
-            for p in info_p:
+            for p in block.select('.movie-card__info p'):
                 if 'Sessões:' in p.get_text():
                     text = p.get_text(strip=True).replace('Sessões:', '')
                     if ':' not in text: continue
                     dias_raw, horarios = text.split(':', 1)
                     dias_list = dias_raw.lower().split()
-                    
                     for dt in target_dates:
-                        is_showing = False
-                        for d in dias_list:
-                            if d in day_map and day_map[d] == dt.weekday():
-                                is_showing = True; break
+                        is_showing = any(d in day_map and day_map[d] == dt.weekday() for d in dias_list)
                         if is_showing:
                             date_str = dt.strftime('%Y-%m-%d')
-                            if date_str not in cinema_events_by_date:
-                                cinema_events_by_date[date_str] = []
-                            cinema_events_by_date[date_str].append({
-                                "titulo": title, "img": img_url, "horas": horarios.strip()
-                            })
+                            if date_str not in cinema_events_by_date: cinema_events_by_date[date_str] = []
+                            cinema_events_by_date[date_str].append({"titulo": title, "img": img_url, "horas": horarios.strip()})
 
         final_cinema = []
         for d_date, movies in cinema_events_by_date.items():
@@ -204,24 +177,14 @@ def get_cinema_data():
                 "start": d_date,
                 "url": url,
                 "source": "cinema",
-                "extendedProps": {
-                    "is_cinema_aggregator": True,
-                    "movies": movies,
-                    "source": "cinema"
-                }
+                "extendedProps": { "is_glicinias": True, "movies": movies, "source": "cinema" }
             })
         return final_cinema
     except Exception as e:
-        print(f"Erro Cinema: {e}")
-        return []
+        print(f"Erro Cinema: {e}"); return []
 
 if __name__ == "__main__":
-    teatro = get_teatro_data()
-    cinema = get_cinema_data()
-    
-    all_results = teatro + cinema
-    
-    if all_results:
-        with open('events.json', 'w', encoding='utf-8') as f:
-            json.dump(all_results, f, ensure_ascii=False, indent=2)
-        print(f"Sucesso! Total de eventos guardados: {len(all_results)}")
+    results = get_teatro_data() + get_cinema_data()
+    with open('events.json', 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    print(f"Sucesso! Total: {len(results)}")
