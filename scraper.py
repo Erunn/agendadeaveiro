@@ -45,7 +45,7 @@ def parse_pt_date(date_str, default_date=None):
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def clean_times_and_tags(text):
-    """Converte '16h' ou '16h30' em '16:00' sem estourar se encontrar formatos esquisitos."""
+    """Converte '16h' em '16:00' sem destruir o resto do texto [VP]"""
     def replacer(m):
         try:
             h_str = m.group(1) or m.group(3)
@@ -54,11 +54,11 @@ def clean_times_and_tags(text):
             m_min = int(m_str) if m_str else 0
             return f"{h:02d}:{m_min:02d}"
         except Exception:
-            return m.group(0) # Se houver erro, devolve o texto original intacto
+            return m.group(0)
     return re.sub(r'(?<!\d)(\d{1,2})[hH](\d{2})?|(?<!\d)(\d{1,2}):(\d{2})', replacer, text)
 
 def parse_days_from_str(text):
-    day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb': 5, 'sab': 5, 'dom': 6}
+    day_map = {'2ª': 0, '2a': 0, '3ª': 1, '3a': 1, '4ª': 2, '4a': 2, '5ª': 3, '5a': 3, '6ª': 4, '6a': 4, 'sáb': 5, 'sab': 5, 'dom': 6}
     found = set()
     if 'todos os dias' in text: return set(range(7))
     for k, v in day_map.items():
@@ -173,9 +173,13 @@ def get_cinema_data():
         target_dates = [today + timedelta(days=i) for i in range(days_to_next_wed + 1)]
 
         for block in soup.select('.movie-card'):
-            title = block.select_one('.movie-card__title').get_text(strip=True)
-            img_el = block.select_one('.flex-media img')
-            img_url = img_el['src'] if img_el else ""
+            title_el = block.select_one('.movie-card__title')
+            if not title_el: continue
+            title = title_el.get_text(strip=True)
+            
+            img_el = block.select_one('img')
+            img_url = img_el['src'] if img_el and 'src' in img_el.attrs else ""
+            
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
@@ -183,30 +187,31 @@ def get_cinema_data():
             
             for p in block.select('.movie-card__info p'):
                 text_content = p.get_text(separator="\n").strip()
-                # Apanha "Sessão" ou "Sessões"
-                if not re.search(r'(?i)sess[õo]e?s', text_content): continue
+                if 'sess' not in text_content.lower(): continue
                 
                 current_days = set(range(7)) 
                 for line in text_content.split('\n'):
                     s_raw = line.strip()
                     s_lower = s_raw.lower()
-                    if not s_raw or re.match(r'^(?i)sess[õo]e?s:$', s_lower): continue
+                    if not s_raw: continue
                     
+                    # Se detetar qualquer indicação de hora (ex: 13h, 13h40, 13:40)
                     if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
                         inline_days = parse_days_from_str(s_lower)
                         if inline_days: current_days = inline_days
                         
                         times_str = s_raw
+                        # Limpa dias colados na mesma linha ex: "Sáb e Dom: 16h" -> Fica só com "16h"
                         if ':' in s_raw:
-                            prefix = s_lower.split(':')[0]
-                            if any(d in prefix for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
-                                parts = s_raw.split(':', 1)
-                                if len(parts) > 1:
-                                    times_str = parts[1].strip()
-                                    
+                            prefix, suffix = s_raw.split(':', 1)
+                            # Confirma que os ":" não fazem parte da hora em si (ex: 16:00)
+                            if any(d in prefix.lower() for d in ['2ª', '2a', '3ª', '3a', '4ª', '4a', '5ª', '5a', '6ª', '6a', 'sáb', 'sab', 'dom', 'dia', 'sess']):
+                                times_str = suffix.strip()
+                                
                         formatted_times = clean_times_and_tags(times_str)
-                        # Remove palavras parasitas no início sem comer detalhes
-                        formatted_times = re.sub(r'^(?i)sess[õo]e?s:\s*', '', formatted_times).lstrip(' :,-')
+                        
+                        # Limpeza final cirúrgica no início da string
+                        formatted_times = re.sub(r'^(?i)sess[õo]e?s\s*:?\s*', '', formatted_times).lstrip(' :,-')
 
                         if not formatted_times: continue
                         
