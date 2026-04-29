@@ -158,7 +158,6 @@ def get_cinema_data():
             img_el = block.select_one('.flex-media img')
             img_url = img_el['src'] if img_el else ""
             
-            # Vamos extrair o link individual do filme!
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
@@ -185,7 +184,6 @@ def get_cinema_data():
             final_cinema.append({
                 "title": "CINEMA: GLICÍNIAS PLAZA",
                 "start": d_date,
-                "url": url,
                 "source": "cinema",
                 "extendedProps": { "is_glicinias": True, "movies": movies, "source": "cinema" }
             })
