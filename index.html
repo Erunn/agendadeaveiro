@@ -183,7 +183,7 @@
         .event-card.vertical .card-img-wrap { width: 100%; height: 220px; border-bottom: var(--divider); }
         
         .event-card.row-span-2.vertical .card-img-wrap { height: auto; flex: 1; }
-        .event-card.row-span-2.horizontal .card-img-wrap { width: 45%; } 
+        .event-card.row-span-2.horizontal .card-img-wrap { width: 45%; }
 
         .card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
         .event-card:hover .card-img { transform: scale(1.05); }
@@ -205,12 +205,12 @@
         /* Ajuste Mobile */
         @media (max-width: 900px) {
             .span-3, .span-4, .span-6 { grid-column: span 12; }
-            .event-card.vertical { flex-direction: row; border-left-width: 12px !important; border-top-width: 0 !important;}
+            .event-card.vertical { flex-direction: row; border-left-width: var(--card-left-width) !important; border-top-width: 0 !important;}
             .event-card.vertical .card-img-wrap { width: 120px; height: auto; border-bottom: none; border-right: var(--divider); }
             .row-span-2 { grid-row: span 1; }
         }
 
-        /* --- MODO CALENDÁRIO (GRID) CORES OMITIDAS --- */
+        /* --- MODO CALENDÁRIO (GRID) --- */
         .fc-dayGridMonth-view .fc-scrollgrid { background: var(--card-bg) !important; border: var(--border-color) !important; box-shadow: var(--card-shadow); border-radius: var(--card-radius);}
         .fc-theme-standard td, .fc-theme-standard th { border: var(--divider) !important; }
         .fc-col-header-cell { padding: 12px 0; font-weight: 700; color: var(--text-color); text-transform: uppercase; border-bottom: none !important; font-size: 0.9rem;}
@@ -322,33 +322,35 @@
             let c = cEvents.length;
             let total = t + c;
 
-            // A ordem em que os eventos são inseridos na grelha
-            let renderOrder = (t === 2 && c === 4) ? [...cEvents, ...tEvents] : [...tEvents, ...cEvents];
+            let renderOrder = (t >= 2 && c >= 4) ? [...cEvents, ...tEvents] : [...tEvents, ...cEvents];
 
             // ==========================================
-            // NOVAS REGRAS MATEMÁTICAS APLICADAS
+            // REGRAS MATEMÁTICAS DINÂMICAS PARA CINEMA E TEATRO (GRELHA RESISTENTE A N FILMES)
             // ==========================================
             if (total === 1) {
                 renderOrder[0].gridClass = 'span-12 horizontal';
             } else if (total === 2) {
-                // Se forem 2, dividem exatamente a largura ao meio (50/50) e ficam lado a lado
                 renderOrder.forEach(e => e.gridClass = 'span-6 horizontal');
             } else if (total === 3) {
-                // Se forem 3, dividem exatamente a largura por três (33/33/33)
                 renderOrder.forEach(e => e.gridClass = 'span-4 vertical');
-            } else if (t === 0 && c === 4) {
-                renderOrder.forEach(e => e.gridClass = 'span-3 vertical');
-            } else if (t === 0 && c === 5) {
-                renderOrder[0].gridClass = 'span-6 row-span-2 horizontal featured';
-                for(let i=1; i<5; i++) renderOrder[i].gridClass = 'span-3 vertical';
-            } else if (t === 1 && c === 4) {
-                renderOrder[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
-                for(let i=1; i<5; i++) renderOrder[i].gridClass = 'span-3 vertical';
-            } else if (t === 2 && c === 4) {
-                for(let i=0; i<4; i++) renderOrder[i].gridClass = 'span-3 vertical';
-                for(let i=4; i<6; i++) renderOrder[i].gridClass = 'span-6 horizontal';
+            } else if (t === 0) { 
+                // APENAS CINEMA
+                if (c === 4) {
+                    renderOrder.forEach(e => e.gridClass = 'span-3 vertical');
+                } else { // 5 ou mais filmes: o 1º fica gigante e os outros ajustam-se
+                    renderOrder[0].gridClass = 'span-6 row-span-2 vertical featured';
+                    for(let i=1; i<c; i++) renderOrder[i].gridClass = 'span-3 vertical';
+                }
+            } else if (t === 1 && c >= 4) {
+                // 1 TEATRO + MUITOS CINEMAS
+                tEvents[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
+                cEvents.forEach(e => e.gridClass = 'span-3 vertical');
+            } else if (t >= 2 && c >= 4) {
+                // MUITOS TEATROS E MUITOS CINEMAS
+                cEvents.forEach(e => e.gridClass = 'span-3 vertical');
+                tEvents.forEach(e => e.gridClass = 'span-6 horizontal');
             } else {
-                // Fallback para qualquer outro número bizarro de eventos
+                // FALLBACK DE SEGURANÇA
                 tEvents.forEach(e => e.gridClass = 'span-6 horizontal');
                 cEvents.forEach(e => e.gridClass = 'span-3 vertical');
             }
