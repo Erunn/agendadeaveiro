@@ -46,6 +46,21 @@ def parse_pt_date(date_str, default_date=None):
     except Exception:
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
+def format_cinema_times(text):
+    # Extrai horas no formato '16h', '16h15', '16:15'
+    matches = re.findall(r'(\d{1,2})[hH:](\d{2})?', text)
+    times = []
+    for h, m in matches:
+        h_int = int(h)
+        m_int = int(m) if m else 0
+        if 0 <= h_int <= 25: # Aceita horas como 24h
+            times.append((h_int, m_int))
+    # Remove duplicados e ordena cronologicamente
+    times = sorted(list(set(times)))
+    # Formata para HH:MM
+    formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
+    return ", ".join(formatted)
+
 def get_teatro_data():
     all_events = []
     base_url = "https://www.teatroaveirense.pt"
@@ -77,11 +92,11 @@ def get_teatro_data():
             if h2 and date_el and link_el:
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
+                
                 h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
                 if h2_clone.span: h2_clone.span.decompose()
                 event_name = " ".join(h2_clone.get_text().replace('::', '').strip().split())
                 
-                final_title = f"<b>{umbrella_name.upper()}</b><br>{event_name}" if umbrella_name else event_name
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
 
@@ -112,11 +127,12 @@ def get_teatro_data():
                     time_iso = f"T{sorted_times[0]}:00" if sorted_times else ""
 
                     all_events.append({
-                        "title": final_title,
+                        "title": event_name, # Separado do Umbrella
                         "start": d_date + time_iso,
                         "url": url,
                         "source": "teatro",
                         "extendedProps": {
+                            "umbrella": umbrella_name, # Guardamos o umbrella isolado
                             "image": img_url,
                             "source": "teatro",
                             "description": resumo_text,
@@ -165,7 +181,11 @@ def get_cinema_data():
                 if 'Sessões:' in p.get_text():
                     text = p.get_text(strip=True).replace('Sessões:', '')
                     if ':' not in text: continue
-                    dias_raw, horarios = text.split(':', 1)
+                    dias_raw, horarios_raw = text.split(':', 1)
+                    
+                    horarios_formatados = format_cinema_times(horarios_raw)
+                    if not horarios_formatados: continue
+
                     dias_list = dias_raw.lower().split()
                     for dt in target_dates:
                         is_showing = any(d in day_map and day_map[d] == dt.weekday() for d in dias_list)
@@ -175,14 +195,14 @@ def get_cinema_data():
                             cinema_events_by_date[date_str].append({
                                 "titulo": title, 
                                 "img": img_url, 
-                                "horas": horarios.strip(),
+                                "horas": horarios_formatados,
                                 "url": movie_url
                             })
 
         final_cinema = []
         for d_date, movies in cinema_events_by_date.items():
             final_cinema.append({
-                "title": "CINEMA: GLICÍNIAS PLAZA",
+                "title": "CINEMAS NOS GLICÍNIAS PLAZA",
                 "start": d_date,
                 "source": "cinema",
                 "extendedProps": { "is_glicinias": True, "movies": movies, "source": "cinema" }
