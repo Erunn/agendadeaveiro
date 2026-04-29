@@ -18,13 +18,22 @@ def parse_pt_date(date_str):
     }
     try:
         clean_str = date_str.lower().replace(' de ', ' ').strip()
-        parts = clean_str.split()
         
-        day = parts[0].zfill(2)
-        month_name = parts[1].replace('.', '')
-        month = months.get(month_name, '01')
+        # Encontra todos os números na string (ex: "12 > 13" -> encontra o 12)
+        days = re.findall(r'\d+', clean_str)
+        day = days[0].zfill(2) if days else '01'
+        
+        # Procura qual das palavras corresponde a um mês conhecido
+        month = '01'
+        for word in clean_str.split():
+            # Remove símbolos estranhos (como > . , -) para isolar as letras
+            word_clean = re.sub(r'[^a-zç]', '', word)
+            if word_clean in months:
+                month = months[word_clean]
+                break
         
         year = datetime.now().year
+        # Evita atirar eventos de Janeiro para o passado se estivermos em Dezembro
         if datetime.now().month == 12 and month == '01':
             year += 1
             
@@ -116,7 +125,7 @@ def get_data():
                     "extendedProps": {
                         "image": img_url,
                         "source": "teatro",
-                        "description": resumo_text # <- Adicionamos o resumo aqui!
+                        "description": resumo_text
                     }
                 })
                 print(f"Processado: {event_name}")
