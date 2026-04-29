@@ -20,7 +20,7 @@
             
             --teatro-color: #FF4500;    
             --cinema-color: #0047FF;    
-            --23milhas-color: #FF007F; /* O Magenta do 23 Milhas */
+            --23milhas-color: #FF007F; 
 
             --font-main: 'Space Grotesk', sans-serif;
             --font-title: 'Space Grotesk', sans-serif;
@@ -233,13 +233,13 @@
             let ep = arg.event.extendedProps;
             if (!ep.is_grouped) return; 
 
-            // Tudo o que não for cinema assume o layout de destaque (Teatro, 23 Milhas, etc)
             let tEvents = ep.daily_events.filter(e => e.source !== 'cinema');
             let cEvents = ep.daily_events.filter(e => e.source === 'cinema');
             let t = tEvents.length;
             let c = cEvents.length;
             let total = t + c;
 
+            // O motor de lógica atribui os TAMANHOS corretamente a cada fonte
             let renderOrder = (t >= 2 && c >= 4) ? [...cEvents, ...tEvents] : [...tEvents, ...cEvents];
 
             if (total === 1) {
@@ -277,8 +277,16 @@
                 });
             }
 
+            // MAGIA: Depois de as classes estarem atribuídas com sucesso, 
+            // ORDENAMOS TUDO cronologicamente antes de renderizar no DOM!
+            let finalRender = [...renderOrder].sort((a, b) => {
+                let timeA = a.start || "";
+                let timeB = b.start || "";
+                return timeA.localeCompare(timeB);
+            });
+
             let html = '<div class="daily-grid">';
-            renderOrder.forEach(e => {
+            finalRender.forEach(e => {
                 let p = e.extendedProps || e;
                 let umbrellaHtml = p.umbrella ? `<div class="card-umbrella">${p.umbrella}</div>` : '';
                 
