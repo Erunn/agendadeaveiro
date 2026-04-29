@@ -1,16 +1,15 @@
 [
   {
     "title": "<b>AVEIRO_SÍNTESE 2026</b><br>[c3] acusmática Ludger Brümmer",
-    "start": "2026-04-30T21:30:00",
+    "start": "2026-04-30",
     "url": "https://www.teatroaveirense.pt/pt/evento/c3-acusmatica-ludger-brummer-aveiro-sintese-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c3-acusmatica-ludger-brummer-aveiro-sintese-2026_img69e8aa09a4e70.jpg",
       "source": "teatro",
       "description": "Obras acusmáticas de Ludger Brümmer",
       "category": "Música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -18,7 +17,6 @@
     "start": "2026-05-01T17:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/ca-som-a-interior-aveiro-sintese-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/ca-som-a-interior-aveiro-sintese-2026_img69e8ac75e68e6.jpg",
       "source": "teatro",
@@ -32,7 +30,6 @@
     "start": "2026-05-01T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c4-ars-ad-hoc-aveiro-sintese-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c4-ars-ad-hoc-aveiro-sintese-2026_img69e8aba958c1a.jpg",
       "source": "teatro",
@@ -46,7 +43,6 @@
     "start": "2026-05-02T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c5-o-beiras/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c5-o-beiras-aveiro-sintese-2026_img69e8b45349ff6.jpg",
       "source": "teatro",
@@ -60,7 +56,6 @@
     "start": "2026-05-03T11:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/dreaming-bodies-a-collective-practice-for-the-future-masterclass-palcos-instaveis/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/dreaming-bodies-a-collective-practice-for-the-future-masterclass-palcos-instaveis_img69e78c97ebba0.png",
       "source": "teatro",
@@ -74,7 +69,6 @@
     "start": "2026-05-03T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/c6-nmpnm-aveiro-sintese-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c6-nmpnm-aveiro-sintese-2026_img69e8b4ebc3064.jpg",
       "source": "teatro",
@@ -88,7 +82,6 @@
     "start": "2026-05-05T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/chercher-la-femme/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/chercher-la-femme-os-filmes-das-nossas-tercas_img69f0dcbf8d58d.jpg",
       "source": "teatro",
@@ -102,7 +95,6 @@
     "start": "2026-05-07T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/a-sense-of/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/a-sense-of-de-beatriz-lourenco-palcos-instaveis-segunda-casa_img69d522795b160.jpg",
       "source": "teatro",
@@ -116,7 +108,6 @@
     "start": "2026-05-09T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/nos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/nos-fado-samba-associacao-palco-central_img69d5239ec581f.jpg",
       "source": "teatro",
@@ -130,7 +121,6 @@
     "start": "2026-05-10T17:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/concerto-de-homenagem-a-santa-joana/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/concerto-de-homenagem-a-santa-joana-orquestra-das-beiras-e-orquestra-sinfonica-do-deca_img69d524939dcdb.jpg",
       "source": "teatro",
@@ -144,7 +134,6 @@
     "start": "2026-05-15T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/falsas-historias-verdadeiras-uma-pina-colagem-teatro-nacional-sao-joao-direcao-de-victor-hugo-pontes-e-musica-de-a-garota-nao_img69d525ae63215.jpg",
       "source": "teatro",
@@ -158,7 +147,6 @@
     "start": "2026-05-16T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/falsas-historias-verdadeiras-uma-pina-colagem-teatro-nacional-sao-joao-direcao-de-victor-hugo-pontes-e-musica-de-a-garota-nao_img69d525ae63215.jpg",
       "source": "teatro",
@@ -172,7 +160,6 @@
     "start": "2026-05-17T16:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-que-e-que-queres-saber/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/o-que-e-que-queres-saber-de-ines-pupo-e-goncalo-pratas_img69d52af111887.jpg",
       "source": "teatro",
@@ -186,7 +173,6 @@
     "start": "2026-05-18T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/19-festa-do-cinema-italiano_img69d6217ee112c.jpg",
       "source": "teatro",
@@ -200,7 +186,6 @@
     "start": "2026-05-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/19-festa-do-cinema-italiano_img69d6217ee112c.jpg",
       "source": "teatro",
@@ -214,7 +199,6 @@
     "start": "2026-05-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabrik-quartet-tubo-de-ensaio/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/fabrik-quartet-tubo-de-ensaio_img69d52bff8f005.jpg",
       "source": "teatro",
@@ -228,7 +212,6 @@
     "start": "2026-05-26T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
@@ -242,7 +225,6 @@
     "start": "2026-05-27T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
@@ -256,7 +238,6 @@
     "start": "2026-05-28T18:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
@@ -270,7 +251,6 @@
     "start": "2026-05-31T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
@@ -284,7 +264,6 @@
     "start": "2026-06-04T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
@@ -298,7 +277,6 @@
     "start": "2026-05-30T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/a-morte-do-diabo/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/a-morte-do-diabo-fragmentos-de-uma-opereta-de-eca-de-queiros-pela-banda-amizade-banda-sinfonica-de-aveiro_img6978a158e1e96.jpg",
       "source": "teatro",
@@ -312,7 +290,6 @@
     "start": "2026-06-03T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/only-duos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/only-duos-companhia-nacional-de-bailado_img69d52ce8f159c.jpg",
       "source": "teatro",
@@ -326,7 +303,6 @@
     "start": "2026-06-08T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/the-simon-garfunkel-story/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/the-simon-garfunkel-story_img698dbf2095c48.jpg",
       "source": "teatro",
@@ -340,7 +316,6 @@
     "start": "2026-06-11T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/onyx-piny/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/onyx-piny_img69d52dff914f2.jpg",
       "source": "teatro",
@@ -354,7 +329,6 @@
     "start": "2026-06-12T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/18-pontos-andreia-ribeiro-da-silva_img69d52ea62b899.jpg",
       "source": "teatro",
@@ -368,7 +342,6 @@
     "start": "2026-06-13T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/18-pontos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/18-pontos-andreia-ribeiro-da-silva_img69d52ea62b899.jpg",
       "source": "teatro",
@@ -382,7 +355,6 @@
     "start": "2026-06-18T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/duques-do-precariado/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/duques-do-precariado-novas-quintas_img69d52f81070ef.jpg",
       "source": "teatro",
@@ -396,7 +368,6 @@
     "start": "2026-06-20T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel_img69d5308085fae.jpg",
       "source": "teatro",
@@ -410,7 +381,6 @@
     "start": "2026-06-21T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel_img69d5308085fae.jpg",
       "source": "teatro",
@@ -424,7 +394,6 @@
     "start": "2026-06-26T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/hold/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/hold-sao-castro-e-teresa-alves-da-silva_img69d53208d0eca.jpg",
       "source": "teatro",
@@ -438,7 +407,6 @@
     "start": "2026-06-28T15:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cantar-o-lar-aaaa/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/cantar-o-lar-projeto-de-arte-comunitaria-3-edicao_img69d532ef17977.jpg",
       "source": "teatro",
@@ -452,7 +420,6 @@
     "start": "2026-07-03T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/baiao-doxigenio/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/baiao-doxigenio_img698c5894bde0d.jpg",
       "source": "teatro",
@@ -466,7 +433,6 @@
     "start": "2026-07-04T15:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/baiao-doxigenio/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/baiao-doxigenio_img698c5894bde0d.jpg",
       "source": "teatro",
@@ -480,7 +446,6 @@
     "start": "2026-07-05T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/maria-joao-andre-mehmari-carlos-bica/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/maria-joao-andre-mehmari-carlos-bica_img69f0db32abe3c.jpg",
       "source": "teatro",
@@ -494,7 +459,6 @@
     "start": "2026-07-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
@@ -508,7 +472,6 @@
     "start": "2026-07-16",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
@@ -522,7 +485,6 @@
     "start": "2026-07-17",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
@@ -536,7 +498,6 @@
     "start": "2026-07-18",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
@@ -550,7 +511,6 @@
     "start": "2026-07-19",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
@@ -564,7 +524,6 @@
     "start": "2026-07-25T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/territorio-ix/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/territorio-ix-estudios-victor-cordon_img69d533edc183b.jpg",
       "source": "teatro",
@@ -578,7 +537,6 @@
     "start": "2026-07-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
       "source": "teatro",
@@ -592,7 +550,6 @@
     "start": "2026-07-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
       "source": "teatro",
@@ -606,7 +563,6 @@
     "start": "2026-07-29",
     "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
       "source": "teatro",
@@ -620,7 +576,6 @@
     "start": "2026-07-30",
     "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
       "source": "teatro",
@@ -634,7 +589,6 @@
     "start": "2026-07-31T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/marta-ren/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/marta-ren_img69d61a75cac4a.jpg",
       "source": "teatro",
@@ -648,7 +602,6 @@
     "start": "2026-08-01T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/ainda-nada-marcia-leite/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/ainda-nada-marcia-leite_img69d61c1fbcb4e.jpg",
       "source": "teatro",
@@ -662,7 +615,6 @@
     "start": "2026-08-02T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/ainda-nada-marcia-leite/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/ainda-nada-marcia-leite_img69d61c1fbcb4e.jpg",
       "source": "teatro",
@@ -676,7 +628,6 @@
     "start": "2026-08-06T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/maquina/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/maquina-novas-quintas-na-rua_img69d534c6ef694.jpg",
       "source": "teatro",
@@ -690,13 +641,241 @@
     "start": "2026-08-08T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/logos/",
     "source": "teatro",
-    "color": "#e67e22",
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/logos-com-hugo-oliveira-e-sage-cushman_img69d61ced25573.jpg",
       "source": "teatro",
       "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense.",
       "category": "Novo Circo",
       "display_time": "22:00"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-04-29",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "O Diabo Veste Prada 2",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)"
+        },
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-05-06",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "O Diabo Veste Prada 2",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+          "horas": "13h05, 15h45, 18h30, 21h15, 24h (ATMOS)"
+        },
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-04-30",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-05-01",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-05-03",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-05-04",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
+    }
+  },
+  {
+    "title": "CINEMA: GLICÍNIAS PLAZA",
+    "start": "2026-05-05",
+    "url": "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718",
+    "source": "cinema",
+    "extendedProps": {
+      "is_cinema_aggregator": true,
+      "movies": [
+        {
+          "titulo": "Michael",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+          "horas": "23h30 | 13h10, 16h, 18h50, 21h50 (ATMOS)"
+        },
+        {
+          "titulo": "Super Mario Galaxy - O Filme",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+          "horas": "13h40, 16h15, 19h (VP)Sab. Dom.: 10h50, 13h40, 16h15, 19h (VP)"
+        },
+        {
+          "titulo": "O Drama",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
+          "horas": "13h05, 15h40, 18h10, 20h50"
+        },
+        {
+          "titulo": "Tudo Me Lembra de Ti",
+          "img": "https://imagens.publicocdn.com/imagens.aspx/822217?tp=KM",
+          "horas": "21h30, 00h05"
+        }
+      ],
+      "source": "cinema"
     }
   }
 ]
