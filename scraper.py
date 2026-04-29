@@ -140,7 +140,8 @@ def get_teatro_data():
 
 def get_cinema_data():
     cinema_events_by_date = {}
-    url = "https://cinecartaz.publico.pt/cinema/zon-lusomundo-glicinias-17718"
+    base_cine_url = "https://cinecartaz.publico.pt"
+    url = f"{base_cine_url}/cinema/zon-lusomundo-glicinias-17718"
     print("A iniciar scraper para Cinema Glicínias...")
     try:
         res = session.get(url, headers=HEADERS, timeout=15)
@@ -157,6 +158,10 @@ def get_cinema_data():
             img_el = block.select_one('.flex-media img')
             img_url = img_el['src'] if img_el else ""
             
+            # Vamos extrair o link individual do filme!
+            link_el = block.select_one('a.block-link')
+            movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
+            
             for p in block.select('.movie-card__info p'):
                 if 'Sessões:' in p.get_text():
                     text = p.get_text(strip=True).replace('Sessões:', '')
@@ -168,7 +173,12 @@ def get_cinema_data():
                         if is_showing:
                             date_str = dt.strftime('%Y-%m-%d')
                             if date_str not in cinema_events_by_date: cinema_events_by_date[date_str] = []
-                            cinema_events_by_date[date_str].append({"titulo": title, "img": img_url, "horas": horarios.strip()})
+                            cinema_events_by_date[date_str].append({
+                                "titulo": title, 
+                                "img": img_url, 
+                                "horas": horarios.strip(),
+                                "url": movie_url
+                            })
 
         final_cinema = []
         for d_date, movies in cinema_events_by_date.items():
