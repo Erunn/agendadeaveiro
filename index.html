@@ -1,414 +1,229 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Aveiro</title>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
-    <style>
-        :root {
-            --sidebar-bg: #009a61;
-            --main-bg: #f4f7f6;
-            --text-color: #333;
-            --card-bg: #ffffff;
-            --border-color: #e5e7eb;
-            --teatro-color: #e67e22;
-            --cinema-color: #1e88e5;
-            --cma-color: #2e7d32;
-            --viral-color: #7b1fa2;
-        }
+import requests
+from bs4 import BeautifulSoup
+import json
+import re
+import time
+from datetime import datetime, timedelta
 
-        [data-theme="dark"] {
-            --main-bg: #111827;
-            --text-color: #f3f4f6;
-            --card-bg: #1f2937;
-            --border-color: #374151;
-        }
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+session = requests.Session()
 
-        * { box-sizing: border-box; }
-        body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--main-bg); color: var(--text-color); display: flex; height: 100vh; overflow: hidden; transition: background 0.3s; }
+def parse_pt_date(date_str, default_date=None):
+    months = {
+        'janeiro': '01', 'fevereiro': '02', 'março': '03', 'abril': '04',
+        'maio': '05', 'junho': '06', 'julho': '07', 'agosto': '08',
+        'setembro': '09', 'outubro': '10', 'novembro': '11', 'dezembro': '12',
+        'jan': '01', 'fev': '02', 'mar': '03', 'abr': '04', 'mai': '05', 'jun': '06',
+        'jul': '07', 'ago': '08', 'set': '09', 'out': '10', 'nov': '11', 'dez': '12'
+    }
+    try:
+        clean_str = date_str.lower().replace(' de ', ' ').strip()
+        days = re.findall(r'\d+', clean_str)
+        if not days:
+            return default_date or datetime.now().strftime('%Y-%m-%d')
         
-        /* --- SIDEBAR & TOGGLES (Estilo iOS) --- */
-        .sidebar { width: 260px; background: var(--sidebar-bg); padding: 30px 20px; display: flex; flex-direction: column; gap: 25px; color: white; z-index: 200; box-shadow: 2px 0 10px rgba(0,0,0,0.1); flex-shrink: 0; overflow-y: auto; scrollbar-width: none; }
-        .sidebar::-webkit-scrollbar { display: none; }
-        .sidebar h1 { font-size: 1.5rem; margin: 0; letter-spacing: -0.5px; }
-        .sidebar-section h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.7); margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px;}
+        day = days[0].zfill(2)
+        month = None
+        for word in clean_str.split():
+            word_clean = re.sub(r'[^a-zç]', '', word)
+            if word_clean in months:
+                month = months[word_clean]
+                break
+
+        if not month:
+            return default_date or datetime.now().strftime('%Y-%m-%d')
+
+        year = datetime.now().year
+        for d in days:
+            if len(d) == 4:
+                year = int(d)
+                break
+        else:
+            if datetime.now().month >= 10 and month in ['01', '02', '03']:
+                year += 1
+
+        return f"{year}-{month}-{day}"
+    except Exception:
+        return default_date or datetime.now().strftime('%Y-%m-%d')
+
+def format_cinema_times(text):
+    matches = re.findall(r'(\d{1,2})[hH:](\d{2})?', text)
+    times = []
+    for h, m in matches:
+        h_int = int(h)
+        m_int = int(m) if m else 0
+        if 0 <= h_int <= 25: times.append((h_int, m_int))
+    times = sorted(list(set(times)))
+    formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
+    return ", ".join(formatted)
+
+def normalize_category(cat_str):
+    cat = cat_str.lower()
+    if 'teatro' in cat: return 'teatro'
+    if 'cinema' in cat or 'filme' in cat: return 'cinema'
+    if 'música' in cat or 'musica' in cat: return 'música'
+    if 'dança' in cat or 'danca' in cat: return 'dança'
+    if 'workshop' in cat or 'oficina' in cat: return 'workshop'
+    if 'ópera' in cat or 'opera' in cat: return 'ópera'
+    if 'multidisciplinar' in cat: return 'multidisciplinar'
+    if 'festival' in cat: return 'festival'
+    return 'outros'
+
+def get_teatro_data():
+    all_events = []
+    base_url = "https://www.teatroaveirense.pt"
+    print("A iniciar scraper para Teatro Aveirense...")
+    
+    try:
+        res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
+        res.raise_for_status()
+        soup = BeautifulSoup(res.text, 'html.parser')
+        items = soup.select('.programa_item')
         
-        .filter-group { display: flex; flex-direction: column; gap: 8px; }
-        .toggle-item { 
-            display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; 
-            padding: 8px 12px; cursor: pointer; border-radius: 8px; transition: background 0.2s;
-        }
-        .toggle-item:hover { background: rgba(255,255,255,0.1); }
-        .toggle-item input { display: none; }
-        .toggle-switch { 
-            width: 36px; height: 20px; background: rgba(0,0,0,0.3); border-radius: 20px; 
-            position: relative; transition: 0.3s; flex-shrink: 0;
-        }
-        .toggle-switch::after { 
-            content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; 
-            background: white; border-radius: 50%; transition: 0.3s; 
-        }
-        .toggle-item input:checked + .toggle-switch { background: #fff; }
-        .toggle-item input:checked + .toggle-switch::after { transform: translateX(16px); background: var(--sidebar-bg); }
+        for item in items:
+            h2 = item.select_one('h2')
+            date_el = item.select_one('.data')
+            link_el = item.select_one('a')
+            
+            img_el = item.select_one('img')
+            img_url = img_el.get('src', '') if img_el else ""
+            if img_url and not img_url.startswith('http'):
+                img_url = base_url + img_url
 
-        /* --- LAYOUT PRINCIPAL --- */
-        .main-wrapper { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
-        .custom-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; background: var(--main-bg); z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
-        [data-theme="dark"] .custom-header { border-bottom: 1px solid rgba(255,255,255,0.05); }
-        
-        .header-left, .header-right { display: flex; align-items: center; gap: 10px; width: 250px; }
-        .header-right { justify-content: flex-end; }
-        .header-center { display: flex; align-items: center; gap: 15px; justify-content: center; flex: 1; }
-        .header-center h2 { margin: 0; font-size: 1.4rem; font-weight: 700; text-transform: lowercase; min-width: 200px; text-align: center; }
-        
-        .btn { background: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .btn:hover { background: var(--border-color); }
-        .btn.active { background: var(--sidebar-bg); color: white; border-color: var(--sidebar-bg); }
-
-        .theme-switch-wrapper { margin-left: 20px; display: flex; align-items: center; }
-        .theme-switch { display: inline-block; height: 24px; position: relative; width: 44px; }
-        .theme-switch input { display:none; }
-        .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 34px; }
-        .slider:before { background-color: #fff; bottom: 4px; content: ""; height: 16px; left: 4px; position: absolute; transition: .4s; width: 16px; border-radius: 50%; }
-        input:checked + .slider { background-color: #222; }
-        input:checked + .slider:before { transform: translateX(20px); }
-
-        /* --- ZONA DE CONTEÚDO --- */
-        .calendar-section { flex: 1; padding: 25px 30px; overflow-y: auto; scroll-behavior: smooth; }
-        .fc-header-toolbar { display: none !important; } 
-        #calendar { background: transparent; padding: 0; border: none; }
-        .fc-view-harness, .fc-view { background: transparent !important; outline: none !important; border: none !important; }
-
-        /* --- MODO CALENDÁRIO (GRID) --- */
-        .fc-dayGridMonth-view .fc-scrollgrid { background: var(--card-bg) !important; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid var(--border-color) !important; }
-        .fc-theme-standard td, .fc-theme-standard th { border: 1px solid var(--border-color) !important; }
-        .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
-        .fc-daygrid-day-frame { padding: 5px; }
-
-        .fc-day-past, .fc-day-other, .fc-day-disabled { background-color: rgba(0,0,0,0.02) !important; }
-        [data-theme="dark"] .fc-day-past, [data-theme="dark"] .fc-day-other, [data-theme="dark"] .fc-day-disabled { background-color: rgba(255,255,255,0.02) !important; }
-        .fc-day-past .fc-daygrid-day-number, .fc-day-other .fc-daygrid-day-number, .fc-day-disabled .fc-daygrid-day-number { opacity: 0.35; }
-
-        .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; padding: 2px 5px; font-size: 0.75rem; }
-        .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 3px solid var(--teatro-color) !important; }
-        .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 3px solid var(--cinema-color) !important; }
-        .event-cma { background: rgba(46, 125, 50, 0.08) !important; border-left: 3px solid var(--cma-color) !important; }
-        .event-viral { background: rgba(123, 31, 162, 0.08) !important; border-left: 3px solid var(--viral-color) !important; }
-
-        /* --- MODO LISTA CONTÍNUA --- */
-        .fc .fc-list-event-graphic, .fc .fc-list-event-time { display: none !important; }
-        .fc .fc-list-table, .fc .fc-list-table td, .fc .fc-list-table th, .fc .fc-list-table tr { border: none !important; background: transparent !important; }
-        .fc-theme-standard .fc-list { border: none !important; }
-        .fc-theme-standard .fc-list-event:hover td { background-color: transparent !important; }
-        .fc-list-table, .fc-list-table tbody, .fc-list-table tr, .fc-list-table td { display: block !important; width: 100% !important; } 
-        .fc-list-event { margin-bottom: 15px !important; }
-        .fc-list-event-title { padding: 0 !important; }
-        .fc-list-day-cushion { padding: 0 !important; background: transparent !important;}
-
-        .custom-day-header { display: flex; flex-direction: column; gap: 2px; padding: 25px 0 10px 0; text-align: left; }
-        .custom-weekday { font-size: 0.85rem; text-transform: uppercase; color: #888; font-weight: 700; letter-spacing: 1px; }
-        .custom-date { font-size: 1.3rem; font-weight: 700; color: var(--text-color); letter-spacing: -0.5px; }
-
-        /* --- CARTÃO BASE (Igual para Teatro e Cinema) --- */
-        .list-card { 
-            display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; min-height: 140px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s;
-            overflow: hidden; border-left-width: 10px !important; border-left-style: solid; 
-        }
-        
-        .list-card.clickable-card { cursor: pointer; }
-        .list-card.clickable-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
-        
-        .list-time-box { 
-            width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            font-weight: bold; font-size: 1.1em; color: var(--text-color); border-right: 1px solid rgba(0,0,0,0.05); 
-            flex-shrink: 0; padding: 10px; text-align: center; line-height: 1.4;
-        }
-        [data-theme="dark"] .list-time-box { border-right-color: rgba(255,255,255,0.05); }
-
-        /* --- TEATRO / NORMAIS --- */
-        .list-img { 
-            width: 140px; align-self: stretch; object-fit: cover; flex-shrink: 0; 
-            margin-right: 20px; border-radius: 0; 
-        }
-        .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; color: var(--text-color); }
-        .list-meta { font-size: 0.85em; color: #888; margin-bottom: 6px; font-weight: 600; text-transform: uppercase; }
-        .list-title { font-size: 1.1em; line-height: 1.3; font-weight: bold; margin-bottom: 5px;}
-        .list-desc { font-size: 0.85em; color: #6b7280; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-        /* --- CINEMA (MOSAICO 100% ALINHADO E ALTURA FORÇADA) --- */
-        .cinema-main-card { 
-            cursor: default !important; 
-            height: 140px !important; /* Força exatamente a altura do teatro */
-            min-height: 140px !important;
-        }
-        .cinema-main-card:hover { transform: none !important; box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important; }
-        
-        .cinema-mosaico { 
-            display: flex; flex: 1; overflow-x: auto; align-items: stretch;
-            padding: 0 20px 0 0; 
-            scrollbar-width: none; -ms-overflow-style: none;
-            height: 100%; /* Permite forçar o tamanho para o crop da imagem */
-        }
-        .cinema-mosaico::-webkit-scrollbar { display: none; }
-        
-        .movie-item { 
-            display: flex; flex-direction: row; align-items: stretch;
-            width: 320px; flex-shrink: 0; 
-            border-right: none !important; /* REMOVIDA A LINHA CINZENTA DE SEPARAÇÃO */
-            text-decoration: none !important; color: inherit; transition: background 0.2s;
-            height: 100%; 
-        }
-        [data-theme="dark"] .movie-item { border-right-color: rgba(255,255,255,0.05); }
-        
-        .movie-item:hover { background: rgba(0,0,0,0.02); }
-        [data-theme="dark"] .movie-item:hover { background: rgba(255,255,255,0.02); }
-        
-        .movie-poster-wrap {
-            width: 140px; align-self: stretch; flex-shrink: 0; margin-right: 15px; overflow: hidden;
-            height: 100%;
-        }
-        
-        .movie-poster { 
-            width: 100%; height: 100%; object-fit: cover; border-radius: 0;
-            transition: transform 0.3s ease;
-        }
-        
-        .movie-item:hover .movie-poster { transform: scale(1.05); }
-        
-        .movie-details { 
-            flex: 1; display: flex; flex-direction: column; justify-content: center; 
-            padding: 15px 15px 15px 0; gap: 6px; overflow: hidden;
-        }
-        
-        .movie-info-name { 
-            font-size: 1em; font-weight: bold; color: var(--text-color); 
-            line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; 
-            -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 2px;
-            text-transform: uppercase;
-        }
-        
-        .movie-info-time { font-size: 0.85em; color: #6b7280; font-weight: normal; line-height: 1.4; }
-    </style>
-</head>
-<body>
-
-    <div class="sidebar">
-        <h1>AGENDA AVEIRO</h1>
-        
-        <div class="sidebar-section">
-            <h3>Locais</h3>
-            <div class="filter-group" id="filter-locations">
-                <label class="toggle-item">Teatro Aveirense <input type="checkbox" checked value="teatro"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Cinema Glicínias <input type="checkbox" checked value="cinema"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Município <input type="checkbox" checked value="cma"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Viral Agenda <input type="checkbox" checked value="viral"><div class="toggle-switch"></div></label>
-            </div>
-        </div>
-
-        <div class="sidebar-section">
-            <h3>Tipo de Evento</h3>
-            <div class="filter-group" id="filter-categories">
-                <label class="toggle-item">Cinema <input type="checkbox" checked value="cinema"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Música <input type="checkbox" checked value="música"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Teatro <input type="checkbox" checked value="teatro"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Dança <input type="checkbox" checked value="dança"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Workshop <input type="checkbox" checked value="workshop"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Ópera <input type="checkbox" checked value="ópera"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Multidisciplinar <input type="checkbox" checked value="multidisciplinar"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Festival <input type="checkbox" checked value="festival"><div class="toggle-switch"></div></label>
-                <label class="toggle-item">Outros <input type="checkbox" checked value="outros"><div class="toggle-switch"></div></label>
-            </div>
-        </div>
-    </div>
-
-    <div class="main-wrapper">
-        <div class="custom-header">
-            <div class="header-left">
-                <button class="btn active" id="btn-list" data-view="listYear">Lista</button>
-                <button class="btn" id="btn-grid" data-view="dayGridMonth">Calendário</button>
-            </div>
-            <div class="header-center">
-                <button class="btn btn-icon" id="btn-prev">&lt;</button>
-                <h2 id="current-month-title">a carregar...</h2>
-                <button class="btn btn-icon" id="btn-next">&gt;</button>
-            </div>
-            <div class="header-right">
-                <button class="btn" id="btn-today">Hoje</button>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch"><input type="checkbox" id="themeToggle"><div class="slider"></div></label>
-                </div>
-            </div>
-        </div>
-
-        <div class="calendar-section" id="scroll-container">
-            <div id='calendar'></div>
-        </div>
-    </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var scrollContainer = document.getElementById('scroll-container');
-        var titleEl = document.getElementById('current-month-title');
-        window.allEvents = [];
-        let currentViewName = 'listYear';
-
-        window.calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
-          initialView: 'listYear', locale: 'pt', firstDay: 1, stickyHeaderDates: false, height: 'auto',
-          datesSet: (info) => { 
-              if (currentViewName === 'dayGridMonth') titleEl.innerText = info.view.title.toLowerCase();
-              else updateTitleOnScroll();
-          },
-          dayHeaderContent: (arg) => {
-              if (arg.view.type === 'listYear') {
-                  let weekday = arg.date.toLocaleDateString('pt-PT', { weekday: 'long' });
-                  let dayMonthYear = arg.date.toLocaleDateString('pt-PT', { day: 'numeric', month: 'long', year: 'numeric' });
-                  return { html: `<div class="custom-day-header"><span class="custom-weekday">${weekday}</span><span class="custom-date">${dayMonthYear}</span></div>` };
-              }
-          },
-          eventContent: function(arg) {
-            let ep = arg.event.extendedProps;
-
-            if (ep.is_glicinias && arg.view.type === 'listYear') {
-                let moviesHtml = ep.movies.map(m => `
-                    <a href="${m.url}" target="_blank" class="movie-item">
-                        <div class="movie-poster-wrap">
-                            <img src="${m.img}" class="movie-poster">
-                        </div>
-                        <div class="movie-details">
-                            <div class="movie-info-name">${m.titulo}</div>
-                            <div class="movie-info-time">${m.horas}</div>
-                        </div>
-                    </a>`).join('');
+            resumo_text = item.select_one('.resumo').get_text(strip=True) if item.select_one('.resumo') else ""
+            categoria_el = item.select_one('.categoria')
+            categoria_text = "Outros"
+            if categoria_el:
+                if categoria_el.select_one('.sr-only'): categoria_el.select_one('.sr-only').decompose()
+                categoria_text = categoria_el.get_text(strip=True)
+            
+            if h2 and date_el and link_el:
+                span = h2.find('span')
+                umbrella_name = span.get_text().strip() if span else ""
                 
-                return { html: `
-                    <div class="list-card cinema-main-card" style="border-left-color: var(--cinema-color) !important;">
-                        <div class="list-time-box"></div>
-                        <div class="cinema-mosaico">${moviesHtml}</div>
-                    </div>` };
-            }
-
-            let timeText = ep.display_time ? ep.display_time.split(' / ').join('<br>') : 'Todo o dia';
-            let sourceColor = ep.source === 'teatro' ? 'var(--teatro-color)' : ep.source === 'cinema' ? 'var(--cinema-color)' : ep.source === 'cma' ? 'var(--cma-color)' : 'var(--viral-color)';
-
-            if (arg.view.type === 'listYear') {
-                let umbrellaHtml = ep.umbrella ? `<b style="color: var(--sidebar-bg); display: block; font-size: 0.9em; margin-bottom: 3px; text-transform: uppercase;">${ep.umbrella}</b>` : '';
+                h2_clone = BeautifulSoup(str(h2), 'html.parser').find('h2')
+                if h2_clone.span: h2_clone.span.decompose()
+                event_name = " ".join(h2_clone.get_text().replace('::', '').strip().split())
                 
-                return { html: `
-                    <div class="list-card clickable-card" style="border-left-color: ${sourceColor} !important" onclick="window.open('${arg.event.url}', '_blank')">
-                        <div class="list-time-box">${timeText}</div>
-                        ${ep.image ? `<img src="${ep.image}" class="list-img">` : ''}
-                        <div class="list-info">
-                            <div class="list-meta"><span>${ep.category || 'Geral'}</span></div>
-                            <div class="list-title">${umbrellaHtml}${arg.event.title}</div>
-                            <div class="list-desc">${ep.description || ''}</div>
-                        </div>
-                    </div>` };
-            }
-            
-            return { html: `<div style="overflow:hidden;"><b>${timeText.replace('<br>', ' ')}</b> ${arg.event.title}</div>` };
-          },
-          eventClassNames: (arg) => ['event-' + arg.event.extendedProps.source]
-        });
+                url = link_el['href']
+                if not url.startswith('http'): url = base_url + url
 
-        function updateTitleOnScroll() {
-            if(currentViewName !== 'listYear') return;
-            let dayHeaders = document.querySelectorAll('.fc-list-day');
-            let containerTop = scrollContainer.getBoundingClientRect().top;
-            let currentEl = dayHeaders[0];
-            for (let el of dayHeaders) {
-                if (el.getBoundingClientRect().top <= containerTop + 100) currentEl = el;
-                else break;
-            }
-            if(currentEl && currentEl.getAttribute('data-date')) {
-                titleEl.innerText = new Date(currentEl.getAttribute('data-date')).toLocaleString('pt-PT', { month: 'long', year: 'numeric' });
-            }
-        }
-        scrollContainer.addEventListener('scroll', updateTitleOnScroll);
+                listing_date = parse_pt_date(date_el.text.strip())
+                daily_schedules = {}
+                
+                try:
+                    time.sleep(0.2) 
+                    event_page = session.get(url, headers=HEADERS, timeout=5)
+                    inner_soup = BeautifulSoup(event_page.text, 'html.parser')
+                    horarios_elements = inner_soup.select('.horarios_txt')
+                    
+                    if horarios_elements:
+                        for hp in horarios_elements:
+                            text_content = hp.get_text(separator="\n").lower()
+                            lines = text_content.split('\n')
+                            day_date = parse_pt_date(lines[0], default_date=listing_date)
+                            times_in_block = re.findall(r'(\d{1,2})[h:](\d{2})', text_content)
+                            if day_date not in daily_schedules: daily_schedules[day_date] = set()
+                            for h, m in times_in_block: daily_schedules[day_date].add(f"{h.zfill(2)}:{m}")
+                except Exception: pass
 
-        function navigateListMonth(direction) {
-            let dayHeaders = Array.from(document.querySelectorAll('.fc-list-day'));
-            if (!dayHeaders.length) return;
+                if not daily_schedules: daily_schedules[listing_date] = set()
+                    
+                for d_date, times_set in daily_schedules.items():
+                    sorted_times = sorted(list(times_set))
+                    display_time = " / ".join(sorted_times) if sorted_times else "Todo o dia"
+                    time_iso = f"T{sorted_times[0]}:00" if sorted_times else ""
+
+                    all_events.append({
+                        "title": event_name,
+                        "start": d_date + time_iso,
+                        "url": url,
+                        "source": "teatro",
+                        "extendedProps": {
+                            "umbrella": umbrella_name,
+                            "image": img_url,
+                            "source": "teatro",
+                            "description": resumo_text,
+                            "category": categoria_text,
+                            "category_normalized": normalize_category(categoria_text),
+                            "display_time": display_time,
+                            "is_glicinias": False
+                        },
+                        "raw_event_name": event_name,
+                        "raw_umbrella_name": umbrella_name
+                    })
+        
+        umbrella_names = {ev["raw_umbrella_name"].lower() for ev in all_events if ev.get("raw_umbrella_name")}
+        final_teatro = []
+        for ev in all_events:
+            if ev.get("raw_event_name", "").lower() in umbrella_names: continue
+            ev.pop("raw_event_name", None); ev.pop("raw_umbrella_name", None)
+            final_teatro.append(ev)
+        return final_teatro
+    except Exception as e:
+        print(f"Erro Teatro: {e}"); return []
+
+def get_cinema_data():
+    cinema_events_by_date = {}
+    base_cine_url = "https://cinecartaz.publico.pt"
+    url = f"{base_cine_url}/cinema/zon-lusomundo-glicinias-17718"
+    print("A iniciar scraper para Cinema Glicínias...")
+    try:
+        res = session.get(url, headers=HEADERS, timeout=15)
+        res.raise_for_status()
+        soup = BeautifulSoup(res.text, 'html.parser')
+        day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb.': 5, 'dom.': 6, 'sab': 5, 'dom': 6}
+        today = datetime.now().date()
+        days_to_next_wed = (2 - today.weekday()) % 7
+        if days_to_next_wed == 0: days_to_next_wed = 7 
+        target_dates = [today + timedelta(days=i) for i in range(days_to_next_wed + 1)]
+
+        for block in soup.select('.movie-card'):
+            title = block.select_one('.movie-card__title').get_text(strip=True)
+            img_el = block.select_one('.flex-media img')
+            img_url = img_el['src'] if img_el else ""
             
-            let containerTop = scrollContainer.getBoundingClientRect().top;
-            let currentEl = dayHeaders[0];
-            for (let el of dayHeaders) {
-                if (el.getBoundingClientRect().top <= containerTop + 100) currentEl = el;
-                else break;
-            }
+            link_el = block.select_one('a.block-link')
+            movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
-            let currentDate = new Date(currentEl.getAttribute('data-date'));
-            currentDate.setMonth(currentDate.getMonth() + direction);
-            let targetMonthStr = currentDate.getFullYear() + '-' + String(currentDate.getMonth() + 1).padStart(2, '0');
-            
-            let targetHeader = null;
-            if (direction === 1) {
-                targetHeader = dayHeaders.find(el => el.getAttribute('data-date').substring(0, 7) >= targetMonthStr);
-            } else {
-                let reversed = [...dayHeaders].reverse();
-                targetHeader = reversed.find(el => el.getAttribute('data-date').substring(0, 7) <= targetMonthStr);
-                if (targetHeader) {
-                    let prevMonthStr = targetHeader.getAttribute('data-date').substring(0, 7);
-                    targetHeader = dayHeaders.find(el => el.getAttribute('data-date').startsWith(prevMonthStr));
+            for p in block.select('.movie-card__info p'):
+                if 'Sessões:' in p.get_text():
+                    text = p.get_text(strip=True).replace('Sessões:', '')
+                    if ':' not in text: continue
+                    dias_raw, horarios_raw = text.split(':', 1)
+                    
+                    horarios_formatados = format_cinema_times(horarios_raw)
+                    if not horarios_formatados: continue
+
+                    dias_list = dias_raw.lower().split()
+                    for dt in target_dates:
+                        is_showing = any(d in day_map and day_map[d] == dt.weekday() for d in dias_list)
+                        if is_showing:
+                            date_str = dt.strftime('%Y-%m-%d')
+                            if date_str not in cinema_events_by_date: cinema_events_by_date[date_str] = []
+                            cinema_events_by_date[date_str].append({
+                                "titulo": title, 
+                                "img": img_url, 
+                                "horas": horarios_formatados,
+                                "url": movie_url
+                            })
+
+        final_cinema = []
+        for d_date, movies in cinema_events_by_date.items():
+            final_cinema.append({
+                "title": "CINEMAS GLICÍNIAS",
+                "start": d_date,
+                "source": "cinema",
+                "extendedProps": { 
+                    "is_glicinias": True, "movies": movies, "source": "cinema", "category_normalized": "cinema"
                 }
-            }
-            
-            if (targetHeader) targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+            })
+        return final_cinema
+    except Exception as e:
+        print(f"Erro Cinema: {e}"); return []
 
-        document.getElementById('btn-prev').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(-1) : calendar.prev());
-        document.getElementById('btn-next').addEventListener('click', () => currentViewName === 'listYear' ? navigateListMonth(1) : calendar.next());
-        
-        document.getElementById('btn-today').addEventListener('click', () => {
-            if (currentViewName === 'listYear') {
-                let target = Array.from(document.querySelectorAll('.fc-list-day')).find(el => el.getAttribute('data-date') >= new Date().toISOString().split('T')[0]);
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else calendar.today();
-        });
-
-        document.querySelectorAll('.header-left .btn[data-view]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.header-left .btn[data-view]').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                currentViewName = e.target.dataset.view;
-                calendar.changeView(currentViewName);
-                scrollContainer.scrollTo({top: 0});
-            });
-        });
-
-        document.getElementById('themeToggle').addEventListener('change', (e) => document.documentElement.setAttribute('data-theme', e.target.checked ? 'dark' : 'light'));
-
-        fetch('events.json?t=' + new Date().getTime()).then(res => res.json()).then(data => {
-            window.allEvents = data;
-            if(data.length > 0) {
-                let min = data.reduce((a, b) => a.start < b.start ? a : b).start.split('T')[0];
-                let max = data.reduce((a, b) => a.start > b.start ? a : b).start.split('T')[0];
-                let today = new Date().toISOString().split('T')[0];
-                calendar.setOption('validRange', { start: min < today ? min : today, end: max });
-                calendar.gotoDate(min);
-            }
-            updateCalendar();
-        });
-
-        window.updateCalendar = () => {
-            const activeLocs = Array.from(document.querySelectorAll('#filter-locations input:checked')).map(el => el.value);
-            const activeCats = Array.from(document.querySelectorAll('#filter-categories input:checked')).map(el => el.value);
-            
-            const filteredEvents = window.allEvents.filter(ev => {
-                let ep = ev.extendedProps;
-                if (ep.is_glicinias) return activeLocs.includes('cinema') && activeCats.includes('cinema');
-                return activeLocs.includes(ev.source) && activeCats.includes(ep.category_normalized);
-            });
-
-            calendar.removeAllEvents();
-            calendar.addEventSource(filteredEvents);
-            calendar.render();
-            setTimeout(updateTitleOnScroll, 100);
-        };
-        
-        document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(i => i.addEventListener('change', updateCalendar));
-      });
-    </script>
-</body>
-</html>
+if __name__ == "__main__":
+    results = get_teatro_data() + get_cinema_data()
+    with open('events.json', 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    print(f"Sucesso! Total: {len(results)}")
