@@ -53,11 +53,11 @@ def format_cinema_times(text):
     for h, m in matches:
         h_int = int(h)
         m_int = int(m) if m else 0
-        if 0 <= h_int <= 25: # Aceita horas como 24h
+        if 0 <= h_int <= 25: 
             times.append((h_int, m_int))
     # Remove duplicados e ordena cronologicamente
     times = sorted(list(set(times)))
-    # Formata para HH:MM
+    # Formata garantindo os zeros à esquerda (ex: 16:00, 21:30)
     formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
     return ", ".join(formatted)
 
@@ -127,12 +127,12 @@ def get_teatro_data():
                     time_iso = f"T{sorted_times[0]}:00" if sorted_times else ""
 
                     all_events.append({
-                        "title": event_name, # Separado do Umbrella
+                        "title": event_name,
                         "start": d_date + time_iso,
                         "url": url,
                         "source": "teatro",
                         "extendedProps": {
-                            "umbrella": umbrella_name, # Guardamos o umbrella isolado
+                            "umbrella": umbrella_name,
                             "image": img_url,
                             "source": "teatro",
                             "description": resumo_text,
