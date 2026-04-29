@@ -67,7 +67,7 @@ def normalize_category(cat_str):
     if 'ópera' in cat or 'opera' in cat: return 'ópera'
     if 'multidisciplinar' in cat: return 'multidisciplinar'
     if 'festival' in cat: return 'festival'
-    return 'outros'
+    return 'outros' # Mantido como pediste!
 
 def get_teatro_data():
     all_events = []
@@ -146,8 +146,7 @@ def get_teatro_data():
                             "description": resumo_text,
                             "category": categoria_text,
                             "category_normalized": normalize_category(categoria_text),
-                            "display_time": display_time,
-                            "is_glicinias": False
+                            "display_time": display_time
                         },
                         "raw_event_name": event_name,
                         "raw_umbrella_name": umbrella_name
@@ -164,7 +163,7 @@ def get_teatro_data():
         print(f"Erro Teatro: {e}"); return []
 
 def get_cinema_data():
-    cinema_events_by_date = {}
+    final_cinema = []
     base_cine_url = "https://cinecartaz.publico.pt"
     url = f"{base_cine_url}/cinema/zon-lusomundo-glicinias-17718"
     print("A iniciar scraper para Cinema Glicínias...")
@@ -200,24 +199,21 @@ def get_cinema_data():
                         is_showing = any(d in day_map and day_map[d] == dt.weekday() for d in dias_list)
                         if is_showing:
                             date_str = dt.strftime('%Y-%m-%d')
-                            if date_str not in cinema_events_by_date: cinema_events_by_date[date_str] = []
-                            cinema_events_by_date[date_str].append({
-                                "titulo": title, 
-                                "img": img_url, 
-                                "horas": horarios_formatados,
-                                "url": movie_url
+                            
+                            # 1 CARTÃO POR FILME (Crucial para a grelha Masonry funcionar)
+                            final_cinema.append({
+                                "title": title,
+                                "start": date_str,
+                                "url": movie_url,
+                                "source": "cinema",
+                                "extendedProps": {
+                                    "image": img_url,
+                                    "display_time": horarios_formatados,
+                                    "source": "cinema",
+                                    "category": "Cinema",
+                                    "category_normalized": "cinema"
+                                }
                             })
-
-        final_cinema = []
-        for d_date, movies in cinema_events_by_date.items():
-            final_cinema.append({
-                "title": "CINEMAS GLICÍNIAS",
-                "start": d_date,
-                "source": "cinema",
-                "extendedProps": { 
-                    "is_glicinias": True, "movies": movies, "source": "cinema", "category_normalized": "cinema"
-                }
-            })
         return final_cinema
     except Exception as e:
         print(f"Erro Cinema: {e}"); return []
@@ -226,4 +222,4 @@ if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data()
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"Sucesso! Total: {len(results)}")
+    print(f"Sucesso! Total de eventos unitários guardados: {len(results)}")
