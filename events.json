@@ -8,7 +8,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/aveiro-sintese-2026-bienal-de-musica-electroacustica_img693c4f29a1128.jpg",
       "source": "teatro",
-      "description": "A bienal dedicada à música electroacústica estará de regresso na Primavera."
+      "description": "A bienal dedicada à música electroacústica estará de regresso na Primavera.",
+      "category": "Música"
     }
   },
   {
@@ -20,7 +21,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c3-acusmatica-ludger-brummer-aveiro-sintese-2026_img69e8aa09a4e70.jpg",
       "source": "teatro",
-      "description": "Obras acusmáticas de Ludger Brümmer"
+      "description": "Obras acusmáticas de Ludger Brümmer",
+      "category": "Música"
     }
   },
   {
@@ -32,7 +34,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/ca-som-a-interior-aveiro-sintese-2026_img69e8ac75e68e6.jpg",
       "source": "teatro",
-      "description": "ESTREIA ABSOLUTA"
+      "description": "ESTREIA ABSOLUTA",
+      "category": "Música"
     }
   },
   {
@@ -44,7 +47,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c4-ars-ad-hoc-aveiro-sintese-2026_img69e8aba958c1a.jpg",
       "source": "teatro",
-      "description": "ESTREIA NACIONAL"
+      "description": "ESTREIA NACIONAL",
+      "category": "Música"
     }
   },
   {
@@ -56,7 +60,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c5-o-beiras-aveiro-sintese-2026_img69e8b45349ff6.jpg",
       "source": "teatro",
-      "description": "ESTREIA NACIONAL"
+      "description": "ESTREIA NACIONAL",
+      "category": "Música"
     }
   },
   {
@@ -68,7 +73,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/dreaming-bodies-a-collective-practice-for-the-future-masterclass-palcos-instaveis_img69e78c97ebba0.png",
       "source": "teatro",
-      "description": "Uma oficina de dança que emerge do universo do espetáculo \"A SENSE OF\" e propõe partilhar as ferramentas de pesquisa e os eixos conceptuais da peça."
+      "description": "Uma oficina de dança que emerge do universo do espetáculo \"A SENSE OF\" e propõe partilhar as ferramentas de pesquisa e os eixos conceptuais da peça.",
+      "category": "Workshop"
     }
   },
   {
@@ -80,7 +86,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/c6-nmpnm-aveiro-sintese-2026_img69e8b4ebc3064.jpg",
       "source": "teatro",
-      "description": "Nova Música para Novos Músicos"
+      "description": "Nova Música para Novos Músicos",
+      "category": "Música"
     }
   },
   {
@@ -92,7 +99,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/chercher-la-femme-os-filmes-das-nossas-tercas_img69f0dcbf8d58d.jpg",
       "source": "teatro",
-      "description": "Um filme de António da Cunha Telles."
+      "description": "Um filme de António da Cunha Telles.",
+      "category": "Cinema"
     }
   },
   {
@@ -104,7 +112,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/a-sense-of-de-beatriz-lourenco-palcos-instaveis-segunda-casa_img69d522795b160.jpg",
       "source": "teatro",
-      "description": "O poder coletivo e o sonho como modos de protesto num espetáculo de dança."
+      "description": "O poder coletivo e o sonho como modos de protesto num espetáculo de dança.",
+      "category": "Dança"
     }
   },
   {
@@ -116,7 +125,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/nos-fado-samba-associacao-palco-central_img69d5239ec581f.jpg",
       "source": "teatro",
-      "description": "[ESTREIA]Uma dramaturgia musical que une o samba e o fado para contar a história de dois povos irmãos."
+      "description": "[ESTREIA]Uma dramaturgia musical que une o samba e o fado para contar a história de dois povos irmãos.",
+      "category": "Música"
     }
   },
   {
@@ -128,7 +138,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/concerto-de-homenagem-a-santa-joana-orquestra-das-beiras-e-orquestra-sinfonica-do-deca_img69d524939dcdb.jpg",
       "source": "teatro",
-      "description": "Um programa dedicado à Sinfonia n.º 5 de Gustav Mahler"
+      "description": "Um programa dedicado à Sinfonia n.º 5 de Gustav Mahler",
+      "category": "Música"
     }
   },
   {
@@ -140,7 +151,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/falsas-historias-verdadeiras-uma-pina-colagem-teatro-nacional-sao-joao-direcao-de-victor-hugo-pontes-e-musica-de-a-garota-nao_img69d525ae63215.jpg",
       "source": "teatro",
-      "description": "Espetáculo que celebra o mundo às avessas de Manuel António Pina, um dos nossos maiores poetas."
+      "description": "Espetáculo que celebra o mundo às avessas de Manuel António Pina, um dos nossos maiores poetas.",
+      "category": "Teatro"
     }
   },
   {
@@ -152,7 +164,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/o-que-e-que-queres-saber-de-ines-pupo-e-goncalo-pratas_img69d52af111887.jpg",
       "source": "teatro",
-      "description": "Um espetáculo em formato de história-concerto para ver em família."
+      "description": "Um espetáculo em formato de história-concerto para ver em família.",
+      "category": "Música"
     }
   },
   {
@@ -164,7 +177,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/19-festa-do-cinema-italiano_img69d6217ee112c.jpg",
       "source": "teatro",
-      "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição"
+      "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição",
+      "category": "Cinema"
     }
   },
   {
@@ -176,7 +190,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/fabrik-quartet-tubo-de-ensaio_img69d52bff8f005.jpg",
       "source": "teatro",
-      "description": "Radicado na Alemanha, o Fabrik Quartet estreia-se em Portugal a convite da Arte no Tempo"
+      "description": "Radicado na Alemanha, o Fabrik Quartet estreia-se em Portugal a convite da Arte no Tempo",
+      "category": "Música"
     }
   },
   {
@@ -188,7 +203,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
       "source": "teatro",
-      "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade."
+      "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
+      "category": "Workshop"
     }
   },
   {
@@ -200,7 +216,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/a-morte-do-diabo-fragmentos-de-uma-opereta-de-eca-de-queiros-pela-banda-amizade-banda-sinfonica-de-aveiro_img6978a158e1e96.jpg",
       "source": "teatro",
-      "description": "Espectáculo musical, irónico, poético e com uma forte componente visual que evoca o sonho como esperança colectiva para construir um mundo melhor."
+      "description": "Espectáculo musical, irónico, poético e com uma forte componente visual que evoca o sonho como esperança colectiva para construir um mundo melhor.",
+      "category": "Ópera"
     }
   },
   {
@@ -212,7 +229,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/only-duos-companhia-nacional-de-bailado_img69d52ce8f159c.jpg",
       "source": "teatro",
-      "description": "Programa da CNB que celebra a força e a intimidade do encontro entre duas presenças em palco."
+      "description": "Programa da CNB que celebra a força e a intimidade do encontro entre duas presenças em palco.",
+      "category": "Dança"
     }
   },
   {
@@ -224,7 +242,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/the-simon-garfunkel-story_img698dbf2095c48.jpg",
       "source": "teatro",
-      "description": "Um espetáculo de sucesso mundial que celebra a vida e a música de uma das duplas mais influentes de sempre."
+      "description": "Um espetáculo de sucesso mundial que celebra a vida e a música de uma das duplas mais influentes de sempre.",
+      "category": "Música"
     }
   },
   {
@@ -236,7 +255,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/onyx-piny_img69d52dff914f2.jpg",
       "source": "teatro",
-      "description": "Um ritual onírico de vácuo e presença, onde se apagam as fronteiras entre a intervenção política e social."
+      "description": "Um ritual onírico de vácuo e presença, onde se apagam as fronteiras entre a intervenção política e social.",
+      "category": "Dança"
     }
   },
   {
@@ -248,7 +268,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/18-pontos-andreia-ribeiro-da-silva_img69d52ea62b899.jpg",
       "source": "teatro",
-      "description": "[ESTREIA]Entrelaçando áreas artísticas, mostra-se e acolhe-se a dor, olhos nos olhos, transfigurando-a em traço e movimento."
+      "description": "[ESTREIA]Entrelaçando áreas artísticas, mostra-se e acolhe-se a dor, olhos nos olhos, transfigurando-a em traço e movimento.",
+      "category": "Multidisciplinar"
     }
   },
   {
@@ -260,7 +281,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/duques-do-precariado-novas-quintas_img69d52f81070ef.jpg",
       "source": "teatro",
-      "description": "Os Duques do Precariado trazem o amor e as suas imitações especiosas às Novas Quintas de junho"
+      "description": "Os Duques do Precariado trazem o amor e as suas imitações especiosas às Novas Quintas de junho",
+      "category": "Música"
     }
   },
   {
@@ -272,7 +294,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel_img69d5308085fae.jpg",
       "source": "teatro",
-      "description": "[ESTREIA]Espetáculo comunitário que parte das memórias, desejos e medos dos seus participantes."
+      "description": "[ESTREIA]Espetáculo comunitário que parte das memórias, desejos e medos dos seus participantes.",
+      "category": "Teatro"
     }
   },
   {
@@ -284,7 +307,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/hold-sao-castro-e-teresa-alves-da-silva_img69d53208d0eca.jpg",
       "source": "teatro",
-      "description": "Espetáculo de dança que explora a poética e a ferocidade inerentes ao processo de envelhecimento."
+      "description": "Espetáculo de dança que explora a poética e a ferocidade inerentes ao processo de envelhecimento.",
+      "category": "Dança"
     }
   },
   {
@@ -296,7 +320,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/cantar-o-lar-projeto-de-arte-comunitaria-3-edicao_img69d532ef17977.jpg",
       "source": "teatro",
-      "description": "Projeto orientado pela Orquestra Sem Fronteiras, que reúne participantes de quatro lares de Aveiro."
+      "description": "Projeto orientado pela Orquestra Sem Fronteiras, que reúne participantes de quatro lares de Aveiro.",
+      "category": "Música"
     }
   },
   {
@@ -308,7 +333,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/baiao-doxigenio_img698c5894bde0d.jpg",
       "source": "teatro",
-      "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante."
+      "description": "João Baião regressa aos palcos com um espetáculo inovador, repleto de música, humor e uma energia absolutamente contagiante.",
+      "category": "Musical"
     }
   },
   {
@@ -320,7 +346,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/maria-joao-andre-mehmari-carlos-bica_img69f0db32abe3c.jpg",
       "source": "teatro",
-      "description": "Um espetáculo absolutamente imperdível, que junta três figuras incontornáveis do panorama contemporâneo do jazz."
+      "description": "Um espetáculo absolutamente imperdível, que junta três figuras incontornáveis do panorama contemporâneo do jazz.",
+      "category": "Música"
     }
   },
   {
@@ -332,7 +359,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
       "source": "teatro",
-      "description": ""
+      "description": "",
+      "category": "Festival"
     }
   },
   {
@@ -344,7 +372,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/territorio-ix-estudios-victor-cordon_img69d533edc183b.jpg",
       "source": "teatro",
-      "description": "A 9ª edição do programa TERRITÓRIO passa pelo Teatro Aveirense em julho"
+      "description": "A 9ª edição do programa TERRITÓRIO passa pelo Teatro Aveirense em julho",
+      "category": "Dança"
     }
   },
   {
@@ -356,7 +385,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
       "source": "teatro",
-      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país."
+      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
+      "category": "Cinema"
     }
   },
   {
@@ -368,7 +398,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/marta-ren_img69d61a75cac4a.jpg",
       "source": "teatro",
-      "description": "Uma das mais carismáticas vozes da nova música portuguesa num concerto ao ar livre"
+      "description": "Uma das mais carismáticas vozes da nova música portuguesa num concerto ao ar livre",
+      "category": "Música"
     }
   },
   {
@@ -380,7 +411,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/ainda-nada-marcia-leite_img69d61c1fbcb4e.jpg",
       "source": "teatro",
-      "description": "Um espetáculo de teatro de objetos para ver em família."
+      "description": "Um espetáculo de teatro de objetos para ver em família.",
+      "category": "Teatro de Objetos"
     }
   },
   {
@@ -392,7 +424,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/maquina-novas-quintas-na-rua_img69d534c6ef694.jpg",
       "source": "teatro",
-      "description": "Este Verão MAQUINA. traz a sua autenticidade e musicalidade às Novas Quintas n Rua."
+      "description": "Este Verão MAQUINA. traz a sua autenticidade e musicalidade às Novas Quintas n Rua.",
+      "category": "Música"
     }
   },
   {
@@ -404,7 +437,8 @@
     "extendedProps": {
       "image": "https://www.teatroaveirense.pt/imagens/eventos/logos-com-hugo-oliveira-e-sage-cushman_img69d61ced25573.jpg",
       "source": "teatro",
-      "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense."
+      "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense.",
+      "category": "Novo Circo"
     }
   }
 ]
