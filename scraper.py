@@ -59,9 +59,12 @@ def get_data():
                 img_url = img_el.get('src', '')
                 if img_url and not img_url.startswith('http'):
                     img_url = base_url + img_url
+
+            # --- EXTRAÇÃO DO RESUMO ---
+            resumo_el = item.select_one('.resumo')
+            resumo_text = resumo_el.get_text(strip=True) if resumo_el else ""
             
             if h2 and date_el and link_el:
-                # 1. Lógica de Título (Umbrella em bold, Evento normal)
                 span = h2.find('span')
                 umbrella_name = span.get_text().strip() if span else ""
                 
@@ -77,14 +80,13 @@ def get_data():
                 else:
                     final_title = event_name
 
-                # 2. Busca detalhada da hora (Segunda requisição)
                 url = link_el['href']
                 if not url.startswith('http'):
                     url = base_url + url
                 
                 time_iso = ""
                 try:
-                    time.sleep(0.3) # Delay leve para respeitar o servidor
+                    time.sleep(0.3) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
                     inner_soup = BeautifulSoup(event_page.text, 'html.parser')
                     horario_p = inner_soup.select_one('p.horarios_txt')
@@ -105,7 +107,6 @@ def get_data():
                 except Exception as e:
                     print(f"Erro ao buscar detalhes de {event_name}: {e}")
 
-                # Criamos o objeto final incluindo a imagem no extendedProps
                 all_events.append({
                     "title": final_title,
                     "start": parse_pt_date(date_el.text.strip()) + time_iso,
@@ -114,7 +115,8 @@ def get_data():
                     "color": "#e67e22",
                     "extendedProps": {
                         "image": img_url,
-                        "source": "teatro"
+                        "source": "teatro",
+                        "description": resumo_text # <- Adicionamos o resumo aqui!
                     }
                 })
                 print(f"Processado: {event_name}")
