@@ -83,7 +83,7 @@
         
         #calendar { background: transparent; padding: 0; border: none; }
 
-        /* CORREÇÕES GLOBAIS */
+        /* CORREÇÕES GLOBAIS (Esconde nativos sem partir o resto) */
         .fc-theme-standard th, .fc-theme-standard td, 
         .fc-theme-standard .fc-list, 
         .fc-theme-standard .fc-view,
@@ -95,11 +95,13 @@
         .fc-col-header-cell { padding: 10px 0; font-weight: 600; color: #888; text-transform: lowercase; border-bottom: none !important; }
         .fc-daygrid-day-frame { padding: 5px; }
 
-        .fc-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
-        .event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
-        .event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
-        .event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
-        .event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
+        /* CORREÇÃO INFALÍVEL: Restringe as margens apenas aos eventos do calendário.
+           (Se puseres .fc-event ele apaga as linhas da tabela no Modo Lista!) */
+        .fc-daygrid-event { border: none !important; border-radius: 6px !important; cursor: pointer; margin: 2px 4px !important; }
+        .fc-daygrid-event.event-teatro { background: rgba(230, 126, 34, 0.08) !important; border-left: 4px solid var(--teatro-color) !important; }
+        .fc-daygrid-event.event-cinema { background: rgba(30, 136, 229, 0.08) !important; border-left: 4px solid var(--cinema-color) !important; }
+        .fc-daygrid-event.event-cma    { background: rgba(46, 125, 50, 0.08) !important; border-left: 4px solid var(--cma-color) !important; }
+        .fc-daygrid-event.event-viral  { background: rgba(123, 31, 162, 0.08) !important; border-left: 4px solid var(--viral-color) !important; }
 
         .fc-event-main { display: flex !important; align-items: flex-start; gap: 6px; padding: 4px 6px !important; white-space: normal !important; word-break: break-word; }
         .fc-event-time { font-weight: 700; color: var(--text-color) !important; font-size: 0.8em; white-space: normal !important; flex-shrink: 0; max-width: 45%; }
@@ -108,7 +110,8 @@
         /* --- MODO LISTA CONTÍNUA --- */
         .fc-list-table { background: transparent !important; border: none !important; border-spacing: 0 !important; outline: none !important; } 
         
-        .fc-list-event-graphic, .fc-list-event-time, .fc-list-event-title { display: none !important; } 
+        .fc-list-event-graphic, .fc-list-event-time { display: none !important; } 
+        .fc-list-event-title { padding: 0 !important; border: none !important; background: transparent !important; }
         
         .fc-list-event td { padding: 0 0 15px 0 !important; border: none !important; background: transparent !important; } 
         .fc-list-event:hover td { background: transparent !important; } 
@@ -138,14 +141,14 @@
         }
         [data-theme="dark"] .list-time-box { border-right-color: rgba(255,255,255,0.05); }
         
-        /* CORREÇÃO DA IMAGEM PARA PREENCHER TOTALMENTE O ESPAÇO VERTICAL */
+        /* IMAGEM PREENCHE A ALTURA TOTAL */
         .list-img { 
             width: 160px; 
-            align-self: stretch; /* Estica a imagem para a altura total do cartão */
-            object-fit: cover;   /* Mantém as proporções sem distorcer */
+            align-self: stretch; /* O segredo para esticar! */
+            object-fit: cover;   
             flex-shrink: 0; 
-            margin-right: 20px;  /* Apenas margem à direita para afastar o texto */
-            border-radius: 0;    /* Como toca no topo e base, não precisa de cantos arredondados do lado de dentro */
+            margin-right: 20px;  
+            border-radius: 0;    
         }
         
         .list-info { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 15px 20px 15px 0; color: var(--text-color); }
