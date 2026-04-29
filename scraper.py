@@ -47,18 +47,22 @@ def parse_pt_date(date_str, default_date=None):
         return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def format_cinema_times(text):
-    matches = re.findall(r'(\d{1,2})[hH:](\d{2})?', text)
+    # Apanha formatos seguros como '16h', '16h30' ou '16:30' (evitando apanhar "5" de "5ª feira")
+    matches = re.findall(r'(?<!\d)(\d{1,2})[hH](\d{2})?|(?<!\d)(\d{1,2}):(\d{2})', text)
     times = []
-    for h, m in matches:
+    for match in matches:
+        h = match[0] or match[2]
+        m = match[1] or match[3]
         h_int = int(h)
         m_int = int(m) if m else 0
         if 0 <= h_int <= 25: times.append((h_int, m_int))
+        
     times = sorted(list(set(times)))
     formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
     return ", ".join(formatted)
 
 def parse_days_from_str(text):
-    """Lê uma string e devolve os dias da semana correspondentes (0=2ª, 6=Dom)"""
+    """Mapeia os dias da semana a partir de uma linha de texto (0=2ª feira, 6=Domingo)"""
     day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb': 5, 'sab': 5, 'dom': 6}
     found = set()
     if 'todos os dias' in text: return set(range(7))
@@ -74,9 +78,8 @@ def normalize_category(cat_str):
     if 'dança' in cat or 'danca' in cat: return 'dança'
     if 'workshop' in cat or 'oficina' in cat: return 'workshop'
     if 'ópera' in cat or 'opera' in cat: return 'ópera'
-    if 'multidisciplinar' in cat: return 'multidisciplinar'
     if 'festival' in cat: return 'festival'
-    return 'outros'
+    return 'multidisciplinar'
 
 def get_teatro_data():
     all_events = []
@@ -101,7 +104,7 @@ def get_teatro_data():
 
             resumo_text = item.select_one('.resumo').get_text(strip=True) if item.select_one('.resumo') else ""
             categoria_el = item.select_one('.categoria')
-            categoria_text = "Outros"
+            categoria_text = "Multidisciplinar"
             if categoria_el:
                 if categoria_el.select_one('.sr-only'): categoria_el.select_one('.sr-only').decompose()
                 categoria_text = categoria_el.get_text(strip=True)
@@ -193,48 +196,42 @@ def get_cinema_data():
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
-            movie_times_by_date = {} # Dicionário para agrupar horários por dia
+            movie_times_by_date = {} 
             
             for p in block.select('.movie-card__info p'):
-                strings = list(p.stripped_strings)
-                if not strings or 'Sessões:' not in strings[0]: continue
+                text_content = p.get_text(separator="\n").strip()
+                if 'Sessões:' not in text_content: continue
                 
-                # Assume todos os dias até que se prove o contrário
+                # Assume todos os dias até que a linha diga o contrário
                 current_days = set(range(7)) 
+                lines = text_content.split('\n')
                 
-                # Lê cada bloco de texto dentro do parágrafo
-                for s in strings[1:]:
-                    s_lower = s.lower()
+                for line in lines:
+                    s_lower = line.lower().strip()
+                    if not s_lower or s_lower == 'sessões:': continue
                     
-                    # Verifica se a linha contém horas (ex: "13h40", "16h", "19:00")
-                    if re.search(r'\d{1,2}[hH]\d{0,2}|\d{1,2}:\d{2}', s_lower):
+                    # Se tiver um formato de horas (ex: 13h40 ou 13:40)
+                    if re.search(r'\d{1,2}[hH:]\d{0,2}', s_lower):
                         
-                        # Às vezes o Cinecartaz junta tudo "5ª: 14h00"
-                        if ':' in s_lower and any(d in s_lower.split(':')[0] for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
-                            parts = s_lower.split(':', 1)
-                            current_days = parse_days_from_str(parts[0])
-                            time_str = parts[1]
-                        else:
-                            time_str = s_lower
-                            
-                        times = format_cinema_times(time_str)
+                        # Pode acontecer que os dias estejam colados às horas na mesma linha
+                        inline_days = parse_days_from_str(s_lower)
+                        if inline_days: current_days = inline_days
+                        
+                        times = format_cinema_times(s_lower)
                         if not times: continue
                         
-                        # Atribui estes horários aos dias alvo que a linha indicava
                         for dt in target_dates:
                             if dt.weekday() in current_days:
                                 date_str = dt.strftime('%Y-%m-%d')
                                 if date_str not in movie_times_by_date:
                                     movie_times_by_date[date_str] = set()
-                                # Guarda as horas individualmente para não haver duplicados
                                 for t in times.split(', '):
                                     movie_times_by_date[date_str].add(t)
                     else:
-                        # Se não tem horas, é provável que seja a indicação dos dias ("sáb. dom.")
+                        # Se não tem horas, é uma linha que só dita os dias (ex: "Sáb. Dom.")
                         new_days = parse_days_from_str(s_lower)
                         if new_days: current_days = new_days
 
-            # Agora sim, cria os cartões com os horários perfeitamente agrupados por dia!
             for date_str, times_set in movie_times_by_date.items():
                 if times_set:
                     sorted_times = sorted(list(times_set))
@@ -259,4 +256,4 @@ if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data()
     with open('events.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"Sucesso! Total de eventos unitários guardados: {len(results)}")
+    print(f"Sucesso! Total de eventos guardados: {len(results)}")
