@@ -221,27 +221,32 @@ def get_23milhas_data():
     try:
         event_links = set()
 
-        # Procura em 2 sítios para garantir que não escapa nada
         for path in ["", "/programacao"]:
             try:
                 res = session.get(base_url + path, headers=HEADERS, timeout=15)
-                soup = BeautifulSoup(res.text, 'html.parser')
                 
-                # 1. Procura Clássica (links normais)
+                # 1. Procura Clássica no DOM
+                soup = BeautifulSoup(res.text, 'html.parser')
                 for a in soup.find_all('a', href=True):
                     href = a['href']
-                    if 'evento/' in href:
+                    if '/evento/' in href:
                         url = base_url + href if str(href).startswith('/') else href
                         if base_url in url: event_links.add(url)
                 
-                # 2. Scanner Raio-X: Procura dentro do código raw da página (para sites dinâmicos)
-                raw_urls = re.findall(r'(/evento/[a-zA-Z0-9_/-]+)', res.text)
+                # 2. Scanner "Raio-X" ultra-agressivo para Javascript Embutido (Resolve o problema!)
+                # Remove as barras de escape JSON (\/evento\/ -> /evento/)
+                raw_text = res.text.replace('\\/', '/')
+                # Apanha tudo o que pareça o formato do link, ignorando lixo
+                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+)', raw_text)
+                
                 for r_url in raw_urls:
-                    event_links.add(base_url + r_url)
+                    clean_url = r_url.rstrip('.,;:') # Limpa pontuação final acidental
+                    event_links.add(base_url + clean_url)
+                    
             except Exception as e:
                 pass
 
-        print(f"-> Encontrados {len(event_links)} links potenciais. A processar...")
+        print(f"-> Encontrados {len(event_links)} links potenciais. A processar os dados das páginas...")
 
         for url in event_links:
             try:
@@ -267,7 +272,6 @@ def get_23milhas_data():
 
                 page_text = ev_soup.get_text(separator=' ').lower()
                 
-                # Encontrar a Data Perfeita
                 months_regex = r'(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)'
                 date_match = re.search(r'\b(\d{1,2})\s+(?:de\s+)?' + months_regex + r'(?:\s+(?:de\s+)?(\d{4}))?\b', page_text)
                 
@@ -278,7 +282,6 @@ def get_23milhas_data():
                 
                 start_iso = parse_pt_date(date_str) if date_str else datetime.now().strftime('%Y-%m-%d')
 
-                # Motor de Horário e Categoria
                 time_str = ""
                 cat_str = ""
                 all_texts = [el.get_text(strip=True) for el in ev_soup.find_all(string=True) if el.get_text(strip=True)]
