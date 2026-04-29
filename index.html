@@ -57,9 +57,9 @@
         .event-cma    { background: #a5d6a7 !important; border-left: 5px solid #2e7d32 !important; }
         .event-viral  { background: #ce93d8 !important; border-left: 5px solid #7b1fa2 !important; }
 
-        /* CORREÇÃO DO EVENTO GIGANTE E DO "ALL-DAY" VERTICAL */
+        /* CORREÇÃO DO EVENTO E DO "ALL-DAY" VERTICAL */
         .fc-event-main { 
-            display: flex !important; /* Flexbox adapta-se ao conteúdo perfeitamente */
+            display: flex !important;
             align-items: center;
             gap: 8px;
             padding: 6px 8px !important; 
@@ -71,8 +71,8 @@
             font-weight: bold; 
             color: #000 !important; 
             font-size: 0.85em; 
-            white-space: nowrap !important; /* Impede a palavra "all-day" de partir */
-            flex-shrink: 0; /* Impede a hora de ser esmagada pelo título */
+            white-space: nowrap !important;
+            flex-shrink: 0; 
         }
         
         .fc-event-title { 
@@ -89,7 +89,7 @@
         /* CORREÇÃO DA SEPARAÇÃO NA LISTA */
         .fc-list-table { border-collapse: collapse !important; }
         .fc-list-event td { 
-            border-bottom: 12px solid var(--main-bg) !important; /* Cria o espaço visual entre os eventos */
+            border-bottom: 12px solid var(--main-bg) !important;
             border-top: none !important;
             padding: 0 !important;
             background-clip: padding-box;
@@ -100,7 +100,7 @@
             align-items: stretch; 
             width: 100%; 
             min-height: 110px; 
-            pointer-events: none; /* Permite que o clique acerte na linha inteira */
+            pointer-events: none; 
         }
         
         .list-time-box { width: 100px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #000; border-right: 1px solid rgba(0,0,0,0.1); flex-shrink: 0; }
@@ -111,7 +111,6 @@
         [data-theme="dark"] .list-desc { color: rgba(255,255,255,0.7); }
         .list-info b { display: block; margin-bottom: 4px; }
 
-        /* Dias da lista */
         .fc-list-day-cushion { background: rgba(0,0,0,0.05) !important; padding: 12px !important; }
         
         /* Cores forçadas para a lista */
@@ -143,8 +142,101 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        
+        window.allEvents = [];
+
+        window.calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale: 'pt',
+          firstDay: 1, 
+          headerToolbar: { 
+            left: 'prev,next today dayGridMonth,listMonth', 
+            center: 'title', 
+            right: '' 
+          },
+          buttonText: { dayGridMonth: 'Calendário', listMonth: 'Lista', today: 'Hoje' },
+          
+          eventContent: function(arg) {
+            let timeText = 'all-day';
+            if (arg.event.start) {
+                let date = arg.event.start;
+                if (date.getHours() !== 0 || date.getMinutes() !== 0) {
+                    timeText = date.getHours().toString().padStart(2, '0') + ':' + 
+                               date.getMinutes().toString().padStart(2, '0');
+                }
+            }
+
+            let imgUrl = arg.event.extendedProps.image;
+            let descText = arg.event.extendedProps.description;
+
+            if (arg.view.type === 'listMonth') {
+                let descHtml = descText ? `<div class="list-desc">${descText}</div>` : '';
+                return { 
+                  html: `<div class="list-row-container">
+                            <div class="list-time-box">${timeText}</div>
+                            <img src="${imgUrl || ''}" class="list-img" style="${imgUrl ? '' : 'display:none'}">
+                            <div class="list-info">
+                                <div>${arg.event.title}</div>
+                                ${descHtml}
+                            </div>
+                         </div>` 
+                };
+            }
+            return { 
+              html: `<div class="fc-event-main">
+                        <div class="fc-event-time">${timeText}</div>
+                        <div class="fc-event-title">${arg.event.title}</div>
+                     </div>` 
+            };
+          },
+          eventClassNames: function(arg) { return [ 'event-' + arg.event.extendedProps.source ]; },
+          eventClick: function(info) { 
+            if(info.event.url) {
+                window.open(info.event.url, "_blank"); 
+                info.jsEvent.preventDefault(); 
+            }
+          }
+        });
+
+        // Toggle Dark Mode
         const themeToggle = document.getElementById('themeToggle');
         themeToggle.addEventListener('change', () => {
             document.documentElement.setAttribute('data-theme', themeToggle.checked ? 'dark' : 'light');
-            calendar
+            window.calendar.render();
+        });
+
+        // Buscar dados e iniciar
+        fetch('events.json?t=' + new Date().getTime())
+          .then(res => res.json())
+          .then(data => {
+            window.allEvents = data;
+            
+            // Lógica para saltar para o dia mais antigo e esconder o passado
+            if(data.length > 0) {
+                let minDateStr = data.reduce((min, ev) => (ev.start < min ? ev.start : min), data[0].start);
+                let startDateOnly = minDateStr.split('T')[0];
+                
+                // Esconde dias antes do primeiro evento
+                window.calendar.setOption('validRange', { start: startDateOnly });
+                // Salta para essa data
+                window.calendar.gotoDate(startDateOnly);
+            }
+
+            updateCalendar();
+          })
+          .catch(err => console.error("Erro a carregar eventos: ", err));
+
+        window.updateCalendar = function() {
+          const activeSources = Array.from(document.querySelectorAll('#sourceFilters input:checked')).map(el => el.value);
+          const filtered = window.allEvents.filter(ev => activeSources.includes(ev.source));
+          window.calendar.removeAllEvents();
+          window.calendar.addEventSource(filtered);
+          window.calendar.render();
+        };
+
+        document.querySelectorAll('#sourceFilters input').forEach(input => {
+          input.addEventListener('change', window.updateCalendar);
+        });
+      });
+    </script>
+</body>
+</html>
