@@ -229,18 +229,21 @@ def get_23milhas_data():
                 soup = BeautifulSoup(res.text, 'html.parser')
                 for a in soup.find_all('a', href=True):
                     href = a['href']
-                    if '/evento/' in href:
-                        url = base_url + href if str(href).startswith('/') else href
-                        if base_url in url: event_links.add(url)
+                    # SOLUÇÃO PARA O BUG DA BARRA (/):
+                    # Procura por 'evento/' em vez de '/evento/' 
+                    if 'evento/' in href:
+                        clean_href = href if href.startswith('/') else '/' + href
+                        url = base_url + clean_href
+                        event_links.add(url)
                 
-                # 2. Scanner "Raio-X" ultra-agressivo para Javascript Embutido (Resolve o problema!)
-                # Remove as barras de escape JSON (\/evento\/ -> /evento/)
+                # 2. Scanner "Raio-X" ultra-agressivo para Javascript Embutido
                 raw_text = res.text.replace('\\/', '/')
-                # Apanha tudo o que pareça o formato do link, ignorando lixo
-                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+)', raw_text)
+                # Permite encontrar tanto /evento/xxx como evento/xxx
+                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+|evento/[^"\'\s\\><]+)', raw_text)
                 
                 for r_url in raw_urls:
-                    clean_url = r_url.rstrip('.,;:') # Limpa pontuação final acidental
+                    clean_url = r_url if r_url.startswith('/') else '/' + r_url
+                    clean_url = clean_url.rstrip('.,;:') 
                     event_links.add(base_url + clean_url)
                     
             except Exception as e:
