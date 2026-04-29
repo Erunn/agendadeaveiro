@@ -8,7 +8,7 @@ from datetime import datetime
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
 session = requests.Session()
 
-def parse_pt_date(date_str):
+def parse_pt_date(date_str, default_date=None):
     months = {
         'janeiro': '01', 'fevereiro': '02', 'março': '03', 'abril': '04',
         'maio': '05', 'junho': '06', 'julho': '07', 'agosto': '08',
@@ -19,23 +19,34 @@ def parse_pt_date(date_str):
     try:
         clean_str = date_str.lower().replace(' de ', ' ').strip()
         days = re.findall(r'\d+', clean_str)
-        day = days[0].zfill(2) if days else '01'
+        if not days:
+            return default_date or datetime.now().strftime('%Y-%m-%d')
         
-        month = '01'
+        day = days[0].zfill(2)
+
+        month = None
         for word in clean_str.split():
             word_clean = re.sub(r'[^a-zç]', '', word)
             if word_clean in months:
                 month = months[word_clean]
                 break
-        
+
+        if not month:
+            return default_date or datetime.now().strftime('%Y-%m-%d')
+
         year = datetime.now().year
-        if datetime.now().month == 12 and month == '01':
-            year += 1
-            
+        # Procura se o ano com 4 dígitos foi explicitamente escrito
+        for d in days:
+            if len(d) == 4:
+                year = int(d)
+                break
+        else:
+            if datetime.now().month >= 10 and month in ['01', '02', '03']:
+                year += 1
+
         return f"{year}-{month}-{day}"
     except Exception as e:
-        print(f"Data error: {e}")
-        return datetime.now().strftime('%Y-%m-%d')
+        return default_date or datetime.now().strftime('%Y-%m-%d')
 
 def get_data():
     all_events = []
@@ -54,7 +65,6 @@ def get_data():
             date_el = item.select_one('.data')
             link_el = item.select_one('a')
             
-            # --- IMAGEM ---
             img_el = item.select_one('img')
             img_url = ""
             if img_el:
@@ -62,16 +72,14 @@ def get_data():
                 if img_url and not img_url.startswith('http'):
                     img_url = base_url + img_url
 
-            # --- RESUMO ---
             resumo_el = item.select_one('.resumo')
             resumo_text = resumo_el.get_text(strip=True) if resumo_el else ""
 
-            # --- CATEGORIA ---
             categoria_el = item.select_one('.categoria')
             categoria_text = "Vários"
             if categoria_el:
                 sr = categoria_el.select_one('.sr-only')
-                if sr: sr.decompose() # Remove "Categoria:" oculto
+                if sr: sr.decompose()
                 categoria_text = categoria_el.get_text(strip=True)
             
             if h2 and date_el and link_el:
@@ -86,36 +94,80 @@ def get_data():
 
                 url = link_el['href']
                 if not url.startswith('http'): url = base_url + url
+
+                # Data "Base" do listamento
+                listing_date = parse_pt_date(date_el.text.strip())
+                instances = []
                 
-                time_iso = ""
                 try:
                     time.sleep(0.3) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
-                    horario_p = BeautifulSoup(event_page.text, 'html.parser').select_one('p.horarios_txt')
+                    inner_soup = BeautifulSoup(event_page.text, 'html.parser')
                     
-                    if horario_p:
-                        for line in horario_p.get_text(separator="\n").split('\n'):
-                            if 'h' in line.lower() and any(char.isdigit() for char in line):
-                                match = re.search(r'(\d{1,2})[h:](\d{2})', re.split(r'[–\u2014-]', line)[0].strip().lower())
-                                if match:
-                                    time_iso = f"T{match.group(1).zfill(2)}:{match.group(2)}:00"
-                                    break
-                except: pass
+                    horarios_elements = inner_soup.select('.horarios_txt')
+                    if horarios_elements:
+                        for hp in horarios_elements:
+                            text_content = hp.get_text(separator=" | ")
+                            lines = text_content.split(' | ')
+                            
+                            # A 1ª linha costuma ser a data (ex: Segunda-feira, 18 Maio 2026)
+                            day_date = parse_pt_date(lines[0], default_date=listing_date)
+                            
+                            all_times = []
+                            for line in lines:
+                                matches = re.findall(r'(\d{1,2})[h:](\d{2})', line.lower())
+                                for m in matches:
+                                    all_times.append((m[0].zfill(2), m[1]))
+                            
+                            unique_times = []
+                            for h, m in all_times:
+                                t_str = f"{h}:{m}"
+                                if t_str not in unique_times:
+                                    unique_times.append(t_str)
+                            
+                            # Cria a string visual "18:00 / 21:30"
+                            display_time = " / ".join(unique_times) if unique_times else "Todo o dia"
+                            time_iso = f"T{unique_times[0]}:00" if unique_times else ""
+                            
+                            instances.append({
+                                "date": day_date,
+                                "time_iso": time_iso,
+                                "display_time": display_time
+                            })
+                except Exception as e:
+                    print(f"Erro ao buscar inner page: {e}")
 
-                all_events.append({
-                    "title": final_title,
-                    "start": parse_pt_date(date_el.text.strip()) + time_iso,
-                    "url": url,
-                    "source": "teatro",
-                    "color": "#e67e22",
-                    "extendedProps": {
-                        "image": img_url,
+                # Se a página interior não tiver horários bem definidos, usamos a data base
+                if not instances:
+                    instances.append({
+                        "date": listing_date,
+                        "time_iso": "",
+                        "display_time": "Todo o dia"
+                    })
+
+                # Desduplicação (remove duplicados do mesmo dia e hora)
+                seen_instances = set()
+                for inst in instances:
+                    inst_key = f"{inst['date']}_{inst['display_time']}"
+                    if inst_key in seen_instances:
+                        continue
+                    seen_instances.add(inst_key)
+
+                    all_events.append({
+                        "title": final_title,
+                        "start": inst["date"] + inst["time_iso"],
+                        "url": url,
                         "source": "teatro",
-                        "description": resumo_text,
-                        "category": categoria_text # Enviando categoria!
-                    }
-                })
-                print(f"Processado: {event_name}")
+                        "color": "#e67e22",
+                        "extendedProps": {
+                            "image": img_url,
+                            "source": "teatro",
+                            "description": resumo_text,
+                            "category": categoria_text,
+                            "display_time": inst["display_time"] # <- Passado para o HTML
+                        }
+                    })
+                print(f"Processado: {event_name} ({len(instances)} sessões)")
 
     except Exception as e: print(f"Erro: {e}")
 
