@@ -57,6 +57,15 @@ def format_cinema_times(text):
     formatted = [f"{str(h).zfill(2)}:{str(m).zfill(2)}" for h, m in times]
     return ", ".join(formatted)
 
+def parse_days_from_str(text):
+    """Lê uma string e devolve os dias da semana correspondentes (0=2ª, 6=Dom)"""
+    day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb': 5, 'sab': 5, 'dom': 6}
+    found = set()
+    if 'todos os dias' in text: return set(range(7))
+    for k, v in day_map.items():
+        if k in text: found.add(v)
+    return found
+
 def normalize_category(cat_str):
     cat = cat_str.lower()
     if 'teatro' in cat: return 'teatro'
@@ -67,7 +76,7 @@ def normalize_category(cat_str):
     if 'ópera' in cat or 'opera' in cat: return 'ópera'
     if 'multidisciplinar' in cat: return 'multidisciplinar'
     if 'festival' in cat: return 'festival'
-    return 'outros' # Mantido como pediste!
+    return 'outros'
 
 def get_teatro_data():
     all_events = []
@@ -171,7 +180,6 @@ def get_cinema_data():
         res = session.get(url, headers=HEADERS, timeout=15)
         res.raise_for_status()
         soup = BeautifulSoup(res.text, 'html.parser')
-        day_map = {'2ª': 0, '3ª': 1, '4ª': 2, '5ª': 3, '6ª': 4, 'sáb.': 5, 'dom.': 6, 'sab': 5, 'dom': 6}
         today = datetime.now().date()
         days_to_next_wed = (2 - today.weekday()) % 7
         if days_to_next_wed == 0: days_to_next_wed = 7 
@@ -185,35 +193,64 @@ def get_cinema_data():
             link_el = block.select_one('a.block-link')
             movie_url = base_cine_url + link_el['href'] if link_el and 'href' in link_el.attrs else url
             
+            movie_times_by_date = {} # Dicionário para agrupar horários por dia
+            
             for p in block.select('.movie-card__info p'):
-                if 'Sessões:' in p.get_text():
-                    text = p.get_text(strip=True).replace('Sessões:', '')
-                    if ':' not in text: continue
-                    dias_raw, horarios_raw = text.split(':', 1)
+                strings = list(p.stripped_strings)
+                if not strings or 'Sessões:' not in strings[0]: continue
+                
+                # Assume todos os dias até que se prove o contrário
+                current_days = set(range(7)) 
+                
+                # Lê cada bloco de texto dentro do parágrafo
+                for s in strings[1:]:
+                    s_lower = s.lower()
                     
-                    horarios_formatados = format_cinema_times(horarios_raw)
-                    if not horarios_formatados: continue
-
-                    dias_list = dias_raw.lower().split()
-                    for dt in target_dates:
-                        is_showing = any(d in day_map and day_map[d] == dt.weekday() for d in dias_list)
-                        if is_showing:
-                            date_str = dt.strftime('%Y-%m-%d')
+                    # Verifica se a linha contém horas (ex: "13h40", "16h", "19:00")
+                    if re.search(r'\d{1,2}[hH]\d{0,2}|\d{1,2}:\d{2}', s_lower):
+                        
+                        # Às vezes o Cinecartaz junta tudo "5ª: 14h00"
+                        if ':' in s_lower and any(d in s_lower.split(':')[0] for d in ['2ª', '3ª', '4ª', '5ª', '6ª', 'sáb', 'sab', 'dom', 'dia']):
+                            parts = s_lower.split(':', 1)
+                            current_days = parse_days_from_str(parts[0])
+                            time_str = parts[1]
+                        else:
+                            time_str = s_lower
                             
-                            # 1 CARTÃO POR FILME (Crucial para a grelha Masonry funcionar)
-                            final_cinema.append({
-                                "title": title,
-                                "start": date_str,
-                                "url": movie_url,
-                                "source": "cinema",
-                                "extendedProps": {
-                                    "image": img_url,
-                                    "display_time": horarios_formatados,
-                                    "source": "cinema",
-                                    "category": "Cinema",
-                                    "category_normalized": "cinema"
-                                }
-                            })
+                        times = format_cinema_times(time_str)
+                        if not times: continue
+                        
+                        # Atribui estes horários aos dias alvo que a linha indicava
+                        for dt in target_dates:
+                            if dt.weekday() in current_days:
+                                date_str = dt.strftime('%Y-%m-%d')
+                                if date_str not in movie_times_by_date:
+                                    movie_times_by_date[date_str] = set()
+                                # Guarda as horas individualmente para não haver duplicados
+                                for t in times.split(', '):
+                                    movie_times_by_date[date_str].add(t)
+                    else:
+                        # Se não tem horas, é provável que seja a indicação dos dias ("sáb. dom.")
+                        new_days = parse_days_from_str(s_lower)
+                        if new_days: current_days = new_days
+
+            # Agora sim, cria os cartões com os horários perfeitamente agrupados por dia!
+            for date_str, times_set in movie_times_by_date.items():
+                if times_set:
+                    sorted_times = sorted(list(times_set))
+                    final_cinema.append({
+                        "title": title,
+                        "start": date_str,
+                        "url": movie_url,
+                        "source": "cinema",
+                        "extendedProps": {
+                            "image": img_url,
+                            "display_time": ", ".join(sorted_times),
+                            "source": "cinema",
+                            "category": "Cinema",
+                            "category_normalized": "cinema"
+                        }
+                    })
         return final_cinema
     except Exception as e:
         print(f"Erro Cinema: {e}"); return []
