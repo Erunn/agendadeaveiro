@@ -81,8 +81,9 @@ def get_teatro_data():
     print("A iniciar scraper para Teatro Aveirense...")
     try:
         res = session.get(f"{base_url}/pt/programacao/", headers=HEADERS, timeout=15)
-        html_text = res.content.decode('utf-8', errors='replace') # Forçar UTF-8 contra caracteres estranhos
-        soup = BeautifulSoup(html_text, 'html.parser')
+        res.encoding = 'utf-8' # FIX DE ACENTOS
+        res.raise_for_status()
+        soup = BeautifulSoup(res.text, 'html.parser')
         
         for item in soup.select('.programa_item'):
             h2 = item.select_one('h2')
@@ -113,8 +114,8 @@ def get_teatro_data():
                 try:
                     time.sleep(0.2) 
                     event_page = session.get(url, headers=HEADERS, timeout=5)
-                    event_html = event_page.content.decode('utf-8', errors='replace')
-                    inner_soup = BeautifulSoup(event_html, 'html.parser')
+                    event_page.encoding = 'utf-8' # FIX DE ACENTOS
+                    inner_soup = BeautifulSoup(event_page.text, 'html.parser')
                     for hp in inner_soup.select('.horarios_txt'):
                         text_content = hp.get_text(separator="\n").lower()
                         lines = text_content.split('\n')
@@ -155,9 +156,9 @@ def get_cinema_data():
     print("A iniciar scraper para Cinema Glicínias...")
     try:
         res = session.get(url, headers=HEADERS, timeout=15)
-        html_text = res.content.decode('utf-8', errors='replace') # Forçar UTF-8
-        soup = BeautifulSoup(html_text, 'html.parser')
-        
+        res.encoding = 'utf-8' # FIX DE ACENTOS
+        res.raise_for_status()
+        soup = BeautifulSoup(res.text, 'html.parser')
         today = datetime.now().date()
         days_to_next_wed = (2 - today.weekday()) % 7
         if days_to_next_wed == 0: days_to_next_wed = 7 
@@ -227,50 +228,51 @@ def get_23milhas_data():
         for path in ["", "/programacao"]:
             try:
                 res = session.get(base_url + path, headers=HEADERS, timeout=15)
-                html_text = res.content.decode('utf-8', errors='replace')
+                res.encoding = 'utf-8' # FIX DE ACENTOS
                 
-                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+|evento/[^"\'\s\\><]+)', html_text.replace('\\/', '/'))
+                raw_text = res.text.replace('\\/', '/')
+                raw_urls = re.findall(r'(/evento/[^"\'\s\\><]+|evento/[^"\'\s\\><]+)', raw_text)
+                
                 for r_url in raw_urls:
                     clean_url = r_url if r_url.startswith('/') else '/' + r_url
                     clean_url = clean_url.rstrip('.,;:') 
                     event_links.add(base_url + clean_url)
+                    
             except Exception:
                 pass
 
-        print(f"-> Encontrados {len(event_links)} links potenciais. A recolher detalhes sem truncaturas...")
+        print(f"-> Encontrados {len(event_links)} links potenciais. A processar...")
 
         for url in event_links:
             try:
                 time.sleep(0.1)
                 ev_res = session.get(url, headers=HEADERS, timeout=5)
-                ev_html = ev_res.content.decode('utf-8', errors='replace') # Forçar UTF-8 na página de detalhe
-                ev_soup = BeautifulSoup(ev_html, 'html.parser')
+                ev_res.encoding = 'utf-8' # FIX DE ACENTOS
+                ev_soup = BeautifulSoup(ev_res.text, 'html.parser')
 
-                # TÍTULO E UMBRELLA LIMPOS (Separação a partir do Hífen ou Barra Vertical)
-                title = ""
+                title_raw = ""
                 og_title = ev_soup.find('meta', property='og:title')
                 if og_title: 
-                    title = og_title['content'].replace(' - 23 Milhas', '').strip()
+                    title_raw = og_title['content'].replace(' - 23 Milhas', '').strip()
                 
-                if not title: continue 
+                if not title_raw: continue 
 
-                # Separação Inteligente: O Nome fica antes do "-", o Umbrella fica com o que estiver depois
-                umbrella = ""
-                if " - " in title:
-                    parts = title.split(" - ", 1)
+                # SEPARAÇÃO CIRÚRGICA: Título limpo vs Umbrella
+                title = title_raw
+                umbrella_from_title = ""
+                if " - " in title_raw:
+                    parts = title_raw.split(" - ", 1)
                     title = parts[0].strip()
-                    umbrella = parts[1].strip().rstrip('. ')
-                elif " | " in title:
-                    parts = title.split(" | ", 1)
+                    umbrella_from_title = parts[1].strip().rstrip('. ')
+                elif " | " in title_raw:
+                    parts = title_raw.split(" | ", 1)
                     title = parts[0].strip()
-                    umbrella = parts[1].strip().rstrip('. ')
+                    umbrella_from_title = parts[1].strip().rstrip('. ')
 
-                # IMAGEM
                 img_url = ""
                 og_img = ev_soup.find('meta', property='og:image')
                 if og_img: img_url = og_img['content']
 
-                # TEXTOS PARA DATAS E HORAS
                 page_text = ev_soup.get_text(separator=' ').lower()
                 all_texts = [el.get_text(strip=True) for el in ev_soup.find_all(string=True) if el.get_text(strip=True)]
                 
@@ -311,8 +313,10 @@ def get_23milhas_data():
                     else:
                         start_iso += "T00:00:00"
 
-                # LOCAL / UMBRELLA (Se não apanhou Umbrella no título, deduz do local)
-                if not umbrella:
+                # LOCAL / UMBRELLA DEFINITIVO
+                if umbrella_from_title:
+                    umbrella = umbrella_from_title
+                else:
                     umbrella = "23 Milhas"
                     if "casa cultura" in page_text or "casa da cultura" in page_text: umbrella = "Casa da Cultura de Ílhavo"
                     elif "fábrica das ideias" in page_text or "fábrica" in page_text: umbrella = "Fábrica das Ideias da Gafanha"
@@ -355,7 +359,7 @@ def get_23milhas_data():
             except Exception as e:
                 pass
 
-        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos perfeitamente!")
+        print(f"-> Sucesso: {len(final_23milhas)} eventos do 23 Milhas extraídos e limpos!")
 
     except Exception as e:
         print(f"Erro global 23 Milhas: {e}")
@@ -364,7 +368,11 @@ def get_23milhas_data():
 
 if __name__ == "__main__":
     results = get_teatro_data() + get_cinema_data() + get_23milhas_data()
-    # A garantia absoluta de que o JSON grava com formato internacional para acentos
+    
+    # FILTRO GLOBAL: APAGAR TUDO O QUE ESTÁ NO PASSADO
+    today_iso = datetime.now().strftime('%Y-%m-%d')
+    valid_results = [ev for ev in results if ev['start'][:10] >= today_iso]
+    
     with open('events.json', 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"Sucesso Total! Aglomerados {len(results)} eventos guardados.")
+        json.dump(valid_results, f, ensure_ascii=False, indent=2)
+    print(f"Sucesso Total! Aglomerados {len(valid_results)} eventos válidos e futuros.")
