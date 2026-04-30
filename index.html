@@ -243,56 +243,57 @@
             let ep = arg.event.extendedProps;
             if (!ep.is_grouped) return; 
 
-            let tEvents = ep.daily_events.filter(e => e.source !== 'cinema');
-            let cEvents = ep.daily_events.filter(e => e.source === 'cinema');
-            let t = tEvents.length;
-            let c = cEvents.length;
-            let total = t + c;
-
-            // O motor de lógica atribui os TAMANHOS
-            let renderOrder = (t >= 2 && c >= 4) ? [...cEvents, ...tEvents] : [...tEvents, ...cEvents];
-
-            if (total === 1) {
-                renderOrder[0].gridClass = 'span-12 horizontal single-event';
-            } else if (total === 2) {
-                renderOrder.forEach(e => e.gridClass = 'span-6 horizontal');
-            } else if (total === 3) {
-                renderOrder.forEach(e => e.gridClass = 'span-4 horizontal'); 
-            } else if (t === 0) { 
-                if (c === 4) {
-                    renderOrder.forEach(e => e.gridClass = 'span-3 horizontal');
-                } else { 
-                    renderOrder[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
-                    for(let i=1; i<c; i++) renderOrder[i].gridClass = 'span-3 horizontal'; 
-                }
-            } else if (t === 1 && c >= 4) {
-                tEvents[0].gridClass = 'span-6 row-span-2 horizontal featured'; 
-                cEvents.forEach(e => e.gridClass = 'span-3 horizontal');
-            } else if (t >= 2 && c >= 4) {
-                cEvents.forEach(e => e.gridClass = 'span-3 horizontal'); 
-                tEvents.forEach(e => e.gridClass = 'span-6 horizontal');
-            } else {
-                tEvents.forEach(e => {
-                    if (t === 1) e.gridClass = 'span-12 horizontal single-event';
-                    else if (t === 2) e.gridClass = 'span-6 horizontal';
-                    else if (t === 3) e.gridClass = 'span-4 horizontal';
-                    else e.gridClass = 'span-6 horizontal'; 
-                });
-                
-                cEvents.forEach(e => {
-                    if (c === 1) e.gridClass = 'span-12 horizontal single-event';
-                    else if (c === 2) e.gridClass = 'span-6 horizontal';
-                    else if (c === 3) e.gridClass = 'span-4 horizontal'; 
-                    else e.gridClass = 'span-3 horizontal'; 
-                });
-            }
-
-            // Ordenamos TUDO cronologicamente
-            let finalRender = [...renderOrder].sort((a, b) => {
+            // 1. ORDENAMOS TUDO CRONOLOGICAMENTE PRIMEIRO!
+            let sortedEvents = [...ep.daily_events].sort((a, b) => {
                 let timeA = a.start || "";
                 let timeB = b.start || "";
                 return timeA.localeCompare(timeB);
             });
+
+            // 2. APLICAMOS AS REGRAS EDITORIAIS
+            let finalRender = [];
+            let total = sortedEvents.length;
+
+            if (total === 1) {
+                sortedEvents[0].gridClass = 'span-12 horizontal single-event';
+                finalRender.push(sortedEvents[0]);
+            } 
+            else if (total === 2) {
+                sortedEvents.forEach(e => { e.gridClass = 'span-6 horizontal'; finalRender.push(e); });
+            } 
+            else if (total === 3) {
+                sortedEvents.forEach(e => { e.gridClass = 'span-4 horizontal'; finalRender.push(e); });
+            } 
+            else if (total === 4) {
+                sortedEvents.forEach(e => { e.gridClass = 'span-3 horizontal'; finalRender.push(e); });
+            } 
+            else if (total === 5) {
+                // Layout 1 Grande + 4 Pequenos.
+                // Procura um evento de Teatro/Música para dar destaque
+                let priorityIdx = sortedEvents.findIndex(e => e.source !== 'cinema');
+                if (priorityIdx === -1) priorityIdx = 0; // Se for tudo cinema, destaca o primeiro (mais cedo)
+
+                // Removemos o evento de destaque do array e colocamo-lo PRIMEIRO no HTML
+                // para que a grelha 2x2 dos filmes encaixe perfeitamente à direita!
+                let featured = sortedEvents.splice(priorityIdx, 1)[0];
+                featured.gridClass = 'span-6 row-span-2 horizontal featured';
+                finalRender.push(featured);
+
+                // Os restantes 4 filmes seguem no HTML ordenados por hora
+                sortedEvents.forEach(e => {
+                    e.gridClass = 'span-3 horizontal';
+                    finalRender.push(e);
+                });
+            } 
+            else if (total === 6) {
+                // 4 pequenos em cima, 2 grandes em baixo
+                for(let i=0; i<4; i++) { sortedEvents[i].gridClass = 'span-3 horizontal'; finalRender.push(sortedEvents[i]); }
+                for(let i=4; i<6; i++) { sortedEvents[i].gridClass = 'span-6 horizontal'; finalRender.push(sortedEvents[i]); }
+            } 
+            else {
+                // Prevenção se houver 7+
+                sortedEvents.forEach(e => { e.gridClass = 'span-3 horizontal'; finalRender.push(e); });
+            }
 
             let html = '<div class="daily-grid">';
             finalRender.forEach(e => {
