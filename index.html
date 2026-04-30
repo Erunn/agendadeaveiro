@@ -106,26 +106,25 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 16px;
-            grid-auto-rows: 140px; 
+            grid-auto-rows: 160px; /* AUMENTADO DE 140px PARA 160px */
             grid-auto-flow: dense;
         }
 
         /* * FORÇA BRUTA DE ALTURAS 
-         * Garante que qualquer cartão que ocupe apenas 1 row 
-         * tem exatamente 140px, idêntico aos cartões pequenos de cinema 
+         * Garante que qualquer cartão que ocupe apenas 1 row tem exatamente 160px 
          */
         .event-card {
             display: flex; background: var(--card-bg); border: var(--card-border);
             box-shadow: var(--card-shadow); transition: transform 0.15s, box-shadow 0.15s;
             text-decoration: none; color: inherit; overflow: hidden;
             width: 100%;
-            height: 140px; 
+            height: 160px; /* AUMENTADO DE 140px PARA 160px */
         }
         .event-card:hover { transform: var(--card-hover-transform); box-shadow: var(--card-hover-shadow); }
         
         .row-span-2 { 
             grid-row: span 2; 
-            height: 296px !important; /* Exceção: Destaque = 140 + 140 + 16 de espaçamento */
+            height: 336px !important; /* Destaque = 160 + 160 + 16 de espaçamento */
         }
 
         .event-card.horizontal { flex-direction: row; border-left-width: var(--card-left-width) !important; border-left-style: solid; }
@@ -172,7 +171,7 @@
             .span-3, .span-4, .span-6 { grid-column: span 12; }
             .event-card.vertical { flex-direction: row; border-left-width: var(--card-left-width) !important; border-top-width: 0 !important;}
             .event-card.vertical .card-img-wrap { width: 120px; height: auto; border-bottom: none; border-right: var(--divider); }
-            .row-span-2 { grid-row: span 1; height: 140px !important; }
+            .row-span-2 { grid-row: span 1; height: 160px !important; }
         }
     </style>
 </head>
