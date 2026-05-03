@@ -1,20 +1,5 @@
 [
   {
-    "title": "[c5] O. Beiras",
-    "start": "2026-05-02T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/c5-o-beiras/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Aveiro_Síntese 2026",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/c5-o-beiras-aveiro-sintese-2026_img69e8b45349ff6.jpg",
-      "source": "teatro",
-      "description": "ESTREIA NACIONAL",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Dreaming Bodies: A Collective Practice for the Future",
     "start": "2026-05-03T11:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/dreaming-bodies-a-collective-practice-for-the-future-masterclass-palcos-instaveis/",
@@ -706,19 +691,6 @@
   },
   {
     "title": "As Ovelhas Detectives",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/as-ovelhas-detectives-415295",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822624?tp=KM",
-      "display_time": "11:00, 13:20, 16:20, 19:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "As Ovelhas Detectives",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/as-ovelhas-detectives-415295",
     "source": "cinema",
@@ -771,19 +743,6 @@
   },
   {
     "title": "O Diabo Veste Prada 2",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-      "display_time": "13:00, 15:45, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Diabo Veste Prada 2",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
     "source": "cinema",
@@ -797,19 +756,6 @@
   },
   {
     "title": "Fuze - Explosão Iminente",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/fuze-explosao-iminente-415273",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822237?tp=KM",
-      "display_time": "19:10, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Fuze - Explosão Iminente",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/fuze-explosao-iminente-415273",
     "source": "cinema",
@@ -862,19 +808,6 @@
   },
   {
     "title": "That Time I Got Reincarnated as a Slime o Filme - Lágrimas do Mar Azul-Celeste",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/that-time-i-got-reincarnated-as-a-slime-o-filme---lagrimas-do-mar-azul-celeste-415275",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822315?tp=KM",
-      "display_time": "13:45, 16:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "That Time I Got Reincarnated as a Slime o Filme - Lágrimas do Mar Azul-Celeste",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/that-time-i-got-reincarnated-as-a-slime-o-filme---lagrimas-do-mar-azul-celeste-415275",
     "source": "cinema",
@@ -920,19 +853,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822315?tp=KM",
       "display_time": "13:45, 16:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "23:20 | 13:10, 16:00, 18:50, 21:50 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1024,19 +944,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822382?tp=KM",
       "display_time": "13:20, 16:20, 19:30, 22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Múmia de Lee Cronin",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/fisico-ii-415231",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822382?tp=KM",
-      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1057,19 +964,6 @@
   },
   {
     "title": "O Drama",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/821816?tp=KM",
-      "display_time": "21:30, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Drama",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/o-drama-415146",
     "source": "cinema",
@@ -1154,19 +1048,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
       "display_time": "13:30, 16:10, 19:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Super Mario Galaxy - O Filme",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-      "display_time": "10:50, 13:30, 16:10, 19:00 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1187,19 +1068,6 @@
   },
   {
     "title": "Projecto Hail Mary",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/projecto-hail-mary-415136",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/821804?tp=KM",
-      "display_time": "20:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Projecto Hail Mary",
     "start": "2026-05-03",
     "url": "https://cinecartaz.publico.pt/filme/projecto-hail-mary-415136",
     "source": "cinema",
@@ -1284,19 +1152,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/821728?tp=KM",
       "display_time": "14:00, 16:50 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Saltitões",
-    "start": "2026-05-02",
-    "url": "https://cinecartaz.publico.pt/filme/saltitoes-414987",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/821728?tp=KM",
-      "display_time": "11:10, 14:00, 16:50 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
