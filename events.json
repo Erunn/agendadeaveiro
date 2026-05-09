@@ -631,19 +631,6 @@
   },
   {
     "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-08",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
     "start": "2026-05-11",
     "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
     "source": "cinema",
@@ -718,21 +705,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Estrangeiro",
-    "start": "2026-05-07T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-o-estrangeiro/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "François Ozon",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-o_estrangeiro.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
     }
   },
   {
