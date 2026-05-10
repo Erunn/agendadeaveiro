@@ -1,20 +1,5 @@
 [
   {
-    "title": "Nós",
-    "start": "2026-05-09T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/nos/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Fado & Samba / Dramaturgia Musical / Palco Central",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/nos-fado-samba-associacao-palco-central_img69d5239ec581f.jpg",
-      "source": "teatro",
-      "description": "[ESTREIA]Uma dramaturgia musical que une o samba e o fado para contar a história de dois povos irmãos.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Concerto de Homenagem a Santa Joana",
     "start": "2026-05-10T17:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/concerto-de-homenagem-a-santa-joana/",
@@ -663,19 +648,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
       "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-09",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "13:30, 16:10 | 15:00, 18:50, 21:30, 00:10 (3D/ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
