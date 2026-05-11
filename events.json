@@ -1,20 +1,5 @@
 [
   {
-    "title": "Concerto de Homenagem a Santa Joana",
-    "start": "2026-05-10T17:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/concerto-de-homenagem-a-santa-joana/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Orquestra das Beiras e Orquestra Sinfónica do DeCA",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/concerto-de-homenagem-a-santa-joana-orquestra-das-beiras-e-orquestra-sinfonica-do-deca_img69d524939dcdb.jpg",
-      "source": "teatro",
-      "description": "Um programa dedicado à Sinfonia n.º 5 de Gustav Mahler",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "17:00"
-    }
-  },
-  {
     "title": "Falsas Histórias Verdadeiras: Uma Pina Colagem",
     "start": "2026-05-15T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
@@ -648,19 +633,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
       "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-10",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "13:30, 16:10 | 15:00, 18:50, 21:30, 00:10 (3D/ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
