@@ -601,19 +601,6 @@
   },
   {
     "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-13",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
     "start": "2026-05-14",
     "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
     "source": "cinema",
@@ -698,19 +685,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
       "display_time": "13:30, 16:10 | 15:00, 18:50, 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-13",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
