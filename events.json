@@ -600,91 +600,169 @@
     }
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-14",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-15",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-18",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-    "start": "2026-05-19",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-20",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "18:50 | 21:30, 00:10 (3D/ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "18:40, 21:50 (ATMOS/3D) | 20:40, 23:50 (ATMOS/2D)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
     }
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-15",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-18",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-19",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-20",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
     "start": "2026-05-16",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "13:30, 16:10 | 15:00, 18:50, 21:30, 00:10 (3D/ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "19:00, 21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
     }
   },
   {
-    "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+    "title": "Iron Maiden: Burning Ambition",
     "start": "2026-05-17",
-    "url": "https://cinecartaz.publico.pt/filme/billie-eilish-hit-hard-and-soft-the-tour-415296",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822622?tp=KM",
-      "display_time": "13:30, 16:10 | 15:00, 18:50, 21:30, 00:10 (3D/ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "19:00, 21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-15",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-16",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-17",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-18",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-19",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-20",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -692,12 +770,64 @@
   },
   {
     "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-20",
+    "start": "2026-05-15",
     "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-16",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-17",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-18",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-19",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
