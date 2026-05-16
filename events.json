@@ -1,21 +1,6 @@
 [
   {
     "title": "Falsas Histórias Verdadeiras: Uma Pina Colagem",
-    "start": "2026-05-15T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Teatro Nacional São João / Direção de Victor Hugo Pontes e música de A Garota Não",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/falsas-historias-verdadeiras-uma-pina-colagem-teatro-nacional-sao-joao-direcao-de-victor-hugo-pontes-e-musica-de-a-garota-nao_img69d525ae63215.jpg",
-      "source": "teatro",
-      "description": "Espetáculo que celebra o mundo às avessas de Manuel António Pina, um dos nossos maiores poetas.",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Falsas Histórias Verdadeiras: Uma Pina Colagem",
     "start": "2026-05-16T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/falsas-historias-verdadeiras-uma-pina-colagem/",
     "source": "teatro",
@@ -614,19 +599,6 @@
   },
   {
     "title": "Iron Maiden: Burning Ambition",
-    "start": "2026-05-15",
-    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
-      "display_time": "21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Iron Maiden: Burning Ambition",
     "start": "2026-05-18",
     "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
     "source": "cinema",
@@ -692,19 +664,6 @@
   },
   {
     "title": "Top Gun: Maverick",
-    "start": "2026-05-15",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
-      "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun: Maverick",
     "start": "2026-05-16",
     "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
     "source": "cinema",
@@ -763,19 +722,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
       "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-15",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -915,7 +861,7 @@
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "A New Groove Odyssey",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-funkyoubrassband.jpg?fit=fill&w=1400",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1778856565776-23milhas-2026_2t-funkyoubrassband.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "Música",
