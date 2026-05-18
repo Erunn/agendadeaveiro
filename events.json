@@ -1,20 +1,5 @@
 [
   {
-    "title": "O que é que queres saber?",
-    "start": "2026-05-17T16:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/o-que-e-que-queres-saber/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "De Inês Pupo e Gonçalo Pratas",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-que-e-que-queres-saber-de-ines-pupo-e-goncalo-pratas_img69d52af111887.jpg",
-      "source": "teatro",
-      "description": "Um espetáculo em formato de história-concerto para ver em família.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "16:00"
-    }
-  },
-  {
     "title": "19ª Festa do Cinema Italiano",
     "start": "2026-05-18T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
@@ -570,6 +555,21 @@
     }
   },
   {
+    "title": "Sondre Lerche",
+    "start": "2026-11-13T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/sondre-lerche/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Apresentação do disco 'Acrobat'",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/sondre-lerche-apresentacao-do-disco-acrobat_img6a09d4f3c402f.jpg",
+      "source": "teatro",
+      "description": "Sondre Lerche regressa aos palcos com um novo disco.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-20",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
@@ -622,32 +622,6 @@
     }
   },
   {
-    "title": "Iron Maiden: Burning Ambition",
-    "start": "2026-05-17",
-    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
-      "display_time": "19:00, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "start": "2026-05-17",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
-      "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Top Gun: Maverick",
     "start": "2026-05-18",
     "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
@@ -681,19 +655,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
       "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-17",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
