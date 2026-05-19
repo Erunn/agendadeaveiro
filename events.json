@@ -1,21 +1,6 @@
 [
   {
     "title": "19ª Festa do Cinema Italiano",
-    "start": "2026-05-18T18:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/19-festa-do-cinema-italiano_img69d6217ee112c.jpg",
-      "source": "teatro",
-      "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "18:00 / 21:30"
-    }
-  },
-  {
-    "title": "19ª Festa do Cinema Italiano",
     "start": "2026-05-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
     "source": "teatro",
@@ -120,6 +105,21 @@
     }
   },
   {
+    "title": "A Dança das Raposas",
+    "start": "2026-05-26T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/a-danca-das-raposas-os-filmes-das-nossas-tercas-sessao-especial/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças | Sessão Especial",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/a-danca-das-raposas-os-filmes-das-nossas-tercas-sessao-especial_img6a07476da3098.jpg",
+      "source": "teatro",
+      "description": "Um filme de Valéry Carnoy.Ciclo de sessões especiais dos Filmes das Nossas Terças, num ambiente mais intimista.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "A Morte do Diabo",
     "start": "2026-05-30T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/a-morte-do-diabo/",
@@ -131,6 +131,21 @@
       "description": "Espectáculo musical, irónico, poético e com uma forte componente visual que evoca o sonho como esperança colectiva para construir um mundo melhor.",
       "category": "Ópera",
       "category_normalized": "ópera",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Romaria",
+    "start": "2026-06-02T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/romaria-os-filmes-das-nossas-tercas-sessao-especial/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças | Sessão Especial",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/romaria-os-filmes-das-nossas-tercas-sessao-especial_img6a07495b6d21b.jpg",
+      "source": "teatro",
+      "description": "Um filme de Carla Simón.Ciclo de sessões especiais dos Filmes das Nossas Terças, num ambiente mais intimista.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "21:30"
     }
   },
@@ -206,6 +221,21 @@
       "description": "[ESTREIA]Entrelaçando áreas artísticas, mostra-se e acolhe-se a dor, olhos nos olhos, transfigurando-a em traço e movimento.",
       "category": "Multidisciplinar",
       "category_normalized": "outros",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "O Barqueiro",
+    "start": "2026-06-16T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-barqueiro-os-filmes-das-nossas-tercas-sessao-especial/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças | Sessão Especial",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-barqueiro-os-filmes-das-nossas-tercas-sessao-especial_img6a074b887bdd0.jpg",
+      "source": "teatro",
+      "description": "Um filme de Simão Cayatte.Ciclo de sessões especiais dos Filmes das Nossas Terças, num ambiente mais intimista.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "21:30"
     }
   },
@@ -584,19 +614,6 @@
   },
   {
     "title": "Iron Maiden: Burning Ambition",
-    "start": "2026-05-18",
-    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
-      "display_time": "21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Iron Maiden: Burning Ambition",
     "start": "2026-05-19",
     "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
     "source": "cinema",
@@ -616,19 +633,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
       "display_time": "21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "start": "2026-05-18",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
-      "display_time": "19:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -662,19 +666,6 @@
   },
   {
     "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-18",
-    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Top Gun - Ases Indomáveis",
     "start": "2026-05-19",
     "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
     "source": "cinema",
@@ -684,51 +675,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Filodemo",
-    "start": "2026-05-15T21:30:00",
-    "url": "https://www.23milhas.pt/evento/filodemo/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Teatro Nacional D. Maria II",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-filodemo.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Cabe mais um?",
-    "start": "2026-05-16T17:00:00",
-    "url": "https://www.23milhas.pt/evento/cabe-mais-um-1774876531778/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Teatro Nacional D. Maria II",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-cabemaisum.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "17:00"
-    }
-  },
-  {
-    "title": "Fernanda e a inesperada virtude de aprender a voar",
-    "start": "2026-05-17T17:00:00",
-    "url": "https://www.23milhas.pt/evento/fernanda-e-a-inesperada-virtude-de-aprender-a-voar/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Mochos no Telhado",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-fernandavirtudevoar.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "17:00"
     }
   },
   {
@@ -807,21 +753,6 @@
     }
   },
   {
-    "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Ana Madureira & Vahan Kero...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/dona-arm-foto-desnorte.png?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:00"
-    }
-  },
-  {
     "title": "Dormir com as Estrelas",
     "start": "2026-06-20T21:00:00",
     "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
@@ -833,6 +764,21 @@
       "description": "",
       "category": "Experiência",
       "category_normalized": "outros",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ana Madureira & Vahan Kero...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/dona-arm-foto-desnorte.png?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:00"
     }
   },
