@@ -1,20 +1,5 @@
 [
   {
-    "title": "19ª Festa do Cinema Italiano",
-    "start": "2026-05-19T18:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/19-festa-do-cinema-italiano/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/19-festa-do-cinema-italiano_img69d6217ee112c.jpg",
-      "source": "teatro",
-      "description": "A Festa do Cinema Italiano regressa ao palco do Teatro Aveirense para celebrar a sua 19ª edição",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "18:00 / 21:30"
-    }
-  },
-  {
     "title": "Fabrik Quartet",
     "start": "2026-05-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabrik-quartet-tubo-de-ensaio/",
@@ -613,13 +598,13 @@
     }
   },
   {
-    "title": "Iron Maiden: Burning Ambition",
-    "start": "2026-05-19",
-    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-05-27",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
-      "display_time": "21:40, 00:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "18:40, 21:50 (ATMOS/3D) | 20:40, 23:50 (ATMOS/2D)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -639,8 +624,99 @@
     }
   },
   {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-21",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-22",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-25",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-26",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-27",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-23",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "19:00, 21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Iron Maiden: Burning Ambition",
+    "start": "2026-05-24",
+    "url": "https://cinecartaz.publico.pt/filme/iron-maiden-burning-ambition-415405",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822718?tp=KM",
+      "display_time": "19:00, 21:40, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "Top Gun: Maverick",
-    "start": "2026-05-19",
+    "start": "2026-05-20",
     "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
     "source": "cinema",
     "extendedProps": {
@@ -653,7 +729,85 @@
   },
   {
     "title": "Top Gun: Maverick",
-    "start": "2026-05-20",
+    "start": "2026-05-21",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-22",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-23",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-24",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-25",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-26",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/778948?tp=KM",
+      "display_time": "19:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "start": "2026-05-27",
     "url": "https://cinecartaz.publico.pt/filme/top-gun-maverick-407965",
     "source": "cinema",
     "extendedProps": {
@@ -666,7 +820,72 @@
   },
   {
     "title": "Top Gun - Ases Indomáveis",
-    "start": "2026-05-19",
+    "start": "2026-05-21",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-22",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-23",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-24",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-25",
+    "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/739486?tp=KM",
+      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Top Gun - Ases Indomáveis",
+    "start": "2026-05-26",
     "url": "https://cinecartaz.publico.pt/filme/top-gun---ases-indomaveis-148743",
     "source": "cinema",
     "extendedProps": {
@@ -750,6 +969,51 @@
       "category": "Festival",
       "category_normalized": "festival",
       "display_time": "00:00"
+    }
+  },
+  {
+    "title": "Designer Tiago + Luna Jacome + Núria Mandane",
+    "start": "2026-06-06T17:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-designer-tiago-luna-jacome-nuria-mandane/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Encontro PRAIA",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "17:30"
+    }
+  },
+  {
+    "title": "Wolfgang Muthspiel + Tomás Marques Trio",
+    "start": "2026-06-12T21:30:00",
+    "url": "https://www.23milhas.pt/evento/festival-bernardo-sassetti-wolfgang-muthspiel-tomas-marques-trio/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Festival Jazz Bernardo Sassett...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-site_sassetti.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Carlos Bica + Guilherme Fradinho Trio",
+    "start": "2026-06-13T21:30:00",
+    "url": "https://www.23milhas.pt/evento/festival-bernardo-sassetti-carlos-bica-guilherme-fradinho-trio/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Festival Jazz Bernardo Sassett...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-site_sassetti2.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
     }
   },
   {
@@ -840,6 +1104,111 @@
       "category": "Oficina",
       "category_normalized": "workshop",
       "display_time": "10:30"
+    }
+  },
+  {
+    "title": "Emissão de Rádio",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "RÁDIO",
+      "category_normalized": "outros",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Brincar no Jardim",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-brincar-no-jardim/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Artes Plásticas",
+      "category_normalized": "outros",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Emissão Especial Antena 3 na Rádio Faneca",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-especial-antena-3/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "PROGRAMA DE RÁDIO",
+      "category_normalized": "outros",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Asa Cobra",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-asa-cobra/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Ana Lua Caiano",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-ana-lua-caiano/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Bruno Pernadas",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-bruno-pernadas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Sapatrux",
+    "start": "2026-05-20T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-sapatrux/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "Todo o dia"
     }
   }
 ]
