@@ -150,6 +150,21 @@
     }
   },
   {
+    "title": "Celebração do Dia de Camões",
+    "start": "2026-06-10T16:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/celebracao-do-dia-de-camoes/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/celebracao-do-dia-de-camoes_img6a1079c89e3fb.jpg",
+      "source": "teatro",
+      "description": "A Câmara Municipal de Aveiro assinala o Dia de Portugal, de Camões e das Comunidades Portuguesas com uma programação cultural que cruza pensamento, artes visuais, música e teatro.",
+      "category": "Multidisciplinar",
+      "category_normalized": "outros",
+      "display_time": "16:00"
+    }
+  },
+  {
     "title": "ONYX",
     "start": "2026-06-11T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/onyx-piny/",
@@ -192,6 +207,21 @@
       "category": "Multidisciplinar",
       "category_normalized": "outros",
       "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Os Lusíadas como nunca os ouviu",
+    "start": "2026-06-14T17:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/os-lusiadas-como-nunca-os-ouviu-os-lusiadas-de-lisboa-a-india-ida-e-volta/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Lusíadas de Lisboa à Índia Ida e Volta / António Fonseca",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/os-lusiadas-como-nunca-os-ouviu-os-lusiadas-de-lisboa-a-india-ida-e-volta_img6a107cd6ece40.jpg",
+      "source": "teatro",
+      "description": "A Câmara Municipal de Aveiro assinala o Dia de Portugal, de Camões e das Comunidades Portuguesas com uma programação cultural que cruza pensamento, artes visuais, música e teatro.",
+      "category": "Performance/Leitura",
+      "category_normalized": "outros",
+      "display_time": "17:00"
     }
   },
   {
@@ -571,19 +601,6 @@
   },
   {
     "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-05-22",
-    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
-      "display_time": "14:00, 17:20, 20:40, 23:50 (ATMOS) | 15:30, 18:40, 21:50 (3D ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-25",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
@@ -919,7 +936,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
@@ -934,7 +951,7 @@
   },
   {
     "title": "Brincar no Jardim",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-brincar-no-jardim/",
     "source": "23milhas",
     "extendedProps": {
@@ -949,7 +966,7 @@
   },
   {
     "title": "Emissão Especial Antena 3 na Rádio Faneca",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-especial-antena-3/",
     "source": "23milhas",
     "extendedProps": {
@@ -964,7 +981,7 @@
   },
   {
     "title": "Asa Cobra",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-asa-cobra/",
     "source": "23milhas",
     "extendedProps": {
@@ -979,7 +996,7 @@
   },
   {
     "title": "Ana Lua Caiano",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-ana-lua-caiano/",
     "source": "23milhas",
     "extendedProps": {
@@ -994,7 +1011,7 @@
   },
   {
     "title": "Bruno Pernadas",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-bruno-pernadas/",
     "source": "23milhas",
     "extendedProps": {
@@ -1009,7 +1026,7 @@
   },
   {
     "title": "Sapatrux",
-    "start": "2026-05-22T00:00:00",
+    "start": "2026-05-23T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-sapatrux/",
     "source": "23milhas",
     "extendedProps": {
