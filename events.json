@@ -601,19 +601,6 @@
   },
   {
     "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-05-25",
-    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
-      "display_time": "14:00, 17:20, 20:40, 23:50 (ATMOS) | 15:30, 18:40, 21:50 (3D ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-26",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
@@ -639,66 +626,6 @@
     }
   },
   {
-    "title": "Entroncamento",
-    "start": "2026-05-21T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-entroncamento/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Pedro Cabeleira",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-entroncamento.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
-    }
-  },
-  {
-    "title": "Cores que se comem",
-    "start": "2026-05-23T10:00:00",
-    "url": "https://www.23milhas.pt/evento/cores-que-se-comem/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Oficina Saber Fazer",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-coresquesecomem.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
-    }
-  },
-  {
-    "title": "Funk You Brass Band",
-    "start": "2026-05-23T21:30:00",
-    "url": "https://www.23milhas.pt/evento/funk-you-brass-band-1774879003964/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "A New Groove Odyssey",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1778856565776-23milhas-2026_2t-funkyoubrassband.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Nuvens e outras criaturas voadoras",
-    "start": "2026-05-24T10:30:00",
-    "url": "https://www.23milhas.pt/evento/nuvens-e-outras-criaturas-voadoras/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Planteia em Família",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-nuvenseoutrascriaturasvoadoras.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:30"
-    }
-  },
-  {
     "title": "Festival Rádio Faneca",
     "start": "2026-06-05T00:00:00",
     "url": "https://www.23milhas.pt/evento/festival-radio-faneca-2026/",
@@ -714,18 +641,138 @@
     }
   },
   {
+    "title": "Asa Cobra",
+    "start": "2026-06-05T18:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-asa-cobra/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Asa Cobra",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site13.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Rita Cortezão",
+    "start": "2026-06-05T19:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-rita-cortezao/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Rita Cortezão",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site2.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "19:30"
+    }
+  },
+  {
+    "title": "Ana Lua Caiano",
+    "start": "2026-06-05T21:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-ana-lua-caiano/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ana Lua Caiano",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site5.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Bruno Pernadas",
+    "start": "2026-06-05T22:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-bruno-pernadas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Bruno Pernadas",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site10.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:30"
+    }
+  },
+  {
+    "title": "Sapatrux",
+    "start": "2026-06-05T23:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-sapatrux/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "DJ Set",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site6.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "23:30"
+    }
+  },
+  {
+    "title": "Sofia Leão",
+    "start": "2026-06-06T15:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-sofia-leao/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Sofia Leão",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site14.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "15:30"
+    }
+  },
+  {
     "title": "Designer Tiago + Luna Jacome + Núria Mandane",
     "start": "2026-06-06T17:30:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-designer-tiago-luna-jacome-nuria-mandane/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "Encontro PRAIA",
-      "image": "",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site16.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "Música",
       "category_normalized": "música",
       "display_time": "17:30"
+    }
+  },
+  {
+    "title": "Inês Marques Lucas",
+    "start": "2026-06-06T19:30:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-ines-marques-lucas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Inês Marques Lucas",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site3.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "19:30"
+    }
+  },
+  {
+    "title": "A Sul",
+    "start": "2026-06-07T17:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-a-sul/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "A Sul",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site4.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "17:00"
     }
   },
   {
@@ -819,21 +866,6 @@
     }
   },
   {
-    "title": "Dormir com as Estrelas",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Concerto \"Músicas para da...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-dormircomasestrelas.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Experiência",
-      "category_normalized": "outros",
-      "display_time": "21:00"
-    }
-  },
-  {
     "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
     "start": "2026-06-20T21:00:00",
     "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
@@ -845,6 +877,21 @@
       "description": "",
       "category": "Música",
       "category_normalized": "música",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Dormir com as Estrelas",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Concerto \"Músicas para da...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-dormircomasestrelas.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Experiência",
+      "category_normalized": "outros",
       "display_time": "21:00"
     }
   },
@@ -910,14 +957,14 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-05-25T00:00:00",
+    "start": "2026-05-26T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "23 Milhas",
       "image": "",
       "source": "23milhas",
-      "description": "",
+      "description": "A emissão de rádio, em FM, online e ao vivo, volta a assentar arraiais no Jardim Henriqueta Maia. Inclui concertos, jogos, conversas e discos pedidos e, às vezes, coisas mesmo aleatórias",
       "category": "RÁDIO",
       "category_normalized": "outros",
       "display_time": "Todo o dia"
@@ -925,7 +972,7 @@
   },
   {
     "title": "Brincar no Jardim",
-    "start": "2026-05-25T00:00:00",
+    "start": "2026-05-26T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-brincar-no-jardim/",
     "source": "23milhas",
     "extendedProps": {
@@ -939,9 +986,9 @@
     }
   },
   {
-    "title": "Emissão Especial Antena 3 na Rádio Faneca",
-    "start": "2026-05-25T00:00:00",
-    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-especial-antena-3/",
+    "title": "Emissão Especial RTP Antena 3 na Rádio Faneca",
+    "start": "2026-05-26T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-especial-rtp-antena-3/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "23 Milhas",
@@ -954,62 +1001,17 @@
     }
   },
   {
-    "title": "Asa Cobra",
-    "start": "2026-05-25T00:00:00",
-    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-asa-cobra/",
+    "title": "Histórias nos Becos",
+    "start": "2026-05-26T00:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-historias-nos-becos/",
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "23 Milhas",
       "image": "",
       "source": "23milhas",
       "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "Ana Lua Caiano",
-    "start": "2026-05-25T00:00:00",
-    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-ana-lua-caiano/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "Bruno Pernadas",
-    "start": "2026-05-25T00:00:00",
-    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-bruno-pernadas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "Sapatrux",
-    "start": "2026-05-25T00:00:00",
-    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-sapatrux/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
+      "category": "Teatro para famílias",
+      "category_normalized": "teatro",
       "display_time": "Todo o dia"
     }
   }
