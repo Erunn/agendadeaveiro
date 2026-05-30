@@ -556,19 +556,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-05-30",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -621,19 +608,6 @@
   },
   {
     "title": "Em Zona Cinzenta",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
-      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Em Zona Cinzenta",
     "start": "2026-05-30",
     "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
     "source": "cinema",
@@ -679,19 +653,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
       "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "14:00, 16:45, 19:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -751,19 +712,6 @@
   },
   {
     "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
-      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-30",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
@@ -809,19 +757,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
       "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Passageiro do Inferno",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
-      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -881,19 +816,6 @@
   },
   {
     "title": "O Diabo Veste Prada 2",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-      "display_time": "13:10, 16:00, 18:50, 21:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Diabo Veste Prada 2",
     "start": "2026-05-30",
     "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
     "source": "cinema",
@@ -946,19 +868,6 @@
   },
   {
     "title": "Michael",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:40, 16:30, 19:20, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
     "start": "2026-05-30",
     "url": "https://cinecartaz.publico.pt/filme/michael-415240",
     "source": "cinema",
@@ -1004,19 +913,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
       "display_time": "13:40, 16:30, 19:20, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Super Mario Galaxy - O Filme",
-    "start": "2026-05-29",
-    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-      "display_time": "13:30, 16:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1087,6 +983,21 @@
       "category": "Festival",
       "category_normalized": "festival",
       "display_time": "00:00"
+    }
+  },
+  {
+    "title": "8 Cartas por Francisco Calisto",
+    "start": "2026-06-05T10:00:00",
+    "url": "https://www.23milhas.pt/evento/radio-faneca-2026-8-cartas-por-francisco-calisto/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "projeto com comércio local",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-rf26-site27.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Projeto de comunidade",
+      "category_normalized": "outros",
+      "display_time": "10:00"
     }
   },
   {
@@ -1691,7 +1602,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-05-29T00:00:00",
+    "start": "2026-05-30T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
