@@ -1,20 +1,5 @@
 [
   {
-    "title": "A Morte do Diabo",
-    "start": "2026-05-30T17:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/a-morte-do-diabo/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Fragmentos de uma opereta de Eça de Queirós pela Banda Amizade - Banda Sinfónica de Aveiro",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/a-morte-do-diabo-fragmentos-de-uma-opereta-de-eca-de-queiros-pela-banda-amizade-banda-sinfonica-de-aveiro_img6978a158e1e96.jpg",
-      "source": "teatro",
-      "description": "Espectáculo musical, irónico, poético e com uma forte componente visual que evoca o sonho como esperança colectiva para construir um mundo melhor.",
-      "category": "Ópera",
-      "category_normalized": "ópera",
-      "display_time": "17:30 / 21:30"
-    }
-  },
-  {
     "title": "Oficinas 18 Pontos",
     "start": "2026-05-31T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
@@ -556,19 +541,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-05-31",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -601,19 +573,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
       "display_time": "18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Em Zona Cinzenta",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
-      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -686,19 +645,6 @@
   },
   {
     "title": "Bichos a Bordo",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "10:50, 14:00, 16:45, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
     "start": "2026-05-31",
     "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
     "source": "cinema",
@@ -712,19 +658,6 @@
   },
   {
     "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
-      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-05-31",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
@@ -757,19 +690,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
       "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Passageiro do Inferno",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
-      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -816,19 +736,6 @@
   },
   {
     "title": "O Diabo Veste Prada 2",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-      "display_time": "13:10, 16:00, 18:50, 21:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Diabo Veste Prada 2",
     "start": "2026-05-31",
     "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
     "source": "cinema",
@@ -861,19 +768,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
       "display_time": "13:10, 16:00, 18:50, 21:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:40, 16:30, 19:20, 22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -939,19 +833,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
       "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Super Mario Galaxy - O Filme",
-    "start": "2026-05-30",
-    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-      "display_time": "11:00, 13:30, 16:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1602,7 +1483,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-05-30T00:00:00",
+    "start": "2026-05-31T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
