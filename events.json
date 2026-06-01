@@ -1,35 +1,5 @@
 [
   {
-    "title": "Oficinas 18 Pontos",
-    "start": "2026-05-31T10:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Com João Fino e Claudinei Garcia",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
-      "source": "teatro",
-      "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
-      "category": "Workshop",
-      "category_normalized": "workshop",
-      "display_time": "10:00 / 14:00"
-    }
-  },
-  {
-    "title": "Oficinas 18 Pontos",
-    "start": "2026-06-04T10:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Com João Fino e Claudinei Garcia",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
-      "source": "teatro",
-      "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
-      "category": "Workshop",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
-    }
-  },
-  {
     "title": "Dia Mundial da Criança",
     "start": "2026-06-01",
     "url": "https://www.teatroaveirense.pt/pt/evento/dia-mundial-da-crianca/",
@@ -72,6 +42,21 @@
       "category": "Dança",
       "category_normalized": "dança",
       "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Oficinas 18 Pontos",
+    "start": "2026-06-04T10:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Com João Fino e Claudinei Garcia",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/oficinas-18-pontos_img69e78eb5ce150.png",
+      "source": "teatro",
+      "description": "No âmbito da estreia do espetáculo \"18 Pontos\" de Andreia Ribeiro da Silva, são propostas duas oficinas para a Comunidade.",
+      "category": "Workshop",
+      "category_normalized": "workshop",
+      "display_time": "10:00"
     }
   },
   {
@@ -541,19 +526,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-06-01",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -573,19 +545,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
       "display_time": "18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Em Zona Cinzenta",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
-      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -644,32 +603,6 @@
     }
   },
   {
-    "title": "Bichos a Bordo",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "10:50, 14:00, 16:45, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
-      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Star Wars: The Mandalorian e Grogu",
     "start": "2026-06-01",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
@@ -690,19 +623,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
       "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Passageiro do Inferno",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
-      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -736,19 +656,6 @@
   },
   {
     "title": "O Diabo Veste Prada 2",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
-      "display_time": "13:10, 16:00, 18:50, 21:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Diabo Veste Prada 2",
     "start": "2026-06-01",
     "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
     "source": "cinema",
@@ -768,19 +675,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
       "display_time": "13:10, 16:00, 18:50, 21:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:40, 16:30, 19:20, 22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -833,19 +727,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
       "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Super Mario Galaxy - O Filme",
-    "start": "2026-05-31",
-    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
-      "display_time": "11:00, 13:30, 16:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1483,7 +1364,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-05-31T00:00:00",
+    "start": "2026-06-01T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
