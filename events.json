@@ -1,20 +1,5 @@
 [
   {
-    "title": "Romaria",
-    "start": "2026-06-02T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/romaria-os-filmes-das-nossas-tercas-sessao-especial/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças | Sessão Especial",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/romaria-os-filmes-das-nossas-tercas-sessao-especial_img6a07495b6d21b.jpg",
-      "source": "teatro",
-      "description": "Um filme de Carla Simón.Ciclo de sessões especiais dos Filmes das Nossas Terças, num ambiente mais intimista.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Only Duos",
     "start": "2026-06-03T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/only-duos/",
@@ -511,7 +496,72 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "18:40, 21:20, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "18:40, 21:20, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "18:40, 21:20, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "18:40, 21:20, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "18:40, 21:20, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
     "extendedProps": {
@@ -524,7 +574,72 @@
   },
   {
     "title": "Em Zona Cinzenta",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
+      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Em Zona Cinzenta",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
+      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Em Zona Cinzenta",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
+      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Em Zona Cinzenta",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
+      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Em Zona Cinzenta",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822758?tp=KM",
+      "display_time": "13:20, 15:45, 18:20, 21:00, 23:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Em Zona Cinzenta",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/em-zona-cinzenta-415228",
     "source": "cinema",
     "extendedProps": {
@@ -537,7 +652,7 @@
   },
   {
     "title": "Bichos a Bordo",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
     "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
     "source": "cinema",
     "extendedProps": {
@@ -549,8 +664,138 @@
     }
   },
   {
+    "title": "Bichos a Bordo",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
+      "display_time": "14:00, 16:45, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Bichos a Bordo",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
+      "display_time": "14:00, 16:45, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Bichos a Bordo",
+    "start": "2026-06-09",
+    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
+      "display_time": "14:00, 16:45, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Bichos a Bordo",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
+      "display_time": "10:50, 14:00, 16:45, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Bichos a Bordo",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
+      "display_time": "10:50, 14:00, 16:45, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "Star Wars: The Mandalorian e Grogu",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822738?tp=KM",
+      "display_time": "14:20, 17:30, 20:40, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Star Wars: The Mandalorian e Grogu",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/star-wars-the-mandalorian-grogu-415340",
     "source": "cinema",
     "extendedProps": {
@@ -563,7 +808,72 @@
   },
   {
     "title": "O Passageiro do Inferno",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Passageiro do Inferno",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Passageiro do Inferno",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Passageiro do Inferno",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Passageiro do Inferno",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822737?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Passageiro do Inferno",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/passenger-415339",
     "source": "cinema",
     "extendedProps": {
@@ -576,7 +886,72 @@
   },
   {
     "title": "O Diabo Veste Prada 2",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822530?tp=KM",
+      "display_time": "13:10, 16:00, 18:50, 21:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Diabo Veste Prada 2",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/diabo-veste-prada-2-415274",
     "source": "cinema",
     "extendedProps": {
@@ -589,7 +964,72 @@
   },
   {
     "title": "Michael",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:40, 16:30, 19:20, 22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:40, 16:30, 19:20, 22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:40, 16:30, 19:20, 22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:40, 16:30, 19:20, 22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "13:40, 16:30, 19:20, 22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-09",
     "url": "https://cinecartaz.publico.pt/filme/michael-415240",
     "source": "cinema",
     "extendedProps": {
@@ -602,12 +1042,77 @@
   },
   {
     "title": "Super Mario Galaxy - O Filme",
-    "start": "2026-06-02",
+    "start": "2026-06-04",
     "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
       "display_time": "13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-06-05",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-06-08",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-06-09",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-06-06",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "11:00, 13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Super Mario Galaxy - O Filme",
+    "start": "2026-06-07",
+    "url": "https://cinecartaz.publico.pt/filme/the-super-mario-galaxy-movie-415148",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822228?tp=KM",
+      "display_time": "11:00, 13:30, 16:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1245,7 +1750,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-06-02T00:00:00",
+    "start": "2026-06-03T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
