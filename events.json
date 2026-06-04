@@ -1,20 +1,5 @@
 [
   {
-    "title": "Only Duos",
-    "start": "2026-06-03T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/only-duos/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Companhia Nacional de Bailado",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/only-duos-companhia-nacional-de-bailado_img69d52ce8f159c.jpg",
-      "source": "teatro",
-      "description": "Programa da CNB que celebra a força e a intimidade do encontro entre duas presenças em palco.",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Oficinas 18 Pontos",
     "start": "2026-06-04T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/oficinas-18-pontos/",
@@ -1750,7 +1735,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-06-03T00:00:00",
+    "start": "2026-06-04T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
