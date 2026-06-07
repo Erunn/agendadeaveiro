@@ -479,19 +479,6 @@
   },
   {
     "title": "Masters of the Universe",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:10, 17:20, 20:30, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
     "start": "2026-06-07",
     "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
     "source": "cinema",
@@ -569,32 +556,6 @@
     }
   },
   {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "13:50, 16:10, 18:30, 22:10, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "18:30, 21:15, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Backrooms - O Labirinto",
     "start": "2026-06-07",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
@@ -654,19 +615,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
       "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "11:00, 13:30, 16:00 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -777,32 +725,6 @@
     }
   },
   {
-    "title": "Michael",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:40, 16:30, 19:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "The Amazing Digital Circus: O Último Acto",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/the-amazing-digital-circus-o-ultimo-acto-415588",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823069?tp=KM",
-      "display_time": "14:00, 16:20, 18:40, 21:00, 23:20 (VO) 14:30, 16:50, 19:10, 21:30, 23:50 (VPBR)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "The Amazing Digital Circus: O Último Acto",
     "start": "2026-06-07",
     "url": "https://cinecartaz.publico.pt/filme/the-amazing-digital-circus-o-ultimo-acto-415588",
@@ -810,19 +732,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823069?tp=KM",
       "display_time": "14:00, 16:20, 18:40, 21:00, 23:20 (VO) 14:30, 16:50, 19:10, 21:30, 23:50 (VPBR)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Origin Tour Stadium - Calema",
-    "start": "2026-06-06",
-    "url": "https://cinecartaz.publico.pt/filme/origin-tour-stadium---calema-415596",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823072?tp=KM",
-      "display_time": "21:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1460,7 +1369,7 @@
   },
   {
     "title": "Emissão de Rádio",
-    "start": "2026-06-06T00:00:00",
+    "start": "2026-06-07T00:00:00",
     "url": "https://www.23milhas.pt/evento/radio-faneca-2026-emissao-de-radio/",
     "source": "23milhas",
     "extendedProps": {
