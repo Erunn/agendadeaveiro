@@ -141,7 +141,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img6a3007768b2c3.jpg",
       "source": "teatro",
       "description": "",
       "category": "Festival",
@@ -156,7 +156,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img6a3007768b2c3.jpg",
       "source": "teatro",
       "description": "",
       "category": "Festival",
@@ -171,7 +171,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img6a3007768b2c3.jpg",
       "source": "teatro",
       "description": "",
       "category": "Festival",
@@ -186,7 +186,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img6a3007768b2c3.jpg",
       "source": "teatro",
       "description": "",
       "category": "Festival",
@@ -201,7 +201,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img69d6661369f43.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/festival-dos-canais-2026_img6a3007768b2c3.jpg",
       "source": "teatro",
       "description": "",
       "category": "Festival",
@@ -391,19 +391,6 @@
   },
   {
     "title": "O Dia da Revelação",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
     "source": "cinema",
@@ -430,19 +417,6 @@
   },
   {
     "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
     "source": "cinema",
@@ -469,19 +443,6 @@
   },
   {
     "title": "Scary Movie: What's Up",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
     "source": "cinema",
@@ -508,19 +469,6 @@
   },
   {
     "title": "Masters of the Universe",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
     "source": "cinema",
@@ -547,19 +495,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -586,19 +521,6 @@
   },
   {
     "title": "Bichos a Bordo",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
     "start": "2026-06-16",
     "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
     "source": "cinema",
@@ -618,19 +540,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
       "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-15",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
