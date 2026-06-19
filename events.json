@@ -1,20 +1,5 @@
 [
   {
-    "title": "Duques do Precariado",
-    "start": "2026-06-18T22:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/duques-do-precariado/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Novas Quintas",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/duques-do-precariado-novas-quintas_img69d52f81070ef.jpg",
-      "source": "teatro",
-      "description": "Os Duques do Precariado trazem o amor e as suas imitações especiosas às Novas Quintas de junho",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
-    }
-  },
-  {
     "title": "As Filhas do Limo ou o Concelho das Águas",
     "start": "2026-06-20T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-filhas-do-limo-ou-o-concelho-das-aguas-espetaculo-comunitario-olas-2026-companhia-joao-garcia-miguel/",
@@ -390,6 +375,21 @@
     }
   },
   {
+    "title": "Susie Filipe & Banda Amizade - Banda Sinfónica de Aveiro",
+    "start": "2026-10-17T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/susie-filipe-banda-amizade-banda-sinfonica-de-aveiro/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/susie-filipe-banda-amizade-banda-sinfonica-de-aveiro_img6a33be845fbbe.jpg",
+      "source": "teatro",
+      "description": "Um encontro imperdível que celebra a consagração artística, a tradição viva de Aveiro e a partilha pura da música.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Sondre Lerche",
     "start": "2026-11-13T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/sondre-lerche/",
@@ -405,13 +405,156 @@
     }
   },
   {
-    "title": "O Dia da Revelação",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "title": "Toy Story 5",
+    "start": "2026-06-19",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-06-22",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-06-23",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-06-24",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-06-20",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "10:50 (VP) | 21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-06-21",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "10:50 (VP) | 21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-19",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-20",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-21",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-22",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-23",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Morte de Robin Hood",
+    "start": "2026-06-24",
+    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
+      "display_time": "19:30, 22:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -424,7 +567,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -437,7 +580,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -450,7 +593,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -463,7 +606,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -476,7 +619,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -489,111 +632,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "23:40 | 14:10, 17:30, 20:50 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-20",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-21",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-22",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-23",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Hungry - 4 Toneladas de Raiva",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/hungry-4-toneladas-raiva-415537",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823073?tp=KM",
-      "display_time": "18:50, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -606,7 +645,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -619,7 +658,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -632,7 +671,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -645,7 +684,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -658,7 +697,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -671,20 +710,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:20, 16:40, 19:00, 21:20 | 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -697,7 +723,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -710,7 +736,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -723,7 +749,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -736,7 +762,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -749,7 +775,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -762,20 +788,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "14:00, 17:20, 20:30, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
+      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -788,59 +801,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-21",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-22",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-23",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "13:10, 15:45, 18:20, 21:10, 24:00",
+      "display_time": "22:00, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -853,111 +814,59 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "16:20, 18:20, 21:10, 24:00",
+      "display_time": "22:00, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
     }
   },
   {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-22",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-23",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
-    "start": "2026-06-20",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "11:00, 13:30, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Bichos a Bordo",
+    "title": "Backrooms - O Labirinto",
     "start": "2026-06-21",
-    "url": "https://cinecartaz.publico.pt/filme/falcon-express-414406",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/819496?tp=KM",
-      "display_time": "11:00, 13:30, 16:00 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:00, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
     }
   },
   {
-    "title": "Michael",
-    "start": "2026-06-18",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-22",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:00, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-23",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:00, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-06-24",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:00, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -970,59 +879,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-21",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-22",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-23",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 16:20, 19:15, 22:10",
+      "display_time": "18:30, 21:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1035,7 +892,59 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "13:20, 19:15, 22:10",
+      "display_time": "18:30, 21:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-21",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "18:30, 21:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-22",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "18:30, 21:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-23",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "18:30, 21:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Michael",
+    "start": "2026-06-24",
+    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
+      "display_time": "18:30, 21:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1102,21 +1011,6 @@
     }
   },
   {
-    "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Ana Madureira & Vahan Kero...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/dona-arm-foto-desnorte.png?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:00"
-    }
-  },
-  {
     "title": "Dormir com as Estrelas",
     "start": "2026-06-20T21:00:00",
     "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
@@ -1128,6 +1022,21 @@
       "description": "",
       "category": "Experiência",
       "category_normalized": "outros",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ana Madureira & Vahan Kero...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/dona-arm-foto-desnorte.png?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
       "display_time": "21:00"
     }
   },
@@ -1152,8 +1061,8 @@
     "url": "https://www.23milhas.pt/evento/plantas-saudaveis-na-varanda/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "Planteia em Família",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
+      "umbrella": "Oficina Saber Fazer",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1781799231803-23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "Oficina",
@@ -1189,6 +1098,96 @@
       "category": "Oficina",
       "category_normalized": "workshop",
       "display_time": "10:30"
+    }
+  },
+  {
+    "title": "Cais à Noite",
+    "start": "2026-07-03T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-2026-1781796816513/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ciclo de concertos",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "himalion",
+    "start": "2026-07-03T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-himalion/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais à Noite 2026",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site2.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "emmy Curl",
+    "start": "2026-07-10T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-emmy-curl/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais à Noite 2026",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site3.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Unsafe Space Garden",
+    "start": "2026-07-17T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-unsafe-space-garden/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais à Noite 2026",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site4.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Sean Riley and the Slowriders",
+    "start": "2026-09-12T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-sean-riley-and-the-slowriders/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais à Noite 2026",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site5.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Filipe Sambado - Vida Salgada",
+    "start": "2026-09-18T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-filipe-sambado-vida-salgada/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cais à Noite 2026",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site6.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
     }
   }
 ]
