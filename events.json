@@ -406,19 +406,6 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
     "start": "2026-06-22",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
@@ -484,19 +471,6 @@
   },
   {
     "title": "A Morte de Robin Hood",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
     "start": "2026-06-20",
     "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
     "source": "cinema",
@@ -555,19 +529,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
       "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -640,19 +601,6 @@
   },
   {
     "title": "Scary Movie: What's Up",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
     "start": "2026-06-20",
     "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
     "source": "cinema",
@@ -711,19 +659,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
       "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -796,19 +731,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-06-20",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -867,19 +789,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
       "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-19",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -966,21 +875,6 @@
     }
   },
   {
-    "title": "Dia 1 - Suspiria + Queer",
-    "start": "2026-06-18T18:30:00",
-    "url": "https://www.23milhas.pt/evento/ciclo-cinema-queer-dia-1-suspiria-queer/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Ciclo Cinema Queer",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1779290253937-23milhas-2026_2t-site_ciclo_queer_dia-18.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
-    }
-  },
-  {
     "title": "Dia 2 - Documentário Outlasting + conversa",
     "start": "2026-06-19T14:30:00",
     "url": "https://www.23milhas.pt/evento/ciclo-cinema-queer-dia-2-documentario-outlasting-conversa/",
@@ -1011,21 +905,6 @@
     }
   },
   {
-    "title": "Dormir com as Estrelas",
-    "start": "2026-06-20T21:00:00",
-    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Concerto \"Músicas para da...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-dormircomasestrelas.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Experiência",
-      "category_normalized": "outros",
-      "display_time": "21:00"
-    }
-  },
-  {
     "title": "Músicas para dar a volta ao Mundo da Dona Arménia",
     "start": "2026-06-20T21:00:00",
     "url": "https://www.23milhas.pt/evento/musicas-para-dar-a-volta-ao-mundo-da-dona-armenia-1774880852069/",
@@ -1037,6 +916,21 @@
       "description": "",
       "category": "Música",
       "category_normalized": "música",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Dormir com as Estrelas",
+    "start": "2026-06-20T21:00:00",
+    "url": "https://www.23milhas.pt/evento/dormir-com-as-estrelas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Concerto \"Músicas para da...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-dormircomasestrelas.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Experiência",
+      "category_normalized": "outros",
       "display_time": "21:00"
     }
   },
@@ -1092,7 +986,7 @@
     "source": "23milhas",
     "extendedProps": {
       "umbrella": "Planteia em Família",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-construcaodeumrelvinhas.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "Oficina",
