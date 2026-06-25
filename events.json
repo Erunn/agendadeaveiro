@@ -361,19 +361,6 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
     "start": "2026-06-25",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
@@ -465,19 +452,6 @@
   },
   {
     "title": "A Morte de Robin Hood",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
     "start": "2026-06-25",
     "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
     "source": "cinema",
@@ -562,19 +536,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
       "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -673,19 +634,6 @@
   },
   {
     "title": "Scary Movie: What's Up",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
     "start": "2026-06-25",
     "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
     "source": "cinema",
@@ -770,19 +718,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
       "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -881,19 +816,6 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
     "start": "2026-06-25",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
@@ -978,19 +900,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
       "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-24",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1088,18 +997,18 @@
     }
   },
   {
-    "title": "De que serve vir à luz se ninguém nos acolhe à chegada?",
-    "start": "2026-06-18T18:00:00",
-    "url": "https://www.23milhas.pt/evento/ciclo-cinema-queer-de-que-serve-vir-a-luz-se-ninguem-nos-acolhe-a-chegada/",
+    "title": "O Dia da Revelação",
+    "start": "2026-06-25T18:30:00",
+    "url": "https://www.23milhas.pt/evento/cinema-o-dia-da-revelacao/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "Ciclo de cinema Queer",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1779290233257-23milhas-2026_2t-site_ciclo_queer.jpg?fit=fill&w=1400",
+      "umbrella": "Steven Spielberg",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-site_odiadarevelacao.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "CINEMA",
       "category_normalized": "cinema",
-      "display_time": "18:00"
+      "display_time": "18:30"
     }
   },
   {
@@ -1108,7 +1017,7 @@
     "url": "https://www.23milhas.pt/evento/raul-refree-andamp-maria-mazzotta/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "festim - festival intermunicip...",
+      "umbrella": "Festim",
       "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_raulandmaria.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
@@ -1138,7 +1047,7 @@
     "url": "https://www.23milhas.pt/evento/roger-correa/",
     "source": "23milhas",
     "extendedProps": {
-      "umbrella": "Festim | d’Orfeu AC",
+      "umbrella": "Festim",
       "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_rogercorrea.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
@@ -1208,6 +1117,21 @@
     }
   },
   {
+    "title": "Toy Story (V.P.)",
+    "start": "2026-07-16T18:30:00",
+    "url": "https://www.23milhas.pt/evento/cinema-toy-story-vp/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Andrew Stanton, Kenna Harris",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-toystory5.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "CINEMA",
+      "category_normalized": "cinema",
+      "display_time": "18:30"
+    }
+  },
+  {
     "title": "Unsafe Space Garden",
     "start": "2026-07-17T22:00:00",
     "url": "https://www.23milhas.pt/evento/cais-a-noite-26-unsafe-space-garden/",
@@ -1220,6 +1144,21 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Vaiana (V.P.)",
+    "start": "2026-07-30T18:30:00",
+    "url": "https://www.23milhas.pt/evento/cinema-vaiana-vp/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Thomas Kail",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-vaiana.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "CINEMA",
+      "category_normalized": "cinema",
+      "display_time": "18:30"
     }
   },
   {
