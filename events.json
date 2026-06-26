@@ -171,7 +171,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "Estúdios Victor Córdon",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/territorio-ix-estudios-victor-cordon_img69d533edc183b.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/territorio-ix-estudios-victor-cordon_img6a3d3e11e977d.jpg",
       "source": "teatro",
       "description": "A 9ª edição do programa TERRITÓRIO passa pelo Teatro Aveirense em julho",
       "category": "Dança",
@@ -321,7 +321,22 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a2ad469d4539.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a3d48b753c48.jpg",
+      "source": "teatro",
+      "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Schönbrunn Palace Orchestra Vienna",
+    "start": "2026-10-01T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a3d48b753c48.jpg",
       "source": "teatro",
       "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
       "category": "Música",
@@ -360,13 +375,65 @@
     }
   },
   {
-    "title": "Toy Story 5",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "title": "Supergirl",
+    "start": "2026-06-26",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-06-27",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-06-28",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-06-29",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-06-30",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -379,7 +446,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -392,7 +459,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -405,20 +472,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 13:50, 16:30, 19:10 (3D VP)",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -431,7 +485,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "10:50 (VP) | 21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
+      "display_time": "10:50, 13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -444,111 +498,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "10:50 (VP) | 21:00, 23:30 (VO ATMOS) | 13:10, 15:45, 18:20 (VP ATMOS) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-27",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-28",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-29",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-06-30",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Morte de Robin Hood",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/morte-robin-hood-415540",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823146?tp=KM",
-      "display_time": "19:30, 22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
+      "display_time": "10:50, 13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -561,7 +511,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -574,7 +524,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -587,7 +537,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -600,7 +550,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -613,384 +563,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:40, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-27",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-28",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-29",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-06-30",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Scary Movie: What's Up",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/scary-movie-whats-up-415419",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822933?tp=KM",
-      "display_time": "14:30, 16:50, 19:20, 21:40, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-27",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-28",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-29",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-06-30",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Masters of the Universe",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/masters-of-the-universe-415416",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822555?tp=KM",
-      "display_time": "13:15, 16:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-27",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-28",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-29",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-06-30",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:00, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-25",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-27",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-28",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-29",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-06-30",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Michael",
-    "start": "2026-07-01",
-    "url": "https://cinecartaz.publico.pt/filme/michael-415240",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822189?tp=KM",
-      "display_time": "18:30, 21:20",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
