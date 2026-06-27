@@ -1,26 +1,11 @@
 [
   {
-    "title": "hOLD",
-    "start": "2026-06-26T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/hold/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "São Castro e Teresa Alves da Silva",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/hold-sao-castro-e-teresa-alves-da-silva_img69d53208d0eca.jpg",
-      "source": "teatro",
-      "description": "Espetáculo de dança que explora a poética e a ferocidade inerentes ao processo de envelhecimento.",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Cantar-o-Lar",
     "start": "2026-06-28T15:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cantar-o-lar-aaaa/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "Projeto de Arte Comunitária / 3ª edição",
+      "umbrella": "Projeto de Arte Comunitária",
       "image": "https://www.teatroaveirense.pt/imagens/eventos/cantar-o-lar-projeto-de-arte-comunitaria-3-edicao_img69d532ef17977.jpg",
       "source": "teatro",
       "description": "Projeto orientado pela Orquestra Sem Fronteiras, que reúne participantes de quatro lares de Aveiro.",
@@ -376,19 +361,6 @@
   },
   {
     "title": "Supergirl",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Supergirl",
     "start": "2026-06-27",
     "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
     "source": "cinema",
@@ -441,19 +413,6 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
     "start": "2026-06-29",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
@@ -499,19 +458,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
       "display_time": "10:50, 13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
-    "start": "2026-06-26",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:30, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
