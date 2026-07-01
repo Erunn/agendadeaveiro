@@ -1,20 +1,5 @@
 [
   {
-    "title": "Leibniz - Crónica de uma pintura perdida",
-    "start": "2026-06-30T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/leibniz-cronica-de-uma-pintura-perdida-os-filmes-das-nossas-tercas/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/leibniz-cronica-de-uma-pintura-perdida-os-filmes-das-nossas-tercas_img6a2ac32e17f0a.jpg",
-      "source": "teatro",
-      "description": "Um filme de Edgar Reitz.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Baião d'Oxigénio",
     "start": "2026-07-03T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/baiao-doxigenio/",
@@ -57,6 +42,21 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Magalhães",
+    "start": "2026-07-07T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/magalhaes-os-filmes-das-nossas-tercas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/magalhaes-os-filmes-das-nossas-tercas_img6a3d4d3373331.jpg",
+      "source": "teatro",
+      "description": "Um filme de Lav Diaz.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
     }
   },
   {
@@ -132,6 +132,21 @@
       "category": "Festival",
       "category_normalized": "festival",
       "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Franz",
+    "start": "2026-07-21T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/franz-os-filmes-das-nossas-tercas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/franz-os-filmes-das-nossas-tercas_img6a3d4dd63db7e.jpg",
+      "source": "teatro",
+      "description": "Um filme de Agnieska Holland.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
     }
   },
   {
@@ -346,7 +361,72 @@
   },
   {
     "title": "Supergirl",
-    "start": "2026-06-30",
+    "start": "2026-07-02",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-03",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-04",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-05",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-06",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-07",
     "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
     "source": "cinema",
     "extendedProps": {
@@ -359,7 +439,7 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-06-30",
+    "start": "2026-07-02",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
@@ -371,8 +451,73 @@
     }
   },
   {
+    "title": "Toy Story 5",
+    "start": "2026-07-03",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-06",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-07",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-04",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "10:50, 13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-05",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "10:50, 13:05, 15:40, 18:15 (VP) | 20:50, 23:20 (VO) | 11:10, 13:50, 16:30, 19:10 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "O Dia da Revelação",
-    "start": "2026-06-30",
+    "start": "2026-07-02",
     "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
     "source": "cinema",
     "extendedProps": {
@@ -385,92 +530,67 @@
   },
   {
     "title": "O Dia da Revelação",
-    "start": "2026-06-25T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-o-dia-da-revelacao/",
-    "source": "23milhas",
+    "start": "2026-07-03",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Steven Spielberg",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-site_odiadarevelacao.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
-    "title": "Raül Refree & Maria Mazzotta",
-    "start": "2026-06-26T22:00:00",
-    "url": "https://www.23milhas.pt/evento/raul-refree-andamp-maria-mazzotta/",
-    "source": "23milhas",
+    "title": "O Dia da Revelação",
+    "start": "2026-07-04",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Festim",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_raulandmaria.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
-    "title": "Plantas Saudáveis na Varanda",
-    "start": "2026-06-27T10:00:00",
-    "url": "https://www.23milhas.pt/evento/plantas-saudaveis-na-varanda/",
-    "source": "23milhas",
+    "title": "O Dia da Revelação",
+    "start": "2026-07-05",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Oficina Saber Fazer",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1781799231803-23milhas-2026_2t-plantassaudaveisnavaranda.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
-    "title": "Roger Corrêa",
-    "start": "2026-06-27T22:00:00",
-    "url": "https://www.23milhas.pt/evento/roger-correa/",
-    "source": "23milhas",
+    "title": "O Dia da Revelação",
+    "start": "2026-07-06",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Festim",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-festim_rogercorrea.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
-    "title": "Construção de um Relvinhas",
-    "start": "2026-06-28T10:30:00",
-    "url": "https://www.23milhas.pt/evento/construcao-de-um-relvinhas/",
-    "source": "23milhas",
+    "title": "O Dia da Revelação",
+    "start": "2026-07-07",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Planteia em Família",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_2t-construcaodeumrelvinhas.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:30"
-    }
-  },
-  {
-    "title": "Cais à Noite",
-    "start": "2026-07-03T22:00:00",
-    "url": "https://www.23milhas.pt/evento/cais-a-noite-2026-1781796816513/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Ciclo de concertos",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -481,6 +601,21 @@
     "extendedProps": {
       "umbrella": "Cais à Noite 2026",
       "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site2.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Cais à Noite",
+    "start": "2026-07-03T22:00:00",
+    "url": "https://www.23milhas.pt/evento/cais-a-noite-2026-1781796816513/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ciclo de concertos",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site.jpg?fit=fill&w=1400",
       "source": "23milhas",
       "description": "",
       "category": "Música",
