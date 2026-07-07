@@ -246,7 +246,7 @@
     "source": "teatro",
     "extendedProps": {
       "umbrella": "Com Hugo Oliveira e Sage Cushman",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/logos-com-hugo-oliveira-e-sage-cushman_img69d61ced25573.jpg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/logos-com-hugo-oliveira-e-sage-cushman_img6a4bbc8f73913.jpg",
       "source": "teatro",
       "description": "Um espetáculo que projeta para o espaço cénico as temáticas singulares da comunidade aveirense.",
       "category": "Novo Circo",
@@ -316,19 +316,6 @@
   },
   {
     "title": "Letras Roubadas",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
-      "display_time": "14:30, 17:00, 19:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Letras Roubadas",
     "start": "2026-07-07",
     "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
     "source": "cinema",
@@ -355,38 +342,12 @@
   },
   {
     "title": "Dia D: Sob Pressão",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
-      "display_time": "22:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Dia D: Sob Pressão",
     "start": "2026-07-07",
     "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
       "display_time": "22:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Supergirl",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -407,38 +368,12 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Mínimos e Monstros",
     "start": "2026-07-07",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
       "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -459,38 +394,12 @@
   },
   {
     "title": "O Dia da Revelação",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
-      "display_time": "14:10, 17:20, 20:30, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Dia da Revelação",
     "start": "2026-07-07",
     "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
       "display_time": "14:10, 17:20, 20:30, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Backrooms - O Labirinto",
-    "start": "2026-07-06",
-    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
-      "display_time": "22:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -507,26 +416,11 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "himalion",
-    "start": "2026-07-03T22:00:00",
-    "url": "https://www.23milhas.pt/evento/cais-a-noite-26-himalion/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Cais à Noite 2026",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-cais_2026-site2.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
     }
   },
   {
     "title": "Cais à Noite",
-    "start": "2026-07-03T22:00:00",
+    "start": "2026-07-03T21:00:00",
     "url": "https://www.23milhas.pt/evento/cais-a-noite-2026-1781796816513/",
     "source": "23milhas",
     "extendedProps": {
@@ -536,7 +430,7 @@
       "description": "",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "22:00"
+      "display_time": "21:00"
     }
   },
   {
