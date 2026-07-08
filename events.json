@@ -1,20 +1,5 @@
 [
   {
-    "title": "Magalhães",
-    "start": "2026-07-07T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/magalhaes-os-filmes-das-nossas-tercas/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/magalhaes-os-filmes-das-nossas-tercas_img6a3d4d3373331.jpg",
-      "source": "teatro",
-      "description": "Um filme de Lav Diaz.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Festival dos Canais 2026",
     "start": "2026-07-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/festival-dos-canais-2026/",
@@ -316,7 +301,72 @@
   },
   {
     "title": "Letras Roubadas",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
+      "display_time": "14:30, 17:00, 19:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Letras Roubadas",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
+      "display_time": "14:30, 17:00, 19:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Letras Roubadas",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
+      "display_time": "14:30, 17:00, 19:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Letras Roubadas",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
+      "display_time": "14:30, 17:00, 19:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Letras Roubadas",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823358?tp=KM",
+      "display_time": "14:30, 17:00, 19:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Letras Roubadas",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/letras-roubadas-415562",
     "source": "cinema",
     "extendedProps": {
@@ -341,8 +391,86 @@
     }
   },
   {
+    "title": "Vaiana",
+    "start": "2026-07-15",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "Dia D: Sob Pressão",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
+      "display_time": "22:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Dia D: Sob Pressão",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
+      "display_time": "22:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Dia D: Sob Pressão",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
+      "display_time": "22:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Dia D: Sob Pressão",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
+      "display_time": "22:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Dia D: Sob Pressão",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823213?tp=KM",
+      "display_time": "22:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Dia D: Sob Pressão",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/dia-d-pressao-415544",
     "source": "cinema",
     "extendedProps": {
@@ -355,7 +483,72 @@
   },
   {
     "title": "Supergirl",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823216?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Supergirl",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/supergirl-415548",
     "source": "cinema",
     "extendedProps": {
@@ -368,7 +561,72 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20, 19:00 (VP/3D/ATMOS) | 10:40, 13:00, 15:40, 18:20 (VP) | 21:00, 23:30 (VO)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
@@ -381,7 +639,72 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "21:20, 23:50 (VO) | 10:50, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
@@ -394,7 +717,72 @@
   },
   {
     "title": "O Dia da Revelação",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Dia da Revelação",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Dia da Revelação",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Dia da Revelação",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Dia da Revelação",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822998?tp=KM",
+      "display_time": "14:10, 17:20, 20:30, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Dia da Revelação",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/dia-revelacao-415536",
     "source": "cinema",
     "extendedProps": {
@@ -407,7 +795,72 @@
   },
   {
     "title": "Backrooms - O Labirinto",
-    "start": "2026-07-07",
+    "start": "2026-07-09",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822757?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Backrooms - O Labirinto",
+    "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/backrooms-415343",
     "source": "cinema",
     "extendedProps": {
@@ -431,6 +884,21 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Fado Malvado | Porteño",
+    "start": "2026-07-09T21:30:00",
+    "url": "https://www.23milhas.pt/evento/fado-malvado-or-porteno/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Fado Malvado",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/7c616e0a-282a-4cf2-ac54-f1681e100d11.jpeg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
     }
   },
   {
@@ -479,6 +947,51 @@
     }
   },
   {
+    "title": "Oficina Saber Fazer: bijuteria fauna e flora",
+    "start": "2026-07-18T10:00:00",
+    "url": "https://www.23milhas.pt/evento/oficina-saber-fazer-bijuteria-fauna-e-flora/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Oficina Saber Fazer",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-oficina_bijuteriaemceramicafria.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "10:00"
+    }
+  },
+  {
+    "title": "Oficina de pintura com elementos Naturais",
+    "start": "2026-07-19T10:30:00",
+    "url": "https://www.23milhas.pt/evento/planteia-em-familia-pintura-com-elementos-naturais/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Planteia em família",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-oficinapinturacomelementosnaturais.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "10:30"
+    }
+  },
+  {
+    "title": "Playback",
+    "start": "2026-07-25T21:00:00",
+    "url": "https://www.23milhas.pt/evento/playback-anteestreia/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Sérgio Graciano",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-playback.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "CINEMA",
+      "category_normalized": "cinema",
+      "display_time": "21:00"
+    }
+  },
+  {
     "title": "Vaiana (V.P.)",
     "start": "2026-07-30T18:30:00",
     "url": "https://www.23milhas.pt/evento/cinema-vaiana-vp/",
@@ -521,6 +1034,96 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Farsa",
+    "start": "2026-09-19T21:30:00",
+    "url": "https://www.23milhas.pt/evento/farsa-1783337137984/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Catarina Miranda",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-farsa.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Akai e Koku",
+    "start": "2026-09-20T10:00:00",
+    "url": "https://www.23milhas.pt/evento/akai-e-koku/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Lua Cheia - teatro para todos",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-akai_e_koku.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "10:00"
+    }
+  },
+  {
+    "title": "Miguel Gameiro & Pólo Norte",
+    "start": "2026-09-25T21:30:00",
+    "url": "https://www.23milhas.pt/evento/miguel-gameiro-andamp-polo-norte-1783337843010/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Concerto Solidário Antigos Alu...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/cartaz-limpo.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Oficina Saber Fazer: Ramo Comum",
+    "start": "2026-09-26T10:00:00",
+    "url": "https://www.23milhas.pt/evento/oficina-saber-fazer-ramo-comum/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Oficina Saber Fazer",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-oficinacarimbos.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "10:00"
+    }
+  },
+  {
+    "title": "Criação Companhia Jovem Dança 2026",
+    "start": "2026-07-08T00:00:00",
+    "url": "https://www.23milhas.pt/evento/criacao-companhia-jovem-danca-2026/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "Este é o primeiro momento de residência dos participantes desta edição da Companhia Jovem de Dança de Ílhavo com o coreógrafo deste ano: Rui Horta.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "~vaga",
+    "start": "2026-07-08T00:00:00",
+    "url": "https://www.23milhas.pt/evento/vaga/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "23 Milhas",
+      "image": "",
+      "source": "23milhas",
+      "description": "A ~vaga é um coletivo artístico multidisciplinar, dedicado predominantemente ao som, à música e ao vídeo, formado por residentes do território da Ria de Aveiro – da Barra, da Costa Nova e de Ílhavo.",
+      "category": "PERFORMANCE",
+      "category_normalized": "outros",
+      "display_time": "Todo o dia"
     }
   }
 ]
