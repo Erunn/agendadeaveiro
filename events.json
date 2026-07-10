@@ -105,63 +105,108 @@
     }
   },
   {
-    "title": "Avanca Film Fest",
-    "start": "2026-07-27",
-    "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
+    "title": "Amanhã, se tudo correr bem",
+    "start": "2026-07-27T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/demain-si-tout-va-bien-avanca2026/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "30ª Edição",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/amanha-se-tudo-correr-bem-avanca2026_img6a4f7fb492351.jpg",
       "source": "teatro",
-      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
+      "description": "Um filme de Ivan Goldschmidt",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
-    "title": "Avanca Film Fest",
-    "start": "2026-07-28",
-    "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
+    "title": "O Palhaço de Cara Limpa",
+    "start": "2026-07-27T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-palhaco-de-cara-limpa-avanca2026/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "30ª Edição",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-palhaco-de-cara-limpa-avanca2026_img6a4f805f2eb4f.jpg",
       "source": "teatro",
-      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
+      "description": "Um filme de Camilo Cavalcante.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
-    "title": "Avanca Film Fest",
+    "title": "Soula",
+    "start": "2026-07-28T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/soula-avanca2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/soula-avanca2026_img6a4f814da2a68.jpg",
+      "source": "teatro",
+      "description": "Um filme de Issaad Salah.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Obraz",
+    "start": "2026-07-28T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/obraz-avanca2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/obraz-avanca2026_img6a4f84f01e66b.jpg",
+      "source": "teatro",
+      "description": "Um filme de Nikolas Vukcevic.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "avancaGIGANTES",
     "start": "2026-07-29",
-    "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
+    "url": "https://www.teatroaveirense.pt/pt/evento/avancagigantes-avanca2026/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "30ª Edição",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/avancagigantes-avanca2026_img6a4f85ed1d1e3.jpg",
       "source": "teatro",
-      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
+      "description": "Sessões para o público escolar",
       "category": "Cinema",
       "category_normalized": "cinema",
       "display_time": "Todo o dia"
     }
   },
   {
-    "title": "Avanca Film Fest",
-    "start": "2026-07-30",
-    "url": "https://www.teatroaveirense.pt/pt/evento/avanca-film-fest-30-edicao/",
+    "title": "A Voz da Mãe",
+    "start": "2026-07-30T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/a-voz-da-mae-avanca2026/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "30ª Edição",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/avanca-film-fest-30-edicao_img69d6675ed76f4.jpg",
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/a-voz-da-mae-avanca2026_img6a4fa4c21fc02.jpg",
       "source": "teatro",
-      "description": "Três décadas de um dos festivais mais emblemáticos do centro do país.",
+      "description": "Um filme de Ganna Yarovenko.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Livros Restantes",
+    "start": "2026-07-30T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/livros-restantes-avanca2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "AVANCA'2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/livros-restantes-avanca2026_img6a4fa55b41d2e.jpg",
+      "source": "teatro",
+      "description": "Um filme de Marcia Paraiso.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
     }
   },
   {
@@ -297,6 +342,71 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-10",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-11",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-12",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-13",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-14",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -539,7 +649,7 @@
   },
   {
     "title": "Criação Companhia Jovem Dança 2026",
-    "start": "2026-07-09T00:00:00",
+    "start": "2026-07-10T00:00:00",
     "url": "https://www.23milhas.pt/evento/criacao-companhia-jovem-danca-2026/",
     "source": "23milhas",
     "extendedProps": {
@@ -554,7 +664,7 @@
   },
   {
     "title": "~vaga",
-    "start": "2026-07-09T00:00:00",
+    "start": "2026-07-10T00:00:00",
     "url": "https://www.23milhas.pt/evento/vaga/",
     "source": "23milhas",
     "extendedProps": {
