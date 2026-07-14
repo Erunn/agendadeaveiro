@@ -346,19 +346,6 @@
   },
   {
     "title": "Vaiana",
-    "start": "2026-07-13",
-    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:20, 24:00 (VO ATMOS) | 12:50, 15:40, 18:30 ( VP ATMOS) | 10:50, 13:40, 16:30, 19:20 (3D VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vaiana",
     "start": "2026-07-14",
     "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
     "source": "cinema",
@@ -595,7 +582,7 @@
   },
   {
     "title": "Criação Companhia Jovem Dança 2026",
-    "start": "2026-07-13T00:00:00",
+    "start": "2026-07-14T00:00:00",
     "url": "https://www.23milhas.pt/evento/criacao-companhia-jovem-danca-2026/",
     "source": "23milhas",
     "extendedProps": {
@@ -610,7 +597,7 @@
   },
   {
     "title": "~vaga",
-    "start": "2026-07-13T00:00:00",
+    "start": "2026-07-14T00:00:00",
     "url": "https://www.23milhas.pt/evento/vaga/",
     "source": "23milhas",
     "extendedProps": {
