@@ -1,20 +1,5 @@
 [
   {
-    "title": "Franz",
-    "start": "2026-07-21T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/franz-os-filmes-das-nossas-tercas/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/franz-os-filmes-das-nossas-tercas_img6a3d4dd63db7e.jpg",
-      "source": "teatro",
-      "description": "Um filme de Agnieska Holland.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Território IX",
     "start": "2026-07-25T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/territorio-ix/",
@@ -271,7 +256,7 @@
   },
   {
     "title": "A Odisseia",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
     "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
     "extendedProps": {
@@ -284,7 +269,85 @@
   },
   {
     "title": "A Odisseia",
-    "start": "2026-07-22",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "13:00, 14:40, 16:40, 18:20, 20:20, 22:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
     "extendedProps": {
@@ -297,7 +360,7 @@
   },
   {
     "title": "O Convite",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
     "url": "https://cinecartaz.publico.pt/filme/convite-415567",
     "source": "cinema",
     "extendedProps": {
@@ -310,7 +373,85 @@
   },
   {
     "title": "O Convite",
-    "start": "2026-07-22",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
+      "display_time": "21:20, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Convite",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/convite-415567",
     "source": "cinema",
     "extendedProps": {
@@ -323,7 +464,7 @@
   },
   {
     "title": "Evil Dead Burn",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
     "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
     "source": "cinema",
     "extendedProps": {
@@ -336,7 +477,85 @@
   },
   {
     "title": "Evil Dead Burn",
-    "start": "2026-07-22",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
+      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Evil Dead Burn",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
     "source": "cinema",
     "extendedProps": {
@@ -349,7 +568,7 @@
   },
   {
     "title": "Vaiana",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
     "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
     "source": "cinema",
     "extendedProps": {
@@ -362,7 +581,85 @@
   },
   {
     "title": "Vaiana",
-    "start": "2026-07-22",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
+      "display_time": "21:00, 23:50 (VO) | 11:30, 14:30, 18:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Vaiana",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
     "source": "cinema",
     "extendedProps": {
@@ -375,7 +672,98 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
@@ -401,7 +789,7 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-07-21",
+    "start": "2026-07-23",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
@@ -414,7 +802,72 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-07-22",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
@@ -427,7 +880,7 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-07-21",
+    "start": "2026-07-22",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
@@ -440,7 +893,85 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-07-22",
+    "start": "2026-07-23",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-24",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-25",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-26",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-27",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-28",
+    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
+      "display_time": "22:30 (VO) | 10:50, 13:40, 16:30, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Toy Story 5",
+    "start": "2026-07-29",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
@@ -587,38 +1118,8 @@
     }
   },
   {
-    "title": "Criação Companhia Jovem Dança 2026",
-    "start": "2026-07-21T00:00:00",
-    "url": "https://www.23milhas.pt/evento/criacao-companhia-jovem-danca-2026/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "Este é o primeiro momento de residência dos participantes desta edição da Companhia Jovem de Dança de Ílhavo com o coreógrafo deste ano: Rui Horta.",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "~vaga",
-    "start": "2026-07-21T00:00:00",
-    "url": "https://www.23milhas.pt/evento/vaga/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "A ~vaga é um coletivo artístico multidisciplinar, dedicado predominantemente ao som, à música e ao vídeo, formado por residentes do território da Ria de Aveiro – da Barra, da Costa Nova e de Ílhavo.",
-      "category": "PERFORMANCE",
-      "category_normalized": "outros",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
     "title": "Dela Marmy",
-    "start": "2026-07-21T00:00:00",
+    "start": "2026-07-22T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
