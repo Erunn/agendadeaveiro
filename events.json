@@ -1,35 +1,5 @@
 [
   {
-    "title": "A Voz da Mãe",
-    "start": "2026-07-30T18:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/a-voz-da-mae-avanca2026/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "AVANCA'2026",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/a-voz-da-mae-avanca2026_img6a4fa4c21fc02.jpg",
-      "source": "teatro",
-      "description": "Um filme de Ganna Yarovenko.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "18:00"
-    }
-  },
-  {
-    "title": "Livros Restantes",
-    "start": "2026-07-30T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/livros-restantes-avanca2026/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "AVANCA'2026",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/livros-restantes-avanca2026_img6a4fa55b41d2e.jpg",
-      "source": "teatro",
-      "description": "Um filme de Marcia Paraiso.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Marta Ren",
     "start": "2026-07-31T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/marta-ren/",
@@ -165,13 +135,156 @@
     }
   },
   {
-    "title": "A Odisseia",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-07-31",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-08-01",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-08-02",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-08-03",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-08-04",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Motor City - Sede de Vingança",
+    "start": "2026-08-05",
+    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
+      "display_time": "22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-07-31",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-08-01",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-08-02",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-08-03",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-08-04",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-08-05",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -184,7 +297,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -197,7 +310,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -210,7 +323,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -223,7 +336,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -236,7 +349,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 14:30, 16:40, 18:10, 20:20, 22:00, 24:00",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -249,20 +362,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "13:00, 16:40, 20:20, 22:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Convite",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -275,7 +375,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -288,7 +388,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -301,7 +401,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -314,7 +414,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -327,7 +427,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -340,111 +440,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:30, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-07-31",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-08-01",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-08-02",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-08-04",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:15, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Evil Dead Burn",
-    "start": "2026-08-05",
-    "url": "https://cinecartaz.publico.pt/filme/evil-dead-burn-415566",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822988?tp=KM",
-      "display_time": "22:20, 23:55",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vaiana",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:20, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -457,7 +453,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -470,7 +466,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -483,7 +479,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -496,7 +492,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -509,7 +505,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -522,20 +518,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:10 (VO) | 12:40, 15:30, 18:20 (VP) | 11:00 ( VP ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Mínimos e Monstros",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
+      "display_time": "21:50 (VO)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -621,25 +604,12 @@
   },
   {
     "title": "Toy Story 5",
-    "start": "2026-07-30",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
     "start": "2026-07-31",
     "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -652,7 +622,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -665,7 +635,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -678,7 +648,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -691,7 +661,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -704,7 +674,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
+      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -832,7 +802,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-07-30T00:00:00",
+    "start": "2026-07-31T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
