@@ -91,19 +91,6 @@
   },
   {
     "title": "Motor City - Sede de Vingança",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823475?tp=KM",
-      "display_time": "22:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Motor City - Sede de Vingança",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/motor-city-sede-vinganca-415718",
     "source": "cinema",
@@ -130,19 +117,6 @@
   },
   {
     "title": "Homem-Aranha: Um Novo Dia",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
-      "display_time": "13:50, 17:10, 20:30, 23:50 (2D) 12:10, 15:30, 18:50 (3D)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Homem-Aranha: Um Novo Dia",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
     "source": "cinema",
@@ -169,19 +143,6 @@
   },
   {
     "title": "A Odisseia",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "12:50, 14:30, 16:30, 18:10, 20:10, 22:00, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Odisseia",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
@@ -208,19 +169,6 @@
   },
   {
     "title": "O Convite",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/convite-415567",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823433?tp=KM",
-      "display_time": "21:20, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Convite",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/convite-415567",
     "source": "cinema",
@@ -247,19 +195,6 @@
   },
   {
     "title": "Vaiana",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "21:50 (VO)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vaiana",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
     "source": "cinema",
@@ -286,19 +221,6 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Mínimos e Monstros",
     "start": "2026-08-04",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
@@ -318,19 +240,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
       "display_time": "10:40, 13:20, 16:00, 18:40 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
-    "start": "2026-08-03",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:00, 13:40, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -469,7 +378,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-08-03T00:00:00",
+    "start": "2026-08-04T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
