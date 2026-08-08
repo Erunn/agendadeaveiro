@@ -45,6 +45,51 @@
     }
   },
   {
+    "title": "Los Devoró la Selva",
+    "start": "2026-09-18T19:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/los-devoro-la-selva/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Todos São Palco",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/los-devoro-la-selva-todos-sao-palco_img6a74dfdd57f05.jpg",
+      "source": "teatro",
+      "description": "Mostra de Teatro Além do Equador.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "19:00 / 21:30"
+    }
+  },
+  {
+    "title": "Ponto Final, Ponto Seguido",
+    "start": "2026-09-25T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/ponto-final-ponto-seguido/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Todos São Palco",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/ponto-final-ponto-seguido-todos-sao-palco_img6a74e05c0192a.jpg",
+      "source": "teatro",
+      "description": "Mostra de Teatro Além do Equador",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Fértil em terras áridas",
+    "start": "2026-09-25T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/fertil-em-terras-aridas-todos-sao-palco/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Todos São Palco",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/fertil-em-terras-aridas-todos-sao-palco_img6a74e0fd205b4.jpg",
+      "source": "teatro",
+      "description": "Mostra de Teatro Além do Equador",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Schönbrunn Palace Orchestra Vienna",
     "start": "2026-09-28T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
@@ -71,6 +116,36 @@
       "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
       "category": "Música",
       "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Des-conocido",
+    "start": "2026-09-30T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/des-conocido/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Todos São Palco",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/des-conocido-todos-sao-palco_img6a74e1c68f0d3.jpg",
+      "source": "teatro",
+      "description": "Mostra de Teatro Além do Equador",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "O Avesso da Pele",
+    "start": "2026-10-03T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-avesso-da-pele/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Todos São Palco",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-avesso-da-pele-todos-sao-palco_img6a74e2a84126b.jpg",
+      "source": "teatro",
+      "description": "Mostra de Teatro Além do Equador",
+      "category": "Teatro",
+      "category_normalized": "teatro",
       "display_time": "21:30"
     }
   },
@@ -102,19 +177,6 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Patrulha Pata: O Filme dos Dinossauros",
-    "start": "2026-08-07",
-    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
-      "display_time": "12:30, 14:50, 17:20, 19:40 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
     }
   },
   {
@@ -288,8 +350,68 @@
     }
   },
   {
+    "title": "Rodrigo Leão",
+    "start": "2026-10-23T21:30:00",
+    "url": "https://www.23milhas.pt/evento/rodrigo-leao-1786099177339/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "O Rapaz da Montanha",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site4.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Nós, sozinhas",
+    "start": "2026-11-07T21:30:00",
+    "url": "https://www.23milhas.pt/evento/nos-sozinhas/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Sara Barros Leitão / Cassandra",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site3.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Luís Trigacheiro",
+    "start": "2026-11-15T15:30:00",
+    "url": "https://www.23milhas.pt/evento/luis-trigacheiro-1786100265342/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Concerto Solidário 46º anivers...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site2.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "15:30"
+    }
+  },
+  {
+    "title": "Salvador Sobral",
+    "start": "2026-03-05T21:30:00",
+    "url": "https://www.23milhas.pt/evento/salvador-sobral-1786101740291/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "A Flor do Recomeço",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2027_1t-site.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Dela Marmy",
-    "start": "2026-08-07T00:00:00",
+    "start": "2026-08-08T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
