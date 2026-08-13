@@ -166,19 +166,6 @@
   },
   {
     "title": "Patrulha Pata: O Filme dos Dinossauros",
-    "start": "2026-08-12",
-    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
-      "display_time": "12:30, 14:50, 17:20, 19:40 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Patrulha Pata: O Filme dos Dinossauros",
     "start": "2026-08-13",
     "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
     "source": "cinema",
@@ -435,7 +422,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-08-12T00:00:00",
+    "start": "2026-08-13T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
