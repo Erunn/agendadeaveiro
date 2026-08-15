@@ -106,7 +106,7 @@
   },
   {
     "title": "Schönbrunn Palace Orchestra Vienna",
-    "start": "2026-09-28T21:30:00",
+    "start": "2026-09-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
     "source": "teatro",
     "extendedProps": {
@@ -116,22 +116,7 @@
       "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Schönbrunn Palace Orchestra Vienna",
-    "start": "2026-10-01T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a3d48b753c48.jpg",
-      "source": "teatro",
-      "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -241,19 +226,6 @@
   },
   {
     "title": "Apenas Uma Noite",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/one-night-only-415745",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823567?tp=KM",
-      "display_time": "18:40, 21:20, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Apenas Uma Noite",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/one-night-only-415745",
     "source": "cinema",
@@ -319,19 +291,6 @@
   },
   {
     "title": "Oh Lá Lá 2",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/oh-la-la-2-415747",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823564?tp=KM",
-      "display_time": "13:00, 15:40, 18:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Oh Lá Lá 2",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/oh-la-la-2-415747",
     "source": "cinema",
@@ -397,19 +356,6 @@
   },
   {
     "title": "O Fim de Oak Street",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/o-fim-de-oak-street-415746",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823753?tp=KM",
-      "display_time": "14:10, 16:40, 19:10, 21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Fim de Oak Street",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/o-fim-de-oak-street-415746",
     "source": "cinema",
@@ -475,19 +421,6 @@
   },
   {
     "title": "Patrulha Pata: O Filme dos Dinossauros",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
-      "display_time": "12:30, 14:50, 17:20, 19:40 (VP ATMOS) | 10:40 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Patrulha Pata: O Filme dos Dinossauros",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
     "source": "cinema",
@@ -553,19 +486,6 @@
   },
   {
     "title": "Playback",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/playback-415723",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823480?tp=KM",
-      "display_time": "21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Playback",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/playback-415723",
     "source": "cinema",
@@ -624,19 +544,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823480?tp=KM",
       "display_time": "21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Homem-Aranha: Um Novo Dia",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
-      "display_time": "13:40, 17:00, 20:30, 23:50 (ATMOS) | 22:00 (3D ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -709,19 +616,6 @@
   },
   {
     "title": "A Odisseia",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "12:40, 16:20, 20:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Odisseia",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
@@ -780,19 +674,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
       "display_time": "12:40, 16:20, 20:10, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vaiana",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/vaiana-415568",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822990?tp=KM",
-      "display_time": "11:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -865,19 +746,6 @@
   },
   {
     "title": "Mínimos e Monstros",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "10:50, 13:20, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Mínimos e Monstros",
     "start": "2026-08-15",
     "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
@@ -936,19 +804,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
       "display_time": "10:50, 13:20, 16:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Toy Story 5",
-    "start": "2026-08-14",
-    "url": "https://cinecartaz.publico.pt/filme/toy-story-5-415452",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/822999?tp=KM",
-      "display_time": "11:00 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1186,7 +1041,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-08-14T00:00:00",
+    "start": "2026-08-15T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
