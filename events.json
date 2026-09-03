@@ -1,5 +1,20 @@
 [
   {
+    "title": "Os lugares não são para depois o que antes lá ficou",
+    "start": "2026-09-04T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/os-lugares-nao-sao-para-depois-o-que-antes-la-ficou-lancamento-do-livro-do-laboratorio-de-dramaturgia-2025/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Lançamento do livro do Laboratório de Dramaturgia 2025",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/os-lugares-nao-sao-para-depois-o-que-antes-la-ficou-lancamento-do-livro-do-laboratorio-de-dramaturgia-2025_img6a7de9e721f17.jpg",
+      "source": "teatro",
+      "description": "Esta publicação resulta da terceira edição do projeto e reúne os textos desenvolvidos ao longo desse percurso de criação e aprendizagem",
+      "category": "Livro - Apresentação",
+      "category_normalized": "outros",
+      "display_time": "18:00"
+    }
+  },
+  {
     "title": "Promised Valley Conference Center [ESTREIA]",
     "start": "2026-09-11T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/promised-valley-conference-center/",
@@ -406,7 +421,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-09-02T00:00:00",
+    "start": "2026-09-03T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
