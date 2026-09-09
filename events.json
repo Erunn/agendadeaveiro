@@ -30,6 +30,21 @@
     }
   },
   {
+    "title": "Calle Málaga",
+    "start": "2026-09-15T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/calle-malaga/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/calle-malaga-os-filmes-das-nossas-tercas_img6a9edc3b21f6d.jpg",
+      "source": "teatro",
+      "description": "Um filme de Maryam Touzani.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Futuros Ecossomáticos",
     "start": "2026-09-16T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/futuros-ecossomaticos/",
@@ -75,6 +90,51 @@
     }
   },
   {
+    "title": "La Bohéme de G. Puccini",
+    "start": "2026-09-19T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/la-boheme-de-g-puccini/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Versão de Câmara de Melvin Tay",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/la-boheme-de-g-puccini-versao-de-camara-de-melvin-tay_img6a7c576bef0fa.jpg",
+      "source": "teatro",
+      "description": "Uma coprodução Orquestra das Beiras e Ópera Nómada",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "La Bohéme de G. Puccini",
+    "start": "2026-09-20T17:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/la-boheme-de-g-puccini/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Versão de Câmara de Melvin Tay",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/la-boheme-de-g-puccini-versao-de-camara-de-melvin-tay_img6a7c576bef0fa.jpg",
+      "source": "teatro",
+      "description": "Uma coprodução Orquestra das Beiras e Ópera Nómada",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "17:00"
+    }
+  },
+  {
+    "title": "Livros Restantes",
+    "start": "2026-09-22T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/livros-restantes/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/livros-restantes-os-filmes-das-nossas-tercas_img6a9eddf0edddd.jpg",
+      "source": "teatro",
+      "description": "Um filme de Marcia Paraíso.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Ponto Final, Ponto Seguido",
     "start": "2026-09-25T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/ponto-final-ponto-seguido/",
@@ -105,6 +165,36 @@
     }
   },
   {
+    "title": "Para Instrução de Curiosos. Figuras negras, leituras brancas.",
+    "start": "2026-09-26T15:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/para-instrucao-de-curiosos-figuras-negras-leituras-brancas-com-jose-alberto-ferreira/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Conversa Red Cloud",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/para-instrucao-de-curiosos-figuras-negras-leituras-brancas-conversa-red-cloud_img6a7de43b9cb2b.jpg",
+      "source": "teatro",
+      "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com José Alberto Ferreira.",
+      "category": "Conversa",
+      "category_normalized": "outros",
+      "display_time": "15:00"
+    }
+  },
+  {
+    "title": "Happy Birthday Mr. Mercury",
+    "start": "2026-09-26T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/happy-birthday-mr-mercury/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Quinteto de Cordas + Piano / Orquestra Sinfónica de Lisboa",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/happy-birthday-mr-mercury-quinteto-de-cordas-piano-orquestra-sinfonica-de-lisboa_img6a7c58f4557ab.jpg",
+      "source": "teatro",
+      "description": "No ano em que Freddie Mercury celebraria 80 anos, presta-se homenagem ao legado intemporal de uma das bandas mais marcantes da história da música.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "18:00"
+    }
+  },
+  {
     "title": "Schönbrunn Palace Orchestra Vienna",
     "start": "2026-09-28T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
@@ -131,6 +221,21 @@
       "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
       "category": "Música",
       "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Cartas Amarelas",
+    "start": "2026-09-29T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/cartas-amarelas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/cartas-amarelas-os-filmes-das-nossas-tercas_img6a9edeb4a2973.jpg",
+      "source": "teatro",
+      "description": "Um filme de Iker Çatak.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "21:30"
     }
   },
@@ -210,6 +315,111 @@
     }
   },
   {
+    "title": "PRISMA 2026",
+    "start": "2026-10-08T10:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/prisma-2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Art Light Tech",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/prisma-2026-art-light-tech_img6a7c5a2569fce.jpg",
+      "source": "teatro",
+      "description": "O Festival que assume a luz como seu elemento central volta com mais uma edição a não perder.",
+      "category": "Festival",
+      "category_normalized": "festival",
+      "display_time": "10:00 / 24:00"
+    }
+  },
+  {
+    "title": "PRISMA 2026",
+    "start": "2026-10-09T10:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/prisma-2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Art Light Tech",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/prisma-2026-art-light-tech_img6a7c5a2569fce.jpg",
+      "source": "teatro",
+      "description": "O Festival que assume a luz como seu elemento central volta com mais uma edição a não perder.",
+      "category": "Festival",
+      "category_normalized": "festival",
+      "display_time": "10:00 / 24:00"
+    }
+  },
+  {
+    "title": "PRISMA 2026",
+    "start": "2026-10-10T10:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/prisma-2026/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Art Light Tech",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/prisma-2026-art-light-tech_img6a7c5a2569fce.jpg",
+      "source": "teatro",
+      "description": "O Festival que assume a luz como seu elemento central volta com mais uma edição a não perder.",
+      "category": "Festival",
+      "category_normalized": "festival",
+      "display_time": "10:00 / 24:00"
+    }
+  },
+  {
+    "title": "Arquitetas da Liberdade",
+    "start": "2026-10-13T13:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/arquitetas-da-liberdade/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Ciclo O Problema da Habitação",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/arquitetas-da-liberdade-ciclo-o-problema-da-habitacao_img6a7c78952da50.jpg",
+      "source": "teatro",
+      "description": "Uma exposição ao redor de mulheres e das casas pelas quais lutaram antes e depois do 25 de abril.",
+      "category": "Exposição",
+      "category_normalized": "outros",
+      "display_time": "13:30 / 18:30"
+    }
+  },
+  {
+    "title": "Arquitetas da Liberdade",
+    "start": "2026-12-15T13:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/arquitetas-da-liberdade/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Ciclo O Problema da Habitação",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/arquitetas-da-liberdade-ciclo-o-problema-da-habitacao_img6a7c78952da50.jpg",
+      "source": "teatro",
+      "description": "Uma exposição ao redor de mulheres e das casas pelas quais lutaram antes e depois do 25 de abril.",
+      "category": "Exposição",
+      "category_normalized": "outros",
+      "display_time": "13:30 / 18:30"
+    }
+  },
+  {
+    "title": "Baile Tradicional Galego",
+    "start": "2026-10-15T18:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/baile-tradicional-galego-oficina-do-terreiro-ao-mundo/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Oficina \"Do Terreiro ao Mundo\"",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/baile-tradicional-galego-oficina-do-terreiro-ao-mundo_img6a7de6c289b34.jpg",
+      "source": "teatro",
+      "description": "Uma oficina de baile tradicional galego que partilha elementos chave com a tradição dos Pauliteiros de Miranda",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "18:30"
+    }
+  },
+  {
+    "title": "Do Terreiro ao Mundo",
+    "start": "2026-10-16T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/do-terreiro-ao-mundo/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "De Clara Andermatt para a Companhia Instável",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/do-terreiro-ao-mundo-de-clara-andermatt-para-a-companhia-instavel_img6a7c7a5571160.jpg",
+      "source": "teatro",
+      "description": "Clara Andermatt regressa ao Teatro Aveirense para apresentar uma produção inspirada no universo dos Pauliteiros de Miranda.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Susie Filipe & Banda Amizade - Banda Sinfónica de Aveiro",
     "start": "2026-10-17T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/susie-filipe-banda-amizade-banda-sinfonica-de-aveiro/",
@@ -222,6 +432,156 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:30"
+    }
+  },
+  {
+    "title": "E as flores?",
+    "start": "2026-10-18T10:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/e-as-flores/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Joana Gama",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/e-as-flores-joana-gama_img6a7c7b5a4dc50.jpg",
+      "source": "teatro",
+      "description": "Um mergulho no maravilhoso mundo das flores.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "10:00 / 11:30"
+    }
+  },
+  {
+    "title": "Helena Caldeira",
+    "start": "2026-10-22T22:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/helena-caldeira-novas-quintas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Novas Quintas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/helena-caldeira-novas-quintas_img6a7c7c124843b.jpg",
+      "source": "teatro",
+      "description": "Helena Caldeira traz às Novas Quintas o seu disco de estreia que celebra a voz feminina e as suas tradições reinventando-as.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Uma Linha de Luz na Água [ESTREIA]",
+    "start": "2026-10-24T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/uma-linha-de-luz-na-agua/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "João Reis e Nuno Aroso",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/uma-linha-de-luz-na-agua-estreia-joao-reis-e-nuno-aroso_img6a7c7ceace9fe.jpg",
+      "source": "teatro",
+      "description": "Uma tentativa de mergulho nas profundezas filosóficas da água.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Woyzeck",
+    "start": "2026-10-30T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/woyzeck/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "a partir de Georg Büchner",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/woyzeck-a-partir-de-georg-bu-chner_img6a7c7e10b40ef.jpg",
+      "source": "teatro",
+      "description": "Um espetáculo que transporta a personagem para um universo distópico dominado por máquinas humanoides e inteligência artificial sem ética.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Coelho Radioactivo",
+    "start": "2026-10-31T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/coelho-radioactivo/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Apresenta ANTI-ONTEM",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/coelho-radioactivo-apresenta-anti-ontem_img6a7c7f18021a6.jpg",
+      "source": "teatro",
+      "description": "Depois de uma residência artística no Teatro Aveirense, Coelho Radioactivo apresenta novo disco num concerto que reúne fragmentos de memória, afectos e inquietações que atravessam a experiência de viver no presente.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Ensemble Inverspace [ESTREIA NACIONAL]",
+    "start": "2026-11-05T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/ensemble-inverspace-estreia-nacional/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Tubo de Ensaio #14",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/ensemble-inverspace-estreia-nacional-tubo-de-ensaio-14_img6a7c802fb9d02.jpg",
+      "source": "teatro",
+      "description": "No primeiro concerto em Portugal, o grupo traz música de Oxana Omelchuk, Michelle Lou e Raphael Cendo e duas estreias absolutas.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Home",
+    "start": "2026-11-06T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/home-francisco-sassetti-ciclo-o-problema-da-habitacao/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Francisco Sassetti / Ciclo O Problema da Habitação",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/home-francisco-sassetti-ciclo-o-problema-da-habitacao_img6a7c83dad2e67.jpg",
+      "source": "teatro",
+      "description": "Um concerto que deixa transparecer o peso emocional que se enreda nas melodias de Francisco Sassetti.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Cantar-o-Lar [ESTREIA]",
+    "start": "2026-11-08T15:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/cantar-o-lar-estreia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Projeto de Arte Comunitária",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/cantar-o-lar-estreia-projeto-de-arte-comunitaria_img6a7c866d3ea21.jpg",
+      "source": "teatro",
+      "description": "Orientado pela Orquestra Sem Fronteiras, este projeto envolve artistas de quatro lares de Aveiro.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "15:00"
+    }
+  },
+  {
+    "title": "Bastien e Bastienne de W. A. Mozart",
+    "start": "2026-11-12T11:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Uma ópera em marionetas e em português",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/bastien-e-bastienne-de-w-a-mozart-uma-opera-em-marionetas-e-em-portugues_img6a7c910eec7c4.jpg",
+      "source": "teatro",
+      "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "11:00"
+    }
+  },
+  {
+    "title": "Bastien e Bastienne de W. A. Mozart",
+    "start": "2026-11-13T11:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Uma ópera em marionetas e em português",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/bastien-e-bastienne-de-w-a-mozart-uma-opera-em-marionetas-e-em-portugues_img6a7c910eec7c4.jpg",
+      "source": "teatro",
+      "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "11:00"
     }
   },
   {
@@ -240,16 +600,318 @@
     }
   },
   {
-    "title": "Ataque Implacável",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
-    "source": "cinema",
+    "title": "Bastien e Bastienne de W. A. Mozart",
+    "start": "2026-11-14T16:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-de-w-a-mozart/",
+    "source": "teatro",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
-      "display_time": "19:00, 21:20, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "umbrella": "Uma ópera em marionetas e em português",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/bastien-e-bastienne-de-w-a-mozart-uma-opera-em-marionetas-e-em-portugues_img6a7c8f161e269.jpg",
+      "source": "teatro",
+      "description": "A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "16:00"
+    }
+  },
+  {
+    "title": "Entre Corpo, Voz, Memória",
+    "start": "2026-11-15T11:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/entre-corpo-voz-memoria/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Oficina Palcos Instáveis",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/entre-corpo-voz-memoria-oficina-palcos-instaveis_img6a7de769eee49.jpg",
+      "source": "teatro",
+      "description": "Uma oficina de dança que parte do universo da peça\"Songs of Ascencion\"",
+      "category": "Oficina",
+      "category_normalized": "workshop",
+      "display_time": "11:00"
+    }
+  },
+  {
+    "title": "Songs of Ascencion",
+    "start": "2026-11-19T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/songs-of-ascencion/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Beatriz Moreira, Iris Auguste e Giulia Micelli / Palcos Instáveis - Segunda Casa",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/songs-of-ascencion-beatriz-moreira-iris-auguste-e-giulia-micelli-palcos-instaveis-segunda-casa_img6a7c930c97916.jpg",
+      "source": "teatro",
+      "description": "Uma viagem sensorial que investiga a liberdade corporal feminina, permitindo que as intérpretes explorem uma relação espontânea com objetos, sons e outros corpos.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "O Problema da Habitação [ESTREIA]",
+    "start": "2026-11-21T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Direção de Jorge Louraço Figueira",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-problema-da-habitacao-estreia-direcao-de-jorge-louraco-figueira_img6a7d8c73041fc.jpg",
+      "source": "teatro",
+      "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Todos os sons vão dar à UA",
+    "start": "2026-11-25T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/todos-os-sons-vao-dar-a-ua/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Ensemble Efémero Internacional / Festivais de Outono 2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/todos-os-sons-vao-dar-a-ua-ensemble-efemero-internacional-festivais-de-outono-2026_img6a7d8d7dc7859.jpg",
+      "source": "teatro",
+      "description": "Um projeto que desafia as convenções da música erudita ao fundir a tradição ocidental com a riqueza ancestral do Oriente e do Médio Oriente.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Som da Água: uma parceria UA / UNESCO",
+    "start": "2026-11-27T18:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/som-da-agua-uma-parceria-ua-unesco/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Conversa Festivais de Outono",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/som-da-agua-uma-parceria-ua-unesco-conversa-festivais-de-outono_img6a7de469e5614.jpg",
+      "source": "teatro",
+      "description": "Com Susana Sardo, Luís Menezes Pinheiro, Luís Tinoco e Pedro Rodrigues",
+      "category": "Conversa",
+      "category_normalized": "outros",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "O Som da Água: Música em estado líquido",
+    "start": "2026-11-27T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/o-som-da-agua-musica-em-estado-liquido/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Concerto de encerramento dos Festivais de Outono 2026",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-som-da-agua-musica-em-estado-liquido-concerto-de-encerramento-dos-festivais-de-outono-2026_img6a7d8e68cac01.jpg",
+      "source": "teatro",
+      "description": "Uma viagem imersiva pelos mistérios da água.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Carolina Deslandes",
+    "start": "2026-11-28T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Voz, Guitarra & Violoncelo",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/carolina-deslandes-voz-guitarra-violoncelo_img6a9e9b3294b74.jpg",
+      "source": "teatro",
+      "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Axiom Casino",
+    "start": "2026-12-03T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Jonathan Uliel Saldanha",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
+      "source": "teatro",
+      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Axiom Casino",
+    "start": "2026-12-04T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Jonathan Uliel Saldanha",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
+      "source": "teatro",
+      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
+    "start": "2026-12-04T11:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/en-tre/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Red Cloud Teatro de Marionetas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/en-tre-nar-ra-ti-vas-estreia-red-cloud-teatro-de-marionetas_img6a7d9fd356788.jpg",
+      "source": "teatro",
+      "description": "Sessão para público escolar.A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
+      "category": "Teatro de Marionetas",
+      "category_normalized": "teatro",
+      "display_time": "11:00"
+    }
+  },
+  {
+    "title": "Fabulando no Escuro",
+    "start": "2026-12-05T17:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/fabulando-no-escuro/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Conversa Red Cloud",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/fabulando-no-escuro-conversa-red-cloud_img6a7de4527d69f.jpg",
+      "source": "teatro",
+      "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com Cristina Roldão.",
+      "category": "Conversa",
+      "category_normalized": "outros",
+      "display_time": "17:00"
+    }
+  },
+  {
+    "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
+    "start": "2026-12-05T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Red Cloud Teatro de Marionetas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/en-tre-nar-ra-ti-vas-estreia-red-cloud-teatro-de-marionetas_img6a7d9e67c32e4.jpg",
+      "source": "teatro",
+      "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
+      "category": "Teatro de Marionetas",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
+    "start": "2026-12-06T17:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Red Cloud Teatro de Marionetas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/en-tre-nar-ra-ti-vas-estreia-red-cloud-teatro-de-marionetas_img6a7d9e67c32e4.jpg",
+      "source": "teatro",
+      "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
+      "category": "Teatro de Marionetas",
+      "category_normalized": "teatro",
+      "display_time": "17:30"
+    }
+  },
+  {
+    "title": "As mais belas coisas do mundo",
+    "start": "2026-12-08T16:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas-coisas-do-mundo/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Joana Providência",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/as-mais-belas-coisas-do-mundo-joana-providencia_img6a7daa8911d8e.jpg",
+      "source": "teatro",
+      "description": "A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "16:00"
+    }
+  },
+  {
+    "title": "As mais belas coisas do mundo",
+    "start": "2026-12-09T10:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Joana Providência",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/as-mais-belas-coisas-do-mundo-joana-providencia_img6a7dab32ea879.jpg",
+      "source": "teatro",
+      "description": "Sessão para público escolar.A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "10:30 / 14:30"
+    }
+  },
+  {
+    "title": "Baleia Baleia Baleia",
+    "start": "2026-12-10T22:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/baleia-baleia-baleia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Novas Quintas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/baleia-baleia-baleia-novas-quintas_img6a7dc4333372a.jpg",
+      "source": "teatro",
+      "description": "Uma das bandas mais ativas do panorama underground português chega às Novas Quintas do Teatro Aveirense.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "22:00"
+    }
+  },
+  {
+    "title": "Flamingo",
+    "start": "2026-12-11T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/flamingo/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Remy Tiburg",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/flamingo-remy-tiburg_img6a7dc5b072d02.jpg",
+      "source": "teatro",
+      "description": "Um espetáculo de dança onde a natureza ganha voz.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Concerto Coral - Cantar o Natal",
+    "start": "2026-12-13T17:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/concerto-coral-cantar-o-natal/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Conservatório de Música de Aveiro Calouste Gulbenkian",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/concerto-coral-cantar-o-natal-conservatorio-de-musica-de-aveiro-calouste-gulbenkian_img6a7dc66098ada.jpg",
+      "source": "teatro",
+      "description": "Um momento de celebração musical da quadra natalícia",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "17:00"
+    }
+  },
+  {
+    "title": "Começar tudo outra vez",
+    "start": "2026-12-19T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/comecar-tudo-outra-vez/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Tonan Quito",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/comecar-tudo-outra-vez-tonan-quito_img6a7dc83c809e6.jpg",
+      "source": "teatro",
+      "description": "Moldadas pelos seus próprios nascimentos, as personagens convidam-nos a sentar à mesa e a partilhar histórias, afetos e perguntas.",
+      "category": "Teatro",
+      "category_normalized": "teatro",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "A Poesia das Pequenas Coisas [ESTREIA]",
+    "start": "2026-12-20T11:00:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/a-poesia-das-pequenas-coisas-estreia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Arte no Tempo",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/a-poesia-das-pequenas-coisas-estreia-arte-no-tempo_img6a7dc98835f08.jpg",
+      "source": "teatro",
+      "description": "Num mundo marcado pela voracidade do tempo e o pelo excesso de estímulos, este espetáculo convida a desacelerar e a mergulhar num universo de fantasia, saboreando pequenas subtilezas.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "11:00"
     }
   },
   {
@@ -266,13 +928,91 @@
     }
   },
   {
-    "title": "A Qualquer Custo",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "title": "Ataque Implacável",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
-      "display_time": "13:10, 16:00, 18:40",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ataque Implacável",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/onslaught-415822",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823741?tp=KM",
+      "display_time": "19:00, 21:20, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -292,13 +1032,91 @@
     }
   },
   {
-    "title": "Na Companhia das Estrelas",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "title": "A Qualquer Custo",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
-      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Qualquer Custo",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/qualquer-custo-415846",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823986?tp=KM",
+      "display_time": "13:10, 16:00, 18:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -318,13 +1136,91 @@
     }
   },
   {
-    "title": "Coyote vs. Acme",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
-      "display_time": "22:00 (VO) | 14:00, 16:40, 19:15 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "14:30, 17:50, 21:00, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -344,13 +1240,91 @@
     }
   },
   {
-    "title": "Mutiny: Código de Vingança",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
-      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 11:10, 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 11:10, 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 11:10, 14:00, 16:40, 19:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "22:00 (VO) | 11:10, 14:00, 16:40, 19:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -370,13 +1344,91 @@
     }
   },
   {
-    "title": "Patrulha Pata: O Filme dos Dinossauros",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
-      "display_time": "13:20, 15:50 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "14:50, 17:20, 21:40, 00:05",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -396,13 +1448,91 @@
     }
   },
   {
-    "title": "Homem-Aranha: Um Novo Dia",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
-      "display_time": "20:30, 23:50 (ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "10:50, 13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "10:50, 13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "10:50, 13:20, 15:50 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Patrulha Pata: O Filme dos Dinossauros",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/patrulha-pata-filme-dinossauros-415724",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823565?tp=KM",
+      "display_time": "10:50, 13:20, 15:50 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -422,13 +1552,91 @@
     }
   },
   {
-    "title": "A Odisseia",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "18:20, 22:20",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "20:30, 23:50 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -448,13 +1656,91 @@
     }
   },
   {
-    "title": "Mínimos e Monstros",
-    "start": "2026-09-08",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "title": "A Odisseia",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "13:40, 16:20 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "18:20, 22:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -468,6 +1754,97 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
       "display_time": "13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-14",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-15",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-16",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-10",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "11:00, 13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-11",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "11:00, 13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-12",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "11:00, 13:40, 16:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-13",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "11:00, 13:40, 16:20 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -670,7 +2047,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-09-08T00:00:00",
+    "start": "2026-09-09T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
