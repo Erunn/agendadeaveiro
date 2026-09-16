@@ -1,20 +1,5 @@
 [
   {
-    "title": "Calle Málaga",
-    "start": "2026-09-15T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/calle-malaga/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/calle-malaga-os-filmes-das-nossas-tercas_img6a9edc3b21f6d.jpg",
-      "source": "teatro",
-      "description": "Um filme de Maryam Touzani.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Futuros Ecossomáticos",
     "start": "2026-09-16T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/futuros-ecossomaticos/",
@@ -886,7 +871,7 @@
   },
   {
     "title": "Magia e Sedução: Segredos de Família",
-    "start": "2026-09-15",
+    "start": "2026-09-16",
     "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
     "source": "cinema",
     "extendedProps": {
@@ -899,7 +884,85 @@
   },
   {
     "title": "Magia e Sedução: Segredos de Família",
-    "start": "2026-09-16",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
+      "display_time": "20:50, 24:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Magia e Sedução: Segredos de Família",
+    "start": "2026-09-23",
     "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
     "source": "cinema",
     "extendedProps": {
@@ -912,7 +975,7 @@
   },
   {
     "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-09-15",
+    "start": "2026-09-16",
     "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
     "source": "cinema",
     "extendedProps": {
@@ -925,7 +988,85 @@
   },
   {
     "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-09-16",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-09-23",
     "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
     "source": "cinema",
     "extendedProps": {
@@ -938,7 +1079,7 @@
   },
   {
     "title": "Coyote vs. Acme",
-    "start": "2026-09-15",
+    "start": "2026-09-16",
     "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
     "source": "cinema",
     "extendedProps": {
@@ -951,7 +1092,7 @@
   },
   {
     "title": "Coyote vs. Acme",
-    "start": "2026-09-16",
+    "start": "2026-09-17",
     "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
     "source": "cinema",
     "extendedProps": {
@@ -963,13 +1104,78 @@
     }
   },
   {
-    "title": "Na Companhia das Estrelas",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
-      "display_time": "18:45, 21:30",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "13:05, 15:40, 18:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "11:10, 13:05, 15:40, 18:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Coyote vs. Acme",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
+      "display_time": "11:10, 13:05, 15:40, 18:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -989,13 +1195,39 @@
     }
   },
   {
-    "title": "Mutiny: Código de Vingança",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
-      "display_time": "22:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "18:45, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "18:45, 21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Na Companhia das Estrelas",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/companhia-estrelas-415758",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823820?tp=KM",
+      "display_time": "18:45, 21:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1015,13 +1247,91 @@
     }
   },
   {
-    "title": "Homem-Aranha: Um Novo Dia",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
-      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mutiny: Código de Vingança",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
+      "display_time": "22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1041,13 +1351,91 @@
     }
   },
   {
-    "title": "A Odisseia",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "14:20, 18:00, 21:50",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Homem-Aranha: Um Novo Dia",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
+      "display_time": "13:40, 17:00, 20:20, 23:40 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1067,13 +1455,91 @@
     }
   },
   {
-    "title": "Mínimos e Monstros",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "title": "A Odisseia",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
-      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Odisseia",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
+      "display_time": "14:20, 18:00, 21:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1093,13 +1559,91 @@
     }
   },
   {
-    "title": "Shrek",
-    "start": "2026-09-15",
-    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
-      "display_time": "14:00, 16:30, 19:00",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:50, 13:30, 16:10 (VP ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Mínimos e Monstros",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/minimos-monstros-415560",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823359?tp=KM",
+      "display_time": "10:50, 13:30, 16:10 (VP ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1113,6 +1657,97 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
       "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-17",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-18",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-21",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-22",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-23",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-19",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "11:00, 14:00, 16:30, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Shrek",
+    "start": "2026-09-20",
+    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
+      "display_time": "11:00, 14:00, 16:30, 19:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1285,7 +1920,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-09-15T00:00:00",
+    "start": "2026-09-16T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
