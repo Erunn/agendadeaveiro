@@ -1,20 +1,5 @@
 [
   {
-    "title": "La Bohéme de G. Puccini",
-    "start": "2026-09-20T17:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/la-boheme-de-g-puccini/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Versão de Câmara de Melvin Tay",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/la-boheme-de-g-puccini-versao-de-camara-de-melvin-tay_img6aa80493059f1.png",
-      "source": "teatro",
-      "description": "[CANCELADO]Uma coprodução Orquestra das Beiras e Ópera Nómada",
-      "category": "Ópera",
-      "category_normalized": "ópera",
-      "display_time": "17:00"
-    }
-  },
-  {
     "title": "Livros Restantes",
     "start": "2026-09-22T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/livros-restantes/",
@@ -810,32 +795,6 @@
     }
   },
   {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "15:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Resident Evil",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "14:00, 16:40, 19:00, 21:20, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Resident Evil",
     "start": "2026-09-21",
     "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
@@ -908,32 +867,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824000?tp=KM",
       "display_time": "18:50, 21:45, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Runner: Corrida Pela Vida",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/runner-corrida-vida-415850",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824000?tp=KM",
-      "display_time": "21:45, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Magia e Sedução: Segredos de Família",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/magia-seducao-segredos-familia-415827",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823988?tp=KM",
-      "display_time": "21:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1018,32 +951,6 @@
     }
   },
   {
-    "title": "Coyote vs. Acme",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/coyote-vs-acme-415755",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823580?tp=KM",
-      "display_time": "11:00, 12:50 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Mutiny: Código de Vingança",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
-      "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Mutiny: Código de Vingança",
     "start": "2026-09-21",
     "url": "https://cinecartaz.publico.pt/filme/mutiny-codigo-vinganca-415749",
@@ -1077,19 +984,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823575?tp=KM",
       "display_time": "19:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Odisseia",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "20:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1168,19 +1062,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
       "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Shrek",
-    "start": "2026-09-20",
-    "url": "https://cinecartaz.publico.pt/filme/shrek-25538",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/180337?tp=KM",
-      "display_time": "10:50, 13:30, 16:10, 18:50 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1353,7 +1234,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-09-20T00:00:00",
+    "start": "2026-09-21T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
