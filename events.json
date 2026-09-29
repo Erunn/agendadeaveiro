@@ -1,35 +1,5 @@
 [
   {
-    "title": "Schönbrunn Palace Orchestra Vienna",
-    "start": "2026-09-28T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a3d48b753c48.jpg",
-      "source": "teatro",
-      "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Schönbrunn Palace Orchestra Vienna",
-    "start": "2026-10-01T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6a3d48b753c48.jpg",
-      "source": "teatro",
-      "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Cartas Amarelas",
     "start": "2026-09-29T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cartas-amarelas/",
@@ -87,6 +57,21 @@
       "category": "Oficina",
       "category_normalized": "workshop",
       "display_time": "18:00 / 22:30"
+    }
+  },
+  {
+    "title": "Schönbrunn Palace Orchestra Vienna",
+    "start": "2026-10-01T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/schonbrunn-palace-orchestra-vienna/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "From Strauss to Léhar - an evening through Vienna's Golden Age",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/schonbrunn-palace-orchestra-vienna-from-strauss-to-lehar-an-evening-through-viennas-golden-age_img6aba47e9c749d.png",
+      "source": "teatro",
+      "description": "Uma encantadora seleção de algumas das mais célebres valsas, polcas e operetas do repertório vienense.",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
     }
   },
   {
@@ -736,19 +721,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:20, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -775,19 +747,6 @@
   },
   {
     "title": "Natal Amargo",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/amarga-navidad-415858",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824038?tp=KM",
-      "display_time": "15:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Natal Amargo",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/amarga-navidad-415858",
     "source": "cinema",
@@ -814,19 +773,6 @@
   },
   {
     "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "13:30, 15:50, 18:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
     "source": "cinema",
@@ -853,19 +799,6 @@
   },
   {
     "title": "Resident Evil",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:45, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Resident Evil",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
     "source": "cinema",
@@ -892,19 +825,6 @@
   },
   {
     "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:30, 17:30, 20:30, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
     "source": "cinema",
@@ -931,19 +851,6 @@
   },
   {
     "title": "Homem-Aranha: Um Novo Dia",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823472?tp=KM",
-      "display_time": "20:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Homem-Aranha: Um Novo Dia",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/homemaranha-novo-dia-415715",
     "source": "cinema",
@@ -970,19 +877,6 @@
   },
   {
     "title": "A Odisseia",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
-      "display_time": "14:10, 18:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Odisseia",
     "start": "2026-09-29",
     "url": "https://cinecartaz.publico.pt/filme/odisseia-415570",
     "source": "cinema",
@@ -1002,19 +896,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823435?tp=KM",
       "display_time": "14:10, 18:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vingadores: Endgame",
-    "start": "2026-09-28",
-    "url": "https://cinecartaz.publico.pt/filme/vingadores-endgame-393980",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "13:05, 17:00, 21:00, 23:20 (ATMOS/2D) | 18:00, 22:00 (ATMOS/3D)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1044,66 +925,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Na Companhia das Estrelas",
-    "start": "2026-09-24T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-na-companhia-das-estrelas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Ridley Scott",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-bol_na-companhia-das-estrelas.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
-    }
-  },
-  {
-    "title": "Miguel Gameiro & Pólo Norte",
-    "start": "2026-09-25T21:30:00",
-    "url": "https://www.23milhas.pt/evento/miguel-gameiro-andamp-polo-norte-1783337843010/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Concerto Solidário Antigos Alu...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/cartaz-limpo.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Oficina Saber Fazer: Ramo Comum",
-    "start": "2026-09-26T10:00:00",
-    "url": "https://www.23milhas.pt/evento/oficina-saber-fazer-ramo-comum/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Oficina Saber Fazer",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/1790074714167-23milhas-2026_3t-oficinacarimbos.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
-    }
-  },
-  {
-    "title": "Planteia em família: Oficina da brisa e do vento",
-    "start": "2026-09-27T10:30:00",
-    "url": "https://www.23milhas.pt/evento/planteia-em-familia-oficina-da-brisa-e-do-vento/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Planteia em Família",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_3t-oficina_dabrisaedovento.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:30"
     }
   },
   {
@@ -1333,7 +1154,7 @@
   },
   {
     "title": "Dela Marmy",
-    "start": "2026-09-28T00:00:00",
+    "start": "2026-09-29T00:00:00",
     "url": "https://www.23milhas.pt/evento/dela-marmy-1783354000236/",
     "source": "23milhas",
     "extendedProps": {
