@@ -1,21 +1,6 @@
 [
   {
     "title": "PRISMA 2026",
-    "start": "2026-10-08T10:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/prisma-2026/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Art Light Tech",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/prisma-2026-art-light-tech_img6ac4bf2cec72f.jpg",
-      "source": "teatro",
-      "description": "O Festival que assume a luz como seu elemento central volta com mais uma edição a não perder.",
-      "category": "Festival",
-      "category_normalized": "festival",
-      "display_time": "10:00 / 24:00"
-    }
-  },
-  {
-    "title": "PRISMA 2026",
     "start": "2026-10-09T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/prisma-2026/",
     "source": "teatro",
@@ -735,13 +720,260 @@
     }
   },
   {
-    "title": "Verity",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "title": "O Veredicto Social",
+    "start": "2026-10-09",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Veredicto Social",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Veredicto Social",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Veredicto Social",
+    "start": "2026-10-12",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Veredicto Social",
+    "start": "2026-10-13",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Veredicto Social",
+    "start": "2026-10-14",
+    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-09",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-12",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-13",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Primetime",
+    "start": "2026-10-14",
+    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
+      "display_time": "13:40, 16:20, 19:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-09",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-12",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-13",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "De Gaulle: Resistência",
+    "start": "2026-10-14",
+    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
+      "display_time": "21:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ilha Esquecida",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
+      "display_time": "11:00, 13:30, 16:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ilha Esquecida",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
+      "display_time": "11:00, 13:30, 16:10 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -827,25 +1059,12 @@
   },
   {
     "title": "Digger",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/digger-415864",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Digger",
     "start": "2026-10-09",
     "url": "https://cinecartaz.publico.pt/filme/digger-415864",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -858,7 +1077,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -871,7 +1090,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -884,7 +1103,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -897,7 +1116,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -910,111 +1129,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "14:40, 17:40, 20:40, 23:40 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-10",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-11",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-12",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "11:10, 13:50, 16:30, 19:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "13:50, 16:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-09",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "13:50, 16:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-13",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "13:50, 16:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "13:50, 16:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "13:10, 15:40, 18:10, 21:00, 23:30",
+      "display_time": "19:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1100,25 +1215,12 @@
   },
   {
     "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-10",
+    "start": "2026-10-09",
     "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "10:50, 13:30, 15:50, 18:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-11",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "10:50, 13:30, 15:50, 18:30 (VP)",
+      "display_time": "14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1131,33 +1233,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "10:50, 13:30, 15:50, 18:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "13:30, 15:50, 18:30 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-09",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "13:30, 15:50, 18:30 (VP)",
+      "display_time": "14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1170,7 +1246,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "13:30, 15:50, 18:30 (VP)",
+      "display_time": "14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1183,20 +1259,33 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "13:30, 15:50, 18:30 (VP)",
+      "display_time": "14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
     }
   },
   {
-    "title": "Resident Evil",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "10:50, 14:10, 16:40 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "10:50, 14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1209,7 +1298,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1222,7 +1311,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1235,7 +1324,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1248,7 +1337,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1261,7 +1350,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1274,20 +1363,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:50, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:20, 17:20, 20:30, 23:20",
+      "display_time": "21:40, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1296,32 +1372,6 @@
   {
     "title": "Santo António, O Casamenteiro de Lisboa",
     "start": "2026-10-09",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:20, 17:20, 20:30, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-10",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:20, 17:20, 20:30, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-11",
     "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
     "source": "cinema",
     "extendedProps": {
@@ -1372,13 +1422,26 @@
     }
   },
   {
-    "title": "Vingadores: Endgame",
-    "start": "2026-10-08",
-    "url": "https://cinecartaz.publico.pt/filme/vingadores-endgame-393980",
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-10-10",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-10-11",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "20:30, 23:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1391,7 +1454,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1404,7 +1467,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1417,7 +1480,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1430,7 +1493,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1443,7 +1506,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1456,7 +1519,7 @@
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "22:10",
+      "display_time": "13:05, 17:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
