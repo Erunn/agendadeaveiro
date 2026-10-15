@@ -301,7 +301,7 @@
   },
   {
     "title": "Songs of Ascencion",
-    "start": "2026-11-19",
+    "start": "2026-11-19T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/songs-of-ascencion/",
     "source": "teatro",
     "extendedProps": {
@@ -311,12 +311,12 @@
       "description": "Uma viagem sensorial que investiga a liberdade corporal feminina, permitindo que as intérpretes explorem uma relação espontânea com objetos, sons e outros corpos.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21",
+    "start": "2026-11-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -326,7 +326,7 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -661,19 +661,6 @@
   },
   {
     "title": "O Veredicto Social",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
-      "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Veredicto Social",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/veredito-social-415936",
     "source": "cinema",
@@ -758,19 +745,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824245?tp=KM",
       "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Primetime",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/primetime-415972",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824170?tp=KM",
-      "display_time": "13:40, 16:20, 19:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -869,19 +843,6 @@
   },
   {
     "title": "De Gaulle: Resistência",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
-      "display_time": "21:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "De Gaulle: Resistência",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/gaulle-resistencia-415951",
     "source": "cinema",
@@ -966,19 +927,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824189?tp=KM",
       "display_time": "21:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:20, 16:00, 18:40, 21:20, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1077,19 +1025,6 @@
   },
   {
     "title": "Digger",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/digger-415864",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824099?tp=KM",
-      "display_time": "19:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Digger",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/digger-415864",
     "source": "cinema",
@@ -1181,19 +1116,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "13:10, 15:40, 18:10, 21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -1278,19 +1200,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
       "display_time": "13:10, 15:40, 18:10, 21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "14:10, 16:40 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1389,19 +1298,6 @@
   },
   {
     "title": "Resident Evil",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
-      "display_time": "21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Resident Evil",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/resident-evil-415849",
     "source": "cinema",
@@ -1486,19 +1382,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823998?tp=KM",
       "display_time": "21:40, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:20, 17:20, 20:30, 23:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1597,19 +1480,6 @@
   },
   {
     "title": "Vingadores: Endgame",
-    "start": "2026-10-14",
-    "url": "https://cinecartaz.publico.pt/filme/vingadores-endgame-393980",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/713160?tp=KM",
-      "display_time": "13:05, 17:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Vingadores: Endgame",
     "start": "2026-10-15",
     "url": "https://cinecartaz.publico.pt/filme/vingadores-endgame-393980",
     "source": "cinema",
@@ -1697,21 +1567,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Natal Amargo",
-    "start": "2026-10-08T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-natal-amargo/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Pedro Almodóvar",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_cinema-natalamargo.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
     }
   },
   {
