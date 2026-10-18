@@ -1,20 +1,5 @@
 [
   {
-    "title": "Susie Filipe & Banda Amizade - Banda Sinfónica de Aveiro",
-    "start": "2026-10-17T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/susie-filipe-banda-amizade-banda-sinfonica-de-aveiro/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/susie-filipe-banda-amizade-banda-sinfonica-de-aveiro_img6a33be845fbbe.jpg",
-      "source": "teatro",
-      "description": "Um encontro imperdível que celebra a consagração artística, a tradição viva de Aveiro e a partilha pura da música.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "E as flores?",
     "start": "2026-10-18T10:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/e-as-flores/",
@@ -451,7 +436,7 @@
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-08",
+    "start": "2026-12-08T16:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas-coisas-do-mundo/",
     "source": "teatro",
     "extendedProps": {
@@ -461,7 +446,7 @@
       "description": "A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "16:00"
     }
   },
   {
@@ -616,19 +601,6 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "00:10 | 13:20, 16:10, 19:00, 22:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Street Fighter",
     "start": "2026-10-18",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
@@ -681,19 +653,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "13:10, 15:30, 18:00, 20:50, 23:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-10-18",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -739,19 +698,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
       "display_time": "13:10, 15:30, 18:00, 20:50, 23:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Queda da Baleia",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/queda-baleia-415997",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824083?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -811,38 +757,12 @@
   },
   {
     "title": "A Ilha Esquecida",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "11:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
     "start": "2026-10-18",
     "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
       "display_time": "11:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:15, 16:00, 18:40, 21:20, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -902,19 +822,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-18",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -960,19 +867,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
       "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-17",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "18:15, 21:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
