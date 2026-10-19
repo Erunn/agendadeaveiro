@@ -1,20 +1,5 @@
 [
   {
-    "title": "E as flores?",
-    "start": "2026-10-18T10:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/e-as-flores/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Joana Gama",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/e-as-flores-joana-gama_img6a7c7b5a4dc50.jpg",
-      "source": "teatro",
-      "description": "Um mergulho no maravilhoso mundo das flores.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "10:00 / 11:30"
-    }
-  },
-  {
     "title": "As Águias da República",
     "start": "2026-10-20T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-aguias-da-republica/",
@@ -601,19 +586,6 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "00:10 | 13:20, 16:10, 19:00, 22:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Street Fighter",
     "start": "2026-10-19",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
@@ -653,19 +625,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "13:10, 15:30, 18:00, 20:50, 23:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-10-19",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -705,19 +664,6 @@
   },
   {
     "title": "A Queda da Baleia",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/queda-baleia-415997",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824083?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Queda da Baleia",
     "start": "2026-10-19",
     "url": "https://cinecartaz.publico.pt/filme/queda-baleia-415997",
     "source": "cinema",
@@ -750,32 +696,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824083?tp=KM",
       "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ilha Esquecida",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/ilha-esquecida-415863",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824098?tp=KM",
-      "display_time": "11:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:15, 16:00, 18:40, 21:20, 24:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -822,19 +742,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-19",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -867,19 +774,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
       "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-18",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "18:15, 21:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
