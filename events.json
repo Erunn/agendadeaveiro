@@ -586,19 +586,6 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "00:10 | 13:20, 16:10, 19:00, 22:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Street Fighter",
     "start": "2026-10-20",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
@@ -625,19 +612,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "13:10, 15:30, 18:00, 20:50, 23:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-10-20",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -664,19 +638,6 @@
   },
   {
     "title": "A Queda da Baleia",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/queda-baleia-415997",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824083?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Queda da Baleia",
     "start": "2026-10-20",
     "url": "https://cinecartaz.publico.pt/filme/queda-baleia-415997",
     "source": "cinema",
@@ -703,19 +664,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:15, 16:00, 18:40, 21:20, 24:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-10-20",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -742,19 +690,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-20",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -774,19 +709,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
       "display_time": "14:10, 16:40, 19:15, 21:45, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-19",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "18:15, 21:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -816,66 +738,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Oficina de Jardinagem para famílias",
-    "start": "2026-10-17T10:00:00",
-    "url": "https://www.23milhas.pt/evento/oficina-de-jardinagem-para-familias-1790075898648/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Oficina de Jardinagem para fam...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_jardinagemfamilias.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
-    }
-  },
-  {
-    "title": "Oficina Insectarium – Oficina de construção de insetos",
-    "start": "2026-10-17T10:30:00",
-    "url": "https://www.23milhas.pt/evento/oficina-insectarium-oficina-de-construcao-de-insetos/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Historioscópio Teatro de Mario...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_insectarium.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:30"
-    }
-  },
-  {
-    "title": "Picnic",
-    "start": "2026-10-17T17:00:00",
-    "url": "https://www.23milhas.pt/evento/picnic/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Historioscópio - Teatro de Mar...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_picnic.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Teatro de Marionetas",
-      "category_normalized": "teatro",
-      "display_time": "17:00"
-    }
-  },
-  {
-    "title": "Rhapsody in Blue",
-    "start": "2026-10-17T21:30:00",
-    "url": "https://www.23milhas.pt/evento/rhapsody-in-blue/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Orquestra Filarmónica Gafanhen...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_rhapsodyinblue.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
     }
   },
   {
