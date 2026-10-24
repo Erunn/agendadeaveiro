@@ -31,7 +31,7 @@
   },
   {
     "title": "Woyzeck",
-    "start": "2026-10-30T21:30:00",
+    "start": "2026-10-30",
     "url": "https://www.teatroaveirense.pt/pt/evento/woyzeck/",
     "source": "teatro",
     "extendedProps": {
@@ -41,7 +41,7 @@
       "description": "Um espetáculo que transporta a personagem para um universo distópico dominado por máquinas humanoides e inteligência artificial sem ética.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "title": "O Som da Água: Música em estado líquido",
-    "start": "2026-11-27T21:30:00",
+    "start": "2026-11-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-som-da-agua-musica-em-estado-liquido/",
     "source": "teatro",
     "extendedProps": {
@@ -266,12 +266,12 @@
       "description": "Uma viagem imersiva pelos mistérios da água.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Carolina Deslandes",
-    "start": "2026-11-28T21:30:00",
+    "start": "2026-11-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
     "source": "teatro",
     "extendedProps": {
@@ -281,22 +281,7 @@
       "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Carolina Deslandes",
-    "start": "2026-11-29T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Voz, Guitarra & Violoncelo",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/carolina-deslandes-voz-guitarra-violoncelo_img6a9e9b3294b74.jpg",
-      "source": "teatro",
-      "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -556,19 +541,6 @@
   },
   {
     "title": "Memórias do Cárcere",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "13:45, 17:15, 20:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Memórias do Cárcere",
     "start": "2026-10-24",
     "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
     "source": "cinema",
@@ -634,19 +606,6 @@
   },
   {
     "title": "A Quinta dos Animais",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "13:30, 16:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
     "source": "cinema",
@@ -705,19 +664,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "10:50, 13:30, 16:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -790,19 +736,6 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "19:45, 22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Street Fighter",
     "start": "2026-10-24",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
@@ -868,19 +801,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "18:40, 21:00, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-10-24",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -939,19 +859,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
       "display_time": "18:40, 21:00, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1024,19 +931,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "19:00, 21:30, 23:55",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-24",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -1095,19 +989,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
       "display_time": "19:00, 21:30, 23:55",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "14:00, 16:45 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1173,19 +1054,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
       "display_time": "11:00, 14:00, 16:45 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-23",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:15, 17:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1254,21 +1122,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Digger",
-    "start": "2026-10-22T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-digger/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Alejandro G. Iñárritu",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_cinema-digger.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
     }
   },
   {
@@ -1588,7 +1441,7 @@
   },
   {
     "title": "No Café-Livraria",
-    "start": "2026-10-23T00:00:00",
+    "start": "2026-10-24T00:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
     "source": "23milhas",
     "extendedProps": {
