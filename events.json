@@ -1,7 +1,7 @@
 [
   {
     "title": "Filho de Ninguém",
-    "start": "2026-10-27",
+    "start": "2026-10-27T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/filho-de-ninguem/",
     "source": "teatro",
     "extendedProps": {
@@ -11,12 +11,12 @@
       "description": "Um filme de Safy Nebbou.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Woyzeck",
-    "start": "2026-10-30",
+    "start": "2026-10-30T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/woyzeck/",
     "source": "teatro",
     "extendedProps": {
@@ -26,7 +26,7 @@
       "description": "Um espetáculo que transporta a personagem para um universo distópico dominado por máquinas humanoides e inteligência artificial sem ética.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "title": "Home",
-    "start": "2026-11-06",
+    "start": "2026-11-06T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/home-francisco-sassetti-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -71,7 +71,7 @@
       "description": "Um concerto que deixa transparecer o peso emocional que se enreda nas melodias de Francisco Sassetti.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "title": "Bastien e Bastienne de W. A. Mozart",
-    "start": "2026-11-12",
+    "start": "2026-11-12T10:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
     "source": "teatro",
     "extendedProps": {
@@ -101,7 +101,22 @@
       "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
       "category": "Ópera",
       "category_normalized": "ópera",
-      "display_time": "Todo o dia"
+      "display_time": "10:30"
+    }
+  },
+  {
+    "title": "Bastien e Bastienne de W. A. Mozart",
+    "start": "2026-11-13T10:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Uma ópera em marionetas e em português",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/bastien-e-bastienne-de-w-a-mozart-uma-opera-em-marionetas-e-em-portugues_img6a7c910eec7c4.jpg",
+      "source": "teatro",
+      "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "10:30 / 14:30"
     }
   },
   {
@@ -121,7 +136,7 @@
   },
   {
     "title": "Bastien e Bastienne de W. A. Mozart",
-    "start": "2026-11-14T16:00:00",
+    "start": "2026-11-14",
     "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-de-w-a-mozart/",
     "source": "teatro",
     "extendedProps": {
@@ -131,7 +146,7 @@
       "description": "A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
       "category": "Ópera",
       "category_normalized": "ópera",
-      "display_time": "16:00"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -181,7 +196,7 @@
   },
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21T21:30:00",
+    "start": "2026-11-21",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -191,12 +206,12 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Todos os sons vão dar à UA",
-    "start": "2026-11-25T21:30:00",
+    "start": "2026-11-25",
     "url": "https://www.teatroaveirense.pt/pt/evento/todos-os-sons-vao-dar-a-ua/",
     "source": "teatro",
     "extendedProps": {
@@ -206,12 +221,12 @@
       "description": "Um projeto que desafia as convenções da música erudita ao fundir a tradição ocidental com a riqueza ancestral do Oriente e do Médio Oriente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Som da Água: uma parceria UA / Comité Nacional para a Década do Oceano",
-    "start": "2026-11-27T18:00:00",
+    "start": "2026-11-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/som-da-agua-uma-parceria-ua-unesco/",
     "source": "teatro",
     "extendedProps": {
@@ -221,12 +236,12 @@
       "description": "Com Susana Sardo, Luís Menezes Pinheiro, Luís Tinoco e Pedro Rodrigues",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "18:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "O Som da Água: Música em estado líquido",
-    "start": "2026-11-27",
+    "start": "2026-11-27T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-som-da-agua-musica-em-estado-liquido/",
     "source": "teatro",
     "extendedProps": {
@@ -236,7 +251,7 @@
       "description": "Uma viagem imersiva pelos mistérios da água.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -301,7 +316,7 @@
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-04T11:00:00",
+    "start": "2026-12-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre/",
     "source": "teatro",
     "extendedProps": {
@@ -311,12 +326,12 @@
       "description": "Sessão para público escolar.A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Fabulando no Escuro",
-    "start": "2026-12-05T17:00:00",
+    "start": "2026-12-05",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabulando-no-escuro/",
     "source": "teatro",
     "extendedProps": {
@@ -326,12 +341,12 @@
       "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com Cristina Roldão.",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "17:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-05",
+    "start": "2026-12-05T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
     "source": "teatro",
     "extendedProps": {
@@ -341,12 +356,27 @@
       "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
+    "start": "2026-12-06T17:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Red Cloud Teatro de Marionetas",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/en-tre-nar-ra-ti-vas-estreia-red-cloud-teatro-de-marionetas_img6a7d9e67c32e4.jpg",
+      "source": "teatro",
+      "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
+      "category": "Teatro de Marionetas",
+      "category_normalized": "teatro",
+      "display_time": "17:30"
     }
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-08",
+    "start": "2026-12-08T16:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas-coisas-do-mundo/",
     "source": "teatro",
     "extendedProps": {
@@ -356,7 +386,7 @@
       "description": "A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "16:00"
     }
   },
   {
@@ -481,7 +511,7 @@
   },
   {
     "title": "António Zambujo",
-    "start": "2027-02-27T21:30:00",
+    "start": "2027-02-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/antonio-zambujo/",
     "source": "teatro",
     "extendedProps": {
@@ -491,7 +521,7 @@
       "description": "O músico apresenta ao vivo o seu décimo primeiro álbum de estúdio.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -511,19 +541,6 @@
   },
   {
     "title": "Memórias do Cárcere",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "13:45, 17:15, 20:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Memórias do Cárcere",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
     "source": "cinema",
@@ -595,19 +612,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "13:30, 16:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "10:50, 13:30, 16:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -653,19 +657,6 @@
     }
   },
   {
-    "title": "Clayface",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "18:50, 21:40, 00:15",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Street Fighter",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
@@ -705,32 +696,6 @@
     }
   },
   {
-    "title": "Street Fighter",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "18:40, 21:00, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "O Pecado Mora em Cima",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
@@ -771,19 +736,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -816,19 +768,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "19:00, 21:30, 23:55",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -913,19 +852,6 @@
     }
   },
   {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "11:00, 14:00, 16:45 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Santo António, O Casamenteiro de Lisboa",
     "start": "2026-10-26",
     "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
@@ -959,19 +885,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
       "display_time": "14:15, 17:00",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-25",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "13:00, 16:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1294,7 +1207,7 @@
   },
   {
     "title": "No Café-Livraria",
-    "start": "2026-10-25T00:00:00",
+    "start": "2026-10-26T00:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
     "source": "23milhas",
     "extendedProps": {
