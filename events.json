@@ -31,7 +31,7 @@
   },
   {
     "title": "Coelho Radioactivo",
-    "start": "2026-10-31T21:30:00",
+    "start": "2026-10-31",
     "url": "https://www.teatroaveirense.pt/pt/evento/coelho-radioactivo/",
     "source": "teatro",
     "extendedProps": {
@@ -41,7 +41,7 @@
       "description": "Depois de uma residência artística no Teatro Aveirense, Coelho Radioactivo apresenta novo disco num concerto que reúne fragmentos de memória, afectos e inquietações que atravessam a experiência de viver no presente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "title": "Bastien e Bastienne de W. A. Mozart",
-    "start": "2026-11-14",
+    "start": "2026-11-14T16:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-de-w-a-mozart/",
     "source": "teatro",
     "extendedProps": {
@@ -146,7 +146,7 @@
       "description": "A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
       "category": "Ópera",
       "category_normalized": "ópera",
-      "display_time": "Todo o dia"
+      "display_time": "16:00"
     }
   },
   {
@@ -166,7 +166,7 @@
   },
   {
     "title": "O Problema da habitação e o papel ético e social da arquitetura",
-    "start": "2026-11-19",
+    "start": "2026-11-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao-e-o-papel-etico-e-social-da-arquitetura-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -176,7 +176,7 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Maria Neto (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21",
+    "start": "2026-11-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -206,12 +206,12 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Todos os sons vão dar à UA",
-    "start": "2026-11-25",
+    "start": "2026-11-25T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/todos-os-sons-vao-dar-a-ua/",
     "source": "teatro",
     "extendedProps": {
@@ -221,7 +221,7 @@
       "description": "Um projeto que desafia as convenções da música erudita ao fundir a tradição ocidental com a riqueza ancestral do Oriente e do Médio Oriente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -331,7 +331,7 @@
   },
   {
     "title": "Fabulando no Escuro",
-    "start": "2026-12-05",
+    "start": "2026-12-05T17:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabulando-no-escuro/",
     "source": "teatro",
     "extendedProps": {
@@ -341,7 +341,7 @@
       "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com Cristina Roldão.",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "17:00"
     }
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "title": "Concerto Coral - Cantar o Natal",
-    "start": "2026-12-13T17:00:00",
+    "start": "2026-12-13",
     "url": "https://www.teatroaveirense.pt/pt/evento/concerto-coral-cantar-o-natal/",
     "source": "teatro",
     "extendedProps": {
@@ -461,7 +461,7 @@
       "description": "Um momento de celebração musical da quadra natalícia",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "17:00"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04T21:30:00",
+    "start": "2027-03-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -536,20 +536,7 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Memórias do Cárcere",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "13:45, 17:15, 20:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -580,19 +567,6 @@
   },
   {
     "title": "A Quinta dos Animais",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "13:30, 16:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
     "start": "2026-10-27",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
     "source": "cinema",
@@ -612,19 +586,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "13:30, 16:15 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -658,19 +619,6 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
-      "display_time": "19:45, 22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Street Fighter",
     "start": "2026-10-28",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
@@ -697,19 +645,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "18:40, 21:00, 23:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-10-27",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -736,19 +671,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-10-27",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -775,19 +697,6 @@
   },
   {
     "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "19:00, 21:30, 23:55",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
     "start": "2026-10-27",
     "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
@@ -814,19 +723,6 @@
   },
   {
     "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "14:00, 16:45 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
     "start": "2026-10-27",
     "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
     "source": "cinema",
@@ -846,19 +742,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
       "display_time": "14:00, 16:45 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-26",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:15, 17:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -888,36 +771,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Rodrigo Leão",
-    "start": "2026-10-23T21:30:00",
-    "url": "https://www.23milhas.pt/evento/rodrigo-leao-1786099177339/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "O Rapaz da Montanha",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site4.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Formações MILHA 2026",
-    "start": "2026-10-24T10:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-milha-formacoes/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "MILHA 2026",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site13.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Oficina",
-      "category_normalized": "workshop",
-      "display_time": "10:00"
     }
   },
   {
@@ -1026,21 +879,6 @@
     }
   },
   {
-    "title": "Designer Tiago + Núria Mandane",
-    "start": "2026-11-01T16:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-designer-tiago-nuria-mandane/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Encontro PRAIA",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site9.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "16:00"
-    }
-  },
-  {
     "title": "Experiência Imersiva Encontros PRAIA",
     "start": "2026-11-01T16:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-experiencia-imersiva-encontros-praia/",
@@ -1052,6 +890,21 @@
       "description": "",
       "category": "Experiência",
       "category_normalized": "outros",
+      "display_time": "16:00"
+    }
+  },
+  {
+    "title": "Designer Tiago + Núria Mandane",
+    "start": "2026-11-01T16:00:00",
+    "url": "https://www.23milhas.pt/evento/milha-2026-designer-tiago-nuria-mandane/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Encontro PRAIA",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site9.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Música",
+      "category_normalized": "música",
       "display_time": "16:00"
     }
   },
@@ -1207,7 +1060,7 @@
   },
   {
     "title": "No Café-Livraria",
-    "start": "2026-10-26T00:00:00",
+    "start": "2026-10-27T00:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
     "source": "23milhas",
     "extendedProps": {
