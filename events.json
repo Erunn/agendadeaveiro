@@ -1,20 +1,5 @@
 [
   {
-    "title": "Filho de Ninguém",
-    "start": "2026-10-27T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/filho-de-ninguem/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/filho-de-ninguem-os-filmes-das-nossas-tercas_img6abe6f43b3286.jpg",
-      "source": "teatro",
-      "description": "Um filme de Safy Nebbou.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Woyzeck",
     "start": "2026-10-30T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/woyzeck/",
@@ -31,7 +16,7 @@
   },
   {
     "title": "Coelho Radioactivo",
-    "start": "2026-10-31",
+    "start": "2026-10-31T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/coelho-radioactivo/",
     "source": "teatro",
     "extendedProps": {
@@ -41,7 +26,7 @@
       "description": "Depois de uma residência artística no Teatro Aveirense, Coelho Radioactivo apresenta novo disco num concerto que reúne fragmentos de memória, afectos e inquietações que atravessam a experiência de viver no presente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -151,7 +136,7 @@
   },
   {
     "title": "Entre Corpo, Voz, Memória",
-    "start": "2026-11-15",
+    "start": "2026-11-15T11:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/entre-corpo-voz-memoria/",
     "source": "teatro",
     "extendedProps": {
@@ -161,7 +146,7 @@
       "description": "Uma oficina de dança que parte do universo da peça\"Songs of Ascencion\"",
       "category": "Oficina",
       "category_normalized": "workshop",
-      "display_time": "Todo o dia"
+      "display_time": "11:00"
     }
   },
   {
@@ -181,7 +166,7 @@
   },
   {
     "title": "Songs of Ascencion",
-    "start": "2026-11-19",
+    "start": "2026-11-19T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/songs-of-ascencion/",
     "source": "teatro",
     "extendedProps": {
@@ -191,7 +176,7 @@
       "description": "Uma viagem sensorial que investiga a liberdade corporal feminina, permitindo que as intérpretes explorem uma relação espontânea com objetos, sons e outros corpos.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -226,7 +211,7 @@
   },
   {
     "title": "Som da Água: uma parceria UA / Comité Nacional para a Década do Oceano",
-    "start": "2026-11-27",
+    "start": "2026-11-27T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/som-da-agua-uma-parceria-ua-unesco/",
     "source": "teatro",
     "extendedProps": {
@@ -236,7 +221,7 @@
       "description": "Com Susana Sardo, Luís Menezes Pinheiro, Luís Tinoco e Pedro Rodrigues",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
@@ -316,7 +301,7 @@
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-04",
+    "start": "2026-12-04T11:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre/",
     "source": "teatro",
     "extendedProps": {
@@ -326,7 +311,7 @@
       "description": "Sessão para público escolar.A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "11:00"
     }
   },
   {
@@ -451,7 +436,7 @@
   },
   {
     "title": "Concerto Coral - Cantar o Natal",
-    "start": "2026-12-13",
+    "start": "2026-12-13T17:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/concerto-coral-cantar-o-natal/",
     "source": "teatro",
     "extendedProps": {
@@ -461,7 +446,7 @@
       "description": "Um momento de celebração musical da quadra natalícia",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "17:00"
     }
   },
   {
@@ -511,7 +496,7 @@
   },
   {
     "title": "António Zambujo",
-    "start": "2027-02-27",
+    "start": "2027-02-27T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/antonio-zambujo/",
     "source": "teatro",
     "extendedProps": {
@@ -521,12 +506,12 @@
       "description": "O músico apresenta ao vivo o seu décimo primeiro álbum de estúdio.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04",
+    "start": "2027-03-04T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -536,20 +521,7 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "Memórias do Cárcere",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "13:45, 17:15, 20:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "21:30"
     }
   },
   {
@@ -566,13 +538,91 @@
     }
   },
   {
-    "title": "A Quinta dos Animais",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "title": "Memórias do Cárcere",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "13:30, 16:15 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Memórias do Cárcere",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
+      "display_time": "13:45, 17:15, 20:45",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -586,6 +636,97 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "10:50, 13:30, 16:15 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Quinta dos Animais",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
+      "display_time": "10:50, 13:30, 16:15 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -606,12 +747,90 @@
   },
   {
     "title": "Clayface",
-    "start": "2026-10-27",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "13:20, 16:00, 18:50, 21:40, 00:15",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
       "display_time": "13:20, 16:00, 19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Clayface",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
+      "display_time": "18:50, 21:40, 00:15",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -632,7 +851,72 @@
   },
   {
     "title": "Street Fighter",
-    "start": "2026-10-27",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Street Fighter",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Street Fighter",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Street Fighter",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Street Fighter",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "19:45, 22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Street Fighter",
+    "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
     "extendedProps": {
@@ -644,13 +928,13 @@
     }
   },
   {
-    "title": "O Pecado Mora em Cima",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "title": "Street Fighter",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/street-fighter-415999",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "18:40, 21:00, 23:20",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824085?tp=KM",
+      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -670,13 +954,91 @@
     }
   },
   {
-    "title": "Verity",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Pecado Mora em Cima",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
+      "display_time": "18:40, 21:00, 23:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -696,13 +1058,91 @@
     }
   },
   {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "title": "Verity",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "19:00, 21:30, 23:55",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -722,13 +1162,91 @@
     }
   },
   {
-    "title": "A Ovelha Choné: Trapalhada na Quinta",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
-      "display_time": "14:00, 16:45 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Heart of the Beast: Heróis Inseparáveis",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
+      "display_time": "19:00, 21:30, 23:55",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -748,13 +1266,91 @@
     }
   },
   {
-    "title": "Santo António, O Casamenteiro de Lisboa",
-    "start": "2026-10-27",
-    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
-      "display_time": "14:15, 17:00",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "11:00, 14:00, 16:45 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Ovelha Choné: Trapalhada na Quinta",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/ovelha-chone-trapalhada-quinta-415855",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824012?tp=KM",
+      "display_time": "11:00, 14:00, 16:45 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -768,6 +1364,97 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
       "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-10-29",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-10-30",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-10-31",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-11-02",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-11-03",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-11-04",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "14:15, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Santo António, O Casamenteiro de Lisboa",
+    "start": "2026-11-01",
+    "url": "https://cinecartaz.publico.pt/filme/santo-antonio-casamenteiro-lisboa-415828",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/823748?tp=KM",
+      "display_time": "13:00, 16:00",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1060,7 +1747,7 @@
   },
   {
     "title": "No Café-Livraria",
-    "start": "2026-10-27T00:00:00",
+    "start": "2026-10-28T00:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
     "source": "23milhas",
     "extendedProps": {
