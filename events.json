@@ -151,7 +151,7 @@
   },
   {
     "title": "Reflexo de um Diamante Morto",
-    "start": "2026-11-17T21:30:00",
+    "start": "2026-11-17",
     "url": "https://www.teatroaveirense.pt/pt/evento/reflexo-de-um-diamante-morto/",
     "source": "teatro",
     "extendedProps": {
@@ -161,7 +161,7 @@
       "description": "Um filme de Hélène Cattet e Bruno Forzani.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "title": "Arquitetas da Liberdade",
-    "start": "2026-12-15T13:30:00",
+    "start": "2026-12-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/arquitetas-da-liberdade/",
     "source": "teatro",
     "extendedProps": {
@@ -491,7 +491,7 @@
       "description": "Uma exposição ao redor de mulheres e das casas pelas quais lutaram antes e depois do 25 de abril.",
       "category": "Exposição",
       "category_normalized": "outros",
-      "display_time": "13:30 / 18:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -556,19 +556,6 @@
   },
   {
     "title": "Sensibilidade e Bom Senso",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824563?tp=KM",
-      "display_time": "20:30, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Sensibilidade e Bom Senso",
     "start": "2026-11-02",
     "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
     "source": "cinema",
@@ -601,19 +588,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824563?tp=KM",
       "display_time": "20:30, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Crawlers! Bons Sonhos",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/crawlers-415861",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824420?tp=KM",
-      "display_time": "21:50, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -698,32 +672,6 @@
     }
   },
   {
-    "title": "Floresta Mágica",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824418?tp=KM",
-      "display_time": "20:15, 23:10 (VO) | 10:40, 14:00, 17:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "De Gaulle: Liberdade",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824243?tp=KM",
-      "display_time": "13:40, 17:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "De Gaulle: Liberdade",
     "start": "2026-11-02",
     "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
@@ -763,19 +711,6 @@
     }
   },
   {
-    "title": "Memórias do Cárcere",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "15:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "A Quinta dos Animais",
     "start": "2026-11-02",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
@@ -809,32 +744,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "11:00, 13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -919,32 +828,6 @@
     }
   },
   {
-    "title": "O Pecado Mora em Cima",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "13:20, 19:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
     "title": "Verity",
     "start": "2026-11-02",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
@@ -978,19 +861,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-11-01",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "21:00, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1322,7 +1192,7 @@
   },
   {
     "title": "No Café-Livraria",
-    "start": "2026-11-01T00:00:00",
+    "start": "2026-11-02T00:00:00",
     "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
     "source": "23milhas",
     "extendedProps": {
