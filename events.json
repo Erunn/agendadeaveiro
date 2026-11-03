@@ -136,7 +136,7 @@
   },
   {
     "title": "Entre Corpo, Voz, Memória",
-    "start": "2026-11-15T11:00:00",
+    "start": "2026-11-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/entre-corpo-voz-memoria/",
     "source": "teatro",
     "extendedProps": {
@@ -146,12 +146,12 @@
       "description": "Uma oficina de dança que parte do universo da peça\"Songs of Ascencion\"",
       "category": "Oficina",
       "category_normalized": "workshop",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Reflexo de um Diamante Morto",
-    "start": "2026-11-17",
+    "start": "2026-11-17T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/reflexo-de-um-diamante-morto/",
     "source": "teatro",
     "extendedProps": {
@@ -161,7 +161,7 @@
       "description": "Um filme de Hélène Cattet e Bruno Forzani.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -406,7 +406,7 @@
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-09T10:30:00",
+    "start": "2026-12-09",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas/",
     "source": "teatro",
     "extendedProps": {
@@ -416,12 +416,12 @@
       "description": "Sessão para público escolar.A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "10:30 / 14:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Espaço público: uma casa para todos",
-    "start": "2026-12-10T18:00:00",
+    "start": "2026-12-10",
     "url": "https://www.teatroaveirense.pt/pt/evento/espaco-publico-uma-casa-para-todos/",
     "source": "teatro",
     "extendedProps": {
@@ -431,12 +431,12 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Paula del Rio (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "18:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Baleia Baleia Baleia",
-    "start": "2026-12-10T22:00:00",
+    "start": "2026-12-10",
     "url": "https://www.teatroaveirense.pt/pt/evento/baleia-baleia-baleia/",
     "source": "teatro",
     "extendedProps": {
@@ -446,7 +446,7 @@
       "description": "Uma das bandas mais ativas do panorama underground português chega às Novas Quintas do Teatro Aveirense.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "22:00"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "title": "Arquitetas da Liberdade",
-    "start": "2026-12-15",
+    "start": "2026-12-15T13:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/arquitetas-da-liberdade/",
     "source": "teatro",
     "extendedProps": {
@@ -491,7 +491,7 @@
       "description": "Uma exposição ao redor de mulheres e das casas pelas quais lutaram antes e depois do 25 de abril.",
       "category": "Exposição",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "13:30 / 18:30"
     }
   },
   {
@@ -556,19 +556,6 @@
   },
   {
     "title": "Sensibilidade e Bom Senso",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824563?tp=KM",
-      "display_time": "20:30, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Sensibilidade e Bom Senso",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
     "source": "cinema",
@@ -595,19 +582,6 @@
   },
   {
     "title": "Crawlers! Bons Sonhos",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/crawlers-415861",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824420?tp=KM",
-      "display_time": "21:50, 00:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Crawlers! Bons Sonhos",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/crawlers-415861",
     "source": "cinema",
@@ -634,19 +608,6 @@
   },
   {
     "title": "Floresta Mágica",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824418?tp=KM",
-      "display_time": "20:15, 23:10 (VO) | 14:00, 17:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Floresta Mágica",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
     "source": "cinema",
@@ -673,19 +634,6 @@
   },
   {
     "title": "De Gaulle: Liberdade",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824243?tp=KM",
-      "display_time": "13:40, 17:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "De Gaulle: Liberdade",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
     "source": "cinema",
@@ -712,19 +660,6 @@
   },
   {
     "title": "A Quinta dos Animais",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
     "source": "cinema",
@@ -751,19 +686,6 @@
   },
   {
     "title": "Clayface",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
     "source": "cinema",
@@ -790,19 +712,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "14:20, 16:40, 19:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -829,19 +738,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-11-03",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -861,19 +757,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-11-02",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "21:00, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -903,171 +786,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "MILHA 2026",
-    "start": "2026-10-30T20:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-1791545446962/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Festa da Música e dos Músicos ...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "20:00"
-    }
-  },
-  {
-    "title": "Instruções para a Paisagem",
-    "start": "2026-10-30T21:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-instrucoes-para-a-paisagem/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Inês Santiago",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site2.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "EXPOSIÇÃO",
-      "category_normalized": "outros",
-      "display_time": "21:00"
-    }
-  },
-  {
-    "title": "Wolfgang, bitte...e Ordinary Events",
-    "start": "2026-10-30T22:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-wolfgang-bittee-ordinary-events/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "de Rui Horta pela Companhia Jo...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site3.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "22:00"
-    }
-  },
-  {
-    "title": "LES A LES",
-    "start": "2026-10-30T23:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-les-a-les/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Banda Vencedora  Apoio Discogr...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site4.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "23:00"
-    }
-  },
-  {
-    "title": "Fearless Monkeys",
-    "start": "2026-10-31T18:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-fearless-monkeys/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "concerto PRAIA",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site5.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "18:00"
-    }
-  },
-  {
-    "title": "Coro da Madrugada",
-    "start": "2026-10-31T22:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-coro-da-madrugada/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Os Vês pelos Bês",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site7.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "22:00"
-    }
-  },
-  {
-    "title": "Emanuel Graça",
-    "start": "2026-10-31T23:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-emanuel-graca-dj-set/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "DJ Set",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site8.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "23:00"
-    }
-  },
-  {
-    "title": "Experiência Imersiva Encontros PRAIA",
-    "start": "2026-11-01T16:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-experiencia-imersiva-encontros-praia/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Alexandre Oliveira Martins e D...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site12.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Experiência",
-      "category_normalized": "outros",
-      "display_time": "16:00"
-    }
-  },
-  {
-    "title": "Designer Tiago + Núria Mandane",
-    "start": "2026-11-01T16:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-designer-tiago-nuria-mandane/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Encontro PRAIA",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site9.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "16:00"
-    }
-  },
-  {
-    "title": "Hugo Marques + Luana Torrão + Sekai",
-    "start": "2026-11-01T16:45:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-hugo-marques-luana-torrao-sekai/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Encontro PRAIA",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site10.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "16:45"
-    }
-  },
-  {
-    "title": "Orquestra do Mar convida Margarida Campelo para interpretar Dina",
-    "start": "2026-11-01T18:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-orquestra-do-mar-e-margarida-campelo/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "convida Margarida Campelo para...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-milha_2026-site11.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "18:00"
     }
   },
   {
@@ -1188,21 +906,6 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:30"
-    }
-  },
-  {
-    "title": "No Café-Livraria",
-    "start": "2026-11-02T00:00:00",
-    "url": "https://www.23milhas.pt/evento/milha-2026-exposicao-no-cafe-livraria/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "Esta é uma coleção idealizada para um espaço de convívio e leitura ao sabor de um lanche. Utilizando pontilhismo decorado com molduras de cores fortes, a exposição procura criar um ambiente calmo e acolhedor, equilibrando o detalhe da composição com a leveza da uma paleta alegre. Os desenhos são alusivos a literatura e outras narrativas mundanas, recriados de forma etérea, mas realista.",
-      "category": "EXPOSIÇÃO",
-      "category_normalized": "outros",
-      "display_time": "Todo o dia"
     }
   }
 ]
