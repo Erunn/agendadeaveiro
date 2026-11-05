@@ -16,7 +16,7 @@
   },
   {
     "title": "Home",
-    "start": "2026-11-06",
+    "start": "2026-11-06T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/home-francisco-sassetti-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -26,12 +26,12 @@
       "description": "Um concerto que deixa transparecer o peso emocional que se enreda nas melodias de Francisco Sassetti.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Cantar-o-Lar [ESTREIA]",
-    "start": "2026-11-08",
+    "start": "2026-11-08T15:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cantar-o-lar-estreia/",
     "source": "teatro",
     "extendedProps": {
@@ -41,12 +41,12 @@
       "description": "Orientado pela Orquestra Sem Fronteiras, este projeto envolve artistas de quatro lares de Aveiro.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "15:00"
     }
   },
   {
     "title": "Memórias do Cárcere",
-    "start": "2026-11-10",
+    "start": "2026-11-10T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/memorias-do-carcere/",
     "source": "teatro",
     "extendedProps": {
@@ -56,12 +56,12 @@
       "description": "Um filme de Sérgio Graciano.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Bastien e Bastienne de W. A. Mozart",
-    "start": "2026-11-12",
+    "start": "2026-11-12T10:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
     "source": "teatro",
     "extendedProps": {
@@ -71,12 +71,27 @@
       "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
       "category": "Ópera",
       "category_normalized": "ópera",
-      "display_time": "Todo o dia"
+      "display_time": "10:30"
+    }
+  },
+  {
+    "title": "Bastien e Bastienne de W. A. Mozart",
+    "start": "2026-11-13T10:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-escolas/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Uma ópera em marionetas e em português",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/bastien-e-bastienne-de-w-a-mozart-uma-opera-em-marionetas-e-em-portugues_img6a7c910eec7c4.jpg",
+      "source": "teatro",
+      "description": "SESSÕES PARA O PÚBLICO ESCOLAR.A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
+      "category": "Ópera",
+      "category_normalized": "ópera",
+      "display_time": "10:30 / 14:30"
     }
   },
   {
     "title": "Sondre Lerche",
-    "start": "2026-11-13",
+    "start": "2026-11-13T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/sondre-lerche/",
     "source": "teatro",
     "extendedProps": {
@@ -86,12 +101,12 @@
       "description": "Sondre Lerche regressa aos palcos com um novo disco.Primeira parte a cargo de Francisco Fontes.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Bastien e Bastienne de W. A. Mozart",
-    "start": "2026-11-14",
+    "start": "2026-11-14T16:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/bastien-e-bastienne-de-w-a-mozart/",
     "source": "teatro",
     "extendedProps": {
@@ -101,12 +116,12 @@
       "description": "A Orquestra das Beiras e a Ópera Nómada apresentam as desventuras delirantes de Bastien e Bastienne.",
       "category": "Ópera",
       "category_normalized": "ópera",
-      "display_time": "Todo o dia"
+      "display_time": "16:00"
     }
   },
   {
     "title": "Entre Corpo, Voz, Memória",
-    "start": "2026-11-15",
+    "start": "2026-11-15T11:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/entre-corpo-voz-memoria/",
     "source": "teatro",
     "extendedProps": {
@@ -116,12 +131,12 @@
       "description": "Uma oficina de dança que parte do universo da peça\"Songs of Ascencion\"",
       "category": "Oficina",
       "category_normalized": "workshop",
-      "display_time": "Todo o dia"
+      "display_time": "11:00"
     }
   },
   {
     "title": "Reflexo de um Diamante Morto",
-    "start": "2026-11-17",
+    "start": "2026-11-17T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/reflexo-de-um-diamante-morto/",
     "source": "teatro",
     "extendedProps": {
@@ -131,12 +146,12 @@
       "description": "Um filme de Hélène Cattet e Bruno Forzani.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "O Problema da habitação e o papel ético e social da arquitetura",
-    "start": "2026-11-19",
+    "start": "2026-11-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao-e-o-papel-etico-e-social-da-arquitetura-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -146,12 +161,12 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Maria Neto (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
     "title": "Songs of Ascencion",
-    "start": "2026-11-19",
+    "start": "2026-11-19T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/songs-of-ascencion/",
     "source": "teatro",
     "extendedProps": {
@@ -161,12 +176,12 @@
       "description": "Uma viagem sensorial que investiga a liberdade corporal feminina, permitindo que as intérpretes explorem uma relação espontânea com objetos, sons e outros corpos.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21",
+    "start": "2026-11-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -176,12 +191,12 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Siza Vieira, o Arquitecto e a Cidade Velha",
-    "start": "2026-11-24",
+    "start": "2026-11-24T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/siza-vieira-o-arquitecto-e-a-cidade-velha/",
     "source": "teatro",
     "extendedProps": {
@@ -191,12 +206,12 @@
       "description": "Um filme de Catarina Alves Costa.",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Todos os sons vão dar à UA",
-    "start": "2026-11-25",
+    "start": "2026-11-25T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/todos-os-sons-vao-dar-a-ua/",
     "source": "teatro",
     "extendedProps": {
@@ -206,12 +221,12 @@
       "description": "Um projeto que desafia as convenções da música erudita ao fundir a tradição ocidental com a riqueza ancestral do Oriente e do Médio Oriente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Som da Água: uma parceria UA / Comité Nacional para a Década do Oceano",
-    "start": "2026-11-27",
+    "start": "2026-11-27T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/som-da-agua-uma-parceria-ua-unesco/",
     "source": "teatro",
     "extendedProps": {
@@ -221,12 +236,12 @@
       "description": "Com Susana Sardo, Luís Menezes Pinheiro, Luís Tinoco e Pedro Rodrigues",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
     "title": "O Som da Água: Música em estado líquido",
-    "start": "2026-11-27",
+    "start": "2026-11-27T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-som-da-agua-musica-em-estado-liquido/",
     "source": "teatro",
     "extendedProps": {
@@ -236,12 +251,12 @@
       "description": "Uma viagem imersiva pelos mistérios da água.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Carolina Deslandes",
-    "start": "2026-11-28",
+    "start": "2026-11-28T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
     "source": "teatro",
     "extendedProps": {
@@ -251,12 +266,27 @@
       "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Carolina Deslandes",
+    "start": "2026-11-29T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Voz, Guitarra & Violoncelo",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/carolina-deslandes-voz-guitarra-violoncelo_img6a9e9b3294b74.jpg",
+      "source": "teatro",
+      "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
+      "category": "Música",
+      "category_normalized": "música",
+      "display_time": "21:30"
     }
   },
   {
     "title": "Axiom Casino",
-    "start": "2026-12-03",
+    "start": "2026-12-03T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
     "source": "teatro",
     "extendedProps": {
@@ -266,7 +296,22 @@
       "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "Axiom Casino",
+    "start": "2026-12-04T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Jonathan Uliel Saldanha",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
+      "source": "teatro",
+      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
+      "category": "Dança",
+      "category_normalized": "dança",
+      "display_time": "21:30"
     }
   },
   {
@@ -346,7 +391,7 @@
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-09",
+    "start": "2026-12-09T10:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas/",
     "source": "teatro",
     "extendedProps": {
@@ -356,7 +401,7 @@
       "description": "Sessão para público escolar.A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "10:30 / 14:30"
     }
   },
   {
@@ -496,19 +541,6 @@
   },
   {
     "title": "Sensibilidade e Bom Senso",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824563?tp=KM",
-      "display_time": "20:30, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Sensibilidade e Bom Senso",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/sensibilidade-bom-senso-416036",
     "source": "cinema",
@@ -593,19 +625,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824563?tp=KM",
       "display_time": "20:30, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Crawlers! Bons Sonhos",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/crawlers-415861",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824420?tp=KM",
-      "display_time": "21:50, 00:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -704,19 +723,6 @@
   },
   {
     "title": "Floresta Mágica",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824418?tp=KM",
-      "display_time": "20:15, 23:10 (VO) | 14:00, 17:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Floresta Mágica",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
     "source": "cinema",
@@ -808,19 +814,6 @@
   },
   {
     "title": "De Gaulle: Liberdade",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824243?tp=KM",
-      "display_time": "13:40, 17:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "De Gaulle: Liberdade",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/gaulle-liberdade-416031",
     "source": "cinema",
@@ -912,19 +905,6 @@
   },
   {
     "title": "A Quinta dos Animais",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
     "source": "cinema",
@@ -1009,19 +989,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
       "display_time": "11:00, 13:30, 16:10 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "13:50, 16:20, 18:50, 21:30, 00:05 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1120,19 +1087,6 @@
   },
   {
     "title": "O Pecado Mora em Cima",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824084?tp=KM",
-      "display_time": "14:20, 16:40, 19:20",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Pecado Mora em Cima",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/o-pecado-mora-em-cima-415998",
     "source": "cinema",
@@ -1224,19 +1178,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-11-05",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -1321,19 +1262,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:15, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-11-04",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "21:00, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -1462,7 +1390,7 @@
   },
   {
     "title": "Duo Fruscella",
-    "start": "2026-11-08T21:30:00",
+    "start": "2026-11-08T17:00:00",
     "url": "https://www.23milhas.pt/evento/duo-fruscella/",
     "source": "23milhas",
     "extendedProps": {
@@ -1472,7 +1400,7 @@
       "description": "",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "17:00"
     }
   },
   {
