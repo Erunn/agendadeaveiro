@@ -106,7 +106,7 @@
   },
   {
     "title": "O Problema da habitação e o papel ético e social da arquitetura",
-    "start": "2026-11-19",
+    "start": "2026-11-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao-e-o-papel-etico-e-social-da-arquitetura-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -116,7 +116,7 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Maria Neto (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04T21:30:00",
+    "start": "2027-03-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -491,20 +491,7 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Godzilla Minus Zero",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
-      "display_time": "15:00, 22:10, 23:55",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -535,19 +522,6 @@
   },
   {
     "title": "O Gato do Chapéu",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
-      "display_time": "13:20, 16:10, 18:50 (VP) | 13:50, 16:30 (VP 3D)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Gato do Chapéu",
     "start": "2026-11-10",
     "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
     "source": "cinema",
@@ -567,19 +541,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
       "display_time": "13:20, 16:10, 18:50 (VP) | 13:50, 16:30 (VP 3D)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Bola Negra",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
-      "display_time": "20:10, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -613,19 +574,6 @@
   },
   {
     "title": "Floresta Mágica",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824418?tp=KM",
-      "display_time": "20:30 (VO)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Floresta Mágica",
     "start": "2026-11-11",
     "url": "https://cinecartaz.publico.pt/filme/floresta-magica-416035",
     "source": "cinema",
@@ -639,19 +587,6 @@
   },
   {
     "title": "Clayface",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824277?tp=KM",
-      "display_time": "14:00, 16:40, 19:10, 21:45, 00:15",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Clayface",
     "start": "2026-11-10",
     "url": "https://cinecartaz.publico.pt/filme/clayface-416005",
     "source": "cinema",
@@ -678,19 +613,6 @@
   },
   {
     "title": "Memórias do Cárcere",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824090?tp=KM",
-      "display_time": "18:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Memórias do Cárcere",
     "start": "2026-11-10",
     "url": "https://cinecartaz.publico.pt/filme/memorias-carcere-416004",
     "source": "cinema",
@@ -717,19 +639,6 @@
   },
   {
     "title": "A Quinta dos Animais",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824276?tp=KM",
-      "display_time": "14:20, 17:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Quinta dos Animais",
     "start": "2026-11-10",
     "url": "https://cinecartaz.publico.pt/filme/quinta-animais-416006",
     "source": "cinema",
@@ -756,19 +665,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:15, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-11-10",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -788,19 +684,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:15, 00:05 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Heart of the Beast: Heróis Inseparáveis",
-    "start": "2026-11-09",
-    "url": "https://cinecartaz.publico.pt/filme/heart-of-the-beast-herois-inseparaveis-415857",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/823776?tp=KM",
-      "display_time": "21:30, 23:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -830,36 +713,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Nós, sozinhas",
-    "start": "2026-11-07T21:30:00",
-    "url": "https://www.23milhas.pt/evento/nos-sozinhas/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Sara Barros Leitão / Cassandra",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site3.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Teatro",
-      "category_normalized": "teatro",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Duo Fruscella",
-    "start": "2026-11-08T17:00:00",
-    "url": "https://www.23milhas.pt/evento/duo-fruscella/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Festivais de Outono | UA",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_duofruscella.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "17:00"
     }
   },
   {
@@ -935,21 +788,6 @@
       "category": "Música",
       "category_normalized": "música",
       "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Santo António – O Casamenteiro de Lisboa",
-    "start": "2026-11-09T00:00:00",
-    "url": "https://www.23milhas.pt/evento/cinema-santo-antonio-o-casamenteiro-de-lisboa/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "23 Milhas",
-      "image": "",
-      "source": "23milhas",
-      "description": "Os Casamentos de Santo António bateram no fundo. Pelo menos, é o que pensa a Stardust, um grande grupo francês que, em breve, assumirá a gestão do evento. Carmo e Valentim, funcionários da Câmara Municipal de Lisboa com mais de 25 anos na sua organização, recebem um duro ultimato: ou conseguem criar um evento moderno e de sucesso ou serão demitidos. Mas, contra todas as probabilidades, ambos se empenharão em produzir a mais icónica edição da história. Porque Lisboa e as suas tradições não estão à venda.",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "Todo o dia"
     }
   }
 ]
