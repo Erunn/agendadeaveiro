@@ -1,22 +1,7 @@
 [
   {
-    "title": "Reflexo de um Diamante Morto",
-    "start": "2026-11-17T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/reflexo-de-um-diamante-morto/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/reflexo-de-um-diamante-morto-os-filmes-das-nossas-tercas_img6ae4889b637b0.jpg",
-      "source": "teatro",
-      "description": "Um filme de Hélène Cattet e Bruno Forzani.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "O Problema da habitação e o papel ético e social da arquitetura",
-    "start": "2026-11-19",
+    "start": "2026-11-19T18:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao-e-o-papel-etico-e-social-da-arquitetura-ciclo-o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -26,7 +11,7 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Maria Neto (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "Todo o dia"
+      "display_time": "18:00"
     }
   },
   {
@@ -46,7 +31,7 @@
   },
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21",
+    "start": "2026-11-21T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -56,7 +41,7 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
@@ -286,7 +271,7 @@
   },
   {
     "title": "Baleia Baleia Baleia",
-    "start": "2026-12-10",
+    "start": "2026-12-10T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/baleia-baleia-baleia/",
     "source": "teatro",
     "extendedProps": {
@@ -296,7 +281,7 @@
       "description": "Uma das bandas mais ativas do panorama underground português chega às Novas Quintas do Teatro Aveirense.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "22:00"
     }
   },
   {
@@ -406,7 +391,72 @@
   },
   {
     "title": "Cavalo Selvagem Nove",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "13:30, 16:10, 18:50, 21:30, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "13:30, 16:10, 18:50, 21:30, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "13:30, 16:10, 18:50, 21:30, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "13:30, 16:10, 18:50, 21:30, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "13:30, 16:10, 18:50, 21:30, 00:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
     "source": "cinema",
     "extendedProps": {
@@ -419,7 +469,72 @@
   },
   {
     "title": "You Can See Everything",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
     "source": "cinema",
     "extendedProps": {
@@ -432,7 +547,72 @@
   },
   {
     "title": "Ebenezer - Um Conto de Natal",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
     "source": "cinema",
     "extendedProps": {
@@ -445,7 +625,72 @@
   },
   {
     "title": "Como Roubar Um Banco",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30, 18:00, 20:50, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30, 18:00, 20:50, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30, 18:00, 20:50, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30, 18:00, 20:50, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30, 18:00, 20:50, 23:40 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
     "source": "cinema",
     "extendedProps": {
@@ -470,8 +715,86 @@
     }
   },
   {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-25",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:30 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "Godzilla Minus Zero",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
+      "display_time": "14:00, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Godzilla Minus Zero",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
+      "display_time": "14:00, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Godzilla Minus Zero",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
+      "display_time": "14:00, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Godzilla Minus Zero",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
+      "display_time": "14:00, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Godzilla Minus Zero",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824554?tp=KM",
+      "display_time": "14:00, 17:00",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Godzilla Minus Zero",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/godzilla-minus-zero-416140",
     "source": "cinema",
     "extendedProps": {
@@ -484,7 +807,72 @@
   },
   {
     "title": "A Bola Negra",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-24",
     "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
     "source": "cinema",
     "extendedProps": {
@@ -497,7 +885,7 @@
   },
   {
     "title": "O Gato do Chapéu",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
     "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
     "source": "cinema",
     "extendedProps": {
@@ -509,8 +897,73 @@
     }
   },
   {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:45, 16:30, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:45, 16:30, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-24",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:45, 16:30, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "10:50, 13:45, 16:30, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "10:50, 13:45, 16:30, 19:10 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
     "title": "Verity",
-    "start": "2026-11-17",
+    "start": "2026-11-19",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
     "extendedProps": {
@@ -522,33 +975,68 @@
     }
   },
   {
-    "title": "Homúnculo, Homens dos copos - Noite Europeia do Circo",
-    "start": "2026-11-14T21:30:00",
-    "url": "https://www.23milhas.pt/evento/homunculo-homens-dos-copos-noite-europeia-do-circo/",
-    "source": "23milhas",
+    "title": "Verity",
+    "start": "2026-11-20",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "George Swattridge & Rafael...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_homunculo.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Ensaio Aberto",
-      "category_normalized": "outros",
-      "display_time": "21:30"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:15, 17:40, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
-    "title": "Luís Trigacheiro",
-    "start": "2026-11-15T15:30:00",
-    "url": "https://www.23milhas.pt/evento/luis-trigacheiro-1786100265342/",
-    "source": "23milhas",
+    "title": "Verity",
+    "start": "2026-11-21",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
     "extendedProps": {
-      "umbrella": "Concerto Solidário 46º anivers...",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site2.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "15:30"
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:15, 17:40, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-22",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:15, 17:40, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-23",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:15, 17:40, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-24",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:15, 17:40, 20:30, 23:20",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
     }
   },
   {
@@ -579,6 +1067,306 @@
       "category": "Teatro",
       "category_normalized": "teatro",
       "display_time": "21:30"
+    }
+  },
+  {
+    "title": "À Deriva",
+    "start": "2026-12-03T14:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-a-deriva/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Fernando Nogueira [PT/BR]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_a-deriva.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "14:30"
+    }
+  },
+  {
+    "title": "LEME 2026",
+    "start": "2026-12-03T17:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Festival de Circo Contemporâne...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "17:30"
+    }
+  },
+  {
+    "title": "Homúnculo",
+    "start": "2026-12-03T19:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-homunculo/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Homens dos copos - George Swat...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_homunculo.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "19:00"
+    }
+  },
+  {
+    "title": "Sinapse Colapse",
+    "start": "2026-12-03T20:15:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-sinapse-colapse/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cia. Meio Circo [PT]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_sinpapsecolapse.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "20:15"
+    }
+  },
+  {
+    "title": "Budô",
+    "start": "2026-12-03T20:40:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-budo/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cerca Trova [PT]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_budo.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "20:40"
+    }
+  },
+  {
+    "title": "GHETTO",
+    "start": "2026-12-03T21:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-ghetto/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cie. Dissociée [FR/BR]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_ghetto.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "21:30"
+    }
+  },
+  {
+    "title": "ter-ter",
+    "start": "2026-12-04T17:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-ter-ter/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "On Peut Pas Oublier - OPPO [PT...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_ter-ter.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "17:30"
+    }
+  },
+  {
+    "title": "Entre Nó/S",
+    "start": "2026-12-04T18:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-entre-nos/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cristopher Ledezma [CR/PT]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_entrenos.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Monstrum",
+    "start": "2026-12-04T19:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-monstrum/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "João Pataco & Miguel Balta...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_monstrum.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "19:00"
+    }
+  },
+  {
+    "title": "Ceramic Circus",
+    "start": "2026-12-04T21:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-ceramic-circus/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Julien Vogel / Cie. Unlisted [...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_ceramiccircus.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "21:00"
+    }
+  },
+  {
+    "title": "Bello!",
+    "start": "2026-12-04T22:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-bello/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Fabbrica C [IT]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_bello.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "22:30"
+    }
+  },
+  {
+    "title": "Oficina de equilíbrio em duo para famílias",
+    "start": "2026-12-05T10:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-oficina-de-equilibrio-em-duo-para-familias/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Fernando Nogueira [PT/BR]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_oficinaequilibrioemduo.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "10:00"
+    }
+  },
+  {
+    "title": "No pressure… [work in progress]",
+    "start": "2026-12-05T13:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-no-pressure-work-in-progress/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Emma Hörnell [SE]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_nopressure.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "13:30"
+    }
+  },
+  {
+    "title": "Putting bodies on the line [work in progress]",
+    "start": "2026-12-05T14:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-putting-bodies-on-the-line-work-in-progress/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Cia. Victoria Sickness / Vic H...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_puttingbodiesontheline.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "14:00"
+    }
+  },
+  {
+    "title": "IM BAU",
+    "start": "2026-12-05T14:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-im-bau/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Roman Škadra [DE/SK]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_imbau.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "14:30"
+    }
+  },
+  {
+    "title": "Oficina de métodos de processo coreográfico para circo contemporâneo",
+    "start": "2026-12-05T15:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-oficina-de-metodos-de-processo-coreografico-para-circo-contemporaneo/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Homens dos copos - George Swat...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_oficinasmetodosprocessocoreograficos.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "15:00"
+    }
+  },
+  {
+    "title": "A Body and Other Objects (the short story)",
+    "start": "2026-12-05T18:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-a-body-and-other-objects-the-short-story/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Ana Jordão & Vincent Kolla...",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_abodyandotherobjects.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "18:00"
+    }
+  },
+  {
+    "title": "Secrets",
+    "start": "2026-12-05T19:00:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-secrets/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Circo Eia [ES]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_secrets.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "19:00"
+    }
+  },
+  {
+    "title": "Do Birds Dream of Flying?",
+    "start": "2026-12-05T21:45:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-do-birds-dream-of-flying/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Fabla Collective [SI]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_dobirdsdreamofflying.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "21:45"
+    }
+  },
+  {
+    "title": "Kyo Ru Gi",
+    "start": "2026-12-05T22:30:00",
+    "url": "https://www.23milhas.pt/evento/leme-2026-kyo-ru-gi/",
+    "source": "23milhas",
+    "extendedProps": {
+      "umbrella": "Petri Dish [BE]",
+      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-leme_2026-site_kyorugi.jpg?fit=fill&w=1400",
+      "source": "23milhas",
+      "description": "",
+      "category": "Circo Contemporâneo",
+      "category_normalized": "outros",
+      "display_time": "22:30"
     }
   },
   {
