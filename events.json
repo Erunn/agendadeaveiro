@@ -1,7 +1,7 @@
 [
   {
     "title": "O Problema da Habitação [ESTREIA]",
-    "start": "2026-11-21T21:30:00",
+    "start": "2026-11-21",
     "url": "https://www.teatroaveirense.pt/pt/evento/o-problema-da-habitacao/",
     "source": "teatro",
     "extendedProps": {
@@ -11,7 +11,7 @@
       "description": "Um retrato do país com e sem teto, a partir de cenas escritas por um grupo de jornalistas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "title": "Carolina Deslandes",
-    "start": "2026-11-28T21:30:00",
+    "start": "2026-11-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
     "source": "teatro",
     "extendedProps": {
@@ -86,27 +86,12 @@
       "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Carolina Deslandes",
-    "start": "2026-11-29T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Voz, Guitarra & Violoncelo",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/carolina-deslandes-voz-guitarra-violoncelo_img6a9e9b3294b74.jpg",
-      "source": "teatro",
-      "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Axiom Casino",
-    "start": "2026-12-03T21:30:00",
+    "start": "2026-12-03",
     "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
     "source": "teatro",
     "extendedProps": {
@@ -116,27 +101,12 @@
       "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Axiom Casino",
-    "start": "2026-12-04T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Jonathan Uliel Saldanha",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
-      "source": "teatro",
-      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-04T11:00:00",
+    "start": "2026-12-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre/",
     "source": "teatro",
     "extendedProps": {
@@ -146,12 +116,12 @@
       "description": "Sessão para público escolar.A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Fabulando no Escuro",
-    "start": "2026-12-05T17:00:00",
+    "start": "2026-12-05",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabulando-no-escuro/",
     "source": "teatro",
     "extendedProps": {
@@ -161,7 +131,7 @@
       "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com Cristina Roldão.",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "17:00"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -226,7 +196,7 @@
   },
   {
     "title": "Espaço público: uma casa para todos",
-    "start": "2026-12-10T18:00:00",
+    "start": "2026-12-10",
     "url": "https://www.teatroaveirense.pt/pt/evento/espaco-publico-uma-casa-para-todos/",
     "source": "teatro",
     "extendedProps": {
@@ -236,7 +206,7 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Paula del Rio (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "18:00"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -331,7 +301,7 @@
   },
   {
     "title": "António Zambujo",
-    "start": "2027-02-27",
+    "start": "2027-02-27T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/antonio-zambujo/",
     "source": "teatro",
     "extendedProps": {
@@ -341,12 +311,12 @@
       "description": "O músico apresenta ao vivo o seu décimo primeiro álbum de estúdio.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "21:30"
     }
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04",
+    "start": "2027-03-04T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -356,20 +326,7 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
-    }
-  },
-  {
-    "title": "Viana - A Lenda dos Corações de Ouro",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
-      "display_time": "13:20, 16:10, 19:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "21:30"
     }
   },
   {
@@ -432,19 +389,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
       "display_time": "13:20, 16:10, 19:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "The Hunger Games: Amanhecer na Ceifa",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
-      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -517,19 +461,6 @@
   },
   {
     "title": "Cavalo Selvagem Nove",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
-      "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Cavalo Selvagem Nove",
     "start": "2026-11-21",
     "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
     "source": "cinema",
@@ -588,19 +519,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
       "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Como Roubar Um Banco",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
-      "display_time": "14:10, 18:00, 20:50, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -673,19 +591,6 @@
   },
   {
     "title": "Ebenezer - Um Conto de Natal",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Ebenezer - Um Conto de Natal",
     "start": "2026-11-21",
     "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
     "source": "cinema",
@@ -744,19 +649,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
       "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "You Can See Everything",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
-      "display_time": "22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -829,19 +721,6 @@
   },
   {
     "title": "A Bola Negra",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
-      "display_time": "21:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Bola Negra",
     "start": "2026-11-21",
     "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
     "source": "cinema",
@@ -900,19 +779,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
       "display_time": "21:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Gato do Chapéu",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
-      "display_time": "13:50, 16:40, 19:20 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -985,19 +851,6 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-20",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "14:30, 17:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
     "start": "2026-11-21",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
@@ -1059,21 +912,6 @@
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Bola Negra",
-    "start": "2026-11-19T18:30:00",
-    "url": "https://www.23milhas.pt/evento/cinema-a-bola-negra/",
-    "source": "23milhas",
-    "extendedProps": {
-      "umbrella": "Javier Ambrossi, Javier Calvo",
-      "image": "https://img.bndlyr.com/nkqfjskujo/_assets/23milhas-2026_4t-site_abolanegra.jpg?fit=fill&w=1400",
-      "source": "23milhas",
-      "description": "",
-      "category": "CINEMA",
-      "category_normalized": "cinema",
-      "display_time": "18:30"
     }
   },
   {
