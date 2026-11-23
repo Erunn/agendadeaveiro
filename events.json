@@ -226,7 +226,7 @@
   },
   {
     "title": "Baleia Baleia Baleia",
-    "start": "2026-12-10",
+    "start": "2026-12-10T22:00:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/baleia-baleia-baleia/",
     "source": "teatro",
     "extendedProps": {
@@ -236,7 +236,7 @@
       "description": "Uma das bandas mais ativas do panorama underground português chega às Novas Quintas do Teatro Aveirense.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "Todo o dia"
+      "display_time": "22:00"
     }
   },
   {
@@ -346,19 +346,6 @@
   },
   {
     "title": "Viana - A Lenda dos Corações de Ouro",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
-      "display_time": "13:20, 16:10, 19:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Viana - A Lenda dos Corações de Ouro",
     "start": "2026-11-23",
     "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
     "source": "cinema",
@@ -398,19 +385,6 @@
   },
   {
     "title": "The Hunger Games: Amanhecer na Ceifa",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
-      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "The Hunger Games: Amanhecer na Ceifa",
     "start": "2026-11-23",
     "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
     "source": "cinema",
@@ -450,19 +424,6 @@
   },
   {
     "title": "Cavalo Selvagem Nove",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
-      "display_time": "22:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Cavalo Selvagem Nove",
     "start": "2026-11-23",
     "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
     "source": "cinema",
@@ -502,19 +463,6 @@
   },
   {
     "title": "Como Roubar Um Banco",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
-      "display_time": "14:10, 18:00, 20:50, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Como Roubar Um Banco",
     "start": "2026-11-23",
     "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
     "source": "cinema",
@@ -547,19 +495,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
       "display_time": "14:10, 18:00, 20:50, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Ebenezer - Um Conto de Natal",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -606,19 +541,6 @@
   },
   {
     "title": "You Can See Everything",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
-      "display_time": "22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "You Can See Everything",
     "start": "2026-11-23",
     "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
     "source": "cinema",
@@ -651,19 +573,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
       "display_time": "22:10",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Bola Negra",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
-      "display_time": "21:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -742,32 +651,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
       "display_time": "13:50, 16:40, 19:20 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "O Gato do Chapéu",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
-      "display_time": "11:10, 13:50, 16:40, 19:20 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Verity",
-    "start": "2026-11-22",
-    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
-      "display_time": "14:30, 17:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
