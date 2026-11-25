@@ -1,22 +1,7 @@
 [
   {
-    "title": "Siza Vieira, o Arquitecto e a Cidade Velha",
-    "start": "2026-11-24T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/siza-vieira-o-arquitecto-e-a-cidade-velha/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Os Filmes das Nossas Terças / Ciclo O Problema da Habitação",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/siza-vieira-o-arquitecto-e-a-cidade-velha-os-filmes-das-nossas-tercas-ciclo-o-problema-da-habitacao_img6ae48a846efda.jpg",
-      "source": "teatro",
-      "description": "Um filme de Catarina Alves Costa.",
-      "category": "Cinema",
-      "category_normalized": "cinema",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Todos os sons vão dar à UA",
-    "start": "2026-11-25T21:30:00",
+    "start": "2026-11-25",
     "url": "https://www.teatroaveirense.pt/pt/evento/todos-os-sons-vao-dar-a-ua/",
     "source": "teatro",
     "extendedProps": {
@@ -26,7 +11,7 @@
       "description": "Um projeto que desafia as convenções da música erudita ao fundir a tradição ocidental com a riqueza ancestral do Oriente e do Médio Oriente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -90,23 +75,23 @@
     }
   },
   {
-    "title": "Axiom Casino",
-    "start": "2026-12-03T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
+    "title": "Memória de Rapariga",
+    "start": "2026-12-01T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/memoria-de-rapariga/",
     "source": "teatro",
     "extendedProps": {
-      "umbrella": "Jonathan Uliel Saldanha",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/memoria-de-rapariga-os-filmes-das-nossas-tercas_img6b058e343fde8.jpg",
       "source": "teatro",
-      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
-      "category": "Dança",
-      "category_normalized": "dança",
+      "description": "Um filme de Judith Godrèche.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
       "display_time": "21:30"
     }
   },
   {
     "title": "Axiom Casino",
-    "start": "2026-12-04T21:30:00",
+    "start": "2026-12-03",
     "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
     "source": "teatro",
     "extendedProps": {
@@ -116,12 +101,12 @@
       "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-04T11:00:00",
+    "start": "2026-12-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre/",
     "source": "teatro",
     "extendedProps": {
@@ -131,12 +116,12 @@
       "description": "Sessão para público escolar.A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Fabulando no Escuro",
-    "start": "2026-12-05T17:00:00",
+    "start": "2026-12-05",
     "url": "https://www.teatroaveirense.pt/pt/evento/fabulando-no-escuro/",
     "source": "teatro",
     "extendedProps": {
@@ -146,12 +131,12 @@
       "description": "Conversa no âmbito da apresentação deen.tre.nar.ra.ti.vasno Teatro Aveirense, com Cristina Roldão.",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "17:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-05T21:30:00",
+    "start": "2026-12-05",
     "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
     "source": "teatro",
     "extendedProps": {
@@ -161,27 +146,12 @@
       "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
       "category": "Teatro de Marionetas",
       "category_normalized": "teatro",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "en.tre.nar.ra.ti.vas [ESTREIA]",
-    "start": "2026-12-06T17:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/en-tre-nar-ra-ti-vas-estreia/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Red Cloud Teatro de Marionetas",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/en-tre-nar-ra-ti-vas-estreia-red-cloud-teatro-de-marionetas_img6a7d9e67c32e4.jpg",
-      "source": "teatro",
-      "description": "A Red Cloud Teatro de Marionetas regressa com uma fabulação crítica, teatro documental e ficcional.",
-      "category": "Teatro de Marionetas",
-      "category_normalized": "teatro",
-      "display_time": "17:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-08T16:00:00",
+    "start": "2026-12-08",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas-coisas-do-mundo/",
     "source": "teatro",
     "extendedProps": {
@@ -191,12 +161,27 @@
       "description": "A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "16:00"
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "Armand",
+    "start": "2026-12-08",
+    "url": "https://www.teatroaveirense.pt/pt/evento/armand/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/armand-os-filmes-das-nossas-tercas_img6b058ecb0ecab.jpg",
+      "source": "teatro",
+      "description": "Um filme de Halfdan Ullmann Tøndel.",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-09T10:30:00",
+    "start": "2026-12-09",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas/",
     "source": "teatro",
     "extendedProps": {
@@ -206,7 +191,7 @@
       "description": "Sessão para público escolar.A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "10:30 / 14:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -285,6 +270,21 @@
     }
   },
   {
+    "title": "Os Indesejáveis",
+    "start": "2026-12-15T21:30:00",
+    "url": "https://www.teatroaveirense.pt/pt/evento/os-indesejaveis/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças / Ciclo O Problema da Habitação",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/os-indesejaveis-os-filmes-das-nossas-tercas-ciclo-o-problema-da-habitacao_img6b058f800eaa3.jpg",
+      "source": "teatro",
+      "description": "Um filme de Lady Ly",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "21:30"
+    }
+  },
+  {
     "title": "Começar tudo outra vez",
     "start": "2026-12-19T21:30:00",
     "url": "https://www.teatroaveirense.pt/pt/evento/comecar-tudo-outra-vez/",
@@ -301,7 +301,7 @@
   },
   {
     "title": "A Poesia das Pequenas Coisas [ESTREIA]",
-    "start": "2026-12-20T11:00:00",
+    "start": "2026-12-20",
     "url": "https://www.teatroaveirense.pt/pt/evento/a-poesia-das-pequenas-coisas-estreia/",
     "source": "teatro",
     "extendedProps": {
@@ -311,12 +311,27 @@
       "description": "Num mundo marcado pela voracidade do tempo e o pelo excesso de estímulos, este espetáculo convida a desacelerar e a mergulhar num universo de fantasia, saboreando pequenas subtilezas.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
+    }
+  },
+  {
+    "title": "The Loneliest Man in Town",
+    "start": "2026-12-22",
+    "url": "https://www.teatroaveirense.pt/pt/evento/the-loneliest-man-in-town/",
+    "source": "teatro",
+    "extendedProps": {
+      "umbrella": "Os Filmes das Nossas Terças",
+      "image": "https://www.teatroaveirense.pt/imagens/eventos/the-loneliest-man-in-town-os-filmes-das-nossas-tercas_img6b059040a3e31.jpg",
+      "source": "teatro",
+      "description": "Um filme de Tizza Covi e Rainer Frimmel",
+      "category": "Cinema",
+      "category_normalized": "cinema",
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "António Zambujo",
-    "start": "2027-02-27T21:30:00",
+    "start": "2027-02-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/antonio-zambujo/",
     "source": "teatro",
     "extendedProps": {
@@ -326,12 +341,12 @@
       "description": "O músico apresenta ao vivo o seu décimo primeiro álbum de estúdio.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04T21:30:00",
+    "start": "2027-03-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -341,20 +356,7 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Viana - A Lenda dos Corações de Ouro",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
-      "display_time": "13:20, 16:10, 19:00 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -371,13 +373,91 @@
     }
   },
   {
-    "title": "The Hunger Games: Amanhecer na Ceifa",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
-      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Viana - A Lenda dos Corações de Ouro",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
+      "display_time": "13:20, 16:10, 19:00 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -397,13 +477,91 @@
     }
   },
   {
-    "title": "Cavalo Selvagem Nove",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
-      "display_time": "22:30",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "The Hunger Games: Amanhecer na Ceifa",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
+      "display_time": "13:30, 17:00, 20:30, 24:00 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -423,13 +581,91 @@
     }
   },
   {
-    "title": "Como Roubar Um Banco",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
-      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Cavalo Selvagem Nove",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/cavalo-selvagem-nove-416102",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824565?tp=KM",
+      "display_time": "22:30",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -449,13 +685,91 @@
     }
   },
   {
-    "title": "Ebenezer - Um Conto de Natal",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
-      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Como Roubar Um Banco",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/roubar-banco-416103",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824559?tp=KM",
+      "display_time": "14:10, 18:00, 20:50, 23:40",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -475,13 +789,91 @@
     }
   },
   {
-    "title": "You Can See Everything",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
-      "display_time": "22:10",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Ebenezer - Um Conto de Natal",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
+      "display_time": "13:10, 15:50, 18:30, 21:10, 23:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -501,13 +893,91 @@
     }
   },
   {
-    "title": "A Bola Negra",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "title": "You Can See Everything",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
-      "display_time": "21:50",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "You Can See Everything",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
+      "display_time": "22:10",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -527,13 +997,91 @@
     }
   },
   {
-    "title": "O Gato do Chapéu",
-    "start": "2026-11-24",
-    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "title": "A Bola Negra",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
     "source": "cinema",
     "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
-      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "A Bola Negra",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
+      "display_time": "21:50",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -547,6 +1095,97 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
       "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-12-02",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "11:10, 13:50, 16:40, 19:20 (VP)",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "O Gato do Chapéu",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/gato-chapeu-416062",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
+      "display_time": "11:10, 13:50, 16:40, 19:20 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -554,7 +1193,7 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-24",
+    "start": "2026-11-25",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
     "extendedProps": {
@@ -567,7 +1206,85 @@
   },
   {
     "title": "Verity",
-    "start": "2026-11-25",
+    "start": "2026-11-26",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-27",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-28",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-29",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-11-30",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-12-01",
+    "url": "https://cinecartaz.publico.pt/filme/verity-415866",
+    "source": "cinema",
+    "extendedProps": {
+      "image": "https://imagens.publicocdn.com/imagens.aspx/824003?tp=KM",
+      "display_time": "14:30, 17:30",
+      "source": "cinema",
+      "category": "Cinema",
+      "category_normalized": "cinema"
+    }
+  },
+  {
+    "title": "Verity",
+    "start": "2026-12-02",
     "url": "https://cinecartaz.publico.pt/filme/verity-415866",
     "source": "cinema",
     "extendedProps": {
