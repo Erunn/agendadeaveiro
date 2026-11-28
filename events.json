@@ -1,37 +1,7 @@
 [
   {
-    "title": "Som da Água: uma parceria UA / Comité Nacional para a Década do Oceano",
-    "start": "2026-11-27T18:00:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/som-da-agua-uma-parceria-ua-unesco/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Conversa Festivais de Outono",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/som-da-agua-uma-parceria-ua-unesco-conversa-festivais-de-outono_img6a7de469e5614.jpg",
-      "source": "teatro",
-      "description": "Com Susana Sardo, Luís Menezes Pinheiro, Luís Tinoco e Pedro Rodrigues",
-      "category": "Conversa",
-      "category_normalized": "outros",
-      "display_time": "18:00"
-    }
-  },
-  {
-    "title": "O Som da Água: Música em estado líquido",
-    "start": "2026-11-27T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/o-som-da-agua-musica-em-estado-liquido/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Concerto de encerramento dos Festivais de Outono 2026",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/o-som-da-agua-musica-em-estado-liquido-concerto-de-encerramento-dos-festivais-de-outono-2026_img6a7d8e68cac01.jpg",
-      "source": "teatro",
-      "description": "Uma viagem imersiva pelos mistérios da água.",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
     "title": "Carolina Deslandes",
-    "start": "2026-11-28T21:30:00",
+    "start": "2026-11-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
     "source": "teatro",
     "extendedProps": {
@@ -41,22 +11,7 @@
       "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Carolina Deslandes",
-    "start": "2026-11-29T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/carolina-deslandes/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Voz, Guitarra & Violoncelo",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/carolina-deslandes-voz-guitarra-violoncelo_img6a9e9b3294b74.jpg",
-      "source": "teatro",
-      "description": "Carolina Deslandes apresenta-se em trio, num formato que promete estreitar ainda mais a sua relação com o público",
-      "category": "Música",
-      "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -76,7 +31,7 @@
   },
   {
     "title": "Axiom Casino",
-    "start": "2026-12-03T21:30:00",
+    "start": "2026-12-03",
     "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
     "source": "teatro",
     "extendedProps": {
@@ -86,22 +41,7 @@
       "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Axiom Casino",
-    "start": "2026-12-04T21:30:00",
-    "url": "https://www.teatroaveirense.pt/pt/evento/axiom-casino/",
-    "source": "teatro",
-    "extendedProps": {
-      "umbrella": "Jonathan Uliel Saldanha",
-      "image": "https://www.teatroaveirense.pt/imagens/eventos/axiom-casino-jonathan-uliel-saldanha_img6a7d9c413baab.jpg",
-      "source": "teatro",
-      "description": "Uma peça para dois intérpretes situada no interior de uma máquina-casino onde cada gesto é lido e controlado.",
-      "category": "Dança",
-      "category_normalized": "dança",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -196,7 +136,7 @@
   },
   {
     "title": "As mais belas coisas do mundo",
-    "start": "2026-12-09T10:30:00",
+    "start": "2026-12-09",
     "url": "https://www.teatroaveirense.pt/pt/evento/as-mais-belas/",
     "source": "teatro",
     "extendedProps": {
@@ -206,12 +146,12 @@
       "description": "Sessão para público escolar.A partir do texto de Valter Hugo Mãe, conta-se a história de uma menina que, dentro do abraço da avó, procura encontrar respostas para os mistérios da vida.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "10:30 / 14:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Espaço público: uma casa para todos",
-    "start": "2026-12-10T18:00:00",
+    "start": "2026-12-10",
     "url": "https://www.teatroaveirense.pt/pt/evento/espaco-publico-uma-casa-para-todos/",
     "source": "teatro",
     "extendedProps": {
@@ -221,12 +161,12 @@
       "description": "Conversa no âmbito do ciclo O Problema da Habitação, com Paula del Rio (arquiteta)",
       "category": "Conversa",
       "category_normalized": "outros",
-      "display_time": "18:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Baleia Baleia Baleia",
-    "start": "2026-12-10T22:00:00",
+    "start": "2026-12-10",
     "url": "https://www.teatroaveirense.pt/pt/evento/baleia-baleia-baleia/",
     "source": "teatro",
     "extendedProps": {
@@ -236,12 +176,12 @@
       "description": "Uma das bandas mais ativas do panorama underground português chega às Novas Quintas do Teatro Aveirense.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "22:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Flamingo",
-    "start": "2026-12-11T21:30:00",
+    "start": "2026-12-11",
     "url": "https://www.teatroaveirense.pt/pt/evento/flamingo/",
     "source": "teatro",
     "extendedProps": {
@@ -251,12 +191,12 @@
       "description": "Um espetáculo de dança onde a natureza ganha voz.",
       "category": "Dança",
       "category_normalized": "dança",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Concerto Coral - Cantar o Natal",
-    "start": "2026-12-13T17:00:00",
+    "start": "2026-12-13",
     "url": "https://www.teatroaveirense.pt/pt/evento/concerto-coral-cantar-o-natal/",
     "source": "teatro",
     "extendedProps": {
@@ -266,12 +206,12 @@
       "description": "Um momento de celebração musical da quadra natalícia",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "17:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Arquitetas da Liberdade",
-    "start": "2026-12-15T13:30:00",
+    "start": "2026-12-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/arquitetas-da-liberdade/",
     "source": "teatro",
     "extendedProps": {
@@ -281,12 +221,12 @@
       "description": "Uma exposição ao redor de mulheres e das casas pelas quais lutaram antes e depois do 25 de abril.",
       "category": "Exposição",
       "category_normalized": "outros",
-      "display_time": "13:30 / 18:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Os Indesejáveis",
-    "start": "2026-12-15T21:30:00",
+    "start": "2026-12-15",
     "url": "https://www.teatroaveirense.pt/pt/evento/os-indesejaveis/",
     "source": "teatro",
     "extendedProps": {
@@ -296,12 +236,12 @@
       "description": "Um filme de Lady Ly",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Começar tudo outra vez",
-    "start": "2026-12-19T21:30:00",
+    "start": "2026-12-19",
     "url": "https://www.teatroaveirense.pt/pt/evento/comecar-tudo-outra-vez/",
     "source": "teatro",
     "extendedProps": {
@@ -311,12 +251,12 @@
       "description": "Moldadas pelos seus próprios nascimentos, as personagens convidam-nos a sentar à mesa e a partilhar histórias, afetos e perguntas.",
       "category": "Teatro",
       "category_normalized": "teatro",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "A Poesia das Pequenas Coisas [ESTREIA]",
-    "start": "2026-12-20T11:00:00",
+    "start": "2026-12-20",
     "url": "https://www.teatroaveirense.pt/pt/evento/a-poesia-das-pequenas-coisas-estreia/",
     "source": "teatro",
     "extendedProps": {
@@ -326,12 +266,12 @@
       "description": "Num mundo marcado pela voracidade do tempo e o pelo excesso de estímulos, este espetáculo convida a desacelerar e a mergulhar num universo de fantasia, saboreando pequenas subtilezas.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "11:00"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "The Loneliest Man in Town",
-    "start": "2026-12-22T21:30:00",
+    "start": "2026-12-22",
     "url": "https://www.teatroaveirense.pt/pt/evento/the-loneliest-man-in-town/",
     "source": "teatro",
     "extendedProps": {
@@ -341,12 +281,12 @@
       "description": "Um filme de Tizza Covi e Rainer Frimmel",
       "category": "Cinema",
       "category_normalized": "cinema",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "António Zambujo",
-    "start": "2027-02-27T21:30:00",
+    "start": "2027-02-27",
     "url": "https://www.teatroaveirense.pt/pt/evento/antonio-zambujo/",
     "source": "teatro",
     "extendedProps": {
@@ -356,12 +296,12 @@
       "description": "O músico apresenta ao vivo o seu décimo primeiro álbum de estúdio.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Cristina Branco",
-    "start": "2027-03-04T21:30:00",
+    "start": "2027-03-04",
     "url": "https://www.teatroaveirense.pt/pt/evento/cristina/",
     "source": "teatro",
     "extendedProps": {
@@ -371,12 +311,12 @@
       "description": "Cristina Branco celebra 30 anos de vida artística com um espetáculo inédito que revisita a trilogia formada por Menina (2016), Branco (2018) e Eva (2020)",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
+      "display_time": "Todo o dia"
     }
   },
   {
     "title": "Benjamin Clementine",
-    "start": "2027-04-28T21:30:00",
+    "start": "2026-04-28",
     "url": "https://www.teatroaveirense.pt/pt/evento/benjamin-clementine/",
     "source": "teatro",
     "extendedProps": {
@@ -386,20 +326,7 @@
       "description": "Uma oportunidade de viver de perto o trabalho ao vivo de Clementine: pessoal, espontâneo e intransigente.",
       "category": "Música",
       "category_normalized": "música",
-      "display_time": "21:30"
-    }
-  },
-  {
-    "title": "Os Novos Sogros do Pior",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/novos-sogros-pior-416192",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824920?tp=KM",
-      "display_time": "13:20, 16:00, 18:30, 21:00, 23:30",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
+      "display_time": "Todo o dia"
     }
   },
   {
@@ -521,38 +448,12 @@
   },
   {
     "title": "Conversa Açorda",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/conversa-acorda-416188",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824796?tp=KM",
-      "display_time": "14:00, 16:30, 18:50, 21:20, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Conversa Açorda",
     "start": "2026-12-02",
     "url": "https://cinecartaz.publico.pt/filme/conversa-acorda-416188",
     "source": "cinema",
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824796?tp=KM",
       "display_time": "14:00, 16:30, 18:50, 21:20, 23:50",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "HEXE: O Reino da Magia",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/hexe-reino-magia-416189",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824797?tp=KM",
-      "display_time": "13:30, 16:15, 19:00 (VP ATMOS) | 14:10, 17:00 (3D VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -625,19 +526,6 @@
   },
   {
     "title": "The Hunger Games: Amanhecer na Ceifa",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
-      "display_time": "13:10, 16:50, 20:15, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "The Hunger Games: Amanhecer na Ceifa",
     "start": "2026-11-28",
     "url": "https://cinecartaz.publico.pt/filme/the-hunger-games-amanhecer-ceifa-416111",
     "source": "cinema",
@@ -696,19 +584,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824766?tp=KM",
       "display_time": "13:10, 16:50, 20:15, 23:40",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Viana - A Lenda dos Corações de Ouro",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/viana-lenda-coracoes-ouro-416112",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824396?tp=KM",
-      "display_time": "13:50, 16:40, 19:30 (VP)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -781,19 +656,6 @@
   },
   {
     "title": "You Can See Everything",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
-      "display_time": "21:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "You Can See Everything",
     "start": "2026-11-28",
     "url": "https://cinecartaz.publico.pt/filme/you-can-see-everything-416132",
     "source": "cinema",
@@ -852,19 +714,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824463?tp=KM",
       "display_time": "21:45",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "Ebenezer - Um Conto de Natal",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/ebenezer-conto-natal-416105",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824568?tp=KM",
-      "display_time": "20:30, 23:15 (ATMOS)",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
@@ -982,19 +831,6 @@
     "extendedProps": {
       "image": "https://imagens.publicocdn.com/imagens.aspx/824550?tp=KM",
       "display_time": "11:00, 13:00, 15:45 (VP)",
-      "source": "cinema",
-      "category": "Cinema",
-      "category_normalized": "cinema"
-    }
-  },
-  {
-    "title": "A Bola Negra",
-    "start": "2026-11-27",
-    "url": "https://cinecartaz.publico.pt/filme/bola-negra-416056",
-    "source": "cinema",
-    "extendedProps": {
-      "image": "https://imagens.publicocdn.com/imagens.aspx/824425?tp=KM",
-      "display_time": "22:20",
       "source": "cinema",
       "category": "Cinema",
       "category_normalized": "cinema"
